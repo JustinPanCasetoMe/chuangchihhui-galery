@@ -1,15 +1,69 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-
-.card {
-  padding: 2em;
+.Logo{
+  width: 200px;
+  height: 80px;
+  background-color: #c3c3c3;
 }
 
-.read-the-docs {
-  color: #888;
+.pd-x-container{
+  padding: 0 80px;
+}
+
+.pd-y-container{
+  padding-top: 100px;
+}
+
+.pd-10{
+  padding: 10px;
+}
+
+.pd-30{
+  padding: 30px;
+}
+
+.pd-w-10{
+  padding: 0 10px;
+}
+
+.pd-w-20{
+  padding: 0 20px;
+}
+
+.pd-w-30{
+  padding: 0 30px;
+}
+
+.fw{
+  width: 100%;
+}
+
+.fh{
+  height: 100%;
+}
+
+.df{
+  display: flex;
+}
+
+.fd-r{
+  flex-direction: row;
+}
+
+.fd-c{
+  flex-direction: column;
+}
+
+.jc-sb{
+  justify-content: space-between;
+}
+
+.jc-sa{
+  justify-content: space-around;
+}
+
+.aln-itm-c{
+  align-items: center;
 }
