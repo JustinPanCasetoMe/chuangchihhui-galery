@@ -112,6 +112,10 @@
   margin-bottom: 10px;
 }
 
+.mg-b-box{
+  margin-bottom: 50px;
+}
+
 .bd-bm-unActive{
   border-bottom: none;
 }

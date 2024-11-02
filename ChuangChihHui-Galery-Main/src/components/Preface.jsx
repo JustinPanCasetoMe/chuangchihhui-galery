@@ -7,7 +7,7 @@ const Preface = ({ listings = [] }) => {
     })
 
     return (
-        <div className="preface pd-50">
+        <div className="preface pd-50 mg-b-box">
             {prefaceRender}
         </div>
     )

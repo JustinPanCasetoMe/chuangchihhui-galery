@@ -6,7 +6,8 @@ import { Portfolio, Experiences, Critics, Collections, Contacts, Home } from './
 import exhibition from './datas/exhibition.json'
 import competition from './datas/competition.json'
 import archive from './datas/archive.json'
-
+import 'slick-carousel/slick/slick.css';
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
 
