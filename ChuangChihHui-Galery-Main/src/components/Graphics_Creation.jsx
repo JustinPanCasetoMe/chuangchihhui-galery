@@ -10,14 +10,14 @@ const Graphics_Creation = ({ graphicLink =[] }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1
   };
 
   const graphicRender = graphicLink.map((graphicItem, index) => {
     return(
       <div key={index} className=''>
-        <img src={graphicItem.img} alt="" />
+        <img src={graphicItem.img} alt="" className='bd-r'/>
       </div>
     )
   })

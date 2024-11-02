@@ -124,6 +124,10 @@
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
+.bd-r{
+  border-radius: 6px;
+}
+
 .dib{
   display: inline-block;
 }
