@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
 
-  const catergory_tab_style = "mg-r-20 ${visibleSection === 'exhibition' ? 'bd-bt-active' : '' } pointer"
-
   const [visibleSection, setVisibleSection] = useState('exhibition');
 
   const exhibitionRender = exhibition.map((item, index) => {
