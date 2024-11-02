@@ -1,16 +1,16 @@
 [
     {
         "id": 1,
-        "name": "真假同歸",
-        "size": "91X116cm",
+        "name": "遠離塵囂",
+        "size": "116X91cm",
         "mediums": "油畫",
-        "year": "1994",
+        "year": "1993",
         "path": "",
         "img": "https://picsum.photos/id/200/800/600"
     },
     {
         "id": 2,
-        "name": "Artwork version 2",
+        "name": "真假同歸",
         "size": "91X116cm",
         "mediums": "油畫",
         "year": "1994",
@@ -19,56 +19,145 @@
     },
     {
         "id": 3,
-        "name": "Artwork version 3",
+        "name": "心裡心外",
         "size": "91X116cm",
         "mediums": "油畫",
-        "year": "1994",
+        "year": "1995",
         "path": "",
         "img": "https://picsum.photos/id/202/400/300"
     },
     {
         "id": 4,
-        "name": "Artwork version 4",
-        "size": "91X116cm",
-        "mediums": "油畫",
-        "year": "1994",
+        "name": "夜遊巴黎",
+        "size": "50X27cm",
+        "mediums": "壓克力",
+        "year": "2016",
         "path": "",
         "img": "https://picsum.photos/id/203/400/600"
     },
     {
         "id": 5,
-        "name": "Artwork version 5",
-        "size": "91X116cm",
-        "mediums": "油畫",
-        "year": "1994",
+        "name": "時間在分娩",
+        "size": "235X175cm",
+        "mediums": "壓克力",
+        "year": "2015",
         "path": "",
         "img": "https://picsum.photos/id/204/800/600"
     },
     {
         "id": 6,
-        "name": "Artwork version 6",
-        "size": "91X116cm",
-        "mediums": "油畫",
-        "year": "1994",
+        "name": "美國國慶狂想曲",
+        "size": "154X90cm",
+        "mediums": "壓克力",
+        "year": "2018",
         "path": "",
         "img": "https://picsum.photos/id/205/600/800"
     },
     {
         "id": 7,
-        "name": "Artwork version 7",
-        "size": "91X116cm",
-        "mediums": "油畫",
-        "year": "1994",
+        "name": "夏日的晨光",
+        "size": "161X129cm",
+        "mediums": "壓克力",
+        "year": "2022",
         "path": "",
         "img": "https://picsum.photos/id/206/400/300"
     },
     {
         "id": 8,
-        "name": "Artwork version 8",
-        "size": "91X116cm",
-        "mediums": "油畫",
-        "year": "1994",
+        "name": "心智的演化",
+        "size": "150X150cm",
+        "mediums": "壓克力",
+        "year": "2018",
         "path": "",
-        "img": "https://picsum.photos/id/207/400/600"
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 9,
+        "name": "區塊鏈-心念的演變",
+        "size": "128X162.5cm",
+        "mediums": "壓克力",
+        "year": "2019",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },{
+        "id": 10,
+        "name": "心非心",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2023",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 11,
+        "name": "尋找內心的名牌",
+        "size": "218X188X12cm",
+        "mediums": "複合媒材",
+        "year": "2014",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 12,
+        "name": "靈山",
+        "size": "150X150cm",
+        "mediums": "複合媒材",
+        "year": "2021",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 13,
+        "name": "心智的演化",
+        "size": "150X150cm",
+        "mediums": "壓克力",
+        "year": "2018",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 14,
+        "name": "心智的演化",
+        "size": "150X150cm",
+        "mediums": "壓克力",
+        "year": "2018",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 15,
+        "name": "心智的演化",
+        "size": "150X150cm",
+        "mediums": "壓克力",
+        "year": "2018",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 16,
+        "name": "心智的演化",
+        "size": "150X150cm",
+        "mediums": "壓克力",
+        "year": "2018",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 17,
+        "name": "心智的演化",
+        "size": "150X150cm",
+        "mediums": "壓克力",
+        "year": "2018",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
+    },
+    {
+        "id": 18,
+        "name": "心智的演化",
+        "size": "150X150cm",
+        "mediums": "壓克力",
+        "year": "2018",
+        "path": "",
+        "img": "https://picsum.photos/id/208/400/600"
     }
 ]

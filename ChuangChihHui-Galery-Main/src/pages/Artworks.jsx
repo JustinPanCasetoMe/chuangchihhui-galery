@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router'
 import { Link } from 'react-router-dom';
 
 const Artworks = ({ artworks = [] }) => {
 
     //Get the artwork name from the Json file
-    // const { artworkName } = useParams();
     const [artworkName, setArtworkName] = useState('')
 
     //Find the artwork in the artworks array
