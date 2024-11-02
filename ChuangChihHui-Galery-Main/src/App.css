@@ -16,6 +16,22 @@
   padding-top: 100px;
 }
 
+.title-btm{
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.fw{
+  width: 100%;
+}
+
+.fh{
+  height: 100%;
+}
+
+.w-auto{
+  width: auto;
+}
+
 .pd-10{
   padding: 10px;
 }
@@ -36,12 +52,28 @@
   padding: 0 30px;
 }
 
-.fw{
-  width: 100%;
+.pd-b-title{
+  padding-bottom: 10px;
 }
 
-.fh{
-  height: 100%;
+.mg-r-20{
+  margin-right: 20px;
+}
+
+.mg-r-30{
+  margin-right: 30px;
+}
+
+.mg-subtitle{
+  margin-bottom: 20px;
+}
+
+.mg-list{
+  margin-bottom: 10px;
+}
+
+.dib{
+  display: inline-block;
 }
 
 .df{
