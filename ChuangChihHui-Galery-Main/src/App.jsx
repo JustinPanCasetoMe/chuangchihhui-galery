@@ -4,6 +4,9 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home } from './pages'
 import exhibition from './datas/exhibition.json'
+import competition from './datas/competition.json'
+import archive from './datas/archive.json'
+
 
 function App() {
 
@@ -18,8 +21,8 @@ function App() {
           element={
             <Experiences
               exhibition={exhibition}
-              // competition={competition}
-              // archive={archive}
+              competition={competition}
+              archive={archive}
             />}></Route>
         <Route path='/critics' element={<Critics />}></Route>
         <Route path='/collections' element={<Collections />}></Route>
