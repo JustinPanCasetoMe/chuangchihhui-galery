@@ -29,6 +29,11 @@ a:hover {
   color: #383838;
 }
 
+.imgActive:hover{
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
 body {
   margin: 150px 0 80px;
   padding: 0 80px;
@@ -64,4 +69,19 @@ h1 {
 h3{
   font-size: 18px;
   font-weight: 400;
+}
+
+button{
+  width: fit-content;
+  display: inline;
+  padding: 6px 30px;
+  background-color: #e8e8e8;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  color: black;
+}
+
+button:hover{
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }

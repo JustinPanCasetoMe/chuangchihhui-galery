@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "真假同歸",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/200/800/600"
+    },
+    {
+        "id": 2,
+        "name": "Artwork version 2",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/201/600/800"
+    },
+    {
+        "id": 3,
+        "name": "Artwork version 3",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/202/400/300"
+    },
+    {
+        "id": 4,
+        "name": "Artwork version 4",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/203/400/600"
+    },
+    {
+        "id": 5,
+        "name": "Artwork version 5",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/204/800/600"
+    },
+    {
+        "id": 6,
+        "name": "Artwork version 6",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/205/600/800"
+    },
+    {
+        "id": 7,
+        "name": "Artwork version 7",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/206/400/300"
+    },
+    {
+        "id": 8,
+        "name": "Artwork version 8",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "path": "",
+        "img": "https://picsum.photos/id/207/400/600"
+    }
+]
