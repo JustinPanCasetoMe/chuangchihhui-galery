@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
 
+  const catergory_tab_style = "mg-r-20 ${visibleSection === 'exhibition' ? 'bd-bt-active' : '' } pointer"
+
   const [visibleSection, setVisibleSection] = useState('exhibition');
 
   const exhibitionRender = exhibition.map((item, index) => {
@@ -24,9 +26,8 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
 
   const archiveRender = archive.map((item, index) => {
     return(
-      <div key={index} className='df mg-list'>
-        <h3 className='mg-r-30'>{item.year}</h3>
-        <h3>{item.competition}</h3>
+      <div key={index} className='dib mg-r-20 mg-b-10'>
+        <h3>•{item}</h3>
       </div>
     )
   })
@@ -42,25 +43,25 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
           className={`
             mg-r-20
             ${visibleSection === 'exhibition' ? 'bd-bt-active' : '' }
-            pointer
+            pointer trans-4
           `}
           onClick={() => handleSectionToggle('exhibition')}>
           <h2>展歷</h2>
         </li>
-        <li 
+        <li
           className={`
             mg-r-20
             ${visibleSection === 'competition' ? 'bd-bt-active' : '' }
-            pointer
+            pointer trans-4
           `}
           onClick={() => handleSectionToggle('competition')}>
-          <h2>參賽</h2>
+          <h2>參賽記事</h2>
         </li>
         <li 
           className={`
             mg-r-20
             ${visibleSection === 'archive' ? 'bd-bt-active' : '' }
-            pointer
+            pointer trans-4
           `}
           onClick={() => handleSectionToggle('archive')}>
           <h2>典藏</h2>
