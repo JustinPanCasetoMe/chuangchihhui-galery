@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -6,9 +5,11 @@ const Header = () => {
     <header className='df jc-sb aln-itm-c fw pd-x-container'>
 
       {/* Logo Container */}
-      <div className="Logo">
-        <Link to=''></Link>
-      </div>
+      <Link to='/'>
+        <div className="Logo">
+          
+        </div>
+      </Link>
 
       {/* Navigation Bar */}
       <nav className='fh'>
