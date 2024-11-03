@@ -16,6 +16,7 @@
   transition: 0.4s;
 }
 
+/* Direct Style Name */
 .Logo{
   width: 200px;
   height: 80px;
@@ -47,6 +48,7 @@
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
+/* Font, Letter */
 .lt-sc{
   letter-spacing: 2px;
 }
@@ -55,6 +57,7 @@
   font-weight: bold;
 }
 
+/* Width, Height */
 .fw{
   width: 100%;
 }
@@ -67,6 +70,7 @@
   width: auto;
 }
 
+/* Padding */
 .pd-10{
   padding: 10px;
 }
@@ -95,6 +99,7 @@
   padding-bottom: 10px;
 }
 
+/* Margin */
 .mg-r-20{
   margin-right: 20px;
 }
@@ -131,6 +136,7 @@
   margin-bottom: 50px;
 }
 
+/* Border */
 .bd-bm-unActive{
   border-bottom: none;
 }
@@ -147,6 +153,7 @@
   border-radius: 6px;
 }
 
+/* Display */
 .dib{
   display: inline-block;
 }
@@ -155,6 +162,7 @@
   display: flex;
 }
 
+/* Flex */
 .fd-r{
   flex-direction: row;
 }
@@ -167,6 +175,7 @@
   flex-wrap: wrap;
 }
 
+/* Justify-Content */
 .jc-c{
   justify-content: center;
 }
@@ -179,6 +188,7 @@
   justify-content: space-around;
 }
 
+/* Align-items */
 .aln-itm-c{
   align-items: center;
 }
@@ -187,6 +197,17 @@
   text-align: center;
 }
 
+/* Box-shadow */
 .bx-sd-sm{
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Overflow */
+.of-x-scl{
+  overflow-x: scroll;
+}
+
+/* Colors */
+.clr-black{
+  color: rgb(0, 0, 0);
 }

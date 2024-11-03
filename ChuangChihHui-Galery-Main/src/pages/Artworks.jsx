@@ -45,14 +45,12 @@ const Artworks = ({ artworks = [] }) => {
                 </div>
             )
         }
-        console.log("artwork.name = ", artwork.name)
-        console.log("artworkName = ", artworkName)
     })
 
     const simillar_artworksRender = artworks.map((artwork, index) => {
         if(artwork.id != 1){
             return(
-                <div key={index} className='' style={{height:'160px'}}>
+                <div key={index} className='mg-b-30' style={{height:'160px'}}>
 
                     {/* Creating a link to the artwork detail page*/}
                     <Link to={`/portfolio/artwork_${artwork.name}`} onClick={ () => handlePickArtwork(`${artwork.name}`)}>
