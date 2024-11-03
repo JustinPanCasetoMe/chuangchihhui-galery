@@ -66,6 +66,10 @@
   height: 100%;
 }
 
+.f-vh{
+  height: 100vh;
+}
+
 .w-auto{
   width: auto;
 }
@@ -134,6 +138,10 @@
 
 .mg-b-box{
   margin-bottom: 50px;
+}
+
+.mg-ct{
+  margin: 0 ;
 }
 
 /* Border */
