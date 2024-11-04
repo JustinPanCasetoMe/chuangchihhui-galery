@@ -6,8 +6,12 @@ const Header = () => {
 
       {/* Logo Container */}
       <Link to='/'>
-        <div className="Logo">
-          
+        <div className="Logo df aln-itm-c">
+          <img src="/logo.svg" alt="" className='fh mg-r-20'/>
+          <div>
+            <h2>莊志輝</h2>
+            <h2>CHUANG CHIH HUI</h2>
+          </div>
         </div>
       </Link>
 

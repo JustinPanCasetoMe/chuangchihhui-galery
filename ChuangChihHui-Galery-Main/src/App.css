@@ -18,9 +18,12 @@
 
 /* Direct Style Name */
 .Logo{
-  width: 200px;
+  width: 360px;
   height: 80px;
-  background-color: #c3c3c3;
+}
+
+.Logo img{
+  height: 60%;
 }
 
 .preface{
@@ -153,13 +156,13 @@
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
-.bd-r{
+/* .bd-r{
   border-radius: 6px;
 }
 
 .bd-r-sm{
   border-radius: 6px;
-}
+} */
 
 /* Display */
 .dib{

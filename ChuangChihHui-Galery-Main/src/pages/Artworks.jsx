@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-const Artworks = ({ artworks = [] }) => {
+const Artworks = ({ artworks = [] }, mainArtwork ) => {
 
     //Get the artwork name from the Json file
     const [artworkName, setArtworkName] = useState('')

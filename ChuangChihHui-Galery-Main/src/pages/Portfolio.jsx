@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Portfolio = ({ artworks = [] }) => {
+const Portfolio = ({ artworks = [] }, mainArtwork) => {
 
   const artworksRender = ( startTime, endTime ) => {
     return(
-      <div className='df fw of-x-scl'>
+      <div className='df fw jc-sb of-x-scl'>
         {artworks.map((artwork, index) => {
           if(artwork.year >= startTime && artwork.year <= endTime){
             return(
               <div>
-                <div key={index} style={{height:'400px',marginBottom:'80px'}}>
+                <div key={index} style={{height:'480px',marginBottom:'80px'}}>
                   <Link to={`/portfolio/artwork_${artwork.name}`}>
-                    <img src={artwork.img} alt="" className='fh mg-r-30 bd-r-sm bx-sd-sm'/>
+                    <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                   </Link>
                 </div>
                 <div className=''>
