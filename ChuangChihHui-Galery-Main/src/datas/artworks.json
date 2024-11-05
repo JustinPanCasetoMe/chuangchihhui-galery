@@ -5,8 +5,9 @@
         "size": "116X91cm",
         "mediums": "油畫",
         "year": "1993",
-        "path": "",
-        "img": "https://live.staticflickr.com/65535/54116884475_972a5a3b5e_k.jpg"
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54118024662_7b3aaeb012_h.jpg"
     },
     {
         "id": 2,
@@ -14,8 +15,9 @@
         "size": "91X116cm",
         "mediums": "油畫",
         "year": "1994",
-        "path": "",
-        "img": "https://live.staticflickr.com/65535/54115561402_46ec8ba97a_h.jpg"
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54119154933_fc62c54d16_h.jpg"
     },
     {
         "id": 3,
@@ -23,8 +25,9 @@
         "size": "91X116cm",
         "mediums": "油畫",
         "year": "1995",
-        "path": "",
-        "img": "https://live.staticflickr.com/65535/54115561387_413a50ce69_h.jpg"
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54118025062_945540c340_h.jpg"
     },
     {
         "id": 4,
@@ -32,8 +35,9 @@
         "size": "50X27cm",
         "mediums": "壓克力",
         "year": "2016",
-        "path": "",
-        "img": "https://picsum.photos/id/203/400/600"
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54119216779_b9b00c2599_h.jpg"
     },
     {
         "id": 5,
@@ -41,17 +45,19 @@
         "size": "235X175cm",
         "mediums": "壓克力",
         "year": "2015",
-        "path": "",
-        "img": "https://picsum.photos/id/204/800/600"
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54119342710_55f7c26e47_h.jpg"
     },
     {
         "id": 6,
-        "name": "美國國慶狂想曲",
-        "size": "154X90cm",
+        "name": "心智的演化",
+        "size": "150X150cm",
         "mediums": "壓克力",
         "year": "2018",
-        "path": "",
-        "img": "https://picsum.photos/id/205/600/800"
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54119343000_4fd16cc8cb_h.jpg"
     },
     {
         "id": 7,
@@ -59,79 +65,89 @@
         "size": "161X129cm",
         "mediums": "壓克力",
         "year": "2022",
-        "path": "",
-        "img": "https://picsum.photos/id/206/400/300"
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54119154248_f34ba43141_h.jpg"
     },
     {
         "id": 8,
-        "name": "心智的演化",
-        "size": "150X150cm",
+        "name": "想像是前進的動力",
+        "size": "90X72cm",
         "mediums": "壓克力",
-        "year": "2018",
-        "path": "",
-        "img": "https://picsum.photos/id/207/400/600"
+        "year": "2023",
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54118025092_95644c761a_h.jpg"
     },
     {
         "id": 9,
-        "name": "區塊鏈-心念的演變",
-        "size": "128X162.5cm",
+        "name": "====",
+        "size": "150X150cm",
         "mediums": "壓克力",
-        "year": "2019",
-        "path": "",
-        "img": "https://picsum.photos/id/208/400/600"
-    },{
+        "year": "2022",
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg"
+    },
+    {
         "id": 10,
-        "name": "心非心",
-        "size": "182X72cm",
+        "name": "====",
+        "size": "150X150cm",
         "mediums": "壓克力",
-        "year": "2023",
-        "path": "",
-        "img": "https://picsum.photos/id/209/400/600"
+        "year": "2022",
+        "catergory": "general",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg"
     },
     {
         "id": 11,
+        "name": "心非心",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "無相之境",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54118023962_f441f94e79_h.jpg"
+    },
+    {
+        "id": 12,
         "name": "尋找內心的名牌",
         "size": "218X188X12cm",
         "mediums": "複合媒材",
         "year": "2014",
-        "path": "",
-        "img": "https://picsum.photos/id/210/400/600"
+        "catergory": "無相之境",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54119217354_cafbfa7e17_h.jpg"
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "靈山",
         "size": "150X150cm",
         "mediums": "複合媒材",
         "year": "2021",
-        "path": "",
-        "img": "https://picsum.photos/id/211/400/600"
-    },
-    {
-        "id": 13,
-        "name": "心智的演化",
-        "size": "150X150cm",
-        "mediums": "壓克力",
-        "year": "2018",
-        "path": "",
-        "img": "https://picsum.photos/id/212/400/600"
+        "catergory": "無相之境",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
     },
     {
         "id": 14,
+        "name": "區塊鏈-心念的演變",
+        "size": "128X162.5cm",
+        "mediums": "壓克力",
+        "year": "2019",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
+    },
+    {
+        "id": 15,
         "name": "壓力",
         "size": "76X152cm",
         "mediums": "素描",
         "year": "1985",
-        "path": "",
-        "img": "https://picsum.photos/id/213/400/600"
-    },
-    {
-        "id": 15,
-        "name": "心智的演化",
-        "size": "150X150cm",
-        "mediums": "壓克力",
-        "year": "2018",
-        "path": "",
-        "img": "https://picsum.photos/id/214/400/600"
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
     },
     {
         "id": 16,
@@ -139,8 +155,9 @@
         "size": "150X150cm",
         "mediums": "壓克力",
         "year": "2018",
-        "path": "",
-        "img": "https://picsum.photos/id/215/400/600"
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
     },
     {
         "id": 17,
@@ -148,8 +165,9 @@
         "size": "150X150cm",
         "mediums": "壓克力",
         "year": "2018",
-        "path": "",
-        "img": "https://picsum.photos/id/216/400/600"
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
     },
     {
         "id": 18,
@@ -157,7 +175,8 @@
         "size": "150X150cm",
         "mediums": "壓克力",
         "year": "2018",
-        "path": "",
-        "img": "https://picsum.photos/id/217/400/600"
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
     }
 ]

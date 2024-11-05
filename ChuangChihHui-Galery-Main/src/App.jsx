@@ -9,6 +9,7 @@ import archive from './datas/archive.json'
 import artworks from './datas/artworks.json'
 import 'slick-carousel/slick/slick.css';
 import "slick-carousel/slick/slick-theme.css";
+import ArtworkPeriods from './pages/ArtworkPeriods'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='/collections' element={<Collections/>} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/portfolio/:artworksName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
+        <Route path='/portfolio/:artworkPeriod' element={<ArtworkPeriods artworks={artworks} mainArtwork={{}}/>} />
       </Routes>
 
 
