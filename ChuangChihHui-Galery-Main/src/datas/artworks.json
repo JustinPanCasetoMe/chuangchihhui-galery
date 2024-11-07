@@ -131,52 +131,121 @@
     },
     {
         "id": 14,
-        "name": "區塊鏈-心念的演變",
+        "name": "壓力",
         "size": "128X162.5cm",
         "mediums": "壓克力",
         "year": "2019",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343735_a4a2bb962a_h.jpg"
     },
     {
         "id": 15,
-        "name": "壓力",
-        "size": "76X152cm",
-        "mediums": "素描",
-        "year": "1985",
+        "name": "真假同歸",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1998",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119344835_f8a8053357_h.jpg"
     },
     {
         "id": 16,
-        "name": "心智的演化",
+        "name": "守護者",
         "size": "150X150cm",
         "mediums": "壓克力",
         "year": "2018",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119156188_a5b7c2c75f_h.jpg"
     },
     {
         "id": 17,
-        "name": "心智的演化",
-        "size": "150X150cm",
-        "mediums": "壓克力",
-        "year": "2018",
+        "name": "流浪者之歌",
+        "size": "91X116cm",
+        "mediums": "油畫",
+        "year": "1994",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343575_0f6bdef994_h.jpg"
     },
     {
         "id": 18,
-        "name": "心智的演化",
-        "size": "150X150cm",
-        "mediums": "壓克力",
-        "year": "2018",
+        "name": "想入非非",
+        "size": "53X41cm",
+        "mediums": "油畫",
+        "year": "1991",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118025692_4e3f45b089_h.jpg"
+    },
+    {
+        "id": 19,
+        "name": "鬆懈的自在",
+        "size": "116X91cm",
+        "mediums": "油畫",
+        "year": "1994",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54119218754_c653a9df61_h.jpg"
+    },
+    {
+        "id": 20,
+        "name": "孕育",
+        "size": "100X80cm",
+        "mediums": "油畫",
+        "year": "2001",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54119343515_8a4f5bac17_h.jpg"
+    },{
+        "id": 21,
+        "name": "你想系列",
+        "size": "77X26.5cmX4",
+        "mediums": "水彩、油性簽字筆",
+        "year": "1986",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54119343910_2260e4af37_h.jpg"
+    },
+    {
+        "id": 22,
+        "name": "你想系列",
+        "size": "77X26.5cmX4",
+        "mediums": "水彩、油性簽字筆",
+        "year": "1986",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54118882031_975c639f4d_h.jpg"
+    },
+    {
+        "id": 23,
+        "name": "你想系列",
+        "size": "77X26.5cmX4",
+        "mediums": "水彩、油性簽字筆",
+        "year": "1986",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54119343855_2622b755d9_h.jpg"
+    },
+    {
+        "id": 24,
+        "name": "你想系列",
+        "size": "77X26.5cmX4",
+        "mediums": "水彩、油性簽字筆",
+        "year": "1986",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54119343820_f27dbd1324_h.jpg"
+    },
+    {
+        "id": 25,
+        "name": "心星相印",
+        "size": "140X140cm",
+        "mediums": "油畫",
+        "year": "1996",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg"
     }
 ]

@@ -54,7 +54,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
 
                     {/* Creating a link to the artwork detail page*/}
                     <Link to={`/portfolio/artwork_${artwork.name}`} onClick={ () => handlePickArtwork(`${artwork.name}`)}>
-                        <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fh mg-r-20 imgActive trans-2'/>
+                        <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
                     </Link>
 
                 </div>
