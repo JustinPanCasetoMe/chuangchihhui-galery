@@ -10,22 +10,36 @@ const Period_2002_2019 = ({ artworks = [] }) => {
     if (!artwork) return null;
 
     return(
-      <div className='mg-b-300'>
-        <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px'}}>
+      <div 
+        className={`mg-b-300`}
+        style={{
+          marginBottom:`
+            ${artwork.id===34 ? '30px' :
+              artwork.id===36 ? '30px' :
+              artwork.id===37 ? '30px' : '180px'}
+        `}}
+      >
+        <Link to={`/portfolio/artwork_${artwork.name}`} className={{}}>
           <img
-            src={artworks[img_Id].img} alt="" 
+            src={artwork.img} alt={artwork.name} 
             className='bx-sd-sm imgActive trans-2 mg-b-50'
-            style={{height: 
-              row === 1 ? '450px' :
-              row === 2 ? '400px' :
-              row === 3 ? '350px' :
-              row === 4 ? '360px' :
-              row === 5 ? '360px' :
-              row === 6 ? '800px' : ''
-            }}
+            style={{
+              height: 
+              row === 1 ? '400px' :
+              row === 2 ? '480px' :
+              row === 3 ? '480px' :
+              row === 4 ? '480px' :
+              row === 5 ? '480px' :
+              row === 6 ? '480px' : '',
+            }
+          }
           />
         </Link>
-        <div className=''>
+        <div className={`${
+          artwork.id===34 ? 'dn' :
+          artwork.id===36 ? 'dn' :
+          artwork.id===37 ? 'dn' : ''
+        }`}>
           <h3>{artwork.name}</h3>
           <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
         </div>
@@ -37,35 +51,41 @@ const Period_2002_2019 = ({ artworks = [] }) => {
   return (
 
     <>
-      <div>
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2002-2019</h2>
+      <div className='fw'>
+        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2020-2024</h2>
 
-        <div className='df jc-c'>
-          {imgRender(14, 1)}
+        <div className='df jc-sb'>
+          {imgRender(48, 1)}
+          {imgRender(6, 1)}
+          {imgRender(27, 1)}
         </div>
         <div className='df jc-sa'>
-          {imgRender(15, 2)}
-          {imgRender(16, 2)}
-        </div>
-        <div className='df jc-sb'>
-          {imgRender(17, 3)}
-          {imgRender(2, 3)}
-          {imgRender(3, 3)}
-        </div>
-        <div className='df jc-sb'>
-          {imgRender(1,4)}
-          {imgRender(18,4)}
-          {imgRender(19,4)}
-          {imgRender(20,4)}
+          {imgRender(5, 2)}
+          {imgRender(4, 2)}
         </div>
         <div className='df jc-sa'>
-          {imgRender(21, 5)}
-          {imgRender(22, 5)}
-          {imgRender(23, 5)}
-          {imgRender(24, 5)}
+          {imgRender(28, 3)}
+          {imgRender(29, 3)}
+          {imgRender(30, 3)}
         </div>
         <div className='df jc-c'>
-          {imgRender(25, 6)}
+          {imgRender(31,4)}
+        </div>
+        <div className='df jc-sa'>
+          {imgRender(32, 5)}
+          {imgRender(33, 5)}
+        </div>
+        <div className='df jc-c'>
+          <div style={{width:'66%'}}>
+            <div className='df jc-sb'>
+              {imgRender(34, 6)}
+              {imgRender(36, 6)}
+            </div>
+            <div className='df jc-sb'>
+              {imgRender(35, 6)}
+              {imgRender(37, 6)}
+            </div>
+          </div>
         </div>
       </div>
 

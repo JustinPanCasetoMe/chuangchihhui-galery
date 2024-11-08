@@ -18,7 +18,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
             style={{height: 
               row === 1 ? '450px' :
               row === 2 ? '400px' :
-              row === 3 ? '350px' :
+              row === 3 ? '320px' :
               row === 4 ? '360px' :
               row === 5 ? '360px' :
               row === 6 ? '800px' : ''

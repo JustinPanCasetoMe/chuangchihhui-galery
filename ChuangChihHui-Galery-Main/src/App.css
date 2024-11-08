@@ -210,12 +210,16 @@
   display: inline;
 }
 
-.cfd{
-  /* display:; */
-}
-
 .df{
   display: flex;
+}
+
+.dg{
+  display: grid;
+}
+
+.dn{
+  display: none;
 }
 
 /* Flex */
