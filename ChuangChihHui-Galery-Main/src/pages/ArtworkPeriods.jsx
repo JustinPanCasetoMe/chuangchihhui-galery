@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Period_1986_2001 from './Periods/Period_1986_2001'
 import Period_2002_2019 from './Periods/Period_2002_2019'
 import Period_2020_2024 from './Periods/Period_2020_2024'

@@ -9,11 +9,9 @@ const Portfolio = ({ artworks = [] }) => {
 
   
   const [ periodId, setPeriodId ] = useState ('');
-  console.log(periodId)
 
   const handlePeriod = (p) => {
     setPeriodId(p);
-    // Period = setPeriodId(p)
   }
 
   // Rendering the Img by Artwork Periods
@@ -73,7 +71,6 @@ const Portfolio = ({ artworks = [] }) => {
       <div style={{marginBottom:'200px'}}>
         <Link to={`/portfolio/periods/${periods[0]}`} onClick={() => handlePeriod(periods[0])}>
           <h3 className='mg-b-30 fw-b clr-black'>{periods[0]}</h3>
-          {/* <h2>{Period}</h2> */}
         </Link>
         {artworksRender(1986, 2001, false)}
       </div>
@@ -83,8 +80,7 @@ const Portfolio = ({ artworks = [] }) => {
         <Link to={`/portfolio/periods/${periods[1]}`} onClick={() => handlePeriod(periods[1])}>
           <h3 className='mg-b-30 fw-b clr-black'>{periods[1]}</h3>
         </Link>
-
-        {artworksRender(2001,2019, false)}
+        {artworksRender(2002, 2019, false)}
       </div>
 
       {/* 2020-2024 */}
@@ -97,7 +93,7 @@ const Portfolio = ({ artworks = [] }) => {
 
       {/* 無相之境 */}
       <div style={{marginBottom:'200px'}}>
-        <Link to={`/portfolio/periods/${periods[2]}`} onClick={() => handlePeriod(periods[3])}>
+        <Link to={`/portfolio/periods/${periods[3]}`} onClick={() => handlePeriod(periods[3])}>
           <h3 className='mg-b-30 fw-b clr-black'>{periods[3]}</h3>
         </Link>
         {artworksRender(0, 0, true)}

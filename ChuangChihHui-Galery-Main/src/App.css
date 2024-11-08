@@ -53,7 +53,19 @@
 
 .period-img{
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
 
+.NavLink{
+  display: inline;
+  padding: 10px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  color: black;
+  font-weight: 400;
+}
+
+.NavLink:hover{
+  transform: translateY(-5%);
 }
 
 /* Font, Letter */
@@ -107,6 +119,10 @@
   padding: 0 30px;
 }
 
+.pd-y-10{
+  padding: 10px auto;
+}
+
 .pd-b-title{
   padding-bottom: 10px;
 }
@@ -140,8 +156,8 @@
   margin-bottom: 50px;
 }
 
-.mg-b-100{
-  margin-bottom: 100px;
+.mg-b-300{
+  margin-bottom: 300px;
 }
 
 .mg-b-lg{
