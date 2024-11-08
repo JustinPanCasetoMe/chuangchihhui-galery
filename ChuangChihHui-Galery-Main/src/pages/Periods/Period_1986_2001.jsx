@@ -1,96 +1,109 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Period_1986_2001 = ({ artworks = []}) => {
+const Period_1986_2001 = ({ artworks = [] }) => {
 
 
   const imgRender = (img_Id, row) => {
+
+    const artwork = artworks[img_Id -= 1];
+    if (!artwork) return null;
+
+    const detailRender = () => {
+      return(
+        <div className=''>
+          <h3>{artwork.name}</h3>
+          <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+        </div>
+      )
+    }
+
     switch (row){
       case 1:
         return(
-          <div>
-            <Link to={`/portfolio/artwork_${artworks[img_Id-=1].name}`} style={{marginBottom:'300px'}}>
+          <div className='mg-b-100'>
+            <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px'}}>
               <img
                 src={artworks[img_Id].img} alt="" 
-                className='bx-sd-sm imgActive trans-2'
+                className='bx-sd-sm imgActive trans-2 mg-b-50'
                 style={{height:'450px'}}
               />
             </Link>
-            <h3>{artworks[img_Id-=1].name}</h3>
-            <h3>{artworks[img_Id-=1].size}{artworks[img_Id-=1].mediums}{artworks[img_Id-=1].year}</h3>
+            {detailRender()}
           </div>
-        )``
+        )
       case 2:
         return(
-          <div>
-            <Link to={`/portfolio/artwork_${artworks[img_Id-=1].name}`} style={{margin:'0 180px 300px', }}>
+          <div className='mg-b-100'>
+            <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px', }}>
               <img
                 src={artworks[img_Id].img} alt="" 
-                className='bx-sd-sm imgActive trans-2'
+                className='bx-sd-sm imgActive trans-2 mg-b-50'
                 style={{height:'400px'}}
               />
             </Link>
-            <h3>{artworks[img_Id-=1].name}</h3>
-            <h3>{artworks[img_Id-=1].size}{artworks[img_Id-=1].mediums}{artworks[img_Id-=1].year}</h3>
+            {detailRender()}
           </div>
         )
       case 3:
         return(
-          <div>
-            <Link to={`/portfolio/artwork_${artworks[img_Id-=1].name}`} style={{marginBottom:'300px'}}>
+          <div className='mg-b-100'>
+            <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px'}}>
               <img
                 src={artworks[img_Id].img} alt="" 
-                className='bx-sd-sm imgActive trans-2'
+                className='bx-sd-sm imgActive trans-2 mg-b-50'
                 style={{height:'350px'}}
               />
             </Link>
-            <h3>{artworks[img_Id-=1].name}</h3>
-            <h3>{artworks[img_Id-=1].size}{artworks[img_Id-=1].mediums}{artworks[img_Id-=1].year}</h3>
+            {detailRender()}
           </div>
         )
       case 4:
         return(
-          <div>
-            <Link to={`/portfolio/artwork_${artworks[img_Id-=1].name}`} style={{marginBottom:'300px'}}>
+          <div className='mg-b-100'>
+            <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px'}}>
               <img
                 src={artworks[img_Id].img} alt="" 
-                className='bx-sd-sm imgActive trans-2'
+                className='bx-sd-sm imgActive trans-2 mg-b-50'
                 style={{height:'360px'}}
               />
             </Link>
-            <h3>{artworks[img_Id-=1].name}</h3>
-            <h3>{artworks[img_Id-=1].size}{artworks[img_Id-=1].mediums}{artworks[img_Id-=1].year}</h3>
+            {detailRender()}
           </div>
         )
       case 5:
         return(
-          <div>
-            <Link to={`/portfolio/artwork_${artworks[img_Id-=1].name}`} style={{marginBottom:'300px'}}>
+          <div className='mg-b-100'>
+            <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px'}}>
               <img
                 src={artworks[img_Id].img} alt="" 
-                className='bx-sd-sm imgActive trans-2'
+                className='bx-sd-sm imgActive trans-2 mg-b-50'
                 style={{height:'360px'}}
               />
             </Link>
-            <h3>{artworks[img_Id-=1].name}</h3>
-            <h3>{artworks[img_Id-=1].size}{artworks[img_Id-=1].mediums}{artworks[img_Id-=1].year}</h3>
+            {detailRender()}
           </div>
         )
       case 6:
         return(
           <div>
-            <Link to={`/portfolio/artwork_${artworks[img_Id-=1].name}`} style={{marginBottom:'300px'}}>
+            <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px'}}>
               <img
                 src={artworks[img_Id].img} alt="" 
-                className='bx-sd-sm imgActive trans-2'
+                className='bx-sd-sm imgActive trans-2 mg-b-50'
                 style={{height:'800px'}}
               />
             </Link>
-            <h3>{artworks[img_Id-=1].name}</h3>
-            <h3>{artworks[img_Id-=1].size}{artworks[img_Id-=1].mediums}{artworks[img_Id-=1].year}</h3>
+            {detailRender()}
           </div>
         )
     }
+
+    return(
+      <>
+
+      </>
+    )
   }
 
   

@@ -31,8 +31,8 @@ function App() {
         <Route path='/critics' element={<Critics />} />
         <Route path='/collections' element={<Collections/>} />
         <Route path='/contacts' element={<Contacts />} />
-        {/* <Route path='/portfolio/:artworksName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} /> */}
-        <Route path='/portfolio/:Period' element={<ArtworkPeriods artworks={artworks}/>} />
+        <Route path='/portfolio/artworks/:ArtworksName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
+        <Route path='/portfolio/periods/:Period' element={<ArtworkPeriods artworks={artworks}/>} />
       </Routes>
 
 

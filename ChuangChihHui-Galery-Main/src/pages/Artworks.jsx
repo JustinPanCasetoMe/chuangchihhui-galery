@@ -53,7 +53,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                 <div key={index} className='mg-b-30' style={{height:'160px'}}>
 
                     {/* Creating a link to the artwork detail page*/}
-                    <Link to={`/portfolio/artwork_${artwork.name}`} onClick={ () => handlePickArtwork(`${artwork.name}`)}>
+                    <Link to={`/portfolio/artworks-${artwork.name}`} onClick={ () => handlePickArtwork(`${artwork.name}`)}>
                         <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
                     </Link>
 
