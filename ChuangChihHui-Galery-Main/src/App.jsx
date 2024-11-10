@@ -7,15 +7,15 @@ import exhibition from './datas/exhibition.json'
 import competition from './datas/competition.json'
 import archive from './datas/archive.json'
 import artworks from './datas/artworks.json'
+import critics from './datas/critics.json'
 import 'slick-carousel/slick/slick.css';
 import "slick-carousel/slick/slick-theme.css";
 import Period_1986_2001 from './pages/Periods/Period_1986_2001'
 import Period_2002_2019 from './pages/Periods/Period_2002_2019'
 import Period_2020_2024 from './pages/Periods/Period_2020_2024'
+import CriticsContent from './pages/CriticsContent'
 
 function App() {
-
-  const { Period } = useParams();
 
   return (
     <div className=''>
@@ -33,7 +33,11 @@ function App() {
               competition={competition}
               archive={archive}
             />}/>
+
+        {/* Critics */}
         <Route path='/critics' element={<Critics />} />
+        <Route path='/critics/:CriticsItem' element={<CriticsContent critics={critics}/>}></Route>
+
         <Route path='/collections' element={<Collections/>} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/portfolio/artworks/:ArtworksName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />

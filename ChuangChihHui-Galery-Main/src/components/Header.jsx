@@ -52,7 +52,7 @@ const Header = () => {
                   <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                     <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                       <h4>2002-2019</h4>
-                    </Link>
+                    </Link> 
                   </li>
                   <li className='pd-y-10' style={{width:'200px'}}>
                     <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
