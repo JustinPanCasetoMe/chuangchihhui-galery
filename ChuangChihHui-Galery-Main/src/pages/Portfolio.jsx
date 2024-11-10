@@ -7,7 +7,6 @@ const Portfolio = ({ artworks = [] }) => {
     "1986-2001", "2002-2019", "2020-2024", "無相之境"
   ]
 
-  
   const [ periodId, setPeriodId ] = useState ('');
 
   const handlePeriod = (p) => {
