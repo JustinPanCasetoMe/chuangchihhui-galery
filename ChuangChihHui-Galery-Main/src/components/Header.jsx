@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaSortDown, FaAngleRight } from "react-icons/fa";
+import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 
 const Header = () => {
 
@@ -31,7 +31,7 @@ const Header = () => {
             onMouseLeave={() => setMenuHover(false)}
           >
             <Link to='/portfolio' className='pd-10 df aln-itm-c'>
-              作品<FaSortDown size={16} className='pd-l-10'/>
+              作品<FaAngleDown size={16} className='pd-l-10'/>
             </Link>
             <ul className={`fd-c artW-sub ${menuHover===true ? 'df' : 'dn'}`}>
               <li
@@ -44,17 +44,17 @@ const Header = () => {
                   Periods<FaAngleRight size={16} className='pd-l-10'/>
                 </Link>
                 <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
-                  <li className='pd-10 bd-b' style={{width:'200px'}}>
+                  <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                     <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                       <h4>1968-2001</h4>
                     </Link>
                   </li>
-                  <li className='pd-10 bd-b' style={{width:'200px'}}>
+                  <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                     <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                       <h4>2002-2019</h4>
                     </Link>
                   </li>
-                  <li className='pd-10' style={{width:'200px'}}>
+                  <li className='pd-y-10' style={{width:'200px'}}>
                     <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                       <h4>2020-2024</h4>
                     </Link>
