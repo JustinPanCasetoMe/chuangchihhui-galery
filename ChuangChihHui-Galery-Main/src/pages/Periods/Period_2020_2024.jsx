@@ -26,7 +26,7 @@ const Period_2020_2024 = ({ artworks = [] }) => {
               row === 4 ? '450px' :
               row === 5 ? '480px' :
               row === 6 ? '480px' :
-              row === 7 ? '800px' : '',
+              row === 7 ? '600px' : '',
 
               width:
               row === 1 ? '100%' : 
