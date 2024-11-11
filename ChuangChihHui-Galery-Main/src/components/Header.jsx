@@ -6,6 +6,7 @@ const Header = () => {
 
   const [menuHover, setMenuHover] = useState(false);
   const [subMenuHover, setSubMenuHover] = useState(false);
+  const [subMenuCubeHover, setSubMenuCubeHover] = useState(false);
 
   return (
     <header className='df jc-sb aln-itm-c fw pd-x-container'>
@@ -24,6 +25,7 @@ const Header = () => {
       {/* Navigation Bar */}
       <nav className='fh'>
         <ul className='fh df jc-sb aln-itm-c'>
+
           <li
             className={`pd-w-10`}
             style={{position:'relative'}}
@@ -33,15 +35,17 @@ const Header = () => {
             <Link to='/portfolio' className='pd-10 df aln-itm-c'>
               作品<FaAngleDown size={16} className='pd-l-10'/>
             </Link>
+
             <ul className={`fd-c artW-sub ${menuHover===true ? 'df' : 'dn'}`}>
               <li
                 className='bd-b'
-                style={{width:'200px'}}
+                style={{width:'200px', position:'relative'}}
                 onMouseEnter={() => setSubMenuHover(true)}
                 onMouseLeave={() => setSubMenuHover(false)}
               >
+                {/* 歷代平面經典總覽 */}
                 <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
-                  Periods<FaAngleRight size={16} className='pd-l-10'/>
+                  歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                 </Link>
                 <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                   <li className='pd-y-10 bd-b' style={{width:'200px'}}>
@@ -61,11 +65,34 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-              <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                <Link to='/portfolio' className='pd-10'>歷代平面經典總覽</Link>
-              </li>
-              <li className='pd-y-10' style={{width:'200px'}}>
-                <Link to='/portfolio' className='pd-10'>歷代立體經典總覽</Link>
+              <li
+                className='pd-y-10'
+                style={{width:'200px', position:'relative'}}
+                onMouseEnter={() => setSubMenuCubeHover(true)}
+                onMouseLeave={() => setSubMenuCubeHover(false)}
+              >
+
+                {/* 歷代立體經典總覽 */}
+                <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
+                </Link>
+                <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
+                  <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                    <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <h4>To be Determined 01</h4>
+                    </Link>
+                  </li>
+                  <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                    <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <h4>To be Determined 02</h4>
+                    </Link> 
+                  </li>
+                  <li className='pd-y-10' style={{width:'200px'}}>
+                    <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <h4>To be Determined 03</h4>
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
