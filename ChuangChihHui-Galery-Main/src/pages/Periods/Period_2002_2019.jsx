@@ -19,7 +19,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
               artwork.id===37 ? '30px' : '180px'}
         `}}
       >
-        <Link to={`/portfolio/artwork_${artwork.name}`} className={{}}>
+        <Link to={`/portfolio/artworks/${artwork.name}`} className={{}}>
           <img
             src={artwork.img} alt={artwork.name} 
             className='bx-sd-sm imgActive trans-2 mg-b-50'

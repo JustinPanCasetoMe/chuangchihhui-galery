@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const Period_2020_2024 = ({ artworks = [] }) => {
 
+  const { ArtworkName } = useParams
 
   const imgRender = (img_Id, row) => {
 
@@ -14,7 +15,7 @@ const Period_2020_2024 = ({ artworks = [] }) => {
         className={`mg-b-300`}
         style={{marginBottom:'180px'}}
       >
-        <Link to={`/portfolio/artwork_${artwork.name}`} className={{}}>
+        <Link to={`/portfolio/artworks/${artwork.name}`} className={{}}>
           <img
             src={artwork.img} alt={artwork.name} 
             className='bx-sd-sm imgActive trans-2 mg-b-50'

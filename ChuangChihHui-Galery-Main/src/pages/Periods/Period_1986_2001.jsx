@@ -11,7 +11,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
 
     return(
       <div className='mg-b-300'>
-        <Link to={`/portfolio/artwork_${artwork.name}`} style={{marginBottom:'300px'}}>
+        <Link to={`/portfolio/artworks/${artwork.name}`} style={{marginBottom:'300px'}}>
           <img
             src={artworks[img_Id].img} alt="" 
             className='bx-sd-sm imgActive trans-2 mg-b-50'
