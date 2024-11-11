@@ -16,8 +16,8 @@ const Graphics_Creation = ({ graphicLink =[] }) => {
 
   const graphicRender = graphicLink.map((graphicItem, index) => {
     return(
-      <div key={index} className='' style={{height:'300px'}}>
-        <img src={graphicItem.img} alt="" className='bd-r fh'/>
+      <div key={index} className='' style={{width:'100px', height:'300px'}}>
+        <img src={graphicItem.img} alt="" className='bd-r fw'/>
       </div>
     )
   })
