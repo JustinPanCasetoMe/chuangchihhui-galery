@@ -40,7 +40,9 @@ function App() {
 
         <Route path='/collections' element={<Collections/>} />
         <Route path='/contacts' element={<Contacts />} />
-        <Route path='/portfolio/artworks/:ArtworksName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
+
+        {/* Artworks */}
+        <Route path='/portfolio/artworks/:ArtworkName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
 
         {/* Period */}
         <Route path='/portfolio/periods/:Period' element={<ArtworkPeriods artworks={artworks}/>} />

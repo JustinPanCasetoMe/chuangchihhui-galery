@@ -1,21 +1,12 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link, useParams } from 'react-router-dom';
 
 const Artworks = ({ artworks = [] }, mainArtwork ) => {
 
-    //Get the artwork name from the Json file
-    const [artworkName, setArtworkName] = useState('')
-
-    //Find the artwork in the artworks array
-    // const artwork = artworks.find(item => item.name === artworkName)
-
-    const handlePickArtwork = (artworkPicked) => {
-        setArtworkName(artworkName === artworkPicked ? null : artworkPicked)
-    }
-
+    const { ArtworkName } = useParams();
 
     const main_artworksRender = artworks.map((artwork, index)=> {
-        if(artwork.name === artworkName){
+        if(artwork.name === ArtworkName){
             return(
                 <div key={index} className='df jc-sb fw mg-b-lg'>
                     <div className='df jc-c' style={{height:'500px'}}>
@@ -48,12 +39,12 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
     })
 
     const simillar_artworksRender = artworks.map((artwork, index) => {
-        if(artwork.id != 1){
+        if(artwork.id == 1 || artwork.id == 2 || artwork.id == 3 || artwork.id == 4){
             return(
                 <div key={index} className='mg-b-30' style={{height:'160px'}}>
 
                     {/* Creating a link to the artwork detail page*/}
-                    <Link to={`/portfolio/artworks-${artwork.name}`} onClick={ () => handlePickArtwork(`${artwork.name}`)}>
+                    <Link to={`/portfolio/artworks/${artwork.name}`}>
                         <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
                     </Link>
 
