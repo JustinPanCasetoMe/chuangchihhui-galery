@@ -52,7 +52,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
 
     <>
       <div className='fw'>
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2020-2024</h2>
+        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2002-2019</h2>
 
         <div className='df jc-sb'>
           {imgRender(48, 1)}
