@@ -88,6 +88,17 @@
   z-index: 15;
 }
 
+.menuBar{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.red{
+  background-color: #540404;
+}
+
 /* Font, Letter */
 .lt-sc{
   letter-spacing: 2px;
@@ -117,6 +128,10 @@
 /* Padding */
 .pd-10{
   padding: 10px;
+}
+
+.pd-20{
+  padding: 20px;
 }
 
 .pd-30{
@@ -157,6 +172,10 @@
 
 .pd-t-10{
   padding-top: 10px;
+}
+
+.pd-t-20{
+  padding-top: 20px;
 }
 
 .pd-b-10{
@@ -243,6 +262,10 @@
 
 .bd-b{
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.bd-t{
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* .bd-r{
@@ -335,4 +358,34 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width:1024px){
+  .Logo{
+    width: 232px;
+    height: 80px;
+  }
+}
+
+@media (max-width:768px){
+  .pd-x-container{
+    padding: 0 40px;
+  }
+
+  .menuMobile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 60px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width:425px){
+
+}
+
+@media (max-width:375px){
+
 }

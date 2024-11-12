@@ -37,8 +37,6 @@ a:hover {
 body {
   margin: 150px 0 80px;
   padding: 0 80px;
-  /* display: flex; */
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -95,4 +93,18 @@ button{
 button:hover{
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+@media (max-width:1024px) {
+  
+}
+
+@media (max-width:768px) {
+  body {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width:425px) {
+  
 }
