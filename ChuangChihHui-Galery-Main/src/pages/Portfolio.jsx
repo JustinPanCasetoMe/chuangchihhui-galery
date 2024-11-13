@@ -169,6 +169,7 @@ const Portfolio = ({ artworks = [] }) => {
 
           <Slider {...settings}>
 
+          </Slider>
             {artworks.map((artwork, index) => {
               if((artwork.classics)){
                 if((artwork.year >= startTime && artwork.year < endTime) && (!cater) && (artwork.catergory!="無相之境")){
@@ -204,7 +205,6 @@ const Portfolio = ({ artworks = [] }) => {
               }
               return null;
             })}
-          </Slider>
 
 
 
