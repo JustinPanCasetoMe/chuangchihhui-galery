@@ -19,7 +19,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
               artwork.id===37 ? '30px' : '180px'}
         `}}
       >
-        <Link to={`/portfolio/artworks/${artwork.name}`} className={{}}>
+        <Link to={`/chuangchihhui-galery/portfolio/artworks/${artwork.name}`} className={{}}>
           <img
             src={artwork.img} alt={artwork.name} 
             className='bx-sd-sm imgActive trans-2 mg-b-50'
@@ -90,7 +90,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
       </div>
 
       <div className='df jc-c mg-b-300'>
-        <Link to='/portfolio/' className='NavLink trans-2'>
+        <Link to='//chuangchihhui-galeryportfolio/' className='NavLink trans-2'>
           <h3>歷代經典總覽</h3>
         </Link>
       </div>

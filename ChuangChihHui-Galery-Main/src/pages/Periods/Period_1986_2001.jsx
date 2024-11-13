@@ -11,7 +11,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
 
     return(
       <div className='mg-b-300'>
-        <Link to={`/portfolio/artworks/${artwork.name}`} style={{marginBottom:'300px'}}>
+        <Link to={`/chuangchihhui-galery/portfolio/artworks/${artwork.name}`} style={{marginBottom:'300px'}}>
           <img
             src={artworks[img_Id].img} alt="" 
             className='bx-sd-sm imgActive trans-2 mg-b-50'
@@ -70,7 +70,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
       </div>
 
       <div className='df jc-c mg-b-300'>
-        <Link to='/portfolio/' className='NavLink trans-2'>
+        <Link to='//chuangchihhui-galeryportfolio/' className='NavLink trans-2'>
           <h3>歷代經典總覽</h3>
         </Link>
       </div>

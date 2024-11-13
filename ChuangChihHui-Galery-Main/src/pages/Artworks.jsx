@@ -1,20 +1,9 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css';
-import "slick-carousel/slick/slick-theme.css";
 
 const Artworks = ({ artworks = [] }, mainArtwork ) => {
 
     const ScreenWidth = window.innerWidth
-
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1
-    };
 
     const { ArtworkName } = useParams();
 
@@ -129,7 +118,6 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                             ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'
                         }`}>
                         
-                        <Slider {...settings}>
                             <div className='df jc-c' style={{height:'700px'}}>
                                 <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
                             </div>
@@ -154,7 +142,6 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                                 
                                 <button className='trans-2'>同期作品</button>
                             </div>
-                        </Slider>
 
                     </div>
                 </>
@@ -170,7 +157,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                 <div key={index} className='mg-b-30' style={{height:'160px'}}>
 
                     {/* Creating a link to the artwork detail page*/}
-                    <Link to={`/portfolio/artworks/${artwork.name}`}>
+                    <Link to={`/chuangchihhui-galery/portfolio/artworks/${artwork.name}`}>
                         <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
                     </Link>
 

@@ -7,7 +7,7 @@ const Critics = () => {
   const criticsRender = critics_item.map((critic, index) => {
     return(
       <div key={index} className='mg-b-50' style={{width:'30%', position:'relative'}}>
-        <Link to={`/critics/${critic.id}`}>
+        <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
           <div>
             <div className='fw' style={{position:'relative'}}>
               <img src={critic.bg} alt="" className='fw'/>
