@@ -8,8 +8,8 @@ import competition from './datas/competition.json'
 import archive from './datas/archive.json'
 import artworks from './datas/artworks.json'
 import critics from './datas/critics.json'
-import 'slick-carousel/slick/slick.css';
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css'
+import "slick-carousel/slick/slick-theme.css"
 import Period_1986_2001 from './pages/Periods/Period_1986_2001'
 import Period_2002_2019 from './pages/Periods/Period_2002_2019'
 import Period_2020_2024 from './pages/Periods/Period_2020_2024'
