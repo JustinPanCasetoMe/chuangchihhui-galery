@@ -215,16 +215,16 @@ const Header = () => {
               </ul>
             </li>
             <li className='pd-w-10'>
-              <Link to='/experiences' className='pd-10'>資歷</Link>
+              <Link to='/chuangchihhui-galery/experiences' className='pd-10'>資歷</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='critics' className='pd-10'>藝評</Link>
+              <Link to='/chuangchihhui-galery/critics' className='pd-10'>藝評</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='collections' className='pd-10'>收藏</Link>
+              <Link to='/chuangchihhui-galery/collections' className='pd-10'>收藏</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='contacts' className='pd-10'>聯絡</Link>
+              <Link to='/chuangchihhui-galery/contacts' className='pd-10'>聯絡</Link>
             </li>
           </ul>
         </nav>
@@ -329,16 +329,16 @@ const Header = () => {
 
             </li>
             <li className='bd-t fw'>
-              <Link to='/experiences' className='pd-20 db'>資歷</Link>
+              <Link to='/chuangchihhui-galery/experiences' className='pd-20 db'>資歷</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/critics' className='pd-20 db'>藝評</Link>
+              <Link to='/chuangchihhui-galery/critics' className='pd-20 db'>藝評</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/collections' className='pd-20 db'>收藏</Link>
+              <Link to='/chuangchihhui-galery/collections' className='pd-20 db'>收藏</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/contacts' className='pd-20 db'>聯絡</Link>
+              <Link to='/chuangchihhui-galery/contacts' className='pd-20 db'>聯絡</Link>
             </li>
           </ul>
         </nav>
@@ -444,16 +444,16 @@ const Header = () => {
 
             </li>
             <li className='bd-t fw'>
-              <Link to='/experiences' className='pd-20 db'>資歷</Link>
+              <Link to='/chuangchihhui-galery/experiences' className='pd-20 db'>資歷</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/critics' className='pd-20 db'>藝評</Link>
+              <Link to='/chuangchihhui-galery/critics' className='pd-20 db'>藝評</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/collections' className='pd-20 db'>收藏</Link>
+              <Link to='/chuangchihhui-galery/collections' className='pd-20 db'>收藏</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/contacts' className='pd-20 db'>聯絡</Link>
+              <Link to='/chuangchihhui-galery/contacts' className='pd-20 db'>聯絡</Link>
             </li>
           </ul>
         </nav>
