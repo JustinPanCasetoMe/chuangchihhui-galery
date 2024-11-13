@@ -27,7 +27,7 @@ const Portfolio = ({ artworks = [] }) => {
               return(
                 <div key={index}>
                   <div style={{height:'400px',marginBottom:'40px'}}>
-                    <Link to={`/portfolio/artworks/${artwork.name}`}>
+                    <Link to={`chuangchihhui-galery/portfolio/artworks/${artwork.name}`}>
                       <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                     </Link>
                   </div>
@@ -42,7 +42,7 @@ const Portfolio = ({ artworks = [] }) => {
               return(
                 <div key={index}>
                   <div style={{height:'400px',marginBottom:'80px'}}>
-                    <Link to={`/portfolio/artworks/${artwork.name}`}>
+                    <Link to={`chuangchihhui-galery/portfolio/artworks/${artwork.name}`}>
                       <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                     </Link>
                   </div>
@@ -68,7 +68,7 @@ const Portfolio = ({ artworks = [] }) => {
 
       {/* 1986-2001 */}
       <div style={{marginBottom:'200px'}}>
-        <Link to={`/portfolio/periods/${periods[0]}`} onClick={() => handlePeriod(periods[0])}>
+        <Link to={`chuangchihhui-galery/portfolio/periods/${periods[0]}`} onClick={() => handlePeriod(periods[0])}>
           <h3 className='mg-b-30 fw-b clr-black'>{periods[0]}</h3>
         </Link>
         {artworksRender(1986, 2001, false)}
@@ -76,7 +76,7 @@ const Portfolio = ({ artworks = [] }) => {
 
       {/* 2002-2019 */}
       <div style={{marginBottom:'200px'}}>
-        <Link to={`/portfolio/periods/${periods[1]}`} onClick={() => handlePeriod(periods[1])}>
+        <Link to={`chuangchihhui-galery/portfolio/periods/${periods[1]}`} onClick={() => handlePeriod(periods[1])}>
           <h3 className='mg-b-30 fw-b clr-black'>{periods[1]}</h3>
         </Link>
         {artworksRender(2002, 2019, false)}
@@ -84,7 +84,7 @@ const Portfolio = ({ artworks = [] }) => {
 
       {/* 2020-2024 */}
       <div style={{marginBottom:'200px'}}>
-        <Link to={`/portfolio/periods/${periods[2]}`} onClick={() => handlePeriod(periods[2])}>
+        <Link to={`chuangchihhui-galery/portfolio/periods/${periods[2]}`} onClick={() => handlePeriod(periods[2])}>
           <h3 className='mg-b-30 fw-b clr-black'>{periods[2]}</h3>
         </Link>
         {artworksRender(2020, 2024, false)}
@@ -92,7 +92,7 @@ const Portfolio = ({ artworks = [] }) => {
 
       {/* 無相之境 */}
       <div style={{marginBottom:'200px'}}>
-        <Link to={`/portfolio/periods/${periods[3]}`} onClick={() => handlePeriod(periods[3])}>
+        <Link to={`chuangchihhui-galery/portfolio/periods/${periods[3]}`} onClick={() => handlePeriod(periods[3])}>
           <h3 className='mg-b-30 fw-b clr-black'>{periods[3]}</h3>
         </Link>
         {artworksRender(0, 0, true)}

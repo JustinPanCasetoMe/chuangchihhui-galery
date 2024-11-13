@@ -1,14 +1,68 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css';
+import "slick-carousel/slick/slick-theme.css";
 
 const Artworks = ({ artworks = [] }, mainArtwork ) => {
+
+    const ScreenWidth = window.innerWidth
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    };
 
     const { ArtworkName } = useParams();
 
     const main_artworksRender = artworks.map((artwork, index)=> {
         if(artwork.name === ArtworkName){
             return(
-                <div key={index} className='df jc-sb fw mg-b-lg'>
+
+                <>
+                    <div 
+                        key={index}
+                        className={`
+                            df jc-sb fw mg-b-lg
+                            ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'
+
+                        }`}>
+                        <div className='df jc-c' style={{height:'500px'}}>
+                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                        </div>
+        
+                        <div className='df fd-c jc-c' style={{width:'40%'}}>
+        
+                            <h3 className='mg-b-30'>{artwork.name}</h3>
+                            <ul className='mg-b-30'>
+                                <span className='df'>
+                                    <li className='mg-b-5'>尺寸：</li>
+                                    <li className='lt-sc'>{artwork.size}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>媒材：</li>
+                                    <li className='lt-sc'>{artwork.mediums}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>年份：</li>
+                                    <li className='lt-sc'>{artwork.year}</li>
+                                </span>
+                            </ul>
+                            
+                            <button className='trans-2'>同期作品</button>
+                        </div>
+                    </div>
+                
+                    <div 
+                    key={index}
+                    className={`
+                        df jc-sb fw mg-b-lg
+                        ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'
+
+                    }`}>
                     <div className='df jc-c' style={{height:'500px'}}>
                         <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
                     </div>
@@ -33,7 +87,79 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                         
                         <button className='trans-2'>同期作品</button>
                     </div>
-                </div>
+                    </div>
+
+                    <div 
+                    key={index}
+                    className={`
+                        df jc-sb fw mg-b-lg
+                        ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'
+
+                    }`}>
+                    <div className='df jc-c' style={{height:'500px'}}>
+                        <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                    </div>
+    
+                    <div className='df fd-c jc-c' style={{width:'40%'}}>
+    
+                        <h3 className='mg-b-30'>{artwork.name}</h3>
+                        <ul className='mg-b-30'>
+                            <span className='df'>
+                                <li className='mg-b-5'>尺寸：</li>
+                                <li className='lt-sc'>{artwork.size}</li>
+                            </span>
+                            <span className='df'>
+                                <li className='mg-b-5'>媒材：</li>
+                                <li className='lt-sc'>{artwork.mediums}</li>
+                            </span>
+                            <span className='df'>
+                                <li className='mg-b-5'>年份：</li>
+                                <li className='lt-sc'>{artwork.year}</li>
+                            </span>
+                        </ul>
+                        
+                        <button className='trans-2'>同期作品</button>
+                    </div>
+                    </div>
+
+                    <div 
+                        key={index}
+                        className={`
+                            df jc-sb fw mg-b-lg
+                            ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'
+                        }`}>
+                        
+                        <Slider {...settings}>
+                            <div className='df jc-c' style={{height:'700px'}}>
+                                <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                            </div>
+            
+                            <div className='df fd-c jc-c' style={{width:'40%'}}>
+            
+                                <h3 className='mg-b-30'>{artwork.name}</h3>
+                                <ul className='mg-b-30'>
+                                    <span className='df'>
+                                        <li className='mg-b-5'>尺寸：</li>
+                                        <li className='lt-sc'>{artwork.size}</li>
+                                    </span>
+                                    <span className='df'>
+                                        <li className='mg-b-5'>媒材：</li>
+                                        <li className='lt-sc'>{artwork.mediums}</li>
+                                    </span>
+                                    <span className='df'>
+                                        <li className='mg-b-5'>年份：</li>
+                                        <li className='lt-sc'>{artwork.year}</li>
+                                    </span>
+                                </ul>
+                                
+                                <button className='trans-2'>同期作品</button>
+                            </div>
+                        </Slider>
+
+                    </div>
+                </>
+
+                
             )
         }
     })

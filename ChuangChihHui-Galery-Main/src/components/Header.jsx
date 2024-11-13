@@ -24,9 +24,9 @@ const Header = () => {
         ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
       `}>
         {/* Logo Container */}
-        <Link to='/'>
+        <Link to='/chuangchihhui-galery/'>
           <div className="Logo df aln-itm-c">
-            <img src="/logo.svg" alt="" className='fh mg-r-20'/>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
               <h3>莊志輝</h3>
               <h3>CHUANG CHIH HUI</h3>
@@ -43,7 +43,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/portfolio' className='pd-10 df aln-itm-c'>
+              <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c'>
                 作品<FaAngleDown size={16} className='pd-l-10'/>
               </Link>
 
@@ -55,7 +55,7 @@ const Header = () => {
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
                   {/* 歷代平面經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
@@ -84,7 +84,7 @@ const Header = () => {
                   >
 
                   {/* 歷代立體經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
@@ -131,9 +131,9 @@ const Header = () => {
       `}>
 
         {/* Logo Container */}
-        <Link to='/'>
+        <Link to='/chuangchihhui-galery/'>
           <div className="Logo df aln-itm-c">
-            <img src="/logo.svg" alt="" className='fh mg-r-20'/>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
               <h3>莊志輝</h3>
               <h3>CHUANG CHIH HUI</h3>
@@ -150,7 +150,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/portfolio' className='pd-10 df aln-itm-c'>
+              <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c'>
                 作品<FaAngleDown size={16} className='pd-l-10'/>
               </Link>
 
@@ -162,7 +162,7 @@ const Header = () => {
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
                   {/* 歷代平面經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
@@ -191,7 +191,7 @@ const Header = () => {
                   >
 
                   {/* 歷代立體經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
@@ -244,9 +244,9 @@ const Header = () => {
         />
 
         {/* Logo Container */}
-        <Link to='/'>
+        <Link to='/chuangchihhui-galery/'>
           <div className="Logo df aln-itm-c">
-            <img src="/logo.svg" alt="" className='fh mg-r-20'/>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
               <h3>莊志輝</h3>
               <h3>CHUANG CHIH HUI</h3>
@@ -263,7 +263,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/portfolio' className='pd-20 df jc-sb aln-itm-c'>
+              <Link to='/chuangchihhui-galery/portfolio' className='pd-20 df jc-sb aln-itm-c'>
                 作品<FaAngleDown size={16}/>
               </Link>
 
@@ -275,7 +275,7 @@ const Header = () => {
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
                   {/* 歷代平面經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
@@ -304,7 +304,7 @@ const Header = () => {
                   >
 
                   {/* 歷代立體經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
@@ -359,9 +359,9 @@ const Header = () => {
         {console.log(menuBarStatus)}
 
         {/* Logo Container */}
-        <Link to='/'>
+        <Link to='/chuangchihhui-galery/'>
           <div className="Logo df jc-sb aln-itm-c">
-            <img src="/logo.svg" alt="" className='fh mg-r-20'/>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
               <h3>莊志輝</h3>
               <h3>CHUANG CHIH HUI</h3>
@@ -378,7 +378,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/portfolio' className='pd-20 df jc-sb aln-itm-c'>
+              <Link to='/chuangchihhui-galery/portfolio' className='pd-20 df jc-sb aln-itm-c'>
                 作品<FaAngleDown size={16}/>
               </Link>
 
@@ -390,7 +390,7 @@ const Header = () => {
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
                   {/* 歷代平面經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
@@ -419,7 +419,7 @@ const Header = () => {
                   >
 
                   {/* 歷代立體經典總覽 */}
-                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
