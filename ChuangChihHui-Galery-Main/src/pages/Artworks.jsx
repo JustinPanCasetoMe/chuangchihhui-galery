@@ -167,7 +167,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
     })
 
     return (
-        <div>
+        <div key={{}}>
             {main_artworksRender}
             <div>
                 <h2 className='mg-b-30'>相似作品</h2>
