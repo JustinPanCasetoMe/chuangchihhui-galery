@@ -167,9 +167,9 @@ const Portfolio = ({ artworks = [] }) => {
           ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  
         `}>
 
-          <Slider {...settings}>
+          {/* <Slider {...settings}>
 
-          </Slider>
+          </Slider> */}
             {artworks.map((artwork, index) => {
               if((artwork.classics)){
                 if((artwork.year >= startTime && artwork.year < endTime) && (!cater) && (artwork.catergory!="無相之境")){
