@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://justinpancasetome.github.io/ChuangChihHui-Galery",
+  "homepage": "http://justinpancasetome.github.io/ChuangChihHui-Galery/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

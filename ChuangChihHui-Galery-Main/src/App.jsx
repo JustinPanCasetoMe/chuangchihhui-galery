@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import { Route, Routes, useParams } from 'react-router'
+import { Route, Routes } from 'react-router'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods } from './pages'
 import exhibition from './datas/exhibition.json'
 import competition from './datas/competition.json'
