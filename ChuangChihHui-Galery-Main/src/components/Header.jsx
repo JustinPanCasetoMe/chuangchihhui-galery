@@ -345,18 +345,12 @@ const Header = () => {
       </header>
 
 
-      {/* Navigation Bar for the 375-425 version*/}
+      {/* ======== Navigation Bar for the 375-425 version ========*/}
       <header className={`
         df jc-sb aln-itm-c fw pd-x-container
         ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  
       `}>
 
-        <FaBars 
-          size={32}
-          className='menuBar'
-          onClick={handleMenuBar}
-        />
-        {console.log(menuBarStatus)}
 
         {/* Logo Container */}
         <Link to='/chuangchihhui-galery/'>
@@ -369,6 +363,12 @@ const Header = () => {
           </div>
         </Link>
 
+        <FaBars 
+          size={32}
+          className='menuBar'
+          onClick={handleMenuBar}
+        />
+        {console.log(menuBarStatus)}
 
         <nav className={`${menuBarStatus ? 'menuMobile' : 'dn'}`}>
           <ul className='df fd-c' style={{width:'250px'}}>
