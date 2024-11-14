@@ -10,10 +10,9 @@ const Header = () => {
   const [subMenuHover, setSubMenuHover] = useState(false);
   const [subMenuCubeHover, setSubMenuCubeHover] = useState(false);
   const [subOpen, setSubOpen] = useState(false)
-
   const [menuBarStatus, setMenuBarStatus] = useState(false)
-
   const [menuTouched, setMenuTouched] = useState(false)
+  const [menuClose, setMenuClose] = useState()
 
   const handleMenuBar = () => {
     setMenuBarStatus(!menuBarStatus)
@@ -30,6 +29,10 @@ const Header = () => {
 
   const handleSubOpen = () => {
     setSubOpen(!subOpen)
+  }
+
+  const handleMenuClose = () => {
+    setMenuBarStatus(false)
   }
 
   return (
@@ -370,7 +373,7 @@ const Header = () => {
 
 
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/' onClick={handleTouched}>
+        <Link to='/chuangchihhui-galery/' onClick={handleMenuClose}>
           <div className="Logo df jc-sb aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
