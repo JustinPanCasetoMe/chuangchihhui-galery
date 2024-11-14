@@ -25,6 +25,9 @@ function App() {
 
         {/* Header Menu Navigation Bar Component */}
         <Route path='/chuangchihhui-galery/portfolio' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/chuangchihhui-galery/portfolio/:Classics' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/chuangchihhui-galery/portfolio/:graphics' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/chuangchihhui-galery/portfolio/:threeD' element={<Portfolio artworks={artworks}/>} />
         <Route 
           path='/chuangchihhui-galery/experiences'
           element={
