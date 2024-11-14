@@ -9,6 +9,7 @@ const Header = () => {
   const [menuHover, setMenuHover] = useState(false);
   const [subMenuHover, setSubMenuHover] = useState(false);
   const [subMenuCubeHover, setSubMenuCubeHover] = useState(false);
+  const [subOpen, setSubOpen] = useState(false)
 
   const [menuBarStatus, setMenuBarStatus] = useState(false)
 
@@ -25,6 +26,10 @@ const Header = () => {
   const handleTouched = () => {
     setMenuTouched(!menuTouched)
     setMenuBarStatus(!menuBarStatus)
+  }
+
+  const handleSubOpen = () => {
+    setSubOpen(!subOpen)
   }
 
   return (
@@ -365,7 +370,7 @@ const Header = () => {
 
 
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/'>
+        <Link to='/chuangchihhui-galery/' onClick={handleTouched}>
           <div className="Logo df jc-sb aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
@@ -390,7 +395,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio' className='pd-20 df jc-sb aln-itm-c'>
+              <Link to='/chuangchihhui-galery/portfolio' className='pd-20 df jc-sb aln-itm-c' onClick={handleSubOpen}>
                 作品<FaAngleDown size={16}/>
               </Link>
 
@@ -400,7 +405,7 @@ const Header = () => {
 
             {/* 歷代平面經典總覽 */}
             <li
-              className={`bd-b ${menuTouched && menuHover ? '' : 'dn'}`}
+              className={`bd-b ${subOpen && menuHover ? '' : 'dn'}`}
               style={{width:'200px', position:'relative'}}
               onMouseEnter={() => setSubMenuHover(true)}
               onMouseLeave={() => setSubMenuHover(false)}
@@ -430,7 +435,7 @@ const Header = () => {
 
             {/* 歷代立體經典總覽 */}
             <li
-              className={`${menuTouched && menuHover? '' : 'dn'}`}
+              className={`${subOpen && menuHover? '' : 'dn'}`}
               style={{width:'200px', position:'relative'}}
               onMouseEnter={() => setSubMenuCubeHover(true)}
               onMouseLeave={() => setSubMenuCubeHover(false)}
