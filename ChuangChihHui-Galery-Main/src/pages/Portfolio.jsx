@@ -12,7 +12,7 @@ const Portfolio = ({ artworks = [] }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1
   };
 
@@ -162,14 +162,9 @@ const Portfolio = ({ artworks = [] }) => {
 
         </div>
 
-        <div className={`
-          df fw jc-sb
-          ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  
-        `}>
+        <div className={`${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}`}>
 
-          {/* <Slider {...settings}>
-
-          </Slider> */}
+          <Slider {...settings}>
             {artworks.map((artwork, index) => {
               if((artwork.classics)){
                 if((artwork.year >= startTime && artwork.year < endTime) && (!cater) && (artwork.catergory!="無相之境")){
@@ -205,6 +200,7 @@ const Portfolio = ({ artworks = [] }) => {
               }
               return null;
             })}
+          </Slider>
 
 
 

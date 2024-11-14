@@ -16,6 +16,10 @@ const Header = () => {
     setMenuBarStatus(!menuBarStatus)
   }
 
+  const handleSubmenuItemClick = () => {
+    setMenuBarStatus(false)
+  }
+
   return (
     <>
       {/* Navigation Bar for the website version*/}
@@ -24,7 +28,7 @@ const Header = () => {
         ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
       `}>
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/'>
+        <Link to='/chuangchihhui-galery/' onClick={handleSubmenuItemClick}>
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
@@ -43,7 +47,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c'>
+              <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c' onClick={handleSubmenuItemClick}>
                 作品<FaAngleDown size={16} className='pd-l-10'/>
               </Link>
 
