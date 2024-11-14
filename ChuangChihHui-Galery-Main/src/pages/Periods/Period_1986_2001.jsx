@@ -43,7 +43,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
                 row === 3 ? '320px' :
                 row === 4 ? '360px' :
                 row === 5 ? '360px' :
-                (375<=ScreenWidth && ScreenWidth < 425) && row === 6 ? '300px' : '',
+                (375<=ScreenWidth && ScreenWidth < 425) && row === 6 ? '300px' : '360px',
               width:
                 (375<=ScreenWidth && ScreenWidth < 425) && row === 2 ? '100%' : 
                 (375<=ScreenWidth && ScreenWidth < 425) && row === 3 ? '100%' : 
@@ -137,10 +137,8 @@ const Period_1986_2001 = ({ artworks = [] }) => {
           {imgRender(14, 1)}
         </div>
         <div className='df jc-sa'>
-        <Slider {...settingsSlideOne}>
           {imgRender(15, 2)}
           {imgRender(16, 2)}
-        </Slider>
         </div>
         <div className='df jc-sb'>
           {imgRender(17, 3)}
@@ -205,7 +203,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
       </div>
 
       <div className='df jc-c mg-b-300'>
-        <Link to='//chuangchihhui-galeryportfolio/' className='NavLink trans-2'>
+        <Link to='/chuangchihhui-galery/portfolio' className='NavLink trans-2'>
           <h3>歷代經典總覽</h3>
         </Link>
       </div>
