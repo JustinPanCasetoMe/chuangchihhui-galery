@@ -60,17 +60,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>1968-2001</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>2002-2019</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>2020-2024</h4>
                       </Link>
                     </li>
@@ -89,17 +89,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>To be Determined 02</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
@@ -167,17 +167,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>1968-2001</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>2002-2019</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>2020-2024</h4>
                       </Link>
                     </li>
@@ -196,17 +196,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>To be Determined 02</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
@@ -237,12 +237,6 @@ const Header = () => {
         ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  
       `}>
 
-        <FaBars 
-          size={32}
-          className='menuBar'
-          onClick={handleMenuBar}
-        />
-
         {/* Logo Container */}
         <Link to='/chuangchihhui-galery/'>
           <div className="Logo df aln-itm-c">
@@ -254,6 +248,11 @@ const Header = () => {
           </div>
         </Link>
 
+        <FaBars 
+          size={32}
+          className='menuBar'
+          onClick={handleMenuBar}
+        />
 
         <nav className={`${menuBarStatus ? 'menuMobile' : 'dn'}`}>
           <ul className='df fd-c' style={{width:'250px'}}>
@@ -280,17 +279,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>1968-2001</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>2002-2019</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>2020-2024</h4>
                       </Link>
                     </li>
@@ -309,17 +308,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>To be Determined 02</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
@@ -395,17 +394,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>1968-2001</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>2002-2019</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>2020-2024</h4>
                       </Link>
                     </li>
@@ -424,17 +423,17 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>To be Determined 02</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
