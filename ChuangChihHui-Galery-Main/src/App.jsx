@@ -26,7 +26,7 @@ function App() {
         {/* Header Menu Navigation Bar Component */}
         <Route path='/chuangchihhui-galery/portfolio' element={<Portfolio artworks={artworks}/>} />
         <Route 
-          path='/experiences'
+          path='/chuangchihhui-galery/experiences'
           element={
             <Experiences
               exhibition={exhibition}
