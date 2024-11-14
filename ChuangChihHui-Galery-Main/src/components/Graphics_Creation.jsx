@@ -13,7 +13,9 @@ const Graphics_Creation = ({ graphicLink =[] }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
   };
 
   var settingsOne = {
@@ -21,7 +23,9 @@ const Graphics_Creation = ({ graphicLink =[] }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
   };
 
   const graphicRender = graphicLink.map((graphicItem, index) => {
