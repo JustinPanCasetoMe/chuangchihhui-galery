@@ -114,11 +114,11 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                     <div 
                         key={index}
                         className={`
-                            df jc-sb fw mg-b-lg
-                            ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'
+                            df fw mg-b-lg
+                            ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : 'dn'
                         }`}>
                         
-                            <div className='df jc-c' style={{height:'700px'}}>
+                            <div className='fw mg-b-30' style={{}}>
                                 <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
                             </div>
             
@@ -161,7 +161,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                         <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
                     </Link>
 
-                </div>
+                </div> 
             )
         }
     })
