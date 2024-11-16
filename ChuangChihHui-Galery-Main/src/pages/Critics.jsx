@@ -9,9 +9,9 @@ const Critics = () => {
   const criticsRender = critics_item.map((critic, index) => {
     return(
 
-      <>
+      <div key={index}>
+        
         <div
-          key={index}
           className={`mg-b-50 ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  `}
           style={{width:'30%', position:'relative'}}>
           <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
@@ -32,7 +32,6 @@ const Critics = () => {
         </div>
 
         <div
-          key={index}
           className={`mg-b-50 ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'}  `}
           style={{width:'30%', position:'relative'}}>
           <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
@@ -53,7 +52,6 @@ const Critics = () => {
         </div>
 
         <div
-          key={index}
           className={`mg-b-50 ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  `}
           style={{width:'30%', position:'relative'}}>
           <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
@@ -74,7 +72,6 @@ const Critics = () => {
         </div>
 
         <div
-          key={index}
           className={`mg-b-50 ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  `}
           style={{width:'100%', position:'relative'}}>
           <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
@@ -94,7 +91,7 @@ const Critics = () => {
           </Link>
         </div>
       
-      </>
+      </div>
     )
   })
 
