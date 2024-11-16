@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
+import { Collections, Contacts, Critics, Experiences } from '../pages';
 
 const Header = () => {
 
@@ -11,29 +12,25 @@ const Header = () => {
   const [subMenuCubeHover, setSubMenuCubeHover] = useState(false);
   const [subOpen, setSubOpen] = useState(false)
   const [menuBarStatus, setMenuBarStatus] = useState(false)
-  const [menuTouched, setMenuTouched] = useState(false)
-  const [menuClose, setMenuClose] = useState()
+  const [menuItem, setMenuItem] = useState('Artworks')
 
-  const handleMenuBar = () => {
+  const menubarToggle = () => {
     setMenuBarStatus(!menuBarStatus)
   }
 
-  const handleSubmenuItemClick = () => {
+  const handleMenubarClose = (menu) => {
     setMenuBarStatus(false)
-  }
-
-  const handleTouched = () => {
-    setMenuTouched(!menuTouched)
-    setMenuBarStatus(!menuBarStatus)
+    setSubOpen(false)
+    setMenuItem(menu)
   }
 
   const handleSubOpen = () => {
     setSubOpen(!subOpen)
   }
 
-  const handleMenuClose = () => {
-    setMenuBarStatus(false)
-  }
+
+  console.log('menuItem = ', menuItem)
+
 
   return (
     <>
@@ -43,7 +40,7 @@ const Header = () => {
         ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
       `}>
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/' onClick={handleSubmenuItemClick}>
+        <Link to='/chuangchihhui-galery/' onClick={handleMenubarClose}>
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
@@ -62,9 +59,9 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              {/* <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c' onClick={handleSubmenuItemClick}> */}
+              <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c'>
                 作品<FaAngleDown size={16} className='pd-l-10'/>
-              {/* </Link> */}
+              </Link>
 
               <ul className={`fd-c artW-sub ${menuHover===true ? 'df' : 'dn'}`}>
                 {/* 歷代平面經典總覽 */}
@@ -129,23 +126,23 @@ const Header = () => {
               </ul>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/experiences' className='pd-10'>資歷</Link>
+              <Link to='/chuangchihhui-galery/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/critics' className='pd-10'>藝評</Link>
+              <Link to='/chuangchihhui-galery/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>藝評</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/collections' className='pd-10'>收藏</Link>
+              <Link to='/chuangchihhui-galery/collections' className='pd-10' onClick={() => handleMenubarClose('Collections')}>收藏</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/contacts' className='pd-10'>聯絡</Link>
+              <Link to='/chuangchihhui-galery/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>
           </ul>
         </nav>
       </header>
 
 
-      {/* Navigation Bar for the 768-1024 version*/}
+      {/* ======== Navigation Bar for the 768-1024 version ========*/}
       <header className={`
         df jc-sb aln-itm-c fw pd-x-container
         ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'}  
@@ -252,7 +249,7 @@ const Header = () => {
       </header>
 
 
-      {/* Navigation Bar for the 425-768 version*/}
+      {/* ======== Navigation Bar for the 425-768 version ========*/}
       <header className={`
         df jc-sb aln-itm-c fw pd-x-container
         ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  
@@ -272,7 +269,7 @@ const Header = () => {
         <FaBars 
           size={32}
           className='menuBar'
-          onClick={handleMenuBar}
+          onClick={menubarToggle}
         />
 
         <nav className={`${menuBarStatus ? 'menuMobile' : 'dn'}`}>
@@ -373,7 +370,7 @@ const Header = () => {
 
 
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/' onClick={handleMenuClose}>
+        <Link to='/chuangchihhui-galery/' onClick={handleMenubarClose}>
           <div className="Logo df jc-sb aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
@@ -386,7 +383,7 @@ const Header = () => {
         <FaBars 
           size={32}
           className='menuBar'
-          onClick={handleMenuBar}
+          onClick={menubarToggle}
         />
 
         <nav className={`${menuBarStatus ? 'menuMobile' : 'dn'}`}>
@@ -412,7 +409,7 @@ const Header = () => {
               onMouseEnter={() => setSubMenuHover(true)}
               onMouseLeave={() => setSubMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio/graphics' className='pd-10 df jc-sb aln-itm-c' onClick={handleTouched}>
+              <Link to='/chuangchihhui-galery/portfolio/graphics' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
                 歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
               </Link>
             </li>
@@ -442,7 +439,7 @@ const Header = () => {
               onMouseEnter={() => setSubMenuCubeHover(true)}
               onMouseLeave={() => setSubMenuCubeHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c' onClick={handleTouched}>
+              <Link to='/chuangchihhui-galery/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
                 歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
               </Link>
             </li>
@@ -465,16 +462,16 @@ const Header = () => {
             </ul> */}
 
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/experiences' className={`pd-20 db`} onClick={handleTouched}>資歷</Link>
+              <Link to='/chuangchihhui-galery/experiences' className={`pd-20 db`} onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/critics' className={`pd-20 db`} onClick={handleTouched}>藝評</Link>
+              <Link to='/chuangchihhui-galery/critics' className={`pd-20 db`} onClick={() => handleMenubarClose('Critics')}>藝評</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/collections' className={`pd-20 db`} onClick={handleTouched}>收藏</Link>
+              <Link to='/chuangchihhui-galery/collections' className={`pd-20 db`} onClick={() => handleMenubarClose('Collections')}>收藏</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/contacts' className={`pd-20 db`} onClick={handleTouched}>聯絡</Link>
+              <Link to='/chuangchihhui-galery/contacts' className={`pd-20 db`} onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>
           </ul>
         </nav>

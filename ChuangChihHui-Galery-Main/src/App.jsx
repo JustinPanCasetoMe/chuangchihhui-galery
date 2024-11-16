@@ -7,7 +7,6 @@ import exhibition from './datas/exhibition.json'
 import competition from './datas/competition.json'
 import archive from './datas/archive.json'
 import artworks from './datas/artworks.json'
-import critics from './datas/critics.json'
 import 'slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css"
 import Period_1986_2001 from './pages/Periods/Period_1986_2001'
@@ -22,6 +21,7 @@ function App() {
 
       <Routes>
         <Route path='/chuangchihhui-galery' element={<Home />} />
+        <Route path='/chuangchihhui-galery/:MenuItem/'/>
 
         {/* Header Menu Navigation Bar Component */}
         <Route path='/chuangchihhui-galery/portfolio' element={<Portfolio artworks={artworks}/>} />
