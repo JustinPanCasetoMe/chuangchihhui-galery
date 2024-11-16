@@ -11,10 +11,8 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
         if(artwork.name === ArtworkName){
             return(
 
-                <>
-                    <div 
-                        key={index}
-                        className={`
+                <div key={index}>
+                    <div className={`
                             df jc-sb fw mg-b-lg
                             ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'
 
@@ -45,9 +43,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                         </div>
                     </div>
                 
-                    <div 
-                    key={index}
-                    className={`
+                    <div className={`
                         df jc-sb fw mg-b-lg
                         ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'
 
@@ -78,9 +74,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                     </div>
                     </div>
 
-                    <div 
-                    key={index}
-                    className={`
+                    <div className={`
                         df jc-sb fw mg-b-lg
                         ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'
 
@@ -111,12 +105,10 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                     </div>
                     </div>
 
-                    <div 
-                        key={index}
-                        className={`
-                            df fw mg-b-lg
-                            ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : 'dn'
-                        }`}>
+                    <div className={`
+                        df fw mg-b-lg
+                        ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : 'dn'
+                    }`}>
                         
                             <div className='fw mg-b-30' style={{}}>
                                 <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
@@ -144,7 +136,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                             </div>
 
                     </div>
-                </>
+                </div>
 
                 
             )
