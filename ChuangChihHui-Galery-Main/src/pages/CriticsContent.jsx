@@ -2,11 +2,11 @@ import React from 'react'
 import { useParams } from 'react-router'
 import criticsContent from '../datas/criticsContent/text01.json'
 
-const CriticsContent = ({ critics = [] }) => {
+const CriticsContent = ({ }) => {
 
     const { CriticsItem } = useParams()
 
-    const criticsRender = critics.map((critic, index) => {
+    const criticsRender = criticsContent.map((critic, index) => {
 
         const contentRender = criticsContent.map((criticContent, criticIndex) => {
 
@@ -23,8 +23,8 @@ const CriticsContent = ({ critics = [] }) => {
             })
 
             return(
-                <div key={criticIndex} style={{marginBottom:'50px'}}>
-                    <div className='mg-b-30'>
+                <div key={criticIndex} style={{marginBottom:'80px'}}>
+                    <div className='mg-b-20'>
                         {topicRender}
                     </div>
                     <div>
@@ -38,7 +38,10 @@ const CriticsContent = ({ critics = [] }) => {
         if( critic.id == CriticsItem ){
             return(
                 <div key={`${index}`}>
-                    <h2 className='bd-b mg-b-50'>{critic.title}</h2>
+                    <div className='bd-b mg-b-30 df jc-sb aln-itm-fe'>
+                        <h2 className=''>{critic.title}</h2>
+                        <h3>{critic.position} {critic.author} {critic.year}</h3>
+                    </div>
                     {contentRender}
                 </div>
             )

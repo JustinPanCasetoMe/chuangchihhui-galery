@@ -200,6 +200,10 @@
   margin-bottom: 10px;
 }
 
+.mg-b-20{
+  margin-bottom: 20px;
+}
+
 .mg-b-30{
   margin-bottom: 30px;
 }
@@ -327,6 +331,10 @@
 /* Align-items */
 .aln-itm-c{
   align-items: center;
+}
+
+.aln-itm-fe{
+  align-items: flex-end;
 }
 
 .txt-aln-c{

@@ -388,7 +388,6 @@ const Header = () => {
           className='menuBar'
           onClick={handleMenuBar}
         />
-        {console.log(menuBarStatus)}
 
         <nav className={`${menuBarStatus ? 'menuMobile' : 'dn'}`}>
           <ul className='df fd-c' style={{width:'250px'}}>

@@ -3,7 +3,7 @@
   line-height: 1.5;
 
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 1);
   background-color: #ffffff;
 
   font-synthesis: none;
@@ -64,11 +64,11 @@ h1 {
   line-height: 1.1;
 }
 
-/* h2 {
-  font-size: 1.2em;
+h2 {
+  font-size: 1.6em;
   line-height: 1.5;
   font-weight: 400;
-} */
+}
 
 h3{
   font-size: 18px;

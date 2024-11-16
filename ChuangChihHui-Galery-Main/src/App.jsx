@@ -39,7 +39,7 @@ function App() {
 
         {/* Critics */}
         <Route path='/chuangchihhui-galery/critics' element={<Critics />} />
-        <Route path='/chuangchihhui-galery/critics/:CriticsItem' element={<CriticsContent critics={critics}/>}></Route>
+        <Route path='/chuangchihhui-galery/critics/:CriticsItem' element={<CriticsContent/>}></Route>
 
         <Route path='/chuangchihhui-galery/collections' element={<Collections/>} />
         <Route path='/chuangchihhui-galery/contacts' element={<Contacts />} />
