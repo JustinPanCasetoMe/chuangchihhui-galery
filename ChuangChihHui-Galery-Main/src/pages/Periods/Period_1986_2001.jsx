@@ -44,8 +44,8 @@ const Period_1986_2001 = ({ artworks = [] }) => {
               height: 
                 row === 1 ? '450px' :
                 row === 2 ? '400px' :
-                row === 3 ? '320px' :
-                row === 4 ? '360px' :
+                row === 3 ? '240px' :
+                row === 4 ? '320px' :
                 row === 5 ? '360px' :
                 (375<=ScreenWidth && ScreenWidth < 425) && row === 6 ? '300px' : '360px',
               width:

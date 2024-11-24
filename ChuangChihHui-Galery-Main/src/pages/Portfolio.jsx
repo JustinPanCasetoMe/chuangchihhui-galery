@@ -45,7 +45,7 @@ const Portfolio = ({ artworks = [] }) => {
               if((artwork.year >= startTime && artwork.year < endTime) && (!cater) && (artwork.catergory!="無相之境")){
                 return(
                   <div key={index}>
-                    <div style={{height:'400px',marginBottom:'40px'}}>
+                    <div style={{height:'300px',marginBottom:'40px'}}>
                       <Link to={`artworks/${artwork.name}`}>
                         <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                       </Link>

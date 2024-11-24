@@ -42,7 +42,7 @@ const Header = () => {
         {/* Logo Container */}
         <Link to='/chuangchihhui-galery/' onClick={handleMenubarClose}>
           <div className="Logo df aln-itm-c">
-            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
             <div>
               <h3>莊志輝</h3>
               <h3>CHUANG CHIH HUI</h3>
@@ -131,9 +131,9 @@ const Header = () => {
             <li className='pd-w-10'>
               <Link to='/chuangchihhui-galery/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>藝評</Link>
             </li>
-            <li className='pd-w-10'>
+            {/* <li className='pd-w-10'>
               <Link to='/chuangchihhui-galery/collections' className='pd-10' onClick={() => handleMenubarClose('Collections')}>收藏</Link>
-            </li>
+            </li> */}
             <li className='pd-w-10'>
               <Link to='/chuangchihhui-galery/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>

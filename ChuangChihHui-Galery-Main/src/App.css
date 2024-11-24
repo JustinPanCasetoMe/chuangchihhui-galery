@@ -71,7 +71,7 @@
 .artW-sub{
   position: absolute;
   top: 100%;
-  left: 20px;
+  left: 0px;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -80,7 +80,7 @@
 
 .periods-sub{
   position: absolute;
-  top: 3%;
+  top: 0%;
   left: 100%;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -92,12 +92,17 @@
   z-index: 100;
 }
 
-.menuActive{
+/* .menuActive{
 
-}
+} */
 
-.red{
-  background-color: #540404;
+.outerLink{
+  width: fit-content;
+  display: block;
+  padding: 10px 36px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  color: #979797;
 }
 
 /* Font, Letter */

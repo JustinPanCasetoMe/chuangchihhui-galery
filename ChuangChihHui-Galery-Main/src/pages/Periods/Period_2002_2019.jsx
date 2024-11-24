@@ -50,12 +50,12 @@ const Period_2002_2019 = ({ artworks = [] }) => {
             className='bx-sd-sm imgActive trans-2 mg-b-50'
             style={{
               height: 
-              row === 1 ? '400px' :
+              row === 1 ? '300px' :
               row === 2 ? '480px' :
               row === 3 ? '480px' :
               row === 4 ? '480px' :
               row === 5 ? '480px' :
-              row === 6 ? '480px' : '',
+              row === 6 ? '360px' : '',
             }
           }
           />

@@ -15,8 +15,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                     <div className={`
                             df jc-sb fw mg-b-lg
                             ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'
-
-                        }`}>
+                    }`}>
                         <div className='df jc-c' style={{height:'500px'}}>
                             <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
                         </div>
@@ -48,30 +47,30 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                         ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'
 
                     }`}>
-                    <div className='df jc-c' style={{height:'500px'}}>
-                        <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
-                    </div>
-    
-                    <div className='df fd-c jc-c' style={{width:'40%'}}>
-    
-                        <h3 className='mg-b-30'>{artwork.name}</h3>
-                        <ul className='mg-b-30'>
-                            <span className='df'>
-                                <li className='mg-b-5'>尺寸：</li>
-                                <li className='lt-sc'>{artwork.size}</li>
-                            </span>
-                            <span className='df'>
-                                <li className='mg-b-5'>媒材：</li>
-                                <li className='lt-sc'>{artwork.mediums}</li>
-                            </span>
-                            <span className='df'>
-                                <li className='mg-b-5'>年份：</li>
-                                <li className='lt-sc'>{artwork.year}</li>
-                            </span>
-                        </ul>
-                        
-                        <button className='trans-2'>同期作品</button>
-                    </div>
+                        <div className='df jc-c' style={{height:'500px'}}>
+                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                        </div>
+        
+                        <div className='df fd-c jc-c' style={{width:'40%'}}>
+        
+                            <h3 className='mg-b-30'>{artwork.name}</h3>
+                            <ul className='mg-b-30'>
+                                <span className='df'>
+                                    <li className='mg-b-5'>尺寸：</li>
+                                    <li className='lt-sc'>{artwork.size}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>媒材：</li>
+                                    <li className='lt-sc'>{artwork.mediums}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>年份：</li>
+                                    <li className='lt-sc'>{artwork.year}</li>
+                                </span>
+                            </ul>
+                            
+                            <button className='trans-2'>同期作品</button>
+                        </div>
                     </div>
 
                     <div className={`
@@ -79,62 +78,60 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                         ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'
 
                     }`}>
-                    <div className='df jc-c' style={{height:'500px'}}>
-                        <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
-                    </div>
-    
-                    <div className='df fd-c jc-c' style={{width:'40%'}}>
-    
-                        <h3 className='mg-b-30'>{artwork.name}</h3>
-                        <ul className='mg-b-30'>
-                            <span className='df'>
-                                <li className='mg-b-5'>尺寸：</li>
-                                <li className='lt-sc'>{artwork.size}</li>
-                            </span>
-                            <span className='df'>
-                                <li className='mg-b-5'>媒材：</li>
-                                <li className='lt-sc'>{artwork.mediums}</li>
-                            </span>
-                            <span className='df'>
-                                <li className='mg-b-5'>年份：</li>
-                                <li className='lt-sc'>{artwork.year}</li>
-                            </span>
-                        </ul>
-                        
-                        <button className='trans-2'>同期作品</button>
-                    </div>
+                        <div className='df jc-c' style={{height:'500px'}}>
+                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                        </div>
+        
+                        <div className='df fd-c jc-c' style={{width:'40%'}}>
+        
+                            <h3 className='mg-b-30'>{artwork.name}</h3>
+                            <ul className='mg-b-30'>
+                                <span className='df'>
+                                    <li className='mg-b-5'>尺寸：</li>
+                                    <li className='lt-sc'>{artwork.size}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>媒材：</li>
+                                    <li className='lt-sc'>{artwork.mediums}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>年份：</li>
+                                    <li className='lt-sc'>{artwork.year}</li>
+                                </span>
+                            </ul>
+                            
+                            <button className='trans-2'>同期作品</button>
+                        </div>
                     </div>
 
                     <div className={`
                         df fw mg-b-lg
                         ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : 'dn'
                     }`}>
-                        
-                            <div className='fw mg-b-30' style={{}}>
-                                <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
-                            </div>
-            
-                            <div className='df fd-c jc-c' style={{width:'40%'}}>
-            
-                                <h3 className='mg-b-30'>{artwork.name}</h3>
-                                <ul className='mg-b-30'>
-                                    <span className='df'>
-                                        <li className='mg-b-5'>尺寸：</li>
-                                        <li className='lt-sc'>{artwork.size}</li>
-                                    </span>
-                                    <span className='df'>
-                                        <li className='mg-b-5'>媒材：</li>
-                                        <li className='lt-sc'>{artwork.mediums}</li>
-                                    </span>
-                                    <span className='df'>
-                                        <li className='mg-b-5'>年份：</li>
-                                        <li className='lt-sc'>{artwork.year}</li>
-                                    </span>
-                                </ul>
-                                
-                                <button className='trans-2'>同期作品</button>
-                            </div>
-
+                        <div className='fw mg-b-30' style={{}}>
+                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                        </div>
+        
+                        <div className='df fd-c jc-c' style={{width:'40%'}}>
+        
+                            <h3 className='mg-b-30'>{artwork.name}</h3>
+                            <ul className='mg-b-30'>
+                                <span className='df'>
+                                    <li className='mg-b-5'>尺寸：</li>
+                                    <li className='lt-sc'>{artwork.size}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>媒材：</li>
+                                    <li className='lt-sc'>{artwork.mediums}</li>
+                                </span>
+                                <span className='df'>
+                                    <li className='mg-b-5'>年份：</li>
+                                    <li className='lt-sc'>{artwork.year}</li>
+                                </span>
+                            </ul>
+                            
+                            <button className='trans-2'>同期作品</button>
+                        </div>
                     </div>
                 </div>
 

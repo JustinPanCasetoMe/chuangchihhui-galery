@@ -7,17 +7,18 @@ const Critics = () => {
   const ScreenWidth = window.innerWidth
 
   const criticsRender = critics_item.map((critic, index) => {
+
     return(
 
-      <div key={index}>
+      <div key={index} style={{width:'30%'}}>
         
         <div
           className={`mg-b-50 ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  `}
-          style={{width:'30%', position:'relative'}}>
+          style={{width:'100%', position:'relative'}}>
           <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
             <div>
               <div className='fw' style={{position:'relative'}}>
-                <img src={critic.bg} alt="" className='fw'/>
+                <img src={critic.bg} alt="" className='' style={{width:'100%'}}/>
                 <div className="msk"> </div>
               </div>
               <div

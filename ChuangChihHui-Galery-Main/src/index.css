@@ -1,9 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
 
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 1);
+  color: #8C8383;
   background-color: #ffffff;
 
   font-synthesis: none;
@@ -40,11 +41,10 @@ a:hover {
 
 body {
   margin: 150px 0 80px;
-  padding: 0 80px;
+  padding: 0 255px;
   min-width: 320px;
   min-height: 100vh;
 }
-
 
 header{
   position: fixed;
@@ -52,6 +52,11 @@ header{
   left: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+}
+
+header a{
+  color: #8C8383;
+  font-weight: 900;
 }
 
 footer{
@@ -69,7 +74,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
 }

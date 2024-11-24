@@ -2,13 +2,18 @@ const Preface = ({ listings = [] }) => {
 
     const prefaceRender = listings.map((item, index) => {
         return(
-            <p key={index} className="mg-b-10">{item}</p>
+            <p key={index} className="mg-b-10" style={{color:'#8C8383', lineHeight:'2'}}>{item}</p>
         )
     })
 
     return (
-        <div className="preface pd-50 mg-b-box">
-            {prefaceRender}
+        <div>
+            <div className="mg-b-30">
+                <h2>最新消息</h2>
+            </div>
+            <div className="preface mg-b-box" style={{padding:'80px 50px'}}>
+                {prefaceRender}
+            </div>
         </div>
     )
 }
