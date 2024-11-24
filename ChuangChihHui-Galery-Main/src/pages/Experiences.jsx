@@ -7,8 +7,8 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
   const exhibitionRender = exhibition.map((item, index) => {
     return(
       <div key={index} className='df mg-list' style={{color:'var(--content-grey)'}}>
-        <h3 className='' style={{width:'80px'}}>{item.year}</h3>
-        <h3>{item.exhibition}</h3>
+        <h4 className='fw-b' style={{width:'80px'}}>{item.year}</h4>
+        <h4>{item.exhibition}</h4>
       </div>
     )
   })
@@ -16,8 +16,8 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
   const competitionRender = competition.map((item, index) => {
     return(
       <div key={index} className='df mg-list' style={{color:'var(--content-grey)'}}>
-        <h3 className='' style={{width:'80px'}}>{item.year}</h3>
-        <h3>{item.competition}</h3>
+        <h4 className='' style={{width:'80px'}}>{item.year}</h4>
+        <h4>{item.competition}</h4>
       </div>
     )
   })
@@ -25,7 +25,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
   const archiveRender = archive.map((item, index) => {
     return(
       <div key={index} className='dib mg-r-20 mg-b-10' style={{color:'var(--content-grey)'}}>
-        <h3>•{item}</h3>
+        <h4>{item}</h4>
       </div>
     )
   })
@@ -44,7 +44,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('exhibition')}>
-          <h2>展歷</h2>
+          <h4 style={{fontWeight:'900'}}>展歷</h4>
         </li>
         <li
           className={`
@@ -53,7 +53,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('competition')}>
-          <h2>參賽記事</h2>
+          <h4 style={{fontWeight:'900'}}>參賽記事</h4>
         </li>
         <li 
           className={`
@@ -62,11 +62,11 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('archive')}>
-          <h2>典藏</h2>
+          <h4 style={{fontWeight:'900'}}>典藏</h4>
         </li>
       </ul>
 
-      <h3 className='mg-subtitle'>莊志輝 1965 出生於台灣澎湖</h3>
+      <h4 className='mg-subtitle'>莊志輝 1965 出生於台灣澎湖</h4>
 
       {/* Exhiition Record */}
       {visibleSection === 'exhibition' && (

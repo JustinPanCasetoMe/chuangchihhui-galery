@@ -65,8 +65,8 @@ const Period_2002_2019 = ({ artworks = [] }) => {
           artwork.id===36 ? 'dn' :
           artwork.id===37 ? 'dn' : ''
         }`}>
-          <h3>{artwork.name}</h3>
-          <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+          <h4 style={{marginBottom:'14.56px'}}>{artwork.name}</h4>
+          <h4>{artwork.size} {artwork.mediums} {artwork.year}</h4>
         </div>
       </div>
     )
@@ -78,7 +78,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
     <>
       <div className={`fw ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} `}>
 
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2002-2019</h2>
+        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2002-2019</h2>
 
         <div className='df jc-sb'>
           {imgRender(48, 1)}
@@ -117,7 +117,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
 
       <div className={`fw ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'} `}>
 
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2002-2019</h2>
+        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2002-2019</h2>
 
         <div className='df jc-sb'>
           {imgRender(48, 1)}
@@ -156,7 +156,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
 
       <div className={`fw ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'} `}>
 
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2002-2019</h2>
+        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2002-2019</h2>
 
         <div className='df jc-sb'>
           {imgRender(48, 1)}
@@ -195,7 +195,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
 
       <div className={`fw ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'} `}>
 
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>2002-2019</h2>
+        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2002-2019</h2>
 
         <div className=''>
           <Slider {...settingsSlideOne}>

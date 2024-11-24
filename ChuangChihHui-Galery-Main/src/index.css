@@ -2,6 +2,7 @@
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: "Inter", sans-serif;
   line-height: 1.5;
+  font-weight: 400;
 
   color-scheme: light dark;
   color: #8C8383;
@@ -59,6 +60,11 @@ header a{
   font-weight: 900;
 }
 
+header ul ul li a{
+  color: #8C8383;
+  font-weight: 400;
+}
+
 footer{
   position: fixed;
   bottom: 0;
@@ -80,13 +86,20 @@ h2 {
 }
 
 h3{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 h4{
   font-size: 16px;
   font-weight: 400;
+  letter-spacing:3px;
+}
+
+h5{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing:3px;
 }
 
 button{
@@ -104,13 +117,21 @@ button:hover{
   cursor: pointer;
 }
 
+@media (max-width:1250px) {
+  body {
+    padding: 0 180px;
+  }
+}
+
 @media (max-width:1024px) {
-  
+  body {
+    padding: 0 120px;
+  }
 }
 
 @media (max-width:768px) {
   body {
-    padding: 0 40px;
+    padding: 0 180px;
   }
 }
 

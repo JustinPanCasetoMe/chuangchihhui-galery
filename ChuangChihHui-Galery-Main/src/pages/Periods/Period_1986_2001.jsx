@@ -44,9 +44,12 @@ const Period_1986_2001 = ({ artworks = [] }) => {
               height: 
                 row === 1 ? '450px' :
                 row === 2 ? '400px' :
-                row === 3 ? '240px' :
-                row === 4 ? '320px' :
+                row === 3 ? '220px' :
+                row === 4 ? '280px' :
+                (1250<=ScreenWidth && ScreenWidth < 1440) && row === 4 ? '220px' :
+                (1024<=ScreenWidth && ScreenWidth < 1250) && row === 4 ? '160px' :
                 row === 5 ? '360px' :
+                (768<=ScreenWidth && ScreenWidth < 1024) && row === 3 ? '200px' :
                 (375<=ScreenWidth && ScreenWidth < 425) && row === 6 ? '300px' : '360px',
               width:
                 (375<=ScreenWidth && ScreenWidth < 425) && row === 2 ? '100%' : 
@@ -56,8 +59,8 @@ const Period_1986_2001 = ({ artworks = [] }) => {
           />
         </Link>
         <div className=''>
-          <h3>{artwork.name}</h3>
-          <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+          <h4 style={{marginBottom:'14.56px'}}>{artwork.name}</h4>
+          <h4>{artwork.size} {artwork.mediums} {artwork.year}</h4>
         </div>
       </div>
     )
@@ -69,7 +72,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
     <>
       <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} `}>
       
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>1986-2001</h2>
+        <h3 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>1986-2001</h3>
 
         <div className='df jc-c'>
           {imgRender(14, 1)}
@@ -102,7 +105,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
 
       <div className={`${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'} `}>
 
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>1986-2001</h2>
+        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>1986-2001</h2>
 
         <div className='df jc-c'>
           {imgRender(14, 1)}
@@ -135,7 +138,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
 
       <div className={`${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'} `}>
 
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>1986-2001</h2>
+        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>1986-2001</h2>
 
         <div className='df jc-c'>
           {imgRender(14, 1)}
@@ -167,7 +170,7 @@ const Period_1986_2001 = ({ artworks = [] }) => {
       </div>
 
       <div className={`${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'} `}>
-        <h2 className='txt-aln-c' style={{marginBottom:'200px'}}>1986-2001</h2>
+        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>1986-2001</h2>
 
         <div className='df jc-c'>
           {imgRender(14, 1)}

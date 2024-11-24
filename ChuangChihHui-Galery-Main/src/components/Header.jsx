@@ -77,17 +77,22 @@ const Header = () => {
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                       <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
-                        <h4>1968-2001</h4>
+                        1968-2001
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                       <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
-                        <h4>2002-2019</h4>
+                        2002-2019
                       </Link> 
+                    </li>
+                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                        2020-2024
+                      </Link>
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
                       <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
-                        <h4>2020-2024</h4>
+                        無相之境
                       </Link>
                     </li>
                   </ul>
@@ -105,7 +110,7 @@ const Header = () => {
                   <Link to='/chuangchihhui-galery/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
-                  <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
+                  {/* <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                       <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
@@ -121,7 +126,7 @@ const Header = () => {
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
               </ul>
             </li>
