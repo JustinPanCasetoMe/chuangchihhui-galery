@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import critics_item from '../datas/critics.json' 
 import { Link } from 'react-router-dom'
 
@@ -6,10 +6,14 @@ const Critics = () => {
 
   const ScreenWidth = window.innerWidth
 
+  const [visibleSection, setVisibleSection] = useState('critics');
+
+  const handleSectionToggle = (section) =>{
+    setVisibleSection(visibleSection === section ? null : section)
+  }
+
   const criticsRender = critics_item.map((critic, index) => {
-
     return(
-
       <div key={index} style={{width:'30%'}}>
         
         <div
@@ -97,12 +101,50 @@ const Critics = () => {
   })
 
   return (
-    <div key={{}} className={`
-      df jc-sb fl-wp
-      ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : ''}
-    `}>
-      {criticsRender}
+
+    <div>
+      <ul className='df pd-b-title mg-b-10 w-auto'>
+        <li 
+          className={`
+            mg-r-20
+            ${visibleSection === 'critics' ? 'bd-bt-active' : '' }
+            pointer trans-4
+          `}
+          onClick={() => handleSectionToggle('critics')}>
+          <h4 style={{fontWeight:'900'}}>藝評</h4>
+        </li>
+        <li
+          className={`
+            mg-r-20
+            ${visibleSection === 'report' ? 'bd-bt-active' : '' }
+            pointer trans-4
+          `}
+          onClick={() => handleSectionToggle('report')}>
+          <h4 style={{fontWeight:'900'}}>報導</h4>
+        </li>
+      </ul>
+
+      {visibleSection === 'critics' && (
+          <div className={`
+            df jc-sb fl-wp
+            ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : ''}
+          `}>
+            {criticsRender}
+          </div>
+      )}
+
+      {visibleSection === 'report' && (
+          <div className={`
+            df jc-sb fl-wp
+            ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : ''}
+          `}>
+            {/* {criticsRender} */}
+          </div>
+      )}
+
+
     </div>
+
   )
 }
 

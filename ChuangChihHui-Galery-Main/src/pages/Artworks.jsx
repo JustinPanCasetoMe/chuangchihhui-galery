@@ -16,11 +16,13 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                             df jc-sb fw mg-b-lg
                             ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'
                     }`}>
-                        <div className='df jc-c' style={{height:'500px'}}>
-                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                        <div style={{width:'600px', height:'500px'}} className='df jc-c'>
+                            <div className='df jc-c' style={{height:'500px'}}>
+                                <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+                            </div>
                         </div>
         
-                        <div className='df fd-c jc-c' style={{width:'40%'}}>
+                        <div className='df fd-c jc-c' style={{width:'30%'}}>
         
                             <h3 className='mg-b-30'>{artwork.name}</h3>
                             <ul className='mg-b-30'>
@@ -38,7 +40,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                                 </span>
                             </ul>
                             
-                            <button className='trans-2'>同期作品</button>
+                            <Link to='/chuangchihhui-galery/portfolio/artworks' className='trans-2 button'>同期作品</Link>
                         </div>
                     </div>
                 

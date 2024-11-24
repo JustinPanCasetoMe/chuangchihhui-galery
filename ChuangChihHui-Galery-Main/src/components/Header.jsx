@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
 import { Collections, Contacts, Critics, Experiences } from '../pages';
 
@@ -71,7 +71,7 @@ const Header = () => {
                   onMouseEnter={() => setSubMenuHover(true)}
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
-                  <Link to='/chuangchihhui-galery/portfolio/graphics' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link className='pd-10 df jc-sb aln-itm-c'>
                     歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>

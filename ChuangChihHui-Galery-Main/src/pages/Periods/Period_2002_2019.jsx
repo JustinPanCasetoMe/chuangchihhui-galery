@@ -65,8 +65,8 @@ const Period_2002_2019 = ({ artworks = [] }) => {
           artwork.id===36 ? 'dn' :
           artwork.id===37 ? 'dn' : ''
         }`}>
-          <h4 style={{marginBottom:'14.56px'}}>{artwork.name}</h4>
-          <h4>{artwork.size} {artwork.mediums} {artwork.year}</h4>
+          <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+          <h5>{artwork.size} {artwork.mediums} {artwork.year}</h5>
         </div>
       </div>
     )

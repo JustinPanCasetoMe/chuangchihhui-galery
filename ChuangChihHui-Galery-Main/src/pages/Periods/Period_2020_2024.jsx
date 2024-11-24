@@ -61,8 +61,8 @@ const Period_2020_2024 = ({ artworks = [] }) => {
           />
         </Link>
         <div className=''>
-          <h4 style={{marginBottom:'14.56px'}}>{artwork.name}</h4>
-          <h4>{artwork.size} {artwork.mediums} {artwork.year}</h4>
+          <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+          <h5>{artwork.size} {artwork.mediums} {artwork.year}</h5>
         </div>
       </div>
     )
@@ -73,7 +73,7 @@ const Period_2020_2024 = ({ artworks = [] }) => {
 
     <>
       <div className={`fw ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} `}>
-        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h2>
+        <h3 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h3>
 
         <div className='df jc-c'>
           {imgRender(38, 1)}
@@ -102,7 +102,7 @@ const Period_2020_2024 = ({ artworks = [] }) => {
       </div>
 
       <div className={`fw ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'} `}>
-        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h2>
+        <h3 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h3>
 
         <div className='df jc-c'>
           {imgRender(38, 1)}
@@ -131,7 +131,7 @@ const Period_2020_2024 = ({ artworks = [] }) => {
       </div>
 
       <div className={`fw ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'} `}>
-        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h2>
+        <h3 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h3>
 
         <div className='df jc-c'>
           {imgRender(38, 1)}
@@ -160,7 +160,7 @@ const Period_2020_2024 = ({ artworks = [] }) => {
       </div>
 
       <div className={`fw ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'} `}>
-        <h2 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h2>
+        <h3 className='txt-aln-c periodTitle' style={{marginBottom:'200px'}}>2020-2024</h3>
 
         <div className='df jc-c'>
           {imgRender(38, 1)}
@@ -196,7 +196,7 @@ const Period_2020_2024 = ({ artworks = [] }) => {
 
       <div className='df jc-c mg-b-300'>
         <Link to='/chuangchihhui-galery/portfolio' className='NavLink trans-2'>
-          <h3>歷代經典總覽</h3>
+          <h4>歷代經典總覽</h4>
         </Link>
       </div>
     

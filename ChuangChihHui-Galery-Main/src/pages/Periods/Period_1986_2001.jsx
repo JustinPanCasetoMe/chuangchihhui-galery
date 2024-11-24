@@ -59,8 +59,8 @@ const Period_1986_2001 = ({ artworks = [] }) => {
           />
         </Link>
         <div className=''>
-          <h4 style={{marginBottom:'14.56px'}}>{artwork.name}</h4>
-          <h4>{artwork.size} {artwork.mediums} {artwork.year}</h4>
+          <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+          <h5>{artwork.size} {artwork.mediums} {artwork.year}</h5>
         </div>
       </div>
     )
