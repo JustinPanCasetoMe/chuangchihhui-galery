@@ -142,6 +142,9 @@ const Header = () => {
             <li className='pd-w-10'>
               <Link to='/chuangchihhui-galery/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>
+            <li className='pd-w-10'>
+              <Link to='/chuangchihhui-galery/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>語言</Link>
+            </li>
           </ul>
         </nav>
       </header>
