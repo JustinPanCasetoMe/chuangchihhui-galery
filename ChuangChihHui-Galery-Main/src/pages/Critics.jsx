@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useParams } from 'react'
 import critics_item from '../datas/critics.json' 
 import { Link } from 'react-router-dom'
 
 const Critics = () => {
+
+  // const {CriticsItem} = useParams
 
   const ScreenWidth = window.innerWidth
 
@@ -14,7 +16,7 @@ const Critics = () => {
 
   const criticsRender = critics_item.map((critic, index) => {
     return(
-      <div key={index} style={{width:'30%'}}>
+      <div key={index} style={{width:'31%'}}>
         
         <div
           className={`mg-b-50 ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  `}
@@ -29,8 +31,8 @@ const Critics = () => {
                 className='fw df jc-sb pd-10'
                 style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
               >
-                <h4>{critic.title}</h4>
-                <h4>{critic.author}</h4>
+                <h5>{critic.title}</h5>
+                <h5>{critic.author}</h5>
               </div>
             </div>
           </Link>
@@ -49,8 +51,8 @@ const Critics = () => {
                 className='fw df jc-sb pd-10'
                 style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
               >
-                <h4>{critic.title}</h4>
-                <h4>{critic.author}</h4>
+                <h5>{critic.title}</h5>
+                <h5>{critic.author}</h5>
               </div>
             </div>
           </Link>
@@ -69,8 +71,8 @@ const Critics = () => {
                 className='fw df jc-sb pd-10'
                 style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
               >
-                <h4>{critic.title}</h4>
-                <h4>{critic.author}</h4>
+                <h5>{critic.title}</h5>
+                <h5>{critic.author}</h5>
               </div>
             </div>
           </Link>
@@ -89,8 +91,8 @@ const Critics = () => {
                 className='fw df jc-sb pd-10'
                 style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
               >
-                <h4>{critic.title}</h4>
-                <h4>{critic.author}</h4>
+                <h5>{critic.title}</h5>
+                <h5>{critic.author}</h5>
               </div>
             </div>
           </Link>
@@ -111,7 +113,7 @@ const Critics = () => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('critics')}>
-          <h4 style={{fontWeight:'900'}}>藝評</h4>
+          <h5 style={{fontWeight:'900'}}>藝評</h5>
         </li>
         <li
           className={`
@@ -120,7 +122,7 @@ const Critics = () => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('report')}>
-          <h4 style={{fontWeight:'900'}}>報導</h4>
+          <h5 style={{fontWeight:'900'}}>報導</h5>
         </li>
       </ul>
 

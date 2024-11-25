@@ -48,6 +48,9 @@ const Portfolio = ({ artworks = [] }) => {
                     <div style={{height:'275px',marginBottom:'40px'}}>
                       <Link to={`/portfolio/artworks/${artwork.name}`}>
                         <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
+                        {/* <div>
+                          <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
+                        </div> */}
                       </Link>
                     </div>
                     <div className=''>

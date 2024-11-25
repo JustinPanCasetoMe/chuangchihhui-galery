@@ -43,8 +43,8 @@ const Header = () => {
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
             <div>
-              <h3>莊志輝</h3>
-              <h3>CHUANG CHIH HUI</h3>
+              <h3 style={{fontSize:'18px'}}>莊志輝</h3>
+              <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
             </div>
           </div>
         </Link>
