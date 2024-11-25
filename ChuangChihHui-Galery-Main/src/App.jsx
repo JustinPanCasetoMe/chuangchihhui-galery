@@ -20,16 +20,16 @@ function App() {
     <div className=''>
 
       <Routes>
-        <Route path='/chuangchihhui-galery' element={<Home />} />
-        <Route path='/chuangchihhui-galery/:MenuItem/'/>
+        <Route path='/' element={<Home />} />
+        <Route path='/:MenuItem/'/>
 
         {/* Header Menu Navigation Bar Component */}
-        <Route path='/chuangchihhui-galery/portfolio' element={<Portfolio artworks={artworks}/>} />
-        <Route path='/chuangchihhui-galery/portfolio/:Classics' element={<Portfolio artworks={artworks}/>} />
-        <Route path='/chuangchihhui-galery/portfolio/:graphics' element={<Portfolio artworks={artworks}/>} />
-        <Route path='/chuangchihhui-galery/portfolio/:threeD' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/portfolio' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/portfolio/:Classics' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/portfolio/:graphics' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/portfolio/:threeD' element={<Portfolio artworks={artworks}/>} />
         <Route 
-          path='/chuangchihhui-galery/experiences'
+          path='/experiences'
           element={
             <Experiences
               exhibition={exhibition}
@@ -38,20 +38,20 @@ function App() {
             />}/>
 
         {/* Critics */}
-        <Route path='/chuangchihhui-galery/critics' element={<Critics />} />
-        <Route path='/chuangchihhui-galery/critics/:CriticsItem' element={<CriticsContent/>}></Route>
+        <Route path='/critics' element={<Critics />} />
+        <Route path='/critics/:CriticsItem' element={<CriticsContent/>}></Route>
 
-        <Route path='/chuangchihhui-galery/collections' element={<Collections/>} />
-        <Route path='/chuangchihhui-galery/contacts' element={<Contacts />} />
+        <Route path='/collections' element={<Collections/>} />
+        <Route path='/contacts' element={<Contacts />} />
 
         {/* Artworks */}
-        <Route path='/chuangchihhui-galery/portfolio/artworks/:ArtworkName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
+        <Route path='/portfolio/artworks/:ArtworkName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
 
         {/* Period */}
-        <Route path='/chuangchihhui-galery/portfolio/periods/:Period' element={<ArtworkPeriods artworks={artworks}/>} />
-        <Route path='/chuangchihhui-galery/portfolio/periods/1986-2001' element={<Period_1986_2001 artworks={artworks} />}></Route>
-        <Route path='/chuangchihhui-galery/portfolio/periods/2002-2019' element={<Period_2002_2019 artworks={artworks} />}></Route>
-        <Route path='/chuangchihhui-galery/portfolio/periods/2020-2024' element={<Period_2020_2024 artworks={artworks} />}></Route>
+        <Route path='/portfolio/periods/:Period' element={<ArtworkPeriods artworks={artworks}/>} />
+        <Route path='/portfolio/periods/1986-2001' element={<Period_1986_2001 artworks={artworks} />}></Route>
+        <Route path='/portfolio/periods/2002-2019' element={<Period_2002_2019 artworks={artworks} />}></Route>
+        <Route path='/portfolio/periods/2020-2024' element={<Period_2020_2024 artworks={artworks} />}></Route>
       </Routes>
 
 

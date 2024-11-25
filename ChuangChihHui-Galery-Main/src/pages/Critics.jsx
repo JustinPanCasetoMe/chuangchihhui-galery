@@ -19,7 +19,7 @@ const Critics = () => {
         <div
           className={`mg-b-50 ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  `}
           style={{width:'100%', position:'relative'}}>
-          <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
+          <Link to={`/critics/${critic.id}`}>
             <div>
               <div className='fw' style={{position:'relative'}}>
                 <img src={critic.bg} alt="" className='' style={{width:'100%'}}/>
@@ -39,7 +39,7 @@ const Critics = () => {
         <div
           className={`mg-b-50 ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'}  `}
           style={{width:'30%', position:'relative'}}>
-          <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
+          <Link to={`/critics/${critic.id}`}>
             <div>
               <div className='fw' style={{position:'relative'}}>
                 <img src={critic.bg} alt="" className='fw'/>
@@ -59,7 +59,7 @@ const Critics = () => {
         <div
           className={`mg-b-50 ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  `}
           style={{width:'30%', position:'relative'}}>
-          <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
+          <Link to={`/critics/${critic.id}`}>
             <div>
               <div className='fw' style={{position:'relative'}}>
                 <img src={critic.bg} alt="" className='fw'/>
@@ -79,7 +79,7 @@ const Critics = () => {
         <div
           className={`mg-b-50 ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  `}
           style={{width:'100%', position:'relative'}}>
-          <Link to={`/chuangchihhui-galery/critics/${critic.id}`}>
+          <Link to={`/critics/${critic.id}`}>
             <div>
               <div className='fw' style={{position:'relative'}}>
                 <img src={critic.bg} alt="" className='fw'/>

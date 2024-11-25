@@ -1,6 +1,4 @@
-import Graphics_Creation from '../components/Graphics_Creation'
 import Preface from '../components/Preface'
-import { Link } from 'react-router-dom'
 import preface_text from '../datas/preface_text.json'
 
 
@@ -8,7 +6,6 @@ const Home = () => {
   return (
     <div>
       <Preface listings={preface_text}/>
-      {/* <Graphics_Creation graphicLink={artworks}/> */}
       <div>
         <ul className='df'>
           <a href='https://maps.app.goo.gl/A4tttWxRBfXKYTRf8' className='outerLink mg-r-30' target='_blank'><li>地址</li></a>

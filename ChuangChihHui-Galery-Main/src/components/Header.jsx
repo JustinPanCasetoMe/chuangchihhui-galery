@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
-import { Collections, Contacts, Critics, Experiences } from '../pages';
 
 const Header = () => {
 
@@ -40,7 +39,7 @@ const Header = () => {
         ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
       `}>
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/' onClick={handleMenubarClose}>
+        <Link to='/' onClick={handleMenubarClose}>
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
             <div>
@@ -59,7 +58,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c'>
+              <Link to='/portfolio' className='pd-10 df aln-itm-c'>
                 作品<FaAngleDown size={16} className='pd-l-10'/>
               </Link>
 
@@ -76,22 +75,22 @@ const Header = () => {
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                         1968-2001
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                         2002-2019
                       </Link> 
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                         2020-2024
                       </Link>
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                         無相之境
                       </Link>
                     </li>
@@ -107,22 +106,22 @@ const Header = () => {
                   >
 
                   {/* 歷代立體經典總覽 */}
-                  <Link to='/chuangchihhui-galery/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   {/* <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>To be Determined 02</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
@@ -131,19 +130,19 @@ const Header = () => {
               </ul>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
+              <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>藝評</Link>
+              <Link to='/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>藝評</Link>
             </li>
             {/* <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/collections' className='pd-10' onClick={() => handleMenubarClose('Collections')}>收藏</Link>
+              <Link to='/collections' className='pd-10' onClick={() => handleMenubarClose('Collections')}>收藏</Link>
             </li> */}
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>語言</Link>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>語言</Link>
             </li>
           </ul>
         </nav>
@@ -157,7 +156,7 @@ const Header = () => {
       `}>
 
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/'>
+        <Link to='/'>
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
@@ -176,7 +175,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df aln-itm-c'>
+              <Link to='/portfolio' className='pd-10 df aln-itm-c'>
                 作品<FaAngleDown size={16} className='pd-l-10'/>
               </Link>
 
@@ -188,22 +187,22 @@ const Header = () => {
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
                   {/* 歷代平面經典總覽 */}
-                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>1968-2001</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>2002-2019</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>2020-2024</h4>
                       </Link>
                     </li>
@@ -217,22 +216,22 @@ const Header = () => {
                   >
 
                   {/* 歷代立體經典總覽 */}
-                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>To be Determined 02</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
@@ -241,16 +240,16 @@ const Header = () => {
               </ul>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/experiences' className='pd-10'>資歷</Link>
+              <Link to='/experiences' className='pd-10'>資歷</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/critics' className='pd-10'>藝評</Link>
+              <Link to='/critics' className='pd-10'>藝評</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/collections' className='pd-10'>收藏</Link>
+              <Link to='/collections' className='pd-10'>收藏</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/chuangchihhui-galery/contacts' className='pd-10'>聯絡</Link>
+              <Link to='/contacts' className='pd-10'>聯絡</Link>
             </li>
           </ul>
         </nav>
@@ -264,7 +263,7 @@ const Header = () => {
       `}>
 
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/'>
+        <Link to='/'>
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
@@ -288,7 +287,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio' className='pd-20 df jc-sb aln-itm-c'>
+              <Link to='/portfolio' className='pd-20 df jc-sb aln-itm-c'>
                 作品<FaAngleDown size={16}/>
               </Link>
 
@@ -300,22 +299,22 @@ const Header = () => {
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
                   {/* 歷代平面經典總覽 */}
-                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>1968-2001</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>2002-2019</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>2020-2024</h4>
                       </Link>
                     </li>
@@ -329,22 +328,22 @@ const Header = () => {
                   >
 
                   {/* 歷代立體經典總覽 */}
-                  <Link to='/chuangchihhui-galery/portfolio' className='pd-10 df jc-sb aln-itm-c'>
+                  <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
                     歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                      <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                         <h4>To be Determined 01</h4>
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                         <h4>To be Determined 02</h4>
                       </Link> 
                     </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                      <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                         <h4>To be Determined 03</h4>
                       </Link>
                     </li>
@@ -354,16 +353,16 @@ const Header = () => {
 
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/experiences' className='pd-20 db'>資歷</Link>
+              <Link to='/experiences' className='pd-20 db'>資歷</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/critics' className='pd-20 db'>藝評</Link>
+              <Link to='/critics' className='pd-20 db'>藝評</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/collections' className='pd-20 db'>收藏</Link>
+              <Link to='/collections' className='pd-20 db'>收藏</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/contacts' className='pd-20 db'>聯絡</Link>
+              <Link to='/contacts' className='pd-20 db'>聯絡</Link>
             </li>
           </ul>
         </nav>
@@ -378,7 +377,7 @@ const Header = () => {
 
 
         {/* Logo Container */}
-        <Link to='/chuangchihhui-galery/' onClick={handleMenubarClose}>
+        <Link to='/' onClick={handleMenubarClose}>
           <div className="Logo df jc-sb aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
             <div>
@@ -402,7 +401,7 @@ const Header = () => {
               onMouseEnter={() => setMenuHover(true)}
               onMouseLeave={() => setMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio' className='pd-20 df jc-sb aln-itm-c' onClick={handleSubOpen}>
+              <Link to='/portfolio' className='pd-20 df jc-sb aln-itm-c' onClick={handleSubOpen}>
                 作品<FaAngleDown size={16}/>
               </Link>
 
@@ -417,24 +416,24 @@ const Header = () => {
               onMouseEnter={() => setSubMenuHover(true)}
               onMouseLeave={() => setSubMenuHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio/graphics' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
+              <Link to='/portfolio/graphics' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
                 歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
               </Link>
             </li>
 
             {/* <ul className={`fd-c pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
               <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                   <h4>1968-2001</h4>
                 </Link>
               </li>
               <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                   <h4>2002-2019</h4>
                 </Link> 
               </li>
               <li className='pd-y-10' style={{width:'200px'}}>
-                <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                   <h4>2020-2024</h4>
                 </Link>
               </li>
@@ -447,39 +446,39 @@ const Header = () => {
               onMouseEnter={() => setSubMenuCubeHover(true)}
               onMouseLeave={() => setSubMenuCubeHover(false)}
               >
-              <Link to='/chuangchihhui-galery/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
+              <Link to='/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
                 歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
               </Link>
             </li>
             {/* <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
               <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                <Link to='/chuangchihhui-galery/portfolio/periods/1986-2001' className='pd-y-10'>
+                <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
                   <h4>To be Determined 01</h4>
                 </Link>
               </li>
               <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                <Link to='/chuangchihhui-galery/portfolio/periods/2002-2019' className='pd-y-10'>
+                <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
                   <h4>To be Determined 02</h4>
                 </Link> 
               </li>
               <li className='pd-y-10' style={{width:'200px'}}>
-                <Link to='/chuangchihhui-galery/portfolio/periods/2020-2024' className='pd-y-10'>
+                <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
                   <h4>To be Determined 03</h4>
                 </Link>
               </li>
             </ul> */}
 
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/experiences' className={`pd-20 db`} onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
+              <Link to='/experiences' className={`pd-20 db`} onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/critics' className={`pd-20 db`} onClick={() => handleMenubarClose('Critics')}>藝評</Link>
+              <Link to='/critics' className={`pd-20 db`} onClick={() => handleMenubarClose('Critics')}>藝評</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/collections' className={`pd-20 db`} onClick={() => handleMenubarClose('Collections')}>收藏</Link>
+              <Link to='/collections' className={`pd-20 db`} onClick={() => handleMenubarClose('Collections')}>收藏</Link>
             </li>
             <li className='bd-t fw'>
-              <Link to='/chuangchihhui-galery/contacts' className={`pd-20 db`} onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
+              <Link to='/contacts' className={`pd-20 db`} onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>
           </ul>
         </nav>

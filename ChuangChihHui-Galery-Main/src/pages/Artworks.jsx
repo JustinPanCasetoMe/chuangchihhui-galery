@@ -40,7 +40,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                                 </span>
                             </ul>
                             
-                            <Link to='/chuangchihhui-galery/portfolio/artworks' className='trans-2 button'>同期作品</Link>
+                            <Link to='/portfolio/artworks' className='trans-2 button'>同期作品</Link>
                         </div>
                     </div>
                 
@@ -148,7 +148,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
                 <div key={index} className='mg-b-30' style={{height:'160px'}}>
 
                     {/* Creating a link to the artwork detail page*/}
-                    <Link to={`/chuangchihhui-galery/portfolio/artworks/${artwork.name}`}>
+                    <Link to={`/portfolio/artworks/${artwork.name}`}>
                         <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
                     </Link>
 
