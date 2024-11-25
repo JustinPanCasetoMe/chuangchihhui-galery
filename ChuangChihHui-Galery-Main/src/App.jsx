@@ -13,6 +13,7 @@ import Period_1986_2001 from './pages/Periods/Period_1986_2001'
 import Period_2002_2019 from './pages/Periods/Period_2002_2019'
 import Period_2020_2024 from './pages/Periods/Period_2020_2024'
 import CriticsContent from './pages/CriticsContent'
+import UnXiangArea from './pages/Periods/UnXiangArea'
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
         <Route path='/portfolio/periods/1986-2001' element={<Period_1986_2001 artworks={artworks} />}></Route>
         <Route path='/portfolio/periods/2002-2019' element={<Period_2002_2019 artworks={artworks} />}></Route>
         <Route path='/portfolio/periods/2020-2024' element={<Period_2020_2024 artworks={artworks} />}></Route>
+        <Route path='/portfolio/unxiangarea' element={<UnXiangArea artworks={artworks} />}></Route>
       </Routes>
 
 

@@ -62,7 +62,7 @@ const Period_2002_2019 = ({ artworks = [] }) => {
         </Link>
         <div className={`${
           artwork.id===34 ? 'dn' :
-          artwork.id===36 ? 'dn' :
+          artwork.id===35 ? 'dn' :
           artwork.id===37 ? 'dn' : ''
         }`}>
           <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
@@ -105,10 +105,10 @@ const Period_2002_2019 = ({ artworks = [] }) => {
           <div style={{width:'66%'}}>
             <div className='df jc-sb'>
               {imgRender(34, 6)}
-              {imgRender(36, 6)}
+              {imgRender(35, 6)}
             </div>
             <div className='df jc-sb'>
-              {imgRender(35, 6)}
+              {imgRender(36, 6)}
               {imgRender(37, 6)}
             </div>
           </div>

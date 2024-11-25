@@ -107,7 +107,7 @@
         "year": "2022",
         "catergory": "無相之境",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54118023962_f441f94e79_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54163401958_781dbf9f84_w.jpg"
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@
         "year": "2014",
         "catergory": "無相之境",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54119217354_cafbfa7e17_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54163390858_b8844253ec_w.jpg"
     },
     {
         "id": 13,
@@ -262,7 +262,7 @@
         "id": 27,
         "name": "區塊鏈 - 心念的演變",
         "size": "128X162.5cm",
-        "mediums": "油畫",
+        "mediums": "壓克力",
         "year": "2019",
         "catergory": "general",
         "classics": false,
@@ -271,9 +271,9 @@
     {
         "id": 28,
         "name": "走走",
-        "size": "140X140cm",
-        "mediums": "油畫",
-        "year": "1996",
+        "size": "156X46cm",
+        "mediums": "壓克力",
+        "year": "2015",
         "catergory": "general",
         "classics": false,
         "img": "https://live.staticflickr.com/65535/54118881396_5e1ca4c1c2_h.jpg"
@@ -370,18 +370,18 @@
     },
     {
         "id": 38,
-        "name": "時間在分娩02",
-        "size": "235X175cm",
+        "name": "基因拼圖",
+        "size": "112Ｘ231cm",
         "mediums": "壓克力",
-        "year": "2015",
+        "year": "2023",
         "catergory": "general",
         "classics": false,
         "img": "https://live.staticflickr.com/65535/54118023997_6536ef60ef_h.jpg"
     },
     {
         "id": 39,
-        "name": "時間在分娩03",
-        "size": "235X175cm",
+        "name": "平行宇宙之無量複製",
+        "size": "73X210cm",
         "mediums": "壓克力",
         "year": "2015",
         "catergory": "general",
@@ -401,7 +401,7 @@
     {
         "id": 41,
         "name": "最不可思議的符號",
-        "size": "62X73cm",
+        "size": "102X54cm",
         "mediums": "壓克力",
         "year": "2023",
         "catergory": "general",
@@ -421,7 +421,7 @@
     {
         "id": 43,
         "name": "跨越時空的少女",
-        "size": "102X54cm",
+        "size": "80X80cm",
         "mediums": "壓克力, 矽膠, LED燈",
         "year": "2021",
         "catergory": "general",
@@ -470,12 +470,62 @@
     },
     {
         "id": 48,
-        "name": "心智的演化",
+        "name": "甦醒",
         "size": "150X150cm",
         "mediums": "壓克力",
-        "year": "2018",
+        "year": "2012",
         "catergory": "general",
         "classics": false,
         "img": "https://live.staticflickr.com/65535/54118881136_6d9db1c938_h.jpg"
+    },
+    {
+        "id": 49,
+        "name": "指月",
+        "size": "82X154cm",
+        "mediums": "油畫",
+        "year": "2011",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54163403898_ce0101b0b3_c.jpg"
+    },
+    {
+        "id": 50,
+        "name": "什麼是名牌",
+        "size": "45X154cm",
+        "mediums": "壓克力",
+        "year": "2016",
+        "catergory": "general",
+        "classics": false,
+        "img": "https://live.staticflickr.com/65535/54119343185_0cc5f53b1c_c.jpg"
+    },
+    {
+        "id": 51,
+        "name": "",
+        "size": "",
+        "mediums": "",
+        "year": "",
+        "catergory": "無相之境",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54163401958_781dbf9f84_w.jpg"
+    },
+    {
+        "id": 52,
+        "name": "",
+        "size": "",
+        "mediums": "",
+        "year": "",
+        "catergory": "無相之境",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54163439579_dc90360465_w.jpg"
+    },
+    {
+        "id": 53,
+        "name": "心非心",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "無相之境",
+        "classics": true,
+        "img": "https://live.staticflickr.com/65535/54163581915_2832544d7d_w.jpg"
     }
 ]
