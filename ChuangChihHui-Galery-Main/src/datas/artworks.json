@@ -7,7 +7,8 @@
         "year": "1993",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54118024662_7b3aaeb012_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118024662_7b3aaeb012_h.jpg",
+        "similarArt": [2, 3, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "year": "1994",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54119154933_fc62c54d16_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119154933_fc62c54d16_h.jpg",
+        "similarArt": [1, 3, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
         "year": "1995",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54118025062_945540c340_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118025062_945540c340_h.jpg",
+        "similarArt": [1, 2, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@
         "year": "2016",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54119216779_b9b00c2599_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119216779_b9b00c2599_h.jpg",
+        "similarArt": [91, 92, 93, 94, 95, 96, 97, 98, 99]
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@
         "year": "2015",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54119342710_55f7c26e47_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119342710_55f7c26e47_h.jpg",
+        "similarArt": [86, 87, 88, 89, 90]
     },
     {
         "id": 6,
@@ -57,7 +62,8 @@
         "year": "2018",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54119343000_4fd16cc8cb_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343000_4fd16cc8cb_h.jpg",
+        "similarArt": [27, 82, 83, 84, 85]
     },
     {
         "id": 7,
@@ -67,7 +73,8 @@
         "year": "2022",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54119154248_f34ba43141_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119154248_f34ba43141_h.jpg",
+        "similarArt": [40]
     },
     {
         "id": 8,
@@ -77,7 +84,8 @@
         "year": "2023",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54118025092_95644c761a_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118025092_95644c761a_h.jpg",
+        "similarArt": []
     },
     {
         "id": 9,
@@ -87,7 +95,8 @@
         "year": "2023",
         "catergory": "general",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
+        "similarArt": [112]
     },
     {
         "id": 10,
@@ -97,7 +106,8 @@
         "year": "2020",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg",
+        "similarArt": []
     },
     {
         "id": 11,
@@ -107,7 +117,8 @@
         "year": "2022",
         "catergory": "無相之境",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54163401958_781dbf9f84_w.jpg"
+        "img": "https://live.staticflickr.com/65535/54118023962_a7853f8054_n.jpg",
+        "similarArt": []
     },
     {
         "id": 12,
@@ -117,7 +128,8 @@
         "year": "2014",
         "catergory": "無相之境",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54163390858_b8844253ec_w.jpg"
+        "img": "https://live.staticflickr.com/65535/54163390858_b8844253ec_w.jpg",
+        "similarArt": [54,55,56,57,58,59]
     },
     {
         "id": 13,
@@ -127,7 +139,8 @@
         "year": "2021",
         "catergory": "無相之境",
         "classics": true,
-        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg",
+        "similarArt": []
     },
     {
         "id": 14,
@@ -137,7 +150,8 @@
         "year": "1985",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119343735_a4a2bb962a_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343735_a4a2bb962a_h.jpg",
+        "similarArt": [78, 79, 80, 81]
     },
     {
         "id": 15,
@@ -147,7 +161,8 @@
         "year": "1998",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119344835_f8a8053357_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119344835_f8a8053357_h.jpg",
+        "similarArt": [1, 2, 3, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 16,
@@ -157,7 +172,8 @@
         "year": "1993",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119156188_a5b7c2c75f_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119156188_a5b7c2c75f_h.jpg",
+        "similarArt": [1, 2, 3, 15, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 17,
@@ -167,7 +183,8 @@
         "year": "1994",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119343575_0f6bdef994_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343575_0f6bdef994_h.jpg",
+        "similarArt": [1, 2, 3, 15, 16, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 18,
@@ -177,7 +194,8 @@
         "year": "1991",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118025692_4e3f45b089_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118025692_4e3f45b089_h.jpg",
+        "similarArt": [1, 2, 3, 15, 16, 17, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 19,
@@ -187,7 +205,8 @@
         "year": "1994",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119218754_c653a9df61_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119218754_c653a9df61_h.jpg",
+        "similarArt": [1, 2, 3, 15, 16, 17, 18, 20, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 20,
@@ -197,7 +216,8 @@
         "year": "2001",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119343515_8a4f5bac17_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343515_8a4f5bac17_h.jpg",
+        "similarArt": [1, 2, 3, 15, 16, 17, 18, 19, 71, 72, 73, 74, 75, 76, 77]
     },{
         "id": 21,
         "name": "你想系列",
@@ -206,7 +226,8 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119343910_2260e4af37_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343910_2260e4af37_h.jpg",
+        "similarArt": [22, 23, 24, 67, 68, 69, 70]
     },
     {
         "id": 22,
@@ -216,7 +237,8 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118882031_975c639f4d_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118882031_975c639f4d_h.jpg",
+        "similarArt": [21, 23, 24, 67, 68, 69, 70]
     },
     {
         "id": 23,
@@ -226,7 +248,8 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119343855_2622b755d9_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343855_2622b755d9_h.jpg",
+        "similarArt": [21, 22, 24, 67, 68, 69, 70]
     },
     {
         "id": 24,
@@ -236,7 +259,8 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119343820_f27dbd1324_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343820_f27dbd1324_h.jpg",
+        "similarArt": [21, 22, 23, 67, 68, 69, 70]
     },
     {
         "id": 25,
@@ -246,7 +270,8 @@
         "year": "1996",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg",
+        "similarArt": [65, 66]
     },
     {
         "id": 26,
@@ -256,7 +281,8 @@
         "year": "1996",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg",
+        "similarArt": []
     },
     {
         "id": 27,
@@ -266,7 +292,8 @@
         "year": "2019",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119154228_2aa86864dc_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119154228_2aa86864dc_h.jpg",
+        "similarArt": [6, 82, 83, 84, 85]
     },
     {
         "id": 28,
@@ -276,7 +303,8 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118881396_5e1ca4c1c2_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118881396_5e1ca4c1c2_h.jpg",
+        "similarArt": [29, 30, 107, 108]
     },
     {
         "id": 29,
@@ -286,7 +314,8 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118881371_7acea5db82_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118881371_7acea5db82_h.jpg",
+        "similarArt": [28, 30, 107, 108]
     },
     {
         "id": 30,
@@ -296,7 +325,8 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118024602_5dbbd023da_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118024602_5dbbd023da_h.jpg",
+        "similarArt": [28, 29, 107, 108]
     },
     {
         "id": 31,
@@ -306,7 +336,8 @@
         "year": "2019",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119342755_e56072e69b_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119342755_e56072e69b_h.jpg",
+        "similarArt": [42, 43, 100, 101, 102, 103, 104, 105, 106]
     },
     {
         "id": 32,
@@ -316,7 +347,8 @@
         "year": "2012",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119155668_d04798cab2_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119155668_d04798cab2_h.jpg",
+        "similarArt": []
     },
     {
         "id": 33,
@@ -326,7 +358,8 @@
         "year": "2005",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118025192_b12ef3636a_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118025192_b12ef3636a_h.jpg",
+        "similarArt": []
     },
     {
         "id": 34,
@@ -336,7 +369,8 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118026172_5384892596_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118026172_5384892596_h.jpg",
+        "similarArt": []
     },
     {
         "id": 35,
@@ -346,7 +380,8 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119155973_070e331c9c_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119155973_070e331c9c_h.jpg",
+        "similarArt": []
     },
     {
         "id": 36,
@@ -356,7 +391,8 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118026007_7ebccedf72_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118026007_7ebccedf72_h.jpg",
+        "similarArt": []
     },
     {
         "id": 37,
@@ -366,7 +402,8 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119156003_5e2bfa2652_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119156003_5e2bfa2652_h.jpg",
+        "similarArt": []
     },
     {
         "id": 38,
@@ -376,7 +413,8 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118023997_6536ef60ef_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118023997_6536ef60ef_h.jpg",
+        "similarArt": []
     },
     {
         "id": 39,
@@ -386,7 +424,8 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119217634_1c5c2ac1a9_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119217634_1c5c2ac1a9_h.jpg",
+        "similarArt": []
     },
     {
         "id": 40,
@@ -396,7 +435,8 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118026057_2a07cd8ff4_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118026057_2a07cd8ff4_h.jpg",
+        "similarArt": [7]
     },
     {
         "id": 41,
@@ -406,7 +446,8 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118882391_4a7360b6b1_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118882391_4a7360b6b1_h.jpg",
+        "similarArt": [109, 110, 111]
     },
     {
         "id": 42,
@@ -416,7 +457,8 @@
         "year": "2021",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118882291_543be4180e_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118882291_543be4180e_h.jpg",
+        "similarArt": [31, 43, 100, 101, 102, 103, 104, 105, 106]
     },
     {
         "id": 43,
@@ -426,7 +468,8 @@
         "year": "2021",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119155453_069292ad46_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119155453_069292ad46_h.jpg",
+        "similarArt": [31, 42, 100, 101, 102, 103, 104, 105, 106]
     },
     {
         "id": 44,
@@ -436,17 +479,19 @@
         "year": "2020",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg",
+        "similarArt": []
     },
     {
         "id": 45,
-        "name": "背後的真相",
+        "name": "",
         "size": "73X62cm",
         "mediums": "壓克力",
         "year": "2023",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
+        "similarArt": []
     },
     {
         "id": 46,
@@ -456,17 +501,19 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
+        "similarArt": []
     },
     {
         "id": 47,
-        "name": "背後的真相",
+        "name": "",
         "size": "73X62cm",
         "mediums": "壓克力",
         "year": "2023",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
+        "similarArt": []
     },
     {
         "id": 48,
@@ -476,7 +523,8 @@
         "year": "2012",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54118881136_6d9db1c938_h.jpg"
+        "img": "https://live.staticflickr.com/65535/54118881136_6d9db1c938_h.jpg",
+        "similarArt": []
     },
     {
         "id": 49,
@@ -486,7 +534,8 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54163403898_ce0101b0b3_c.jpg"
+        "img": "https://live.staticflickr.com/65535/54163403898_ce0101b0b3_c.jpg",
+        "similarArt": [50, 60, 61, 62, 63]
     },
     {
         "id": 50,
@@ -496,7 +545,8 @@
         "year": "2016",
         "catergory": "general",
         "classics": false,
-        "img": "https://live.staticflickr.com/65535/54119343185_0cc5f53b1c_c.jpg"
+        "img": "https://live.staticflickr.com/65535/54119343185_0cc5f53b1c_c.jpg",
+        "similarArt": [49, 60, 61, 62, 63]
     },
     {
         "id": 51,
@@ -505,8 +555,9 @@
         "mediums": "",
         "year": "",
         "catergory": "無相之境",
-        "classics": true,
-        "img": "https://live.staticflickr.com/65535/54163401958_781dbf9f84_w.jpg"
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163401958_781dbf9f84_w.jpg",
+        "similarArt": []
     },
     {
         "id": 52,
@@ -515,8 +566,9 @@
         "mediums": "",
         "year": "",
         "catergory": "無相之境",
-        "classics": true,
-        "img": "https://live.staticflickr.com/65535/54163439579_dc90360465_w.jpg"
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163439579_dc90360465_w.jpg",
+        "similarArt": []
     },
     {
         "id": 53,
@@ -525,7 +577,657 @@
         "mediums": "壓克力",
         "year": "2022",
         "catergory": "無相之境",
-        "classics": true,
-        "img": "https://live.staticflickr.com/65535/54163581915_2832544d7d_w.jpg"
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163581915_2832544d7d_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 54,
+        "name": "找回一點真心",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163248549_65471e97fb_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 55,
+        "name": "隨心",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163207668_8c11619f44_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 56,
+        "name": "共乘佛道",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163189093_71a8beb54d_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 57,
+        "name": "覺",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54119219099_61ed78de90_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 58,
+        "name": "頭頂上的星星",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163246774_6571f3de6f_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 59,
+        "name": "我是誰",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162934221_c48baa9abc_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 60,
+        "name": "圓滿歡喜",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163249144_ccfc84c649_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 61,
+        "name": "簡單是一種幸福 三聯作",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162937081_33daf66d12_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 62,
+        "name": "簡單是一種幸福 三聯作",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163556489_03253f76fe_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 63,
+        "name": "簡單是一種幸福 三聯作｀｀",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162937131_fddb4fe86a_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 64,
+        "name": "心非心",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "",
+        "similarArt": []
+    },
+    {
+        "id": 65,
+        "name": "大地之歌",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162045887_a30febbd1c_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 66,
+        "name": "紅心",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163393965_e16d96d28e_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 67,
+        "name": "拼湊的愛",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162907731_61c7eb0534_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 68,
+        "name": "無法自拔",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163183583_202552477f_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 69,
+        "name": "三合一體",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163183503_79a4324433_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 70,
+        "name": "離別",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162033482_01b12415a0_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 71,
+        "name": "同根生",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163209173_0b129dd226_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 71,
+        "name": "時空記憶",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "",
+        "similarArt": []
+    },
+    {
+        "id": 73,
+        "name": "生命的循環",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163376750_f310926f33_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 74,
+        "name": "遺棄",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163215163_b2f2741eea_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 75,
+        "name": "起心動念",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163212808_68bc7d50c2_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 76,
+        "name": "那一夜",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163390350_d6e869bc81_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 77,
+        "name": "飛越地平線",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163183593_e70abf41e6.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 78,
+        "name": "內戰",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162033447_56d1338a9c_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 79,
+        "name": "理想與現實",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162908656_fd9595d37a_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 80,
+        "name": "慾望的迷失",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163222854_d3ebbeb3e1.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 81,
+        "name": "失去平衡",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163222469_5e831b1773_z.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 82,
+        "name": "追夢-花非花",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163195398_57da87afae_z.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 83,
+        "name": "輪迴",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162920576_18470fcab3_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 84,
+        "name": "流動的記憶",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162063677_65722fafc4_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 85,
+        "name": "心靈於邊界",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162065367_71c61c7f1c_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 86,
+        "name": "美國國慶狂想曲",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162062672_7e1ac14417_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 87,
+        "name": "想像可以很大",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162936456_3b3b03eae6.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 88,
+        "name": "飛越道德的階梯",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162940731_3247223794_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 89,
+        "name": "秘密花園",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163235759_893689fd4f_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 90,
+        "name": "區塊鏈 - 平行宇宙",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163182318_db591b5b84_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 91,
+        "name": "被愚弄的盲從",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162907751_b7d77d1efc_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 92,
+        "name": "浪頭上",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163225144_dea715c2f8_w.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 93,
+        "name": "相非相",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163387620_b665a0881b_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 94,
+        "name": "相非相",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163387460_d7e0636519_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 95,
+        "name": "相非相",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162932311_f8e05a1d01_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 96,
+        "name": "相非相",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163208098_f4d45ed590_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 97,
+        "name": "消極等待貪婪",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163249709_52eeca1f21_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 98,
+        "name": "弦樂篇",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162059837_b05e050467_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 99,
+        "name": "弦樂篇",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162934836_db31e00f4d_n.jpg",
+        "similarArt": []
+    },
+    {
+        "id": 100,
+        "name": "跨越時空的少女",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163250739_ba06d0c537_n.jpg",
+        "similarArt": [31, 42, 43, 101, 102, 103, 104, 105, 106]
+    },
+    {
+        "id": 101,
+        "name": "天際效應",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163250954_42afce3817_n.jpg",
+        "similarArt": [31, 42, 43, 100, 102, 103, 104, 105, 106]
+    },
+    {
+        "id": 102,
+        "name": "漫遊天際",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162061132_0f31e471dc.jpg",
+        "similarArt": [31, 42, 43, 100, 101, 103, 104, 105, 106]
+    },
+    {
+        "id": 103,
+        "name": "追夢-花非花",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163251039_11c8e1716f_b.jpg",
+        "similarArt": [31, 42, 43, 100, 101, 102, 104, 105, 106]
+    },
+    {
+        "id": 104,
+        "name": "種子系列",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163391520_2a2849d20d_n.jpg",
+        "similarArt": [31, 42, 43, 100, 101, 102, 103, 105, 106]
+    },
+    {
+        "id": 105,
+        "name": "種子系列",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162935421_1cac4e42e9_n.jpg",
+        "similarArt": [31, 42, 43, 100, 101, 102, 103, 104, 106]
+    },
+    {
+        "id": 106,
+        "name": "種子系列",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163210068_47307fc45c_n.jpg",
+        "similarArt": [31, 42, 43, 100, 101, 102, 103, 104, 105]
+    },
+    {
+        "id": 107,
+        "name": "時代的過客",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163255454_e2c70b1810_w.jpg",
+        "similarArt": [28, 29, 30, 108]
+    },
+    {
+        "id": 108,
+        "name": "來自星星的你",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163208183_d129f8fb09_n.jpg",
+        "similarArt": [28, 29, 30, 107]
+    },
+    {
+        "id": 109,
+        "name": "花開時節",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163394300_5ed5985b72_n.jpg",
+        "similarArt": [41, 110, 111]
+    },
+    {
+        "id": 110,
+        "name": "靜靜的在星空中",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163214858_00d5472561_w.jpg",
+        "similarArt": [41, 109, 111]
+    },
+    {
+        "id": 111,
+        "name": "塵影",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54163394700_9d5dccede1_n.jpg",
+        "similarArt": [41, 109, 110]
+    },
+    {
+        "id": 112,
+        "name": "我們創造了我們",
+        "size": "182X72cm",
+        "mediums": "壓克力",
+        "year": "2022",
+        "catergory": "",
+        "classics": "",
+        "img": "https://live.staticflickr.com/65535/54162065362_ed593f3606_w.jpg",
+        "similarArt": [9]
     }
 ]

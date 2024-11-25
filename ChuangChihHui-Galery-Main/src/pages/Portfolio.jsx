@@ -51,8 +51,8 @@ const Portfolio = ({ artworks = [] }) => {
                       </Link>
                     </div>
                     <div className=''>
-                      <h3>{artwork.name}</h3>
-                      <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.size} {artwork.mediums} {artwork.year}</h5>
                     </div>
                   </div>
                 )
@@ -66,8 +66,8 @@ const Portfolio = ({ artworks = [] }) => {
                       </Link>
                     </div>
                     <div className=''>
-                      <h3>{artwork.name}</h3>
-                      <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.size} {artwork.mediums} {artwork.year}</h5>
                     </div>
                   </div>
                 )
@@ -94,8 +94,8 @@ const Portfolio = ({ artworks = [] }) => {
                       </Link>
                     </div>
                     <div className=''>
-                      <h3>{artwork.name}</h3>
-                      <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.size}{artwork.mediums}{artwork.year}</h5>
                     </div>
                   </div>
                 )
@@ -109,8 +109,8 @@ const Portfolio = ({ artworks = [] }) => {
                       </Link>
                     </div>
                     <div className=''>
-                      <h3>{artwork.name}</h3>
-                      <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.size}{artwork.mediums}{artwork.year}</h5>
                     </div>
                   </div>
                 )
@@ -137,8 +137,8 @@ const Portfolio = ({ artworks = [] }) => {
                       </Link>
                     </div>
                     <div className=''>
-                      <h3>{artwork.name}</h3>
-                      <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.size}{artwork.mediums}{artwork.year}</h5>
                     </div>
                   </div>
                 )
@@ -152,8 +152,8 @@ const Portfolio = ({ artworks = [] }) => {
                       </Link>
                     </div>
                     <div className=''>
-                      <h3>{artwork.name}</h3>
-                      <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                      <h5 style={{marginBottom:'14.56px'}}>{artwork.size}{artwork.mediums}{artwork.year}</h5>
                     </div>
                   </div>
                 )
@@ -178,8 +178,8 @@ const Portfolio = ({ artworks = [] }) => {
                         </Link>
                       </div>
                       <div className=''>
-                        <h3>{artwork.name}</h3>
-                        <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                        <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                        <h5 style={{marginBottom:'14.56px'}}>{artwork.size}{artwork.mediums}{artwork.year}</h5>
                       </div>
                     </div>
                   )
@@ -193,8 +193,8 @@ const Portfolio = ({ artworks = [] }) => {
                         </Link>
                       </div>
                       <div className=''>
-                        <h3>{artwork.name}</h3>
-                        <h3>{artwork.size}{artwork.mediums}{artwork.year}</h3>
+                        <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
+                        <h5 style={{marginBottom:'14.56px'}}>{artwork.size}{artwork.mediums}{artwork.year}</h5>
                       </div>
                     </div>
                   )
@@ -222,7 +222,7 @@ const Portfolio = ({ artworks = [] }) => {
       {/* 1986-2001 */}
       <div style={{marginBottom:'200px'}}>
         <Link to={`periods/${periods[0]}`} onClick={() => handlePeriod(periods[0])}>
-          <h3 className='mg-b-30 fw-b clr-black'>{periods[0]}</h3>
+          <h5 style={{marginBottom:'14.56px'}} className='mg-b-30 fw-b clr-black'>{periods[0]}</h5>
         </Link>
         {artworksRender(1986, 2001, false)}
       </div>
@@ -230,7 +230,7 @@ const Portfolio = ({ artworks = [] }) => {
       {/* 2002-2019 */}
       <div style={{marginBottom:'200px'}}>
         <Link to={`periods/${periods[1]}`} onClick={() => handlePeriod(periods[1])}>
-          <h3 className='mg-b-30 fw-b clr-black'>{periods[1]}</h3>
+          <h5 style={{marginBottom:'14.56px'}} className='mg-b-30 fw-b clr-black'>{periods[1]}</h5>
         </Link>
         {artworksRender(2002, 2019, false)}
       </div>
@@ -238,7 +238,7 @@ const Portfolio = ({ artworks = [] }) => {
       {/* 2020-2024 */}
       <div style={{marginBottom:'200px'}}>
         <Link to={`periods/${periods[2]}`} onClick={() => handlePeriod(periods[2])}>
-          <h3 className='mg-b-30 fw-b clr-black'>{periods[2]}</h3>
+          <h5 style={{marginBottom:'14.56px'}} className='mg-b-30 fw-b clr-black'>{periods[2]}</h5>
         </Link>
         {artworksRender(2020, 2024, false)}
       </div>
@@ -246,7 +246,7 @@ const Portfolio = ({ artworks = [] }) => {
       {/* 無相之境 */}
       <div style={{marginBottom:'200px'}}>
         <Link to={`periods/${periods[3]}`} onClick={() => handlePeriod(periods[3])}>
-          <h3 className='mg-b-30 fw-b clr-black'>{periods[3]}</h3>
+          <h5 style={{marginBottom:'14.56px'}} className='mg-b-30 fw-b clr-black'>{periods[3]}</h5>
         </Link>
         {artworksRender(0, 0, true)}
       </div>

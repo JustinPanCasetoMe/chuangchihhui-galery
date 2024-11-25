@@ -4,17 +4,20 @@ import { Link, useParams } from 'react-router-dom';
 const Artworks = ({ artworks = [] }, mainArtwork ) => {
 
     const ScreenWidth = window.innerWidth
+    let ArtworkId = 0
 
     const { ArtworkName } = useParams();
 
     const main_artworksRender = artworks.map((artwork, index)=> {
         if(artwork.name === ArtworkName){
+            console.log(ArtworkName, index)
+            ArtworkId = index 
             return(
 
                 <div key={index}>
                     <div className={`
-                            df jc-sb fw mg-b-lg
-                            ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'
+                        df jc-sb fw mg-b-lg
+                        ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'
                     }`}>
                         <div style={{width:'600px', height:'500px'}} className='df jc-c'>
                             <div className='df jc-c' style={{height:'500px'}}>
@@ -142,20 +145,41 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
         }
     })
 
-    const simillar_artworksRender = artworks.map((artwork, index) => {
-        if(artwork.id == 1 || artwork.id == 2 || artwork.id == 3 || artwork.id == 4){
-            return(
-                <div key={index} className='mg-b-30' style={{height:'160px'}}>
+    // const simillar_artworksRender = artworks.map((artwork, index) => {
+    //     if(artwork.id == 1 || artwork.id == 2 || artwork.id == 3 || artwork.id == 4){
+    //         return(
+    //             <div key={index} className='mg-b-30' style={{height:'160px'}}>
 
-                    {/* Creating a link to the artwork detail page*/}
-                    <Link to={`/portfolio/artworks/${artwork.name}`}>
-                        <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
-                    </Link>
+    //                 {/* Creating a link to the artwork detail page*/}
+    //                 <Link to={`/portfolio/artworks/${artwork.name}`}>
+    //                     <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
+    //                 </Link>
 
-                </div> 
-            )
-        }
-    })
+    //             </div> 
+    //         )
+    //     }
+    // })
+
+
+    const simillar_artworksRender = (artworkId) => {
+        return artworks.map((artwork, index) => {
+            if(artwork.id - 1 === artworkId){
+                return artwork.similarArt.map((similarId, index) => {
+                    // console.log("similarId = ", similarId)
+                    // console.log("artwork.[",similarId,"].img = ", artworks[similarId].img)
+                    return(
+                        <div key={index} className='mg-b-30' style={{height:'160px'}}>
+    
+                            {/* Creating a link to the artwork detail page*/}
+                            <Link to={`/portfolio/artworks/${artworks[similarId-1].name}`}>
+                                <img src={`${artworks[similarId-1].img}`} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
+                            </Link>
+                        </div> 
+                    )
+                })
+            }
+        })
+    }
 
     return (
         <div key={{}}>
@@ -163,7 +187,7 @@ const Artworks = ({ artworks = [] }, mainArtwork ) => {
             <div>
                 <h2 className='mg-b-30'>相似作品</h2>
                 <div className='df fl-wp'>
-                    {simillar_artworksRender}
+                    {simillar_artworksRender(ArtworkId)}
                 </div>
             </div>
         </div>
