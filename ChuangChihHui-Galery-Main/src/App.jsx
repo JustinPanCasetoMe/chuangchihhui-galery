@@ -1,8 +1,9 @@
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
 import { Route, Routes, useParams } from 'react-router'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods } from './pages'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import exhibition from './datas/exhibition.json'
 import competition from './datas/competition.json'
 import archive from './datas/archive.json'
@@ -20,15 +21,23 @@ import Period_2002_2019 from './pages/Periods/Period_2002_2019'
 import Period_2020_2024 from './pages/Periods/Period_2020_2024'
 import CriticsContent from './pages/CriticsContent'
 import UnXiangArea from './pages/Periods/UnXiangArea'
+import './i18n'
+import { useTransition } from 'react'
 
 function App() {
 
   const { CriticsItem } = useParams()
   console.log(CriticsItem)
 
+  const { t, i18n } = useTransition()
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
+
   return (
     <div className=''>
 
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/:MenuItem/'/>
