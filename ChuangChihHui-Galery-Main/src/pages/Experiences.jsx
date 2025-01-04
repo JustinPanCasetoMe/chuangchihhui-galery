@@ -48,7 +48,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('exhibition')}>
-          <h4 style={{fontWeight:'900'}}>展歷</h4>
+          <h4 style={{fontWeight:'900', letterSpacing:'1.5px'}}>{t('展歷')}</h4>
         </li>
         <li
           className={`
@@ -57,7 +57,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('competition')}>
-          <h4 style={{fontWeight:'900'}}>參賽記事</h4>
+          <h4 style={{fontWeight:'900', letterSpacing:'1.5px'}}>{t('參賽記事')}</h4>
         </li>
         <li 
           className={`
@@ -66,11 +66,11 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
             pointer trans-4
           `}
           onClick={() => handleSectionToggle('archive')}>
-          <h4 style={{fontWeight:'900'}}>典藏</h4>
+          <h4 style={{fontWeight:'900', letterSpacing:'1.5px'}}>{t('典藏')}</h4>
         </li>
       </ul>
 
-      <h4 className='mg-subtitle'>莊志輝 1965 出生於台灣澎湖</h4>
+      <h4 className='mg-subtitle'>{t('莊志輝 1965 出生於台灣澎湖')}</h4>
 
       {/* Exhiition Record */}
       {visibleSection === 'exhibition' && (
