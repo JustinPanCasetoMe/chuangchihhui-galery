@@ -1,10 +1,16 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
+import '../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Header = () => {
 
   const ScreenWidth = window.innerWidth
+  const { t, i18n } = useTranslation()
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
 
   const [menuHover, setMenuHover] = useState(false);
   const [subMenuHover, setSubMenuHover] = useState(false);
@@ -130,7 +136,11 @@ const Header = () => {
               </ul>
             </li>
             <li className='pd-w-10'>
-              <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
+              {/* <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link> */}
+              <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>{t('資歷')}</Link>
+            </li>
+            <li className='pd-w-10'>
+              <Link to='/transactionInput' className='pd-10' onClick={() => handleMenubarClose('Critics')}>ECpay</Link>
             </li>
             <li className='pd-w-10'>
               <Link to='/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>藝評</Link>
@@ -142,7 +152,16 @@ const Header = () => {
               <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>
             <li className='pd-w-10'>
-              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>語言</Link>
+              <select
+                name=""
+                id=""
+                style={{padding:'2px 4px'}}
+                onClick={(e) => changeLanguage(e.target.value)}
+              >
+                <option value="ch">Ch</option>
+                <option value="en">En</option>
+              </select>
+              {/* <Link to='' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>En</Link> */}
             </li>
           </ul>
         </nav>

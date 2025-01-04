@@ -1,5 +1,8 @@
 import './App.css'
+import { useState } from 'react'
 import { Route, Routes, useParams } from 'react-router'
+import { useTranslation } from 'react-i18next'
+import './i18n'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods } from './pages'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -21,18 +24,43 @@ import Period_2002_2019 from './pages/Periods/Period_2002_2019'
 import Period_2020_2024 from './pages/Periods/Period_2020_2024'
 import CriticsContent from './pages/CriticsContent'
 import UnXiangArea from './pages/Periods/UnXiangArea'
-import './i18n'
-import { useTransition } from 'react'
+import Input from './pages/Input'
 
 function App() {
 
   const { CriticsItem } = useParams()
   console.log(CriticsItem)
 
-  const { t, i18n } = useTransition()
+  const { t, i18n } = useTranslation() 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
   }
+
+  // Transaction
+  function getCurrentTime() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+    const milliseconds = String(now.getMilliseconds()).padStart(3, "0");
+    const time = `${year}/${month}/${day} ${hours}:${minutes}:${seconds}`;
+    const string = `${year}${month}${day}${hours}${minutes}${seconds}${milliseconds}`;
+    return {time, string};
+  }
+
+  const [MerchantID, setMerchantID] = useState("3002607");
+  const [Token, setToken] = useState("");
+  const [Language, setLanguage] = useState(ECPay.Language.zhTW); //ECPay.Language.enUS
+  const [ServerType, setServerType] = useState("Stage");
+  const [IsLoading, setIsLoading] = useState(1);
+  const [Version, setVersion] = useState("V2");
+  const [PaymentInfo, setPaymentInfo] = useState("");
+  const [MerchantTradeNo, setMerchantTradeNo] = useState("");
+  const backendurl = "https://ecpay-embedded-checkout-backend.vercel.app";
+  //const backendurl = "http://localhost:3000";
 
   return (
     <div className=''>
@@ -86,6 +114,23 @@ function App() {
         <Route path='/portfolio/periods/2002-2019' element={<Period_2002_2019 artworks={artworks} />} />
         <Route path='/portfolio/periods/2020-2024' element={<Period_2020_2024 artworks={artworks} />} />
         <Route path='/portfolio/unxiangarea' element={<UnXiangArea artworks={artworks} />} />
+
+        {/* Transaction */}
+        <Route
+            path="/transactionInput"
+            element={
+              <Input
+                Language={Language}
+                setLanguage={setLanguage}
+                backendurl={backendurl}
+                setToken={setToken}
+                MerchantID={MerchantID}
+                setMerchantID={setMerchantID}
+                getCurrentTime={getCurrentTime}
+                setMerchantTradeNo={setMerchantTradeNo}
+              />
+            }
+          />
       </Routes>
 
 
