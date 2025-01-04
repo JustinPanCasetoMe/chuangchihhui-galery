@@ -12,12 +12,21 @@ const Header = () => {
     i18n.changeLanguage(lng)
   }
 
+  const [selectedValue, setSelectedValue] = useState('ch'); // Initialize with default value
+  const getSelectedValue = () => {
+    return selectedValue; // Return the selected value from state
+  };
+
   const [menuHover, setMenuHover] = useState(false);
   const [subMenuHover, setSubMenuHover] = useState(false);
   const [subMenuCubeHover, setSubMenuCubeHover] = useState(false);
   const [subOpen, setSubOpen] = useState(false)
   const [menuBarStatus, setMenuBarStatus] = useState(false)
   const [menuItem, setMenuItem] = useState('Artworks')
+
+  const languageSelect = (e) => {
+    console.log(e.target.value)
+  }
 
   const menubarToggle = () => {
     setMenuBarStatus(!menuBarStatus)
@@ -65,7 +74,7 @@ const Header = () => {
               onMouseLeave={() => setMenuHover(false)}
               >
               <Link to='/portfolio' className='pd-10 df aln-itm-c'>
-                作品<FaAngleDown size={16} className='pd-l-10'/>
+              {t('作品')}<FaAngleDown size={16} className='pd-l-10'/>
               </Link>
 
               <ul className={`fd-c artW-sub ${menuHover===true ? 'df' : 'dn'}`}>
@@ -77,7 +86,7 @@ const Header = () => {
                   onMouseLeave={() => setSubMenuHover(false)}
                   >
                   <Link className='pd-10 df jc-sb aln-itm-c'>
-                    歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
+                    {t('歷代平面經典總覽')}<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
@@ -113,7 +122,7 @@ const Header = () => {
 
                   {/* 歷代立體經典總覽 */}
                   <Link to='/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c'>
-                    歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
+                    {t('歷代立體經典總覽')}<FaAngleRight size={16} className='pd-l-10'/>
                   </Link>
                   {/* <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
@@ -139,27 +148,27 @@ const Header = () => {
               {/* <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link> */}
               <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>{t('資歷')}</Link>
             </li>
+            {/* <li className='pd-w-10'>
+              <Link to='/transaction/input' className='pd-10' onClick={() => handleMenubarClose('Critics')}>ECpay</Link>
+            </li> */}
             <li className='pd-w-10'>
-              <Link to='/transactionInput' className='pd-10' onClick={() => handleMenubarClose('Critics')}>ECpay</Link>
-            </li>
-            <li className='pd-w-10'>
-              <Link to='/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>藝評</Link>
+              <Link to='/critics' className='pd-10' onClick={() => handleMenubarClose('Critics')}>{t('藝評')}</Link>
             </li>
             {/* <li className='pd-w-10'>
               <Link to='/collections' className='pd-10' onClick={() => handleMenubarClose('Collections')}>收藏</Link>
             </li> */}
             <li className='pd-w-10'>
-              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('聯絡')}</Link>
             </li>
             <li className='pd-w-10'>
               <select
-                name=""
-                id=""
+                // name=""
+                // id=""
                 style={{padding:'2px 4px'}}
-                onClick={(e) => changeLanguage(e.target.value)}
+                onChange={(e) => {changeLanguage(e.target.value); setSelectedValue(e.target.value); getSelectedValue()}}
               >
-                <option value="ch">Ch</option>
-                <option value="en">En</option>
+                <option value="ch">Chinese</option>
+                <option value="en">English</option>
               </select>
               {/* <Link to='' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>En</Link> */}
             </li>

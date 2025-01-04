@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
+import '../i18n'
+import { useTranslation } from 'react-i18next'
 
 const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
+
+  const { t, i18n } = useTranslation()
 
   const [visibleSection, setVisibleSection] = useState('exhibition');
 
   const exhibitionRender = exhibition.map((item, index) => {
     return(
       <div key={index} className='df mg-list' style={{color:'var(--content-grey)'}}>
-        <h4 className='fw-b' style={{width:'80px'}}>{item.year}</h4>
-        <h4>{item.exhibition}</h4>
+        <h4 className='fw-b' style={{width:'80px'}}>{t(item.year)}</h4>
+        <h4>{t(item.exhibition)}</h4>
       </div>
     )
   })

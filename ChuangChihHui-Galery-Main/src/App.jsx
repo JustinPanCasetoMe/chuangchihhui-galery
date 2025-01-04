@@ -25,6 +25,10 @@ import Period_2020_2024 from './pages/Periods/Period_2020_2024'
 import CriticsContent from './pages/CriticsContent'
 import UnXiangArea from './pages/Periods/UnXiangArea'
 import Input from './pages/Input'
+import OrderResultURL from './pages/OrderResultURL'
+import Payment from './pages/Payment'
+// import { usePayment } from './hooks/usePayment'
+import PaymentInfoPage from './pages/PaymentInfoPage'
 
 function App() {
 
@@ -60,7 +64,7 @@ function App() {
   const [PaymentInfo, setPaymentInfo] = useState("");
   const [MerchantTradeNo, setMerchantTradeNo] = useState("");
   const backendurl = "https://ecpay-embedded-checkout-backend.vercel.app";
-  //const backendurl = "http://localhost:3000";
+  // const backendurl = "http://localhost:3000";
 
   return (
     <div className=''>
@@ -117,22 +121,55 @@ function App() {
 
         {/* Transaction */}
         <Route
-            path="/transactionInput"
-            element={
-              <Input
-                Language={Language}
-                setLanguage={setLanguage}
-                backendurl={backendurl}
-                setToken={setToken}
-                MerchantID={MerchantID}
-                setMerchantID={setMerchantID}
-                getCurrentTime={getCurrentTime}
-                setMerchantTradeNo={setMerchantTradeNo}
-              />
-            }
-          />
-      </Routes>
+          path="/transaction/input"
+          element={
+            <Input
+              Language={Language}
+              setLanguage={setLanguage}
+              backendurl={backendurl}
+              setToken={setToken}
+              MerchantID={MerchantID}
+              setMerchantID={setMerchantID}
+              getCurrentTime={getCurrentTime}
+              setMerchantTradeNo={setMerchantTradeNo}
+            />
+          }
+        />
+      
+        <Route
+          path="/transaction/payment"
+          element={
+            <Payment
+              backendurl={backendurl}
+              MerchantID={MerchantID}
+              setMerchantTradeNo={setMerchantTradeNo}
+              MerchantTradeNo={MerchantTradeNo}
+              setPaymentInfo={setPaymentInfo}
+              Token={Token}
+              Language={Language}
+              ServerType={ServerType}
+              IsLoading={IsLoading}
+              Version={Version}
+            />
+          }
+        />
 
+        <Route
+          path="/OrderResultURL"
+          element={
+            <OrderResultURL
+              backendurl={backendurl}
+              Language={Language}
+            />
+          }
+        />
+
+        <Route
+            path="/PaymentInfoPage"
+            element={<PaymentInfoPage PaymentInfo={PaymentInfo} />}
+        />
+        
+      </Routes>
 
       <Header />
       <Footer />

@@ -135,7 +135,7 @@ export default function Input({
       );
 
       setToken(response.data);
-      navigate("/payment");
+      navigate("/transaction/payment");
     } catch (error) {
       console.error(error);
     }
