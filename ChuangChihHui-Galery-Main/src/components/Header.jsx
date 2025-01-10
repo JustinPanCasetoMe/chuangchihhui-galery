@@ -444,7 +444,7 @@ const Header = () => {
               onMouseEnter={() => setSubMenuHover(true)}
               onMouseLeave={() => setSubMenuHover(false)}
               >
-              <Link to='/portfolio/graphics' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
+              <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
                 歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
               </Link>
             </li>
@@ -474,7 +474,7 @@ const Header = () => {
               onMouseEnter={() => setSubMenuCubeHover(true)}
               onMouseLeave={() => setSubMenuCubeHover(false)}
               >
-              <Link to='/portfolio/threeD' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
+              <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
                 歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
               </Link>
             </li>
