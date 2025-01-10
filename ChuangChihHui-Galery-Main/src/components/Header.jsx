@@ -406,7 +406,7 @@ const Header = () => {
 
         {/* Logo Container */}
         <Link to='/' onClick={handleMenubarClose}>
-          <div className="Logo df jc-sb aln-itm-c">
+          <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20' style={{height:'40%'}}/>
             <div>
               <h3 style={{fontSize:'16px'}}>莊志輝</h3>

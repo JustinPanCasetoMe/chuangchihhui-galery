@@ -16,89 +16,99 @@ const Critics = () => {
 
   const criticsRender = critics_item.map((critic, index) => {
     return(
-      <div key={index} style={{width:'31%'}}>
-        
+      <>
         <div
           className={`mg-b-50 ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  `}
-          style={{width:'100%', position:'relative'}}>
-          <Link to={`/critics/${critic.id}`}>
-            <div>
-              <div className='fw' style={{position:'relative'}}>
-                <img src={critic.bg} alt="" className='' style={{width:'100%'}}/>
-                <div className="msk"> </div>
+          style={{width:'31%', position:'relative'}}
+        >
+          <div key={index} style={{width:'100%'}}>
+            <Link to={`/critics/${critic.id}`}>
+              <div>
+                <div className='fw' style={{position:'relative'}}>
+                  <img src={critic.bg} alt="" className='' style={{width:'100%'}}/>
+                  <div className="msk"> </div>
+                </div>
+                <div
+                  className='fw df jc-sb pd-10'
+                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
+                >
+                  <h5>{critic.title}</h5>
+                  <h5>{critic.author}</h5>
+                </div>
               </div>
-              <div
-                className='fw df jc-sb pd-10'
-                style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-              >
-                <h5>{critic.title}</h5>
-                <h5>{critic.author}</h5>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
 
         <div
           className={`mg-b-50 ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'}  `}
-          style={{width:'30%', position:'relative'}}>
-          <Link to={`/critics/${critic.id}`}>
-            <div>
-              <div className='fw' style={{position:'relative'}}>
-                <img src={critic.bg} alt="" className='fw'/>
-                <div className="msk"> </div>
+          style={{width:'31%', position:'relative'}}
+        >
+          <div key={index} style={{width:'100%'}}>
+            <Link to={`/critics/${critic.id}`}>
+              <div>
+                <div className='fw' style={{position:'relative'}}>
+                  <img src={critic.bg} alt="" className='fw'/>
+                  <div className="msk"> </div>
+                </div>
+                <div
+                  className='fw df jc-sb pd-10'
+                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
+                >
+                  <h5>{critic.title}</h5>
+                  <h5>{critic.author}</h5>
+                </div>
               </div>
-              <div
-                className='fw df jc-sb pd-10'
-                style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-              >
-                <h5>{critic.title}</h5>
-                <h5>{critic.author}</h5>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
 
         <div
           className={`mg-b-50 ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  `}
-          style={{width:'30%', position:'relative'}}>
-          <Link to={`/critics/${critic.id}`}>
-            <div>
-              <div className='fw' style={{position:'relative'}}>
-                <img src={critic.bg} alt="" className='fw'/>
-                <div className="msk"> </div>
+          style={{width:'45%', position:'relative'}}>
+          <div key={index} style={{width:'100%'}}>
+            <Link to={`/critics/${critic.id}`}>
+              <div>
+                <div className='fw' style={{position:'relative'}}>
+                  <img src={critic.bg} alt="" className='fw'/>
+                  <div className="msk"> </div>
+                </div>
+                <div
+                  className='fw df jc-sb pd-10'
+                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
+                >
+                  <h5>{critic.title}</h5>
+                  <h5>{critic.author}</h5>
+                </div>
               </div>
-              <div
-                className='fw df jc-sb pd-10'
-                style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-              >
-                <h5>{critic.title}</h5>
-                <h5>{critic.author}</h5>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
 
         <div
           className={`mg-b-50 ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  `}
-          style={{width:'100%', position:'relative'}}>
-          <Link to={`/critics/${critic.id}`}>
-            <div>
-              <div className='fw' style={{position:'relative'}}>
-                <img src={critic.bg} alt="" className='fw'/>
-                <div className="msk"> </div>
+          style={{width:'100%', position:'relative'}}
+        >
+          <div key={index} style={{width:'100%'}}>
+            <Link to={`/critics/${critic.id}`}>
+              <div>
+                <div className='fw' style={{position:'relative'}}>
+                  <img src={critic.bg} alt="" className='fw'/>
+                  <div className="msk"> </div>
+                </div>
+                <div
+                  className='fw df jc-sb pd-10'
+                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
+                >
+                  <h5>{critic.title}</h5>
+                  <h5>{critic.author}</h5>
+                </div>
               </div>
-              <div
-                className='fw df jc-sb pd-10'
-                style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-              >
-                <h5>{critic.title}</h5>
-                <h5>{critic.author}</h5>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
+      </>
       
-      </div>
     )
   })
 
@@ -127,12 +137,14 @@ const Critics = () => {
       </ul>
 
       {visibleSection === 'critics' && (
-          <div className={`
-            df jc-sb fl-wp
-            ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : ''}
-          `}>
-            {criticsRender}
-          </div>
+        <div className={`
+          ${(1024<=ScreenWidth && ScreenWidth < 1960) ? 'df jc-sb fl-wp' : ''}
+          ${(768<=ScreenWidth && ScreenWidth < 1024) ? 'df jc-sb fl-wp' : ''}
+          ${(425<=ScreenWidth && ScreenWidth < 768) ? 'df jc-sb fl-wp' : ''}
+          ${(375<=ScreenWidth && ScreenWidth < 425) ? 'df fd-c' : ''}
+        `}>
+          {criticsRender}
+        </div>
       )}
 
       {visibleSection === 'report' && (
