@@ -57,7 +57,7 @@ const Header = () => {
         <Link to='/' onClick={handleMenubarClose}>
           <div className="Logo df aln-itm-c">
             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
-            <div>
+            <div style={{width:'300px'}}>
               <h3 style={{fontSize:'18px'}}>莊志輝</h3>
               <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
             </div>
@@ -186,10 +186,10 @@ const Header = () => {
         {/* Logo Container */}
         <Link to='/'>
           <div className="Logo df aln-itm-c">
-            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
-            <div>
-              <h3>莊志輝</h3>
-              <h3>CHUANG CHIH HUI</h3>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20' style={{height:'40%'}}/>
+            <div style={{width:'200px'}}>
+              <h3 style={{fontSize:'16px'}}>莊志輝</h3>
+              <h3 style={{fontSize:'16px'}}>CHUANG CHIH HUI</h3>
             </div>
           </div>
         </Link>
@@ -293,10 +293,10 @@ const Header = () => {
         {/* Logo Container */}
         <Link to='/'>
           <div className="Logo df aln-itm-c">
-            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20' style={{height:'40%'}}/>
             <div>
-              <h3>莊志輝</h3>
-              <h3>CHUANG CHIH HUI</h3>
+              <h3 style={{fontSize:'16px'}}>莊志輝</h3>
+              <h3 style={{fontSize:'16px'}}>CHUANG CHIH HUI</h3>
             </div>
           </div>
         </Link>
@@ -407,10 +407,10 @@ const Header = () => {
         {/* Logo Container */}
         <Link to='/' onClick={handleMenubarClose}>
           <div className="Logo df jc-sb aln-itm-c">
-            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20'/>
+            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20' style={{height:'40%'}}/>
             <div>
-              <h3>莊志輝</h3>
-              <h3>CHUANG CHIH HUI</h3>
+              <h3 style={{fontSize:'16px'}}>莊志輝</h3>
+              <h3 style={{fontSize:'16px'}}>CHUANG CHIH HUI</h3>
             </div>
           </div>
         </Link>
