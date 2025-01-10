@@ -502,9 +502,9 @@ const Header = () => {
             <li className='bd-t fw'>
               <Link to='/critics' className={`pd-20 db`} onClick={() => handleMenubarClose('Critics')}>藝評</Link>
             </li>
-            <li className='bd-t fw'>
+            {/* <li className='bd-t fw'>
               <Link to='/collections' className={`pd-20 db`} onClick={() => handleMenubarClose('Collections')}>收藏</Link>
-            </li>
+            </li> */}
             <li className='bd-t fw'>
               <Link to='/contacts' className={`pd-20 db`} onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
             </li>
