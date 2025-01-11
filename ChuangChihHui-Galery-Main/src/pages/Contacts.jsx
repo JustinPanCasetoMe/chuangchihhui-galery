@@ -20,7 +20,7 @@ const Contacts = () => {
         <h3 className='mg-b-20'>{t('工作室地址：新竹市東區學府路１９號')}</h3>
         <h3 className='mg-b-20'>{t('EMAIL：yamifilm@gmail.com')}</h3>
       </div>
-      
+
       <>
         <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}`}>
           <ul className='df'>
@@ -51,10 +51,10 @@ const Contacts = () => {
 
         <div className={`${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}`}>
           <ul className='txt-aln-c'>
-            <a href='https://maps.app.goo.gl/A4tttWxRBfXKYTRf8' style={{width:'100%'}} className='outerLink mg-r-30 db' target='_blank'><li>地址</li></a>
-            <a href='https://www.instagram.com/sawago88/' style={{width:'100%'}} className='outerLink mg-r-30 db' target='_blank'><li>IG</li></a>
-            <a href='https://www.facebook.com/chc888' style={{width:'100%'}} className='outerLink mg-r-30 db' target='_blank'><li>FB</li></a>
-            <a href='https://youtu.be/aSooyTSjAh8?si=kG7R3wzFHLUqbYqg' style={{width:'100%'}} className='outerLink mg-r-30 db' target='_blank'><li>紀錄片</li></a>
+            <a href='https://maps.app.goo.gl/A4tttWxRBfXKYTRf8' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>地址</li></a>
+            <a href='https://www.instagram.com/sawago88/' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>IG</li></a>
+            <a href='https://www.facebook.com/chc888' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>FB</li></a>
+            <a href='https://youtu.be/aSooyTSjAh8?si=kG7R3wzFHLUqbYqg' style={{width:'100%'}} className='outerLink mg-b-20 db' target='_blank'><li>紀錄片</li></a>
           </ul>
         </div>
       </>
