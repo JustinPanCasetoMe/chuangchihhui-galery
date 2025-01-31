@@ -283,7 +283,6 @@ const Header = () => {
         </nav>
       </header>
 
-
       {/* ======== Navigation Bar for the 425-768 version ========*/}
       <header className={`
         df jc-sb aln-itm-c fw pd-x-container
