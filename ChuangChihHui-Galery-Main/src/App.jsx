@@ -33,7 +33,6 @@ import PaymentInfoPage from './pages/PaymentInfoPage'
 function App() {
 
   const { CriticsItem } = useParams()
-  console.log(CriticsItem)
 
   const { t, i18n } = useTranslation() 
   const changeLanguage = (lng) => {

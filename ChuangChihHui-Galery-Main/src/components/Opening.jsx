@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { FaApple } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
+
 
 const Opening = () => {
 
@@ -48,60 +49,42 @@ const Opening = () => {
             transition:"background-color 0.5s ease" //smooth transition for background color
         }}
     >
-        {/* <div
-            className='OpeningLogo'
-            style={{
-                position: "absolute",
-                top: iconPosition === "top-left" ? '0px' : '',
-                left: iconPosition === "top-left" ? '0px' : '',
-                transform: iconPosition === "top-left" ? 'translate(-40%, -40%)' : 'none',
-                transition: iconPosition === "top-left" ? 'all 1.5s ease-in-out' : '', // smooth movement for icon
-                zIndex:45
-            }}
-        >
-            <FaApple 
-                size={128}
-                color='var(--openingLogo)'
-            />
-        </div> */}
-
         {showSlogan && (
             <div
                 style={{
                     position: "absolute",
-                    top: "50%",
-                    left: "10%",
+                    top: "40%",
+                    left: "50%",
+                    transform:"translateX(-50%)",
+                    textAlign:"center",
                     fontSize: "24px",
                     color: "#fff",
                     zIndex:45,
                     transition: 'all 0.5s ease-in-out'
                 }}
             >
-                <p>Educational Slogan</p>
+                <h1 className='mg-b-10' style={{fontWeight:"500"}}>CHUANG CHIH HUI</h1>
+                <div>
+                    <p style={{fontSize:"12px", marginBottom:"10px"}}>Surrealist Artist</p>
+                    <p style={{fontSize:"12px"}}>Painting x Sculpture x Bronze x Mixed Media</p>
+                </div>
             </div>
         )}
 
-        {showText && (
-            <div
-                style={{
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    fontSize: "24px",
-                    color: "#fff",
-                    zIndex:45,
-                    transition: 'all 1s ease'
-                }}
-            >
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogan</p>
-                <p>Educational Slogancsnzjkcnsdkj</p>
-            </div>
-        )}
+        <div
+            className='df jc-c aln-itm-c'
+            style={{
+                position:"absolute",
+                top:"80%",
+                width:"100%",
+                textAlign:"center",
+                color:"#fff",
+                zIndex:45
+            }}
+        >
+            <h1 style={{fontWeight:"400", marginRight:"20px"}}>EXPLORE</h1>
+            <FaChevronDown size={28} style={{fontWeight:"200"}}/>
+        </div>
 
         <div className="OpeningBG">
             <div

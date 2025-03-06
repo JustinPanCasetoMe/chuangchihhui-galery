@@ -61,6 +61,16 @@
   position: absolute;
 }
 
+.lngSub{
+  width: 100px;
+  background-color: #e3e3e3;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #d5d5d5;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
 .preface{
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
