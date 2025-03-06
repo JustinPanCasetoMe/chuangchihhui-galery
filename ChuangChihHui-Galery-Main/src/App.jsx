@@ -4,6 +4,7 @@ import { Route, Routes, useParams } from 'react-router'
 import { useTranslation } from 'react-i18next'
 import './i18n'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods } from './pages'
+import { MuseumNational, MuseumTaipei, BlockChain, NoXiangFeild, Classics, LightSeries, ModernStereo, EarlyStereo } from './pages/theme'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -117,6 +118,16 @@ function App() {
         <Route path='/portfolio/periods/2002-2019' element={<Period_2002_2019 artworks={artworks} />} />
         <Route path='/portfolio/periods/2020-2024' element={<Period_2020_2024 artworks={artworks} />} />
         <Route path='/portfolio/unxiangarea' element={<UnXiangArea artworks={artworks} />} />
+
+        {/* Seires */}
+        <Route path='/portfolio/museumNational' element={<MuseumNational />}/>
+        <Route path='/portfolio/museumTaipei' element={<MuseumTaipei />}/>
+        <Route path='/portfolio/blockChain' element={<BlockChain />}/>
+        <Route path='/portfolio/noXiangFeild' element={<NoXiangFeild />}/>
+        <Route path='/portfolio/classics' element={<Classics />}/>
+        <Route path='/portfolio/light' element={<LightSeries />}/>
+        <Route path='/portfolio/modernStereo' element={<ModernStereo />}/>
+        <Route path='/portfolio/earlyStereo' element={<EarlyStereo />}/>
 
         {/* Transaction */}
         <Route

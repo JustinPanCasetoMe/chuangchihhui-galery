@@ -2,6 +2,7 @@ import Preface from '../components/Preface'
 import Opening from '../components/Opening'
 import preface_text from '../datas/preface_text.json'
 import seriesItem from '../datas/thumbnails.json'
+import thumbnails from '../datas/thumbnails.json'
 import { Link } from 'react-router-dom'
 
 
@@ -13,18 +14,39 @@ const Home = () => {
     if(index < 8)
       return(
         <div key={index} style={{width:"23%", marginBottom:"50px", position:"relative"}}>
-          <Link to={`/portfolio/artworks/${series.name}`}>
+          <Link to={`/portfolio/${series.catergory}`}>
             <img src={series.img} alt="" style={{width:"100%", height:"100%"}} className='bd-r-sm bx-sd-sm'/>
             <div className='thumbnailMask'>
-              {/* <h5>{series.name}</h5>
-              <h5>{series.size} {series.mediums} {series.year}</h5> */}
-
               <h4>{series.tag}</h4>
             </div>
           </Link>
         </div>
       )
   })
+
+  const imgRender = (img_Id) => {
+    const thumbnail = thumbnails[img_Id -= 1];
+    if (!thumbnail) return null;
+
+    return(
+      <div style={{width:"22%", marginBottom:"100px", position:"relative"}}>
+        <Link to={`/portfolio/${thumbnail.catergory}`}>
+          <img
+            src={thumbnails[img_Id].img} alt="" 
+            className='bx-sd-sm imgActive'
+            style={{width:"100%", height:"100%"}}
+          />
+          <div className='thumbnailMask'>
+            <h4>{thumbnail.tag}</h4>
+            {/* <div className=''>
+              <h5 style={{marginBottom:'14.56px'}}>{thumbnail.name}</h5>
+              <h5>{thumbnail.size} {thumbnail.mediums} {thumbnail.year}</h5>
+            </div> */}
+          </div>
+        </Link>
+      </div>
+    )
+  }
 
   return (
     <div>
@@ -43,7 +65,17 @@ const Home = () => {
       </div> */}
 
       <div style={{marginTop:"110vh"}} className='df jc-sb fl-wp'>
-        {seriesRender}
+        {/* {seriesRender} */}
+        <div className='df jc-sb fl-wp'>
+          {imgRender(12)}
+          {imgRender(13)}
+          {imgRender(25)}
+          {imgRender(41)}
+          {imgRender(13)}
+          {imgRender(5)}
+          {imgRender(6)}
+          {imgRender(7)}
+        </div>
       </div>
 
 
