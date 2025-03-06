@@ -91,23 +91,33 @@ const Header = () => {
                   <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                       <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                        1968-2001
+                        無相之境
                       </Link>
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                       <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                        2002-2019
+                        柔和系列
                       </Link> 
                     </li>
                     <li className='pd-y-10 bd-b' style={{width:'200px'}}>
                       <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                        2020-2024
+                        宇宙系列
                       </Link>
                     </li>
+                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                        區塊鏈
+                      </Link> 
+                    </li>
+                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                        時間
+                      </Link> 
+                    </li>
                     <li className='pd-y-10' style={{width:'200px'}}>
-                      <Link to='/portfolio/unxiangarea' className='pd-y-10'>
-                        無相之境
-                      </Link>
+                      <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
+                        區塊鏈
+                      </Link> 
                     </li>
                   </ul>
                 </li>
@@ -143,6 +153,9 @@ const Header = () => {
                   </ul> */}
                 </li>
               </ul>
+            </li>
+            <li className='pd-w-10'>
+              <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('活動')}</Link>
             </li>
             <li className='pd-w-10'>
               {/* <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>資歷</Link> */}

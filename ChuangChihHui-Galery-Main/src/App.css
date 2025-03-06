@@ -26,6 +26,41 @@
   height: 60%;
 }
 
+.OpeningLogo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 45;
+}
+
+.LogoTransition{
+  position: absolute;
+}
+
+.OpeningBG{
+  width: 100vw;
+  height: 100vh;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 40;
+  background-image: url("https://live.staticflickr.com/65535/54315706478_7e63925e1b_w.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center center; */
+}
+
+.mask{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 99%;
+  position: absolute;
+}
+
 .preface{
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;

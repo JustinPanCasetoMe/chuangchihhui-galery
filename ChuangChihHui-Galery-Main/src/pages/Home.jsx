@@ -1,4 +1,5 @@
 import Preface from '../components/Preface'
+import Opening from '../components/Opening'
 import preface_text from '../datas/preface_text.json'
 
 
@@ -8,6 +9,9 @@ const Home = () => {
 
   return (
     <div>
+
+      <Opening />
+
       <Preface listings={preface_text}/>
 
       <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}`}>
