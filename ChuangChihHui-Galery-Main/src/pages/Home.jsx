@@ -1,18 +1,37 @@
 import Preface from '../components/Preface'
 import Opening from '../components/Opening'
 import preface_text from '../datas/preface_text.json'
+import seriesItem from '../datas/thumbnails.json'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
 
   const ScreenWidth = window.innerWidth
 
+  const seriesRender = seriesItem.map((series, index) => {
+    if(index < 8)
+      return(
+        <div key={index} style={{width:"23%", marginBottom:"50px", position:"relative"}}>
+          <Link to={`/portfolio/artworks/${series.name}`}>
+            <img src={series.img} alt="" style={{width:"100%", height:"100%"}} className='bd-r-sm bx-sd-sm'/>
+            <div className='thumbnailMask'>
+              {/* <h5>{series.name}</h5>
+              <h5>{series.size} {series.mediums} {series.year}</h5> */}
+
+              <h4>{series.tag}</h4>
+            </div>
+          </Link>
+        </div>
+      )
+  })
+
   return (
     <div>
 
       <Opening />
 
-      <Preface listings={preface_text}/>
+      {/* <Preface listings={preface_text}/>
 
       <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}`}>
         <ul className='df'>
@@ -21,11 +40,17 @@ const Home = () => {
           <a href='https://www.facebook.com/chc888' className='outerLink mg-r-30' target='_blank'><li>FB</li></a>
           <a href='https://youtu.be/aSooyTSjAh8?si=kG7R3wzFHLUqbYqg' className='outerLink mg-r-30' target='_blank'><li>紀錄片</li></a>
         </ul>
+      </div> */}
+
+      <div style={{marginTop:"110vh"}} className='df jc-sb fl-wp'>
+        {seriesRender}
       </div>
 
-      <div className={`${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'}`}>
 
-        
+
+
+      <div className={`${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'}`}>
+     
       </div>
 
       <div className={`${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}`}>

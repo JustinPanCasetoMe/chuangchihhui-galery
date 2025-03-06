@@ -61,6 +61,27 @@
   position: absolute;
 }
 
+.thumbnailMask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.thumbnailMask:hover{
+  opacity: 1;
+}
+
 .lngSub{
   width: 100px;
   background-color: #e3e3e3;
