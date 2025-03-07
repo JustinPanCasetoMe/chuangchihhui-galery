@@ -1,8 +1,7 @@
 import Preface from '../components/Preface'
 import Opening from '../components/Opening'
 import preface_text from '../datas/preface_text.json'
-import seriesItem from '../datas/thumbnails.json'
-import thumbnails from '../datas/thumbnails.json'
+import artworks from '../datas/artworks.json'
 import { Link } from 'react-router-dom'
 
 
@@ -10,38 +9,20 @@ const Home = () => {
 
   const ScreenWidth = window.innerWidth
 
-  const seriesRender = seriesItem.map((series, index) => {
-    if(index < 8)
-      return(
-        <div key={index} style={{width:"23%", marginBottom:"50px", position:"relative"}}>
-          <Link to={`/portfolio/${series.catergory}`}>
-            <img src={series.img} alt="" style={{width:"100%", height:"100%"}} className='bd-r-sm bx-sd-sm'/>
-            <div className='thumbnailMask'>
-              <h4>{series.tag}</h4>
-            </div>
-          </Link>
-        </div>
-      )
-  })
-
   const imgRender = (img_Id) => {
-    const thumbnail = thumbnails[img_Id -= 1];
-    if (!thumbnail) return null;
+    const artwork = artworks[img_Id -= 1];
+    if (!artwork) return null;
 
     return(
       <div style={{width:"22%", marginBottom:"100px", position:"relative"}}>
-        <Link to={`/portfolio/${thumbnail.catergory}`}>
+        <Link to={`/portfolio/${artwork.series}`}>
           <img
-            src={thumbnails[img_Id].img} alt="" 
+            src={artworks[img_Id].thumbnail} alt="" 
             className='bx-sd-sm imgActive'
             style={{width:"100%", height:"100%"}}
           />
           <div className='thumbnailMask'>
-            <h4>{thumbnail.tag}</h4>
-            {/* <div className=''>
-              <h5 style={{marginBottom:'14.56px'}}>{thumbnail.name}</h5>
-              <h5>{thumbnail.size} {thumbnail.mediums} {thumbnail.year}</h5>
-            </div> */}
+            <h4>{artwork.tag}</h4>
           </div>
         </Link>
       </div>
@@ -67,14 +48,14 @@ const Home = () => {
       <div style={{marginTop:"110vh"}} className='df jc-sb fl-wp'>
         {/* {seriesRender} */}
         <div className='df jc-sb fl-wp'>
+          {imgRender(14)}
+          {imgRender(2)}
+          {imgRender(6)}
+          {imgRender(167)}
           {imgRender(5)}
-          {imgRender(13)}
-          {imgRender(25)}
-          {imgRender(41)}
-          {imgRender(13)}
-          {imgRender(69)}
-          {imgRender(99)}
-          {imgRender(75)}
+          {imgRender(43)}
+          {imgRender(119)}
+          {imgRender(143)}
         </div>
       </div>
 

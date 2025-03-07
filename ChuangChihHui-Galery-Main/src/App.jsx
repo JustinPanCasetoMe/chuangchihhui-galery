@@ -124,7 +124,7 @@ function App() {
         <Route path='/portfolio/museumNational' element={<MuseumNational />}/>
         <Route path='/portfolio/museumTaipei' element={<MuseumTaipei />}/>
         <Route path='/portfolio/blockChain' element={<BlockChain />}/>
-        <Route path='/portfolio/noXiangFeild' element={<NoXiangFeild />}/>
+        <Route path='/portfolio/unXiangArea' element={<NoXiangFeild />}/>
         <Route path='/portfolio/classics' element={<Classics />}/>
         <Route path='/portfolio/light' element={<LightSeries />}/>
         <Route path='/portfolio/modernStereo' element={<ModernStereo />}/>

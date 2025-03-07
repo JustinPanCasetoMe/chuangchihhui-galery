@@ -91,33 +91,43 @@ const Header = () => {
                     </Link>
                     <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
                       <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
+                        <Link to='/portfolio/museumNational' className='pd-y-10'>
+                          國美館時期
+                        </Link>
+                      </li>
+                      <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                        <Link to='/portfolio/museumTaipei' className='pd-y-10'>
+                          北美館時期
+                        </Link> 
+                      </li>
+                      <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                        <Link to='/portfolio/blockChain' className='pd-y-10'>
+                          區塊鏈系列
+                        </Link>
+                      </li>
+                      <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                        <Link to='/portfolio/noXiangFeild' className='pd-y-10'>
                           無相之境
-                        </Link>
-                      </li>
-                      <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                          柔和系列
                         </Link> 
                       </li>
                       <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                          宇宙系列
-                        </Link>
-                      </li>
-                      <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                          區塊鏈
+                        <Link to='/portfolio/classics' className='pd-y-10'>
+                          各經典時期
                         </Link> 
                       </li>
                       <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                          時間
+                        <Link to='/portfolio/light' className='pd-y-10'>
+                          燈系列
+                        </Link> 
+                      </li>
+                      <li className='pd-y-10 bd-b' style={{width:'200px'}}>
+                        <Link to='/portfolio/modernStereo' className='pd-y-10'>
+                          近代立體
                         </Link> 
                       </li>
                       <li className='pd-y-10' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                          區塊鏈
+                        <Link to='/portfolio/earlyStereo' className='pd-y-10'>
+                          早期立體
                         </Link> 
                       </li>
                     </ul>
@@ -173,9 +183,9 @@ const Header = () => {
               <li className='pd-w-10'>
                 <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('聯絡')}</Link>
               </li>
-              {/* <li className='pd-w-10'>
+              <li className='pd-w-10'>
                 <Link to='/portfolio/all' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('所有')}</Link>
-              </li> */}
+              </li>
             </ul>
           </nav>
         </div>
