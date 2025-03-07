@@ -67,14 +67,14 @@ const Home = () => {
       <div style={{marginTop:"110vh"}} className='df jc-sb fl-wp'>
         {/* {seriesRender} */}
         <div className='df jc-sb fl-wp'>
-          {imgRender(12)}
+          {imgRender(5)}
           {imgRender(13)}
           {imgRender(25)}
           {imgRender(41)}
           {imgRender(13)}
-          {imgRender(5)}
-          {imgRender(6)}
-          {imgRender(7)}
+          {imgRender(69)}
+          {imgRender(99)}
+          {imgRender(75)}
         </div>
       </div>
 

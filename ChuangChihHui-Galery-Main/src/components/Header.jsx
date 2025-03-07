@@ -66,7 +66,7 @@ const Header = () => {
             </div>
           </Link>
 
-          <nav className='fh'>
+          <nav className='fh' style={{marginRight:"80px"}}>
             <ul className='fh df jc-sb aln-itm-c'>
               <li
                 className={`pd-w-10`}
@@ -173,6 +173,9 @@ const Header = () => {
               <li className='pd-w-10'>
                 <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('聯絡')}</Link>
               </li>
+              {/* <li className='pd-w-10'>
+                <Link to='/portfolio/all' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('所有')}</Link>
+              </li> */}
             </ul>
           </nav>
         </div>

@@ -30,6 +30,7 @@ import OrderResultURL from './pages/OrderResultURL'
 import Payment from './pages/Payment'
 // import { usePayment } from './hooks/usePayment'
 import PaymentInfoPage from './pages/PaymentInfoPage'
+import AllArt from './pages/AllArt'
 
 function App() {
 
@@ -128,6 +129,8 @@ function App() {
         <Route path='/portfolio/light' element={<LightSeries />}/>
         <Route path='/portfolio/modernStereo' element={<ModernStereo />}/>
         <Route path='/portfolio/earlyStereo' element={<EarlyStereo />}/>
+
+        <Route path='/portfolio/all' element={<AllArt />}/>
 
         {/* Transaction */}
         <Route

@@ -33,18 +33,25 @@ const Classics = () => {
     <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} `}>
       <h3 className='periodTitle' style={{marginBottom:'160px'}}>各時期經典</h3>
       <div className='df jc-sb fl-wp'>
-        {imgRender(25)}
-        {imgRender(26)}
-        {imgRender(27)}
-        {imgRender(28)}
-        {imgRender(29)}
-        {imgRender(30)}
-        {imgRender(31)}
-        {imgRender(32)}
-        {imgRender(33)}
-        {imgRender(34)}
-        {imgRender(35)}
-        {imgRender(36)}
+        {imgRender(49)}
+        {imgRender(51)}
+        {imgRender(52)}
+        {imgRender(53)}
+        {imgRender(54)}
+        {imgRender(55)}
+        {imgRender(56)}
+        {imgRender(57)}
+        {imgRender(58)}
+        {imgRender(59)}
+        {imgRender(60)}
+        {imgRender(61)}
+        {imgRender(62)}
+        {imgRender(63)}
+        {imgRender(64)}
+        {imgRender(65)}
+        {imgRender(66)}
+        {imgRender(67)}
+        {imgRender(68)}
       </div>
     </div>
   )

@@ -33,18 +33,30 @@ const EarlyStereo = () => {
     <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} `}>
       <h3 className='periodTitle' style={{marginBottom:'160px'}}>早期立體</h3>
       <div className='df jc-sb fl-wp'>
-        {imgRender(25)}
-        {imgRender(26)}
-        {imgRender(27)}
-        {imgRender(28)}
-        {imgRender(29)}
-        {imgRender(30)}
-        {imgRender(31)}
-        {imgRender(32)}
-        {imgRender(33)}
-        {imgRender(34)}
-        {imgRender(35)}
-        {imgRender(36)}
+        {imgRender(99)}
+        {imgRender(100)}
+        {imgRender(101)}
+        {imgRender(102)}
+        {imgRender(103)}
+        {imgRender(104)}
+        {imgRender(105)}
+        {imgRender(106)}
+        {imgRender(107)}
+        {imgRender(108)}
+        {imgRender(109)}
+        {imgRender(110)}
+        {imgRender(111)}
+        {imgRender(112)}
+        {imgRender(113)}
+        {imgRender(114)}
+        {imgRender(115)}
+        {imgRender(116)}
+        {imgRender(117)}
+        {imgRender(118)}
+        {imgRender(119)}
+        {imgRender(120)}
+        {imgRender(121)}
+        {imgRender(122)}
       </div>
     </div>
   )

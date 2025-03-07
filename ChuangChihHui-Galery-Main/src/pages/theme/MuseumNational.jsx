@@ -18,7 +18,7 @@ const MuseumNational = () => {
             style={{width:"100%", height:"100%"}}
           />
           <div className='thumbnailMask'>
-            <h4>{thumbnail.tag}</h4>
+            {/* <h4>{thumbnail.tag}</h4> */}
             <div className=''>
               <h5 style={{marginBottom:'14.56px'}}>{thumbnail.name}</h5>
               <h5>{thumbnail.size} {thumbnail.mediums} {thumbnail.year}</h5>
@@ -37,7 +37,6 @@ const MuseumNational = () => {
         {imgRender(2)}
         {imgRender(3)}
         {imgRender(4)}
-        {imgRender(12)}
         {imgRender(5)}
         {imgRender(6)}
         {imgRender(7)}
@@ -45,6 +44,7 @@ const MuseumNational = () => {
         {imgRender(9)}
         {imgRender(10)}
         {imgRender(11)}
+        {imgRender(12)}
       </div>
     </div>
   )

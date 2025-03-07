@@ -7,6 +7,9 @@
         "year": "1993",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118024662_7b3aaeb012_h.jpg",
         "similarArt": [2, 3, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -18,6 +21,9 @@
         "year": "1994",
         "catergory": "general",
         "classics": true,
+        "series": "museumTaipei",
+        "tag": "北美館時期",
+        "thumbnail": "https://live.staticflickr.com/65535/54335997240_10e0996498_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119154933_fc62c54d16_h.jpg",
         "similarArt": [1, 3, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -29,6 +35,9 @@
         "year": "1995",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118025062_945540c340_h.jpg",
         "similarArt": [1, 2, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -40,6 +49,9 @@
         "year": "2016",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119216779_b9b00c2599_h.jpg",
         "similarArt": [91, 92, 93, 94, 95, 96, 97, 98, 99]
     },
@@ -51,6 +63,9 @@
         "year": "2015",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119342710_55f7c26e47_h.jpg",
         "similarArt": [86, 87, 88, 89, 90]
     },
@@ -62,6 +77,9 @@
         "year": "2018",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119343000_4fd16cc8cb_h.jpg",
         "similarArt": [27, 82, 83, 84, 85]
     },
@@ -73,6 +91,9 @@
         "year": "2022",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119154248_f34ba43141_h.jpg",
         "similarArt": [40]
     },
@@ -84,6 +105,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118025092_95644c761a_h.jpg",
         "similarArt": []
     },
@@ -95,6 +119,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
         "similarArt": [112]
     },
@@ -106,6 +133,9 @@
         "year": "2020",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg",
         "similarArt": []
     },
@@ -117,6 +147,9 @@
         "year": "2022",
         "catergory": "無相之境",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118023962_a7853f8054_n.jpg",
         "similarArt": []
     },
@@ -128,6 +161,9 @@
         "year": "2014",
         "catergory": "無相之境",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163390858_b8844253ec_w.jpg",
         "similarArt": [54,55,56,57,58,59]
     },
@@ -139,6 +175,9 @@
         "year": "2021",
         "catergory": "無相之境",
         "classics": true,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg",
         "similarArt": []
     },
@@ -150,6 +189,9 @@
         "year": "1985",
         "catergory": "general",
         "classics": false,
+        "series": "museumNational",
+        "tag": "國美館時期",
+        "thumbnail": "https://live.staticflickr.com/65535/54335797519_2e55aafe38_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343735_a4a2bb962a_h.jpg",
         "similarArt": [78, 79, 80, 81]
     },
@@ -161,6 +203,9 @@
         "year": "1998",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119344835_f8a8053357_h.jpg",
         "similarArt": [1, 2, 3, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -172,6 +217,9 @@
         "year": "1993",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119156188_a5b7c2c75f_h.jpg",
         "similarArt": [1, 2, 3, 15, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -183,6 +231,9 @@
         "year": "1994",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119343575_0f6bdef994_h.jpg",
         "similarArt": [1, 2, 3, 15, 16, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -194,6 +245,9 @@
         "year": "1991",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118025692_4e3f45b089_h.jpg",
         "similarArt": [1, 2, 3, 15, 16, 17, 19, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -205,6 +259,9 @@
         "year": "1994",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119218754_c653a9df61_h.jpg",
         "similarArt": [1, 2, 3, 15, 16, 17, 18, 20, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -216,6 +273,9 @@
         "year": "2001",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119343515_8a4f5bac17_h.jpg",
         "similarArt": [1, 2, 3, 15, 16, 17, 18, 19, 71, 72, 73, 74, 75, 76, 77]
     },{
@@ -226,6 +286,9 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119343910_2260e4af37_h.jpg",
         "similarArt": [22, 23, 24, 67, 68, 69, 70]
     },
@@ -237,6 +300,9 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118882031_975c639f4d_h.jpg",
         "similarArt": [21, 23, 24, 67, 68, 69, 70]
     },
@@ -248,6 +314,9 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119343855_2622b755d9_h.jpg",
         "similarArt": [21, 22, 24, 67, 68, 69, 70]
     },
@@ -259,6 +328,9 @@
         "year": "1986",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119343820_f27dbd1324_h.jpg",
         "similarArt": [21, 22, 23, 67, 68, 69, 70]
     },
@@ -270,6 +342,9 @@
         "year": "1996",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg",
         "similarArt": [65, 66]
     },
@@ -281,6 +356,9 @@
         "year": "1996",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg",
         "similarArt": []
     },
@@ -292,6 +370,9 @@
         "year": "2019",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119154228_2aa86864dc_h.jpg",
         "similarArt": [6, 82, 83, 84, 85]
     },
@@ -303,6 +384,9 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118881396_5e1ca4c1c2_h.jpg",
         "similarArt": [29, 30, 107, 108]
     },
@@ -314,6 +398,9 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118881371_7acea5db82_h.jpg",
         "similarArt": [28, 30, 107, 108]
     },
@@ -325,6 +412,9 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118024602_5dbbd023da_h.jpg",
         "similarArt": [28, 29, 107, 108]
     },
@@ -336,6 +426,9 @@
         "year": "2019",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119342755_e56072e69b_h.jpg",
         "similarArt": [42, 43, 100, 101, 102, 103, 104, 105, 106]
     },
@@ -347,6 +440,9 @@
         "year": "2012",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119155668_d04798cab2_h.jpg",
         "similarArt": []
     },
@@ -358,6 +454,9 @@
         "year": "2005",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118025192_b12ef3636a_h.jpg",
         "similarArt": []
     },
@@ -369,6 +468,9 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118026172_5384892596_h.jpg",
         "similarArt": []
     },
@@ -380,6 +482,9 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119155973_070e331c9c_h.jpg",
         "similarArt": []
     },
@@ -391,6 +496,9 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118026007_7ebccedf72_h.jpg",
         "similarArt": []
     },
@@ -402,6 +510,9 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119156003_5e2bfa2652_h.jpg",
         "similarArt": []
     },
@@ -413,6 +524,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118023997_6536ef60ef_h.jpg",
         "similarArt": []
     },
@@ -424,6 +538,9 @@
         "year": "2015",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119217634_1c5c2ac1a9_h.jpg",
         "similarArt": []
     },
@@ -435,6 +552,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118026057_2a07cd8ff4_h.jpg",
         "similarArt": [7]
     },
@@ -446,6 +566,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118882391_4a7360b6b1_h.jpg",
         "similarArt": [109, 110, 111]
     },
@@ -457,6 +580,9 @@
         "year": "2021",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118882291_543be4180e_h.jpg",
         "similarArt": [31, 43, 100, 101, 102, 103, 104, 105, 106]
     },
@@ -468,6 +594,9 @@
         "year": "2021",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119155453_069292ad46_h.jpg",
         "similarArt": [31, 42, 100, 101, 102, 103, 104, 105, 106]
     },
@@ -479,6 +608,9 @@
         "year": "2020",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg",
         "similarArt": []
     },
@@ -490,6 +622,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
         "similarArt": []
     },
@@ -501,6 +636,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
         "similarArt": []
     },
@@ -512,6 +650,9 @@
         "year": "2023",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
         "similarArt": []
     },
@@ -523,6 +664,9 @@
         "year": "2012",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54118881136_6d9db1c938_h.jpg",
         "similarArt": []
     },
@@ -534,6 +678,9 @@
         "year": "2011",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163403898_ce0101b0b3_c.jpg",
         "similarArt": [50, 60, 61, 62, 63]
     },
@@ -545,6 +692,9 @@
         "year": "2016",
         "catergory": "general",
         "classics": false,
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119343185_0cc5f53b1c_c.jpg",
         "similarArt": [49, 60, 61, 62, 63]
     },
@@ -556,6 +706,9 @@
         "year": "",
         "catergory": "無相之境",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163401958_781dbf9f84_w.jpg",
         "similarArt": []
     },
@@ -567,6 +720,9 @@
         "year": "",
         "catergory": "無相之境",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163439579_dc90360465_w.jpg",
         "similarArt": []
     },
@@ -578,6 +734,9 @@
         "year": "2022",
         "catergory": "無相之境",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163581915_2832544d7d_w.jpg",
         "similarArt": []
     },
@@ -589,6 +748,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163248549_65471e97fb_w.jpg",
         "similarArt": []
     },
@@ -600,6 +762,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163207668_8c11619f44_w.jpg",
         "similarArt": []
     },
@@ -611,6 +776,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163189093_71a8beb54d_w.jpg",
         "similarArt": []
     },
@@ -622,6 +790,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54119219099_61ed78de90_w.jpg",
         "similarArt": []
     },
@@ -633,6 +804,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163246774_6571f3de6f_w.jpg",
         "similarArt": []
     },
@@ -644,6 +818,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162934221_c48baa9abc_w.jpg",
         "similarArt": []
     },
@@ -655,6 +832,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163249144_ccfc84c649_w.jpg",
         "similarArt": []
     },
@@ -666,6 +846,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162937081_33daf66d12_w.jpg",
         "similarArt": []
     },
@@ -677,6 +860,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163556489_03253f76fe_w.jpg",
         "similarArt": []
     },
@@ -688,6 +874,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162937131_fddb4fe86a_w.jpg",
         "similarArt": []
     },
@@ -699,6 +888,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "",
         "similarArt": []
     },
@@ -710,6 +902,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162045887_a30febbd1c_w.jpg",
         "similarArt": []
     },
@@ -721,6 +916,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163393965_e16d96d28e_w.jpg",
         "similarArt": []
     },
@@ -732,6 +930,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162907731_61c7eb0534_w.jpg",
         "similarArt": []
     },
@@ -743,6 +944,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163183583_202552477f_w.jpg",
         "similarArt": []
     },
@@ -754,6 +958,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163183503_79a4324433_w.jpg",
         "similarArt": []
     },
@@ -765,6 +972,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162033482_01b12415a0_w.jpg",
         "similarArt": []
     },
@@ -776,6 +986,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163209173_0b129dd226_n.jpg",
         "similarArt": []
     },
@@ -787,6 +1000,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "",
         "similarArt": []
     },
@@ -798,6 +1014,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163376750_f310926f33_w.jpg",
         "similarArt": []
     },
@@ -809,6 +1028,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163215163_b2f2741eea_w.jpg",
         "similarArt": []
     },
@@ -820,6 +1042,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163212808_68bc7d50c2_n.jpg",
         "similarArt": []
     },
@@ -831,6 +1056,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163390350_d6e869bc81_w.jpg",
         "similarArt": []
     },
@@ -842,6 +1070,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163183593_e70abf41e6.jpg",
         "similarArt": []
     },
@@ -853,6 +1084,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "museumNational",
+        "tag": "國美館時期",
+        "thumbnail": "https://live.staticflickr.com/65535/54335579206_9b33f402c8_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162033447_56d1338a9c_w.jpg",
         "similarArt": []
     },
@@ -864,6 +1098,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "museumNational",
+        "tag": "國美館時期",
+        "thumbnail": "https://live.staticflickr.com/65535/54334672262_14de0b2b6b_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162908656_fd9595d37a_n.jpg",
         "similarArt": []
     },
@@ -875,6 +1112,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "museumNational",
+        "tag": "國美館時期",
+        "thumbnail": "https://live.staticflickr.com/65535/54335579266_c30ef16502_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163222854_d3ebbeb3e1.jpg",
         "similarArt": []
     },
@@ -886,6 +1126,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163222469_5e831b1773_z.jpg",
         "similarArt": []
     },
@@ -897,6 +1140,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163195398_57da87afae_z.jpg",
         "similarArt": []
     },
@@ -908,6 +1154,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162920576_18470fcab3_n.jpg",
         "similarArt": []
     },
@@ -919,6 +1168,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162063677_65722fafc4_n.jpg",
         "similarArt": []
     },
@@ -930,6 +1182,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162065367_71c61c7f1c_n.jpg",
         "similarArt": []
     },
@@ -941,6 +1196,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162062672_7e1ac14417_w.jpg",
         "similarArt": []
     },
@@ -952,6 +1210,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162936456_3b3b03eae6.jpg",
         "similarArt": []
     },
@@ -963,6 +1224,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162940731_3247223794_n.jpg",
         "similarArt": []
     },
@@ -974,6 +1238,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163235759_893689fd4f_n.jpg",
         "similarArt": []
     },
@@ -985,6 +1252,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163182318_db591b5b84_n.jpg",
         "similarArt": []
     },
@@ -996,6 +1266,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162907751_b7d77d1efc_w.jpg",
         "similarArt": []
     },
@@ -1007,6 +1280,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163225144_dea715c2f8_w.jpg",
         "similarArt": []
     },
@@ -1018,6 +1294,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163387620_b665a0881b_n.jpg",
         "similarArt": []
     },
@@ -1029,6 +1308,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163387460_d7e0636519_n.jpg",
         "similarArt": []
     },
@@ -1040,6 +1322,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162932311_f8e05a1d01_n.jpg",
         "similarArt": []
     },
@@ -1051,6 +1336,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163208098_f4d45ed590_n.jpg",
         "similarArt": []
     },
@@ -1062,6 +1350,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163249709_52eeca1f21_n.jpg",
         "similarArt": []
     },
@@ -1073,6 +1364,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162059837_b05e050467_n.jpg",
         "similarArt": []
     },
@@ -1084,6 +1378,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162934836_db31e00f4d_n.jpg",
         "similarArt": []
     },
@@ -1095,6 +1392,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163250739_ba06d0c537_n.jpg",
         "similarArt": [31, 42, 43, 101, 102, 103, 104, 105, 106]
     },
@@ -1106,6 +1406,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163250954_42afce3817_n.jpg",
         "similarArt": [31, 42, 43, 100, 102, 103, 104, 105, 106]
     },
@@ -1117,6 +1420,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162061132_0f31e471dc.jpg",
         "similarArt": [31, 42, 43, 100, 101, 103, 104, 105, 106]
     },
@@ -1128,6 +1434,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163251039_11c8e1716f_b.jpg",
         "similarArt": [31, 42, 43, 100, 101, 102, 104, 105, 106]
     },
@@ -1139,6 +1448,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163391520_2a2849d20d_n.jpg",
         "similarArt": [31, 42, 43, 100, 101, 102, 103, 105, 106]
     },
@@ -1150,6 +1462,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162935421_1cac4e42e9_n.jpg",
         "similarArt": [31, 42, 43, 100, 101, 102, 103, 104, 106]
     },
@@ -1161,6 +1476,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163210068_47307fc45c_n.jpg",
         "similarArt": [31, 42, 43, 100, 101, 102, 103, 104, 105]
     },
@@ -1172,6 +1490,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163255454_e2c70b1810_w.jpg",
         "similarArt": [28, 29, 30, 108]
     },
@@ -1183,6 +1504,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163208183_d129f8fb09_n.jpg",
         "similarArt": [28, 29, 30, 107]
     },
@@ -1194,6 +1518,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163394300_5ed5985b72_n.jpg",
         "similarArt": [41, 110, 111]
     },
@@ -1205,6 +1532,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163214858_00d5472561_w.jpg",
         "similarArt": [41, 109, 111]
     },
@@ -1216,6 +1546,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54163394700_9d5dccede1_n.jpg",
         "similarArt": [41, 109, 110]
     },
@@ -1227,6 +1560,9 @@
         "year": "2022",
         "catergory": "",
         "classics": "",
+        "series": "",
+        "tag": "",
+        "thumbnail": "",
         "img": "https://live.staticflickr.com/65535/54162065362_ed593f3606_w.jpg",
         "similarArt": [9]
     }
