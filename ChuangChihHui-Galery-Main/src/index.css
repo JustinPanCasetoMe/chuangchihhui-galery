@@ -14,8 +14,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* variables */
-  --content-grey: rgba(0, 0, 0, 0.6)
-
+  --content-grey: rgba(0, 0, 0, 0.6);
+  --grey-1:#9f9f9f
 }
 
 *{
