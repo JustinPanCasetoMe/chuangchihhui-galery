@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
@@ -16,6 +16,7 @@ const Header = () => {
 
     const [menuItem, setMenuItem] = useState('Artworks')
     const [menuToggle, setMenuToggle] = useState()
+    const [tabClose, setTabClose] = useState()
 
     const [menuHover, setMenuHover] = useState(false);
     const [subMenuHover, setSubMenuHover] = useState(false);
@@ -50,12 +51,40 @@ const Header = () => {
             break;
         }
     }
+    // ==================== Close Tab ====================
+    const [isOpen, setIsOpen] = useState(false); // State to control the visibility of the language selector
+    const languageSelectorRef = useRef(null); // Ref to the language selector area
 
-  // ==================== MenuItem Render ====================
+    // Function to toggle the visibility of the language selection area
+    const toggleLanguageSelector = () => {
+        setIsOpen((prev) => !prev);
+    };
+
+    // Close the language selector if clicked outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // Check if the click was outside the language selection area
+            if (languageSelectorRef.current && !languageSelectorRef.current.contains(event.target)) {
+                setIsOpen(false); // Close the language selection area
+                console.log(languageSelectorRef.current.contains(event.target))
+            }
+        };
+        // Add event listener to the document when the component mounts
+        document.addEventListener('mousedown', handleClickOutside);
+
+        // Cleanup the event listener when the component unmounts
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+
+    // ==================== MenuItem Render ====================
     const menuItemRender = menuItems.map((menu, index) => {
         const subMenuItemRender = menu.sub.map((sub, subIndex) => {
             return(
                 <li
+                    key={subIndex}
                     className='bd-b'
                     style={{width:"200px"}}
                 >
@@ -95,16 +124,18 @@ const Header = () => {
                         {subMenuItemRender}
                     </ul>
                 </Link>
-        </li>
+            </li>
         )
     })
 
     // ==================== Language Select ====================
     const handleLanguageSelect = () => {
         setLangActive(!langActive)
+        setIsOpen((prev) => !prev);
     }
-    const handleCloseLng = () => {
-        setLngSubClose(false)
+    const handleCloseTab = () => {
+        setTabClose(false)
+        console.log(tabClose)
     }
 
     const languageSelect = (e) => {
@@ -147,7 +178,7 @@ const Header = () => {
                 </div>
                 </Link>
 
-                <div className='fh df jc-sb aln-itm-c'>
+                <div className='fh df jc-sb aln-itm-c mg-r-30'>
                     {menuItemRender}
                 </div>
                 
@@ -158,21 +189,23 @@ const Header = () => {
             {/* ========== Language Select ========== */}
             <ul style={{position:'relative'}} className='df fd-c pd-w-10 fh jc-c aln-itm-c'>
                 <div className='df fd-c jc-c' onClick={handleLanguageSelect}>
-                <FaEarthAfrica size={20}/>
+                    <FaEarthAfrica size={20}/>
                 </div>
-                <ul
-                className='df fd-c'
-                style={{
-                    position:"absolute",
-                    top:"160%",
-                    left:"50%",
-                    display:`${langActive ? '' : 'none'}`
-                }}
-                onClick={()=>handleCloseLng(false)}
-                >
-                <li className='lngSub' onClick={() => {changeLanguage('ch')}}>{t('中文')}</li>
-                <li className='lngSub' onClick={() => {changeLanguage('en')}}>{t('英文')}</li>
-                </ul>
+                {isOpen && (
+                    <ul
+                        className={`df fd-c ${tabClose ? 'dn' : ''}`}
+                        style={{
+                            position:"absolute",
+                            top:"160%",
+                            left:"50%",
+                            display:`${langActive ? '' : 'none'}`
+                        }}
+                        ref={languageSelectorRef}
+                    >
+                        <li className='lngSub' onClick={() => {changeLanguage('ch')}}>{t('中文')}</li>
+                        <li className='lngSub' onClick={() => {changeLanguage('en')}}>{t('英文')}</li>
+                    </ul>
+                )}
             </ul>
             </header>
 

@@ -16,7 +16,7 @@ const Critics = () => {
 
   const criticsRender = critics_item.map((critic, index) => {
     return(
-      <>
+      <div key={index}>
         <div
           className={`mg-b-50 ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  `}
           style={{width:'31%', position:'relative'}}
@@ -107,7 +107,7 @@ const Critics = () => {
             </Link>
           </div>
         </div>
-      </>
+      </div>
       
     )
   })
