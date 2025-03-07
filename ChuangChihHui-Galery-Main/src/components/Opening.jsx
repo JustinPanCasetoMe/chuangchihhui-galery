@@ -21,7 +21,7 @@ const Opening = () => {
         const sloganTimer = setTimeout(() => {
             setShowSlogan(true);
             setShowText(true);
-        }, 3800);
+        }, 0);
         
         const maskTimer = setTimeout(() => {
             setShowMask(true);
