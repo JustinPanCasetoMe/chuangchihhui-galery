@@ -166,7 +166,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className='pd-w-10'>
-                <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('活動')}</Link>
+                <Link to='/events' className='pd-10' onClick={() => handleMenubarClose('Events')}>{t('活動')}</Link>
               </li>
               <li className='pd-w-10'>
                 <Link to='/experiences' className='pd-10' onClick={() => handleMenubarClose('Experiences')}>{t('資歷')}</Link>
@@ -183,9 +183,9 @@ const Header = () => {
               <li className='pd-w-10'>
                 <Link to='/contacts' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('聯絡')}</Link>
               </li>
-              <li className='pd-w-10'>
+              {/* <li className='pd-w-10'>
                 <Link to='/portfolio/all' className='pd-10' onClick={() => handleMenubarClose('Contacts')}>{t('所有')}</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

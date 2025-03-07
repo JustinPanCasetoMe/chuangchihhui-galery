@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Route, Routes, useParams } from 'react-router'
 import { useTranslation } from 'react-i18next'
 import './i18n'
-import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods } from './pages'
+import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods, Events } from './pages'
 import { MuseumNational, MuseumTaipei, BlockChain, NoXiangFeild, Classics, LightSeries, ModernStereo, EarlyStereo } from './pages/theme'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -80,6 +80,7 @@ function App() {
         <Route path='/portfolio/:Classics' element={<Portfolio artworks={artworks}/>} />
         <Route path='/portfolio/:graphics' element={<Portfolio artworks={artworks}/>} />
         <Route path='/portfolio/:threeD' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/events' element={<Events />}/>
         <Route 
           path='/experiences'
           element={
