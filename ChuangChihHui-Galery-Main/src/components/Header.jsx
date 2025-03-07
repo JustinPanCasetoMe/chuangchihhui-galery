@@ -52,10 +52,6 @@ const Header = () => {
     }
 
   // ==================== MenuItem Render ====================
-    const handleSubToggle = () => {
-        setMenuToggle(!menuToggle)
-    }
-
     const menuItemRender = menuItems.map((menu, index) => {
         const subMenuItemRender = menu.sub.map((sub, subIndex) => {
             return(
