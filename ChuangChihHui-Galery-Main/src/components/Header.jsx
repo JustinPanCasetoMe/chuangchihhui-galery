@@ -93,7 +93,7 @@ const Header = () => {
                         to={`/portfolio/${sub.pathname}`}
                         className='df aln-itm-c pd-10'
                     >
-                        {sub.text}
+                        {sub.text} <h3></h3>
                         <FaAngleRight size={16} className='pd-l-10'/>
                     </Link>
                 </li>
