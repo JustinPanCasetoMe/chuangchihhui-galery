@@ -9,6 +9,7 @@ const Home = () => {
 
   const ScreenWidth = window.innerWidth
 
+  //imgRender
   const imgRender = (img_Id) => {
     const artwork = artworks[img_Id -= 1];
     if (!artwork) return null;
