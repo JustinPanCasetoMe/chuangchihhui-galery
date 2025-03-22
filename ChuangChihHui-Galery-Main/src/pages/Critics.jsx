@@ -1,165 +1,166 @@
-import React, { useState, useParams } from 'react'
-import critics_item from '../datas/critics.json' 
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import critics_item from '../datas/critics.json';
 
-const Critics = () => {
+const SCREEN_BREAKPOINTS = {
+  MOBILE: { min: 375, max: 425, width: '100%' },
+  TABLET_SMALL: { min: 425, max: 768, width: '45%' },
+  TABLET: { min: 768, max: 1024, width: '31%' },
+  DESKTOP: { min: 1024, max: 1960, width: '31%' }
+};
 
-  // const {CriticsItem} = useParams
-
-  const ScreenWidth = window.innerWidth
-
-  const [visibleSection, setVisibleSection] = useState('critics');
-
-  const handleSectionToggle = (section) =>{
-    setVisibleSection(visibleSection === section ? null : section)
-  }
-
-  const criticsRender = critics_item.map((critic, index) => {
-    return(
-      <div key={index}>
-        <div
-          className={`mg-b-50 ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  `}
-          style={{width:'31%', position:'relative'}}
-        >
-          <div key={index} style={{width:'100%'}}>
-            <Link to={`/critics/${critic.id}`}>
-              <div>
-                <div className='fw' style={{position:'relative'}}>
-                  <img src={critic.bg} alt="" className='' style={{width:'100%'}}/>
-                  <div className="msk"> </div>
-                </div>
-                <div
-                  className='fw df jc-sb pd-10'
-                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-                >
-                  <h5>{critic.title}</h5>
-                  <h5>{critic.author}</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        <div
-          className={`mg-b-50 ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'}  `}
-          style={{width:'31%', position:'relative'}}
-        >
-          <div key={index} style={{width:'100%'}}>
-            <Link to={`/critics/${critic.id}`}>
-              <div>
-                <div className='fw' style={{position:'relative'}}>
-                  <img src={critic.bg} alt="" className='fw'/>
-                  <div className="msk"> </div>
-                </div>
-                <div
-                  className='fw df jc-sb pd-10'
-                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-                >
-                  <h5>{critic.title}</h5>
-                  <h5>{critic.author}</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        <div
-          className={`mg-b-50 ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  `}
-          style={{width:'45%', position:'relative'}}>
-          <div key={index} style={{width:'100%'}}>
-            <Link to={`/critics/${critic.id}`}>
-              <div>
-                <div className='fw' style={{position:'relative'}}>
-                  <img src={critic.bg} alt="" className='fw'/>
-                  <div className="msk"> </div>
-                </div>
-                <div
-                  className='fw df jc-sb pd-10'
-                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-                >
-                  <h5>{critic.title}</h5>
-                  <h5>{critic.author}</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-
-        <div
-          className={`mg-b-50 ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  `}
-          style={{width:'100%', position:'relative'}}
-        >
-          <div key={index} style={{width:'100%'}}>
-            <Link to={`/critics/${critic.id}`}>
-              <div>
-                <div className='fw' style={{position:'relative'}}>
-                  <img src={critic.bg} alt="" className='fw'/>
-                  <div className="msk"> </div>
-                </div>
-                <div
-                  className='fw df jc-sb pd-10'
-                  style={{position:'absolute', bottom:'0', left:'0', color:'#fff'}}
-                >
-                  <h5>{critic.title}</h5>
-                  <h5>{critic.author}</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
+const CriticCard = ({ critic, width }) => (
+  <div className="mg-b-50" style={{ width, position: 'relative' }}>
+    <Link to={`/critics/${critic.id}`}>
+      <div className="fw" style={{ position: 'relative' }}>
+        <img src={critic.bg} alt={critic.title} className="fw" />
+        <div className="msk" />
       </div>
-      
-    )
-  })
+      <div
+        className="fw df jc-sb pd-10"
+        style={{ position: 'absolute', bottom: '0', left: '0', color: '#fff' }}
+      >
+        <h5>{critic.title}</h5>
+        <h5>{critic.author}</h5>
+      </div>
+    </Link>
+  </div>
+);
+
+// Updated TabButton component with responsive features
+const TabButton = ({ label, isActive, onClick, screenWidth }) => {
+  const getTabStyles = () => {
+    // Base styles
+    const baseStyles = {
+      fontWeight: '900',
+      transition: 'all 0.4s ease',
+    };
+
+    // Responsive styles
+    if (screenWidth < 425) { // Mobile
+      return {
+        ...baseStyles,
+        fontSize: '16px',
+        padding: '2px 12px',
+        marginRight: '5px',
+      };
+    } else if (screenWidth < 768) { // Tablet
+      return {
+        ...baseStyles,
+        fontSize: '12px',
+        padding: '2px 15px',
+        marginRight: '5px',
+      };
+    } else { // Desktop
+      return {
+        ...baseStyles,
+        fontSize: '12px',
+        padding: '2px 20px',
+        marginRight: '5px',
+      };
+    }
+  };
+
+  const getTabClasses = () => {
+    const baseClasses = 'pointer trans-4';
+    const activeClass = isActive ? 'bd-bt-active' : '';
+    
+    // Add responsive classes
+    if (screenWidth < 425) {
+      return `${baseClasses} ${activeClass} mobile-tab`;
+    }
+    return `${baseClasses} ${activeClass} mg-r-20`;
+  };
 
   return (
+    <li
+      className={getTabClasses()}
+      onClick={onClick}
+      style={{
+        ...getTabStyles(),
+        borderBottom: isActive ? '2px solid #000' : 'none',
+        textAlign: screenWidth < 425 ? 'center' : 'left', // Center text on mobile
+        flex: screenWidth < 425 ? '1 1 45%' : 'none', // Equal width on mobile
+      }}
+    >
+      <h5 style={getTabStyles()}>{label}</h5>
+    </li>
+  );
+};
 
+
+const ResponsiveCriticsList = ({ critics, screenWidth }) => {
+  const getResponsiveStyles = () => {
+    const baseClasses = 'df';
+    if (screenWidth >= 375 && screenWidth < 425) return `${baseClasses} fd-c`;
+    return `${baseClasses} jc-sb fl-wp`;
+  };
+
+  const getCardWidth = () => {
+    if (screenWidth < 425) return '100%';  // mobile
+    if (screenWidth < 768) return '45%';   // small tablet
+    return '31%';                          // tablet & desktop
+  };
+
+  return (
+    <div className={getResponsiveStyles()}>
+      {critics.map((critic, index) => {
+        const isVisible = Object.values(SCREEN_BREAKPOINTS).some(
+          breakpoint => screenWidth >= breakpoint.min && screenWidth < breakpoint.max
+        );
+
+        return (
+          <div key={index} className={isVisible ? 'di' : 'dn'} style={{width:getCardWidth()}}>
+            <CriticCard critic={critic} width={"100%"} />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const Critics = () => {
+  const [visibleSection, setVisibleSection] = useState('critics');
+  const screenWidth = window.innerWidth;
+
+  const handleSectionToggle = (section) => {
+    setVisibleSection(visibleSection === section ? null : section);
+  };
+
+  const tabs = [
+    { id: 'critics', label: '藝評' },
+    { id: 'report', label: '報導' }
+  ];
+
+  return (
     <div>
-      <ul className='df pd-b-title mg-b-10 w-auto'>
-        <li 
-          className={`
-            mg-r-20
-            ${visibleSection === 'critics' ? 'bd-bt-active' : '' }
-            pointer trans-4
-          `}
-          onClick={() => handleSectionToggle('critics')}>
-          <h5 style={{fontWeight:'900'}}>藝評</h5>
-        </li>
-        <li
-          className={`
-            mg-r-20
-            ${visibleSection === 'report' ? 'bd-bt-active' : '' }
-            pointer trans-4
-          `}
-          onClick={() => handleSectionToggle('report')}>
-          <h5 style={{fontWeight:'900'}}>報導</h5>
-        </li>
+      <ul className="df pd-b-title mg-b-10 w-auto">
+        {tabs.map(tab => (
+          <TabButton
+            key={tab.id}
+            label={tab.label}
+            isActive={visibleSection === tab.id}
+            onClick={() => handleSectionToggle(tab.id)}
+            screenWidth={screenWidth}
+          />
+        ))}
       </ul>
 
       {visibleSection === 'critics' && (
-        <div className={`
-          ${(1024<=ScreenWidth && ScreenWidth < 1960) ? 'df jc-sb fl-wp' : ''}
-          ${(768<=ScreenWidth && ScreenWidth < 1024) ? 'df jc-sb fl-wp' : ''}
-          ${(425<=ScreenWidth && ScreenWidth < 768) ? 'df jc-sb fl-wp' : ''}
-          ${(375<=ScreenWidth && ScreenWidth < 425) ? 'df fd-c' : ''}
-        `}>
-          {criticsRender}
-        </div>
+        <ResponsiveCriticsList
+          critics={critics_item}
+          screenWidth={screenWidth}
+        />
       )}
 
       {visibleSection === 'report' && (
-          <div className={`
-            df jc-sb fl-wp
-            ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : ''}
-          `}>
-            {/* {criticsRender} */}
-          </div>
+        <ResponsiveCriticsList
+          critics={[]} // Add report data here
+          screenWidth={screenWidth}
+        />
       )}
-
-
     </div>
+  );
+};
 
-  )
-}
-
-export default Critics
+export default Critics;
