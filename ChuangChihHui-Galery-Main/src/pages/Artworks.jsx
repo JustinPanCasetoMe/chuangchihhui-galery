@@ -24,7 +24,7 @@ const ArtworkDetails = ({ artwork }) => {
 
 const ArtworkImage = ({ img }) => (
     <div className='df jc-c' style={{height:'500px'}}>
-        <img src={img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+        <img src={img} alt="" className='bd-r-sm bx-sd-sm fh'/>
     </div>
 );
 
