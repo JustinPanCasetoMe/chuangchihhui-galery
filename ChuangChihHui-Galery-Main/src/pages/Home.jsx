@@ -60,9 +60,9 @@ const ArtworkThumbnail = ({ artwork, screenWidth }) => {
 
 const SocialLinks = ({ isMobile }) => {
   const containerStyle = isMobile ? 'txt-aln-c' : 'df';
-  const linkStyle = isMobile ? 
-    { width: '100%', className: 'outerLink mg-r-30 mg-b-20 db' } :
-    { className: 'outerLink mg-r-30' };
+  const linkStyle = isMobile ?
+    {width: '100%', className: 'outerLink mg-r-30 mg-b-20 db'}:
+    {className: 'outerLink mg-r-30'};
 
   return (
     <ul className={containerStyle}>
