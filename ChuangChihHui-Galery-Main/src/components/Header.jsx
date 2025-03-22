@@ -170,7 +170,6 @@ const Header = () => {
         )
     }
 
-
     return (
         <>
             {/* Navigation Bar for the website version*/}
@@ -273,7 +272,7 @@ const Header = () => {
             {/* ======== Navigation Bar for the 425-768 version ========*/}
             <header className={`
                 df jc-sb aln-itm-c fw pd-x-container
-                ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  
+                ${(375<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  
             `}>
                 {/* Logo Container */}
                 <div
