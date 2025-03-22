@@ -9,6 +9,7 @@ const Opening = () => {
     const [showSlogan, setShowSlogan] = useState(false)
     const [showText, setShowText] = useState(false)
     const [showMask, setShowMask] = useState(false)
+    const ScreenWidth = window.innerWidth
 
     useEffect(() => {
         // Change background color after 2 seconds
@@ -39,12 +40,13 @@ const Opening = () => {
 
   return (
     <div
+        className='openingContainer'
         style={{
             position:"absolute",
             top:"0",
             left:"0",
             width:"100vw",
-            height:"100vh",
+            height: `${ScreenWidth<425 ? '30vh' : '100vh'}`,
             // backgroundColor: bgColor,
             transition:"background-color 0.5s ease" //smooth transition for background color
         }}
@@ -63,7 +65,12 @@ const Opening = () => {
                     transition: 'all 0.5s ease-in-out'
                 }}
             >
-                <h1 className='mg-b-10' style={{fontWeight:"500"}}>CHUANG CHIH HUI</h1>
+                <h1
+                    className='mg-b-10'
+                    style={{fontWeight:"500", fontSize:`${ScreenWidth<425 ? '16px' : ''}`}}
+                >
+                    CHUANG CHIH HUI
+                </h1>
                 <div>
                     <p style={{fontSize:"12px", marginBottom:"10px"}}>Surrealist Artist</p>
                     <p style={{fontSize:"12px"}}>Painting x Sculpture x Bronze x Mixed Media</p>
@@ -79,10 +86,11 @@ const Opening = () => {
                 width:"100%",
                 textAlign:"center",
                 color:"#fff",
+                display:`${ScreenWidth<425 ? 'none' : ''}`,
                 zIndex:45
             }}
         >
-            <h1 style={{fontWeight:"400", marginRight:"20px"}}>EXPLORE</h1>
+            <h3 style={{fontWeight:"400", marginRight:"20px"}}>EXPLORE</h3>
             <FaChevronDown size={28} style={{fontWeight:"200"}}/>
         </div>
 

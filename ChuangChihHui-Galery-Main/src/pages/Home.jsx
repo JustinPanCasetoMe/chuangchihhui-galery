@@ -111,7 +111,7 @@ const Home = () => {
     <div>
       <Opening />
 
-      <div style={{ marginTop: "110vh" }} className="df jc-sb fl-wp">
+      <div style={{ marginTop:`${ screenWidth<425 ? '40vh' : '110vh'}`}} className="df jc-sb fl-wp">
         <div className="df jc-sb fl-wp">
           {renderArtworks()}
         </div>

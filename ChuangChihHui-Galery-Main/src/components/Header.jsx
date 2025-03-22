@@ -7,12 +7,13 @@ import { useTranslation } from 'react-i18next'
 import menuItems from '../datas/menuItem.json'
 
 const Header = () => {
-
+    
     const ScreenWidth = window.innerWidth
     const { t, i18n } = useTranslation()
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng)
     }
+    const menuRef = useRef(null);
 
     const [menuItem, setMenuItem] = useState('Artworks')
     const [menuToggle, setMenuToggle] = useState()
@@ -78,6 +79,25 @@ const Header = () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // Check if click is outside both menu and menu button
+            if (
+                menuRef.current && 
+                !menuRef.current.contains(event.target) &&
+                !event.target.closest('.menuBar') // Prevent closing when clicking the menu button
+            ) {
+                setMenuBarStatus(false);
+            }
+        };
+    
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+    
 
 
     // ==================== MenuItem Render ====================
@@ -298,7 +318,7 @@ const Header = () => {
                         onClick={menubarToggle}
                     />
 
-                    <div className={`fh df fd-c mg-r-30 ${menuBarStatus ? 'menuMobile' : 'dn'}`}>
+                    <div ref={menuRef} className={`fh df fd-c mg-r-30 ${menuBarStatus ? 'menuMobile' : 'dn'}`}>
                         {menuItemRender}
                     </div>
                     
