@@ -79,7 +79,7 @@ const TabButton = ({ label, isActive, onClick, screenWidth }) => {
       style={{
         ...getTabStyles(),
         borderBottom: isActive ? '2px solid #000' : 'none',
-        textAlign: screenWidth < 425 ? 'center' : 'left', // Center text on mobile
+        textAlign: screenWidth < 425 ? 'center' : 'left', // Center text on mobil｀
         flex: screenWidth < 425 ? '1 1 45%' : 'none', // Equal width on mobile
       }}
     >

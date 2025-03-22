@@ -51,6 +51,7 @@ const Header = () => {
             break;
         }
     }
+
     // ==================== Close Tab ====================
     const [isOpen, setIsOpen] = useState(false); // State to control the visibility of the language selector
     const languageSelectorRef = useRef(null); // Ref to the language selector area
@@ -92,6 +93,7 @@ const Header = () => {
                         key={subIndex}
                         to={`/portfolio/${sub.pathname}`}
                         className='df aln-itm-c pd-10'
+                        style={{backgroundColor:"$fff"}}
                     >
                         {sub.text}
                         <FaAngleRight size={16} className='pd-l-10'/>
@@ -101,11 +103,20 @@ const Header = () => {
         })
 
         return(
-            <li key={index} onClick={()=>{setMenuItem(menu.id)}} className='pd-w-10' style={{position:"relative"}}>
+            <li
+                key={index}
+                onClick={()=>{setMenuItem(menu.id)}}
+                className='pd-w-10'
+                style={{position:"relative", backgroundColor:"#fff"}}
+            >
                 <Link
                     to={`${menu.url}`}
-                    className={`pd-10 df aln-itm-c ${menu.id==menuItem ? 'menuItemActive' : ''}`}
-                    style={{color:`${menu.id==menuItem ? '#383838' : ''}`}}
+                    className={`
+                        pd-10 df jc-c aln-itm-c
+                        ${ScreenWidth<768 ? 'bd-b' : ''}
+                        ${menu.id==menuItem ? 'menuItemActive' : ''}`
+                    }
+                    style={{color:`${menu.id==menuItem ? '#383838' : ''}`, width:"100px"}}
                     onMouseEnter={()=> setMenuToggle(menu.id)}
                     onMouseLeave={()=> setMenuToggle()}
                 >
@@ -116,7 +127,8 @@ const Header = () => {
                         style={{
                             position:"absolute",
                             top:"100%",
-                            left:"20px",
+                            left:"10px",
+                            // width:"100px",
                             paddingTop:"10%",
                             backgroundColor:"#fff",
                             border:"0.6px solid var(--grey-1)"
@@ -163,50 +175,50 @@ const Header = () => {
         <>
             {/* Navigation Bar for the website version*/}
             <header className={`
-            df jc-sb aln-itm-c fw pd-x-container
-            ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
+                df jc-sb aln-itm-c fw pd-x-container
+                ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'}  
             `}>
-            <div className='df jc-sb aln-itm-c fw'>
-                {/* Logo Container */}
-                <Link to='/' onClick={handleMenubarClose}>
-                <div className="Logo df aln-itm-c">
-                    <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
-                    <div style={{width:'300px'}}>
-                    <h3 style={{fontSize:'18px'}}>莊志輝</h3>
-                    <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
-                    </div>
-                </div>
-                </Link>
+                <div className='df jc-sb aln-itm-c fw'>
+                    {/* Logo Container */}
+                    <Link to='/' onClick={handleMenubarClose}>
+                        <div className="Logo df aln-itm-c">
+                            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
+                            <div style={{width:'300px'}}>
+                            <h3 style={{fontSize:'18px'}}>莊志輝</h3>
+                            <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
+                            </div>
+                        </div>
+                    </Link>
 
-                <div className='fh df jc-sb aln-itm-c mg-r-30'>
-                    {menuItemRender}
+                    <div className='fh df jc-sb aln-itm-c mg-r-30'>
+                        {menuItemRender}
+                    </div>
+                    
                 </div>
-                
-            </div>
 
             
 
-            {/* ========== Language Select ========== */}
-            <ul style={{position:'relative'}} className='df fd-c pd-w-10 fh jc-c aln-itm-c'>
-                <div className='df fd-c jc-c' onClick={handleLanguageSelect}>
-                    <FaEarthAfrica size={20}/>
-                </div>
-                {isOpen && (
-                    <ul
-                        className={`df fd-c ${tabClose ? 'dn' : ''}`}
-                        style={{
-                            position:"absolute",
-                            top:"160%",
-                            left:"50%",
-                            display:`${langActive ? '' : 'none'}`
-                        }}
-                        ref={languageSelectorRef}
-                    >
-                        <li className='lngSub' onClick={() => {changeLanguage('ch')}}>{t('中文')}</li>
-                        <li className='lngSub' onClick={() => {changeLanguage('en')}}>{t('英文')}</li>
-                    </ul>
-                )}
-            </ul>
+                {/* ========== Language Select ========== */}
+                <ul style={{position:'relative'}} className='df fd-c pd-w-10 fh jc-c aln-itm-c'>
+                    <div className='df fd-c jc-c' onClick={handleLanguageSelect}>
+                        <FaEarthAfrica size={20}/>
+                    </div>
+                    {isOpen && (
+                        <ul
+                            className={`df fd-c ${tabClose ? 'dn' : ''}`}
+                            style={{
+                                position:"absolute",
+                                top:"160%",
+                                left:"50%",
+                                display:`${langActive ? '' : 'none'}`
+                            }}
+                            ref={languageSelectorRef}
+                        >
+                            <li className='lngSub' onClick={() => {changeLanguage('ch')}}>{t('中文')}</li>
+                            <li className='lngSub' onClick={() => {changeLanguage('en')}}>{t('英文')}</li>
+                        </ul>
+                    )}
+                </ul>
             </header>
 
 
@@ -217,103 +229,45 @@ const Header = () => {
             `}>
 
                 {/* Logo Container */}
-                <Link to='/'>
-                <div className="Logo df aln-itm-c">
-                    <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20' style={{height:'40%'}}/>
-                    <div style={{width:'200px'}}>
-                    <h3 style={{fontSize:'16px'}}>莊志輝</h3>
-                    <h3 style={{fontSize:'16px'}}>CHUANG CHIH HUI</h3>
-                    </div>
-                </div>
-                </Link>
-
-                <nav className='fh'>
-                <ul className='fh df jc-sb aln-itm-c'>
-
-                    <li
-                    className={`pd-w-10`}
-                    style={{position:'relative'}}
-                    onMouseEnter={() => setMenuHover(true)}
-                    onMouseLeave={() => setMenuHover(false)}
-                    >
-                    <Link to='/portfolio' className='pd-10 df aln-itm-c'>
-                        作品<FaAngleDown size={16} className='pd-l-10'/>
+                <div className='df jc-sb aln-itm-c fw'>
+                    {/* Logo Container */}
+                    <Link to='/' onClick={handleMenubarClose}>
+                        <div className="Logo df aln-itm-c">
+                            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
+                            <div style={{width:'300px'}}>
+                            <h3 style={{fontSize:'18px'}}>莊志輝</h3>
+                            <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
+                            </div>
+                        </div>
                     </Link>
 
-                    <ul className={`fd-c artW-sub ${menuHover===true ? 'df' : 'dn'}`}>
-                        <li
-                        className='bd-b'
-                        style={{width:'200px', position:'relative'}}
-                        onMouseEnter={() => setSubMenuHover(true)}
-                        onMouseLeave={() => setSubMenuHover(false)}
-                        >
-                        {/* 歷代平面經典總覽 */}
-                        <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
-                            歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                        </Link>
-                        <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                                <h4>1968-2001</h4>
-                            </Link>
-                            </li>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                                <h4>2002-2019</h4>
-                            </Link> 
-                            </li>
-                            <li className='pd-y-10' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                                <h4>2020-2024</h4>
-                            </Link>
-                            </li>
-                        </ul>
-                        </li>
-                        <li
-                        className=''
-                        style={{width:'200px', position:'relative'}}
-                        onMouseEnter={() => setSubMenuCubeHover(true)}
-                        onMouseLeave={() => setSubMenuCubeHover(false)}
-                        >
+                    <div className='fh df jc-sb aln-itm-c mg-r-30'>
+                        {menuItemRender}
+                    </div>
+                    
+                </div>
 
-                        {/* 歷代立體經典總覽 */}
-                        <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
-                            歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                        </Link>
-                        <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                                <h4>To be Determined 01</h4>
-                            </Link>
-                            </li>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                                <h4>To be Determined 02</h4>
-                            </Link> 
-                            </li>
-                            <li className='pd-y-10' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                                <h4>To be Determined 03</h4>
-                            </Link>
-                            </li>
+                {/* ========== Language Select ========== */}
+                <ul style={{position:'relative'}} className='df fd-c pd-w-10 fh jc-c aln-itm-c'>
+                    <div className='df fd-c jc-c' onClick={handleLanguageSelect}>
+                        <FaEarthAfrica size={20}/>
+                    </div>
+                    {isOpen && (
+                        <ul
+                            className={`df fd-c ${tabClose ? 'dn' : ''}`}
+                            style={{
+                                position:"absolute",
+                                top:"160%",
+                                left:"50%",
+                                display:`${langActive ? '' : 'none'}`
+                            }}
+                            ref={languageSelectorRef}
+                        >
+                            <li className='lngSub' onClick={() => {changeLanguage('ch')}}>{t('中文')}</li>
+                            <li className='lngSub' onClick={() => {changeLanguage('en')}}>{t('英文')}</li>
                         </ul>
-                        </li>
-                    </ul>
-                    </li>
-                    <li className='pd-w-10'>
-                    <Link to='/experiences' className='pd-10'>資歷</Link>
-                    </li>
-                    <li className='pd-w-10'>
-                    <Link to='/critics' className='pd-10'>藝評</Link>
-                    </li>
-                    <li className='pd-w-10'>
-                    <Link to='/collections' className='pd-10'>收藏</Link>
-                    </li>
-                    <li className='pd-w-10'>
-                    <Link to='/contacts' className='pd-10'>聯絡</Link>
-                    </li>
+                    )}
                 </ul>
-                </nav>
             </header>
 
             {/* ======== Navigation Bar for the 425-768 version ========*/}
@@ -321,229 +275,60 @@ const Header = () => {
                 df jc-sb aln-itm-c fw pd-x-container
                 ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'}  
             `}>
-
                 {/* Logo Container */}
-                <Link to='/'>
-                <div className="Logo df aln-itm-c">
-                    <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20' style={{height:'40%'}}/>
-                    <div>
-                    <h3 style={{fontSize:'16px'}}>莊志輝</h3>
-                    <h3 style={{fontSize:'16px'}}>CHUANG CHIH HUI</h3>
-                    </div>
-                </div>
-                </Link>
-
-                <FaBars 
-                size={32}
-                className='menuBar'
-                onClick={menubarToggle}
-                />
-
-                <nav className={`${menuBarStatus ? 'menuMobile' : 'dn'}`}>
-                <ul className='df fd-c' style={{width:'250px'}}>
-                    <li
-                    className={`bd-t fw`}
+                <div
+                    className={`df jc-sb aln-itm-c fw bd-t`}
                     style={{position:'relative'}}
                     onMouseEnter={() => setMenuHover(true)}
                     onMouseLeave={() => setMenuHover(false)}
-                    >
-                    <Link to='/portfolio' className='pd-20 df jc-sb aln-itm-c'>
-                        作品<FaAngleDown size={16}/>
+                >
+                    {/* Logo Container */}
+                    <Link to='/' onClick={handleMenubarClose}>
+                        <div className="Logo df aln-itm-c">
+                            <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
+                            <div style={{width:'300px'}}>
+                                <h3 style={{fontSize:'18px'}}>莊志輝</h3>
+                                <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
+                            </div>
+                        </div>
                     </Link>
 
-                    <ul className={`fd-c artW-sub ${menuHover===true ? 'df' : 'dn'}`}>
-                        <li
-                        className='bd-b'
-                        style={{width:'200px', position:'relative'}}
-                        onMouseEnter={() => setSubMenuHover(true)}
-                        onMouseLeave={() => setSubMenuHover(false)}
-                        >
-                        {/* 歷代平面經典總覽 */}
-                        <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
-                            歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                        </Link>
-                        <ul className={`fd-c periods-sub pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                                <h4>1968-2001</h4>
-                            </Link>
-                            </li>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                                <h4>2002-2019</h4>
-                            </Link> 
-                            </li>
-                            <li className='pd-y-10' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                                <h4>2020-2024</h4>
-                            </Link>
-                            </li>
-                        </ul>
-                        </li>
-                        <li
-                        className=''
-                        style={{width:'200px', position:'relative'}}
-                        onMouseEnter={() => setSubMenuCubeHover(true)}
-                        onMouseLeave={() => setSubMenuCubeHover(false)}
-                        >
+                    <FaBars 
+                        size={32}
+                        className='menuBar'
+                        onClick={menubarToggle}
+                    />
 
-                        {/* 歷代立體經典總覽 */}
-                        <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c'>
-                            歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                        </Link>
-                        <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                                <h4>To be Determined 01</h4>
-                            </Link>
-                            </li>
-                            <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                                <h4>To be Determined 02</h4>
-                            </Link> 
-                            </li>
-                            <li className='pd-y-10' style={{width:'200px'}}>
-                            <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                                <h4>To be Determined 03</h4>
-                            </Link>
-                            </li>
-                        </ul>
-                        </li>
-                    </ul>
-
-                    </li>
-                    <li className='bd-t fw'>
-                    <Link to='/experiences' className='pd-20 db'>資歷</Link>
-                    </li>
-                    <li className='bd-t fw'>
-                    <Link to='/critics' className='pd-20 db'>藝評</Link>
-                    </li>
-                    <li className='bd-t fw'>
-                    <Link to='/collections' className='pd-20 db'>收藏</Link>
-                    </li>
-                    <li className='bd-t fw'>
-                    <Link to='/contacts' className='pd-20 db'>聯絡</Link>
-                    </li>
-                </ul>
-                </nav>
-            </header>
-
-
-            {/* ======== Navigation Bar for the 375-425 version ========*/}
-            <header className={`
-                df jc-sb aln-itm-c fw pd-x-container
-                ${(375<=ScreenWidth && ScreenWidth < 425) ? '' : 'dn'}  
-            `}>
-
-
-                {/* Logo Container */}
-                <Link to='/' onClick={handleMenubarClose}>
-                <div className="Logo df aln-itm-c">
-                    <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='fh mg-r-20' style={{height:'40%'}}/>
-                    <div>
-                    <h3 style={{fontSize:'16px'}}>莊志輝</h3>
-                    <h3 style={{fontSize:'16px'}}>CHUANG CHIH HUI</h3>
+                    <div className={`fh df fd-c mg-r-30 ${menuBarStatus ? 'menuMobile' : 'dn'}`}>
+                        {menuItemRender}
                     </div>
+                    
                 </div>
-                </Link>
 
-                <FaBars 
-                size={32}
-                className='menuBar'
-                onClick={menubarToggle}
-                />
+                {/* ========== Language Select ========== */}
+                {/* <ul style={{position:'relative'}} className='df fd-c pd-w-10 fh jc-c aln-itm-c'>
+                    <div className='df fd-c jc-c' onClick={handleLanguageSelect}>
+                        <FaEarthAfrica size={20}/>
+                    </div>
+                    {isOpen && (
+                        <ul
+                            className={`df fd-c ${tabClose ? 'dn' : ''}`}
+                            style={{
+                                position:"absolute",
+                                top:"160%",
+                                left:"50%",
+                                display:`${langActive ? '' : 'none'}`
+                            }}
+                            ref={languageSelectorRef}
+                        >
+                            <li className='lngSub' onClick={() => {changeLanguage('ch')}}>{t('中文')}</li>
+                            <li className='lngSub' onClick={() => {changeLanguage('en')}}>{t('英文')}</li>
+                        </ul>
+                    )}
+                </ul>  */}
+               
 
-                <nav className={`${menuBarStatus ? 'menuMobile' : 'dn'}`}>
-                <ul className='df fd-c' style={{width:'250px'}}>
-                    <li
-                    className={`bd-t fw`}
-                    style={{position:'relative'}}
-                    onMouseEnter={() => setMenuHover(true)}
-                    onMouseLeave={() => setMenuHover(false)}
-                    >
-                    <Link to='/portfolio' className='pd-20 df jc-sb aln-itm-c' onClick={handleSubOpen}>
-                        作品<FaAngleDown size={16}/>
-                    </Link>
-
-                    <ul className={`fd-c ${menuHover===true ? 'df' : 'dn'}`}>
-                    </ul>
-                    </li>
-
-                    {/* 歷代平面經典總覽 */}
-                    <li
-                    className={`bd-b ${subOpen && menuHover ? '' : 'dn'}`}
-                    style={{width:'200px', position:'relative'}}
-                    onMouseEnter={() => setSubMenuHover(true)}
-                    onMouseLeave={() => setSubMenuHover(false)}
-                    >
-                    <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
-                        歷代平面經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                    </Link>
-                    </li>
-
-                    {/* <ul className={`fd-c pd-w-10 ${subMenuHover===true ? 'df' : 'dn'}`}>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                        <h4>1968-2001</h4>
-                        </Link>
-                    </li>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                        <h4>2002-2019</h4>
-                        </Link> 
-                    </li>
-                    <li className='pd-y-10' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                        <h4>2020-2024</h4>
-                        </Link>
-                    </li>
-                    </ul> */}
-
-                    {/* 歷代立體經典總覽 */}
-                    <li
-                    className={`${subOpen && menuHover? '' : 'dn'}`}
-                    style={{width:'200px', position:'relative'}}
-                    onMouseEnter={() => setSubMenuCubeHover(true)}
-                    onMouseLeave={() => setSubMenuCubeHover(false)}
-                    >
-                    <Link to='/portfolio' className='pd-10 df jc-sb aln-itm-c' onClick={menubarToggle}>
-                        歷代立體經典總覽<FaAngleRight size={16} className='pd-l-10'/>
-                    </Link>
-                    </li>
-                    {/* <ul className={`fd-c periods-sub pd-w-10 ${subMenuCubeHover===true ? 'df' : 'dn'}`}>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/1986-2001' className='pd-y-10'>
-                        <h4>To be Determined 01</h4>
-                        </Link>
-                    </li>
-                    <li className='pd-y-10 bd-b' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2002-2019' className='pd-y-10'>
-                        <h4>To be Determined 02</h4>
-                        </Link> 
-                    </li>
-                    <li className='pd-y-10' style={{width:'200px'}}>
-                        <Link to='/portfolio/periods/2020-2024' className='pd-y-10'>
-                        <h4>To be Determined 03</h4>
-                        </Link>
-                    </li>
-                    </ul> */}
-
-                    <li className='bd-t fw'>
-                    <Link to='/experiences' className={`pd-20 db`} onClick={() => handleMenubarClose('Experiences')}>資歷</Link>
-                    </li>
-                    <li className='bd-t fw'>
-                    <Link to='/critics' className={`pd-20 db`} onClick={() => handleMenubarClose('Critics')}>藝評</Link>
-                    </li>
-                    {/* <li className='bd-t fw'>
-                    <Link to='/collections' className={`pd-20 db`} onClick={() => handleMenubarClose('Collections')}>收藏</Link>
-                    </li> */}
-                    <li className='bd-t fw'>
-                    <Link to='/contacts' className={`pd-20 db`} onClick={() => handleMenubarClose('Contacts')}>聯絡</Link>
-                    </li>
-                </ul>
-                </nav>
             </header>
-    
         </>
     )
 }
