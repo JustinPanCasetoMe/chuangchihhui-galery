@@ -40,13 +40,12 @@ const Opening = () => {
 
   return (
     <div
-        className='openingContainer'
         style={{
             position:"absolute",
-            top:"0",
+            top: `${ScreenWidth<425 ? '60px' : '0'}`,
             left:"0",
             width:"100vw",
-            height: `${ScreenWidth<425 ? '30vh' : '100vh'}`,
+            height: `${ScreenWidth<425 ? '40vh' : '100vh'}`,
             // backgroundColor: bgColor,
             transition:"background-color 0.5s ease" //smooth transition for background color
         }}
