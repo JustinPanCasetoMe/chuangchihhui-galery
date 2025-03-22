@@ -10,7 +10,7 @@ const ModernStereo = () => {
     if (!artwork) return null;
 
     return(
-      <div style={{width:"22%", marginBottom:"100px", position:"relative"}}>
+      <div style={{width:"22%", marginBottom:"100px", marginRight:"50px", position:"relative"}}>
         <Link to={`/portfolio/artworks/${artwork.name}`}>
           <img
             src={artworks[img_Id].thumbnail} alt="" 
@@ -20,7 +20,9 @@ const ModernStereo = () => {
           <div className='thumbnailMask'>
             <div className=''>
               <h5 style={{marginBottom:'14.56px'}}>{artwork.name}</h5>
-              <h5>{artwork.size} {artwork.mediums} {artwork.year}</h5>
+              <h5>{artwork.size}</h5>
+              <h5> {artwork.mediums}</h5>
+              <h5> {artwork.year}</h5>
             </div>
           </div>
         </Link>

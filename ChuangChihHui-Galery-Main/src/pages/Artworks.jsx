@@ -1,197 +1,127 @@
-import React from 'react'
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const Artworks = ({ artworks = [] }, mainArtwork ) => {
+const ArtworkDetails = ({ artwork }) => {
+    return (
+        <div className='df fd-c jc-c' style={{width:'30%'}}>
+            <h3 className='mg-b-30'>{artwork.name}</h3>
+            <ul className='mg-b-30'>
+            {[
+                { label: '尺寸', value: artwork.size },
+                { label: '媒材', value: artwork.mediums },
+                { label: '年份', value: artwork.year }
+            ].map(({ label, value }) => (
+                <span key={label} className='df'>
+                    <li className='mg-b-5'>{label}：</li>
+                    <li className='lt-sc'>{value}</li>
+                </span>
+            ))}
+            </ul>
+            <Link to='/portfolio/artworks' className='trans-2 button'>同期作品</Link>
+        </div>
+    );
+};
 
-    const ScreenWidth = window.innerWidth
-    let ArtworkId = 0
+const ArtworkImage = ({ img }) => (
+    <div className='df jc-c' style={{height:'500px'}}>
+        <img src={img} alt="" className='bd-r-sm bx-sd-sm fw'/>
+    </div>
+);
 
-    const { ArtworkName } = useParams();
-
-    const main_artworksRender = artworks.map((artwork, index)=> {
-        if(artwork.name === ArtworkName){
-            console.log(ArtworkName, index)
-            ArtworkId = index 
-            return(
-
-                <div key={index}>
-                    <div className={`
-                        df jc-sb fw mg-b-lg
-                        ${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'
-                    }`}>
-                        <div style={{width:'600px', height:'500px'}} className='df jc-c'>
-                            <div className='df jc-c' style={{height:'500px'}}>
-                                <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
-                            </div>
-                        </div>
-        
-                        <div className='df fd-c jc-c' style={{width:'30%'}}>
-        
-                            <h3 className='mg-b-30'>{artwork.name}</h3>
-                            <ul className='mg-b-30'>
-                                <span className='df'>
-                                    <li className='mg-b-5'>尺寸：</li>
-                                    <li className='lt-sc'>{artwork.size}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>媒材：</li>
-                                    <li className='lt-sc'>{artwork.mediums}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>年份：</li>
-                                    <li className='lt-sc'>{artwork.year}</li>
-                                </span>
-                            </ul>
-                            
-                            <Link to='/portfolio/artworks' className='trans-2 button'>同期作品</Link>
-                        </div>
-                    </div>
-                
-                    <div className={`
-                        df jc-sb fw mg-b-lg
-                        ${(768<=ScreenWidth && ScreenWidth < 1024) ? '' : 'dn'
-
-                    }`}>
-                        <div className='df jc-c' style={{height:'500px'}}>
-                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
-                        </div>
-        
-                        <div className='df fd-c jc-c' style={{width:'40%'}}>
-        
-                            <h3 className='mg-b-30'>{artwork.name}</h3>
-                            <ul className='mg-b-30'>
-                                <span className='df'>
-                                    <li className='mg-b-5'>尺寸：</li>
-                                    <li className='lt-sc'>{artwork.size}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>媒材：</li>
-                                    <li className='lt-sc'>{artwork.mediums}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>年份：</li>
-                                    <li className='lt-sc'>{artwork.year}</li>
-                                </span>
-                            </ul>
-                            
-                            <button className='trans-2'>同期作品</button>
-                        </div>
-                    </div>
-
-                    <div className={`
-                        df jc-sb fw mg-b-lg
-                        ${(425<=ScreenWidth && ScreenWidth < 768) ? '' : 'dn'
-
-                    }`}>
-                        <div className='df jc-c' style={{height:'500px'}}>
-                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
-                        </div>
-        
-                        <div className='df fd-c jc-c' style={{width:'40%'}}>
-        
-                            <h3 className='mg-b-30'>{artwork.name}</h3>
-                            <ul className='mg-b-30'>
-                                <span className='df'>
-                                    <li className='mg-b-5'>尺寸：</li>
-                                    <li className='lt-sc'>{artwork.size}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>媒材：</li>
-                                    <li className='lt-sc'>{artwork.mediums}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>年份：</li>
-                                    <li className='lt-sc'>{artwork.year}</li>
-                                </span>
-                            </ul>
-                            
-                            <button className='trans-2'>同期作品</button>
-                        </div>
-                    </div>
-
-                    <div className={`
-                        df fw mg-b-lg
-                        ${(375<=ScreenWidth && ScreenWidth < 425) ? 'fd-c' : 'dn'
-                    }`}>
-                        <div className='fw mg-b-30' style={{}}>
-                            <img src={artwork.img} alt="" className='bd-r-sm bx-sd-sm fw'/>
-                        </div>
-        
-                        <div className='df fd-c jc-c' style={{width:'40%'}}>
-        
-                            <h3 className='mg-b-30'>{artwork.name}</h3>
-                            <ul className='mg-b-30'>
-                                <span className='df'>
-                                    <li className='mg-b-5'>尺寸：</li>
-                                    <li className='lt-sc'>{artwork.size}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>媒材：</li>
-                                    <li className='lt-sc'>{artwork.mediums}</li>
-                                </span>
-                                <span className='df'>
-                                    <li className='mg-b-5'>年份：</li>
-                                    <li className='lt-sc'>{artwork.year}</li>
-                                </span>
-                            </ul>
-                            
-                            <button className='trans-2'>同期作品</button>
-                        </div>
-                    </div>
-                </div>
-
-                
-            )
+const ResponsiveArtworkView = ({ artwork, screenWidth }) => {
+    const layouts = {
+        desktop: {
+            condition: screenWidth >= 1024 && screenWidth < 1960,
+            containerClass: 'df jc-sb fw mg-b-lg',
+            imageWidth: '600px'
+        },
+        tablet: {
+            condition: screenWidth >= 768 && screenWidth < 1024,
+            containerClass: 'df jc-sb fw mg-b-lg',
+            imageWidth: '100%'
+        },
+        mobile: {
+            condition: screenWidth >= 375 && screenWidth < 768,
+            containerClass: 'df fw mg-b-lg fd-c',
+            imageWidth: '100%'
         }
-    })
+    };
 
-    // const simillar_artworksRender = artworks.map((artwork, index) => {
-    //     if(artwork.id == 1 || artwork.id == 2 || artwork.id == 3 || artwork.id == 4){
-    //         return(
-    //             <div key={index} className='mg-b-30' style={{height:'160px'}}>
+    const currentLayout = Object.values(layouts).find(layout => layout.condition);
 
-    //                 {/* Creating a link to the artwork detail page*/}
-    //                 <Link to={`/portfolio/artworks/${artwork.name}`}>
-    //                     <img src={artwork.img} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
-    //                 </Link>
+    if (!currentLayout) return null;
 
-    //             </div> 
-    //         )
-    //     }
-    // })
+    return (
+        <div className={`${currentLayout.containerClass} ${currentLayout.condition ? '' : 'dn'}`}>
+            <div style={{width: currentLayout.imageWidth}}>
+                <ArtworkImage img={artwork.img} />
+            </div>
+            <ArtworkDetails artwork={artwork} />
+        </div>
+    );
+};
 
-
-    const simillar_artworksRender = (artworkId) => {
-        return artworks.map((artwork, index) => {
-            if(artwork.id - 1 === artworkId){
-                return artwork.similarArt.map((similarId, index) => {
-                    // console.log("similarId = ", similarId)
-                    // console.log("artwork.[",similarId,"].img = ", artworks[similarId].img)
-                    return(
-                        <div key={index} className='mg-b-30' style={{height:'160px'}}>
+const SimilarArtworks = ({ artworks, currentArtworkId }) => {
+    const currentArtwork = artworks[currentArtworkId];
+    if (!currentArtwork) return null;
     
-                            {/* Creating a link to the artwork detail page*/}
-                            <Link to={`/portfolio/artworks/${artworks[similarId-1].name}`}>
-                                <img src={`${artworks[similarId-1].img}`} alt="" className='bx-sd-sm fh mg-r-20 imgActive trans-2'/>
-                            </Link>
-                        </div> 
-                    )
-                })
-            }
-        })
+    // Check if there are no similar artworks
+    if (!currentArtwork.similarArt || currentArtwork.similarArt.length === 0) {
+        return (
+            <div>
+                <h2 className='mg-b-30'>相似作品</h2>
+                <h3 style={{color:"var(--grey-2)"}}>暫無相似作品</h3>
+            </div>
+        );
     }
 
     return (
-        <div key={{}}>
-            {main_artworksRender}
-            <div>
-                <h2 className='mg-b-30'>相似作品</h2>
-                <div className='df fl-wp'>
-                    {simillar_artworksRender(ArtworkId)}
-                </div>
+        <div>
+            <h2 className='mg-b-30'>相似作品</h2>
+            <div className='df fl-wp'>
+                {currentArtwork.similarArt.map((similarId, index) => {
+                    
+                    const similarArtwork = artworks[similarId - 1];
+                    if (!similarArtwork) return null;
+
+                    return (
+                        <div key={index} className='mg-b-30' style={{height:'160px'}}>
+                            <Link to={`/portfolio/artworks/${similarArtwork.name}`}>
+                                <img
+                                    src={similarArtwork.img} 
+                                    alt={similarArtwork.name}
+                                    className='bx-sd-sm fh mg-r-20 imgActive trans-2'
+                                />
+                            </Link>
+                        </div>
+                    );
+                })}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Artworks
+const Artworks = ({ artworks = [] }) => {
+    const { ArtworkName } = useParams();
+    const screenWidth = window.innerWidth;
+  
+    const currentArtworkId = artworks.findIndex(artwork => artwork.name === ArtworkName);
+    const currentArtwork = artworks[currentArtworkId];
+
+    if (!currentArtwork) return <div>Artwork not found</div>;
+
+    return (
+        <div>
+        <ResponsiveArtworkView 
+            artwork={currentArtwork} 
+            screenWidth={screenWidth} 
+        />
+        <SimilarArtworks 
+            artworks={artworks} 
+            currentArtworkId={currentArtworkId} 
+        />
+        </div>
+    );
+};
+
+export default Artworks;
