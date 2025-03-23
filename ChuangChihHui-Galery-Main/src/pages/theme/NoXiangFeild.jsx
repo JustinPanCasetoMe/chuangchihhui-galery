@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import artworks from '../../datas/artworks.json'
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 const NoXiangFeild = () => {
 
   const ScreenWidth = window.innerWidth
+  const { t, i18n } = useTranslation();
 
   const imgRender = (img_Id) => {
     const artwork = artworks[img_Id -= 1];
@@ -30,7 +33,7 @@ const NoXiangFeild = () => {
 
   return (
     <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} pd-xContainer`}>
-      <h3 className='periodTitle' style={{marginBottom:'160px'}}>無相之境</h3>
+      <h3 className='periodTitle' style={{marginBottom:'160px'}}>{t('無相之境')}</h3>
       <div className='df jc-sb fl-wp'>
         {imgRender(50)}
         {imgRender(55)}

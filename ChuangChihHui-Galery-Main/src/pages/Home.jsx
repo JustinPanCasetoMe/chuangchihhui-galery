@@ -4,6 +4,8 @@ import Opening from '../components/Opening';
 import preface_text from '../datas/preface_text.json';
 import artworks from '../datas/artworks.json';
 import { Link } from 'react-router-dom';
+import '../i18n';
+import { useTranslation } from 'react-i18next';
 
 // Constants
 const SOCIAL_LINKS = [
@@ -23,6 +25,12 @@ const SCREEN_BREAKPOINTS = {
 };
 
 const ArtworkThumbnail = ({ artwork, screenWidth }) => {
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
+  const { t, i18n } = useTranslation();
+
   const getArtworkStyles = () => {
     if (screenWidth < SCREEN_BREAKPOINTS.TABLET_SMALL.min) { // Mobile
       return { width: "100%", marginBottom: "40px" };
@@ -50,7 +58,7 @@ const ArtworkThumbnail = ({ artwork, screenWidth }) => {
               screenWidth < SCREEN_BREAKPOINTS.TABLET_SMALL.min ? '14px' : 
               screenWidth < SCREEN_BREAKPOINTS.TABLET.min ? '16px' : '18px' 
           }}>
-            {artwork.tag}
+            {t(artwork.tag)}
           </h4>
         </div>
       </Link>

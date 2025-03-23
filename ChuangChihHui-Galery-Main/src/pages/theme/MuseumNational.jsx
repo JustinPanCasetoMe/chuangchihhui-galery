@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 // import thumbnails from '../../datas/thumbnails.json'
 import artworks from '../../datas/artworks.json'
-
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 const MuseumNational = () => {
 
   const ScreenWidth = window.innerWidth
+  const { t, i18n } = useTranslation();
 
   const imgRender = (img_Id) => {
     const artwork = artworks[img_Id -= 1];
@@ -31,7 +33,7 @@ const MuseumNational = () => {
 
   return (
     <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} pd-xContainer`}>
-      <h3 className='periodTitle' style={{marginBottom:'160px'}}>國美館時期</h3>
+      <h3 className='periodTitle' style={{marginBottom:'160px'}}>{t('國美館時期')}</h3>
       <div className='df jc-sb fl-wp'>
         {imgRender(24)}
         {imgRender(23)}
