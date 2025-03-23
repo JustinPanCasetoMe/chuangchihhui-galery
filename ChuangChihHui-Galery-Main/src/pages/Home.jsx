@@ -65,7 +65,7 @@ const SocialLinks = ({ isMobile }) => {
     {className: 'outerLink mg-r-30'};
 
   return (
-    <ul className={containerStyle}>
+    <ul className={`pd-xContainer ${containerStyle}`}>
       {SOCIAL_LINKS.map(({ url, label }) => (
         <a
           key={label}
@@ -111,13 +111,16 @@ const Home = () => {
     <div>
       <Opening />
 
-      <div style={{ marginTop:`${ screenWidth<425 ? '40vh' : '110vh'}`}} className="df jc-sb fl-wp">
+      <div  
+        style={{marginTop:`${ screenWidth<425 ? '100px' : '100px'}`}}
+        className="df jc-c pd-xContainer"
+      >
         <div className="df jc-sb fl-wp">
           {renderArtworks()}
         </div>
       </div>
 
-      <Preface listings={preface_text} />
+      {/* <Preface listings={preface_text} /> */}
       
       {getResponsiveLinks()}
     </div>

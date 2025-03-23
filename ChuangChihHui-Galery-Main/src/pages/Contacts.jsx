@@ -11,7 +11,7 @@ const Contacts = () => {
 
 
   return (
-    <div className='df'>
+    <div className='df pd-xContainer'>
       <div
         style={{
           position:"absolute",

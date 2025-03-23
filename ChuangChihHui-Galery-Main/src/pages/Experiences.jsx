@@ -39,7 +39,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
   }
   
   return (
-    <div>
+    <div className='pd-xContainer'>
       <ul className='df pd-b-title mg-b-10 w-auto'>
         <li 
           className={`

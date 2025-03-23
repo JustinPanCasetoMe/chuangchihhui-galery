@@ -42,10 +42,13 @@ a:hover {
 }
 
 body {
-  margin: 150px 0 80px;
-  padding: 0 255px;
+  margin: 120px 0 80px;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.pd-xContainer{
+  padding: 0 255px;
 }
 
 header{
@@ -141,25 +144,25 @@ option{
 }
 
 @media (max-width:1250px) {
-  body {
+  .pd-xContainer{
     padding: 0 180px;
   }
 }
 
 @media (max-width:1024px) {
-  body {
+  .pd-xContainer{
     padding: 0 120px;
   }
 }
 
 @media (max-width:768px) {
-  body {
+  .pd-xContainer{
     padding: 0 80px;
   }
 }
 
 @media (max-width:425px) {
-  body {
+  .pd-xContainer{
     padding: 0 20px;
   }
 }

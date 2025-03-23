@@ -409,6 +409,10 @@
   justify-content: space-around;
 }
 
+.jc-fe{
+  justify-content: flex-end;
+}
+
 /* Align-items */
 .aln-itm-c{
   align-items: center;

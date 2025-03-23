@@ -111,15 +111,15 @@ const Artworks = ({ artworks = [] }) => {
     if (!currentArtwork) return <div>Artwork not found</div>;
 
     return (
-        <div>
-        <ResponsiveArtworkView 
-            artwork={currentArtwork} 
-            screenWidth={screenWidth} 
-        />
-        <SimilarArtworks 
-            artworks={artworks} 
-            currentArtworkId={currentArtworkId} 
-        />
+        <div className='pd-xContainer'>
+            <ResponsiveArtworkView 
+                artwork={currentArtwork} 
+                screenWidth={screenWidth} 
+            />
+            <SimilarArtworks 
+                artworks={artworks} 
+                currentArtworkId={currentArtworkId} 
+            />
         </div>
     );
 };

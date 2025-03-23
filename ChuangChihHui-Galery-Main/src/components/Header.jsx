@@ -126,8 +126,8 @@ const Header = () => {
             <li
                 key={index}
                 onClick={()=>{setMenuItem(menu.id)}}
-                className='pd-w-10'
-                style={{position:"relative", backgroundColor:"#fff"}}
+                // className='pd-w-10'
+                style={{position:"relative", backgroundColor:"#fff", marginRight:"20px"}}
             >
                 <Link
                     to={`${menu.url}`}
@@ -136,7 +136,7 @@ const Header = () => {
                         ${ScreenWidth<768 ? 'bd-b' : ''}
                         ${menu.id==menuItem ? 'menuItemActive' : ''}`
                     }
-                    style={{color:`${menu.id==menuItem ? '#383838' : ''}`, width:"100px"}}
+                    style={{color:`${menu.id==menuItem ? '#383838' : ''}`}}
                     onMouseEnter={()=> setMenuToggle(menu.id)}
                     onMouseLeave={()=> setMenuToggle()}
                 >
@@ -202,7 +202,7 @@ const Header = () => {
                     <Link to='/' onClick={handleMenubarClose}>
                         <div className="Logo df aln-itm-c">
                             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
-                            <div style={{width:'300px'}}>
+                            <div style={{width:'200px'}}>
                             <h3 style={{fontSize:'18px'}}>莊志輝</h3>
                             <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
                             </div>
@@ -253,14 +253,14 @@ const Header = () => {
                     <Link to='/' onClick={handleMenubarClose}>
                         <div className="Logo df aln-itm-c">
                             <img src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg" alt="" className='mg-r-20' style={{height:'40%'}}/>
-                            <div style={{width:'300px'}}>
+                            <div style={{width:'200px'}}>
                             <h3 style={{fontSize:'18px'}}>莊志輝</h3>
                             <h3 style={{fontSize:'18px'}}>CHUANG CHIH HUI</h3>
                             </div>
                         </div>
                     </Link>
 
-                    <div className='fh df jc-sb aln-itm-c mg-r-30'>
+                    <div className='fh df jc-fe aln-itm-c mg-r-30'>
                         {menuItemRender}
                     </div>
                     
