@@ -2,7 +2,7 @@
     {
         "menu" : "作品",
         "id": "artworks",
-        "url":"portfolio/artworks",
+        "url":"",
         "sub":[
             { 
                 "id": "museumNational",

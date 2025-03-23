@@ -42,7 +42,7 @@ const MuseumTaipei = () => {
         {imgRender(77)}
         {imgRender(76)}
         {imgRender(71)}
-        {imgRender(20)}
+        {imgRender(72)}
         {imgRender(16)}
         {imgRender(20)}
         {imgRender(15)}

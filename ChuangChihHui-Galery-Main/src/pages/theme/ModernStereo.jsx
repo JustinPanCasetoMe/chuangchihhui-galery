@@ -12,7 +12,7 @@ const ModernStereo = () => {
     if (!artwork) return null;
 
     return(
-      <div style={{width:"22%", marginBottom:"100px", marginRight:"50px", position:"relative"}}>
+      <div style={{width:"22%", marginBottom:"100px", position:"relative"}}>
         <Link to={`/portfolio/artworks/${artwork.name}`}>
           <img
             src={artworks[img_Id].thumbnail} alt="" 

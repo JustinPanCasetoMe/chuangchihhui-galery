@@ -275,7 +275,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54335997165_303a08be46_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343515_8a4f5bac17_h.jpg",
         "similarArt": [1, 2, 3, 15, 16, 17, 18, 19, 71, 72, 73, 74, 75, 76, 77]
     },
@@ -994,7 +994,7 @@
         "similarArt": []
     },
     {
-        "id": 71,
+        "id": 72,
         "name": "時空記憶",
         "size": "91X116cm",
         "mediums": "油畫",
@@ -1003,7 +1003,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54335997160_8bf2492f34_n.jpg",
         "img": "https://live.staticflickr.com/65535/54118881606_4d0be10449_m.jpg",
         "similarArt": []
     },
