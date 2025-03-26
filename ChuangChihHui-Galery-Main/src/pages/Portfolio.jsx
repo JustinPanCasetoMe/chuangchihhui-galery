@@ -64,7 +64,7 @@ const Portfolio = ({ artworks = [] }) => {
                 return(
                   <div key={index}>
                     <div style={{height:'360px',marginBottom:'80px'}}>
-                      <Link to={`/portfolio/artworks/${artwork.name}`}>
+                      <Link to={`/portfolio/artworks/${artwork.id}`}>
                         <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                       </Link>
                     </div>
@@ -92,7 +92,7 @@ const Portfolio = ({ artworks = [] }) => {
                 return(
                   <div key={index}>
                     <div style={{height:'400px',marginBottom:'40px'}}>
-                      <Link to={`/portfolio/artworks/${artwork.name}`}>
+                      <Link to={`/portfolio/artworks/${artwork.id}`}>
                         <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                       </Link>
                     </div>
@@ -107,7 +107,7 @@ const Portfolio = ({ artworks = [] }) => {
                 return(
                   <div key={index}>
                     <div style={{height:'400px',marginBottom:'80px'}}>
-                      <Link to={`/portfolio/artworks/${artwork.name}`}>
+                      <Link to={`/portfolio/artworks/${artwork.id}`}>
                         <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                       </Link>
                     </div>
@@ -135,7 +135,7 @@ const Portfolio = ({ artworks = [] }) => {
                 return(
                   <div key={index}>
                     <div style={{height:'400px',marginBottom:'40px'}}>
-                      <Link to={`/portfolio/artworks/${artwork.name}`}>
+                      <Link to={`/portfolio/artworks/${artwork.id}`}>
                         <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                       </Link>
                     </div>
@@ -150,7 +150,7 @@ const Portfolio = ({ artworks = [] }) => {
                 return(
                   <div key={index}>
                     <div style={{height:'400px',marginBottom:'80px'}}>
-                      <Link to={`/portfolio/artworks/${artwork.name}`}>
+                      <Link to={`/portfolio/artworks/${artwork.id}`}>
                         <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                       </Link>
                     </div>
@@ -176,7 +176,7 @@ const Portfolio = ({ artworks = [] }) => {
                   return(
                     <div key={index}>
                       <div style={{height:'400px',marginBottom:'40px'}}>
-                        <Link to={`/portfolio/artworks/${artwork.name}`}>
+                        <Link to={`/portfolio/artworks/${artwork.id}`}>
                           <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                         </Link>
                       </div>
@@ -191,7 +191,7 @@ const Portfolio = ({ artworks = [] }) => {
                   return(
                     <div key={index}>
                       <div style={{height:'400px',marginBottom:'80px'}}>
-                        <Link to={`/portfolio/artworks/${artwork.name}`}>
+                        <Link to={`/portfolio/artworks/${artwork.id}`}>
                           <img src={artwork.img} alt="" className='fh bd-r-sm bx-sd-sm'/>
                         </Link>
                       </div>

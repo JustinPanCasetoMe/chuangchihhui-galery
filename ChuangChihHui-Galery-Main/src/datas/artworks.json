@@ -940,8 +940,8 @@
     {
         "id": 68,
         "name": "無法自拔",
-        "size": "182X72cm",
-        "mediums": "壓克力",
+        "size": "54X80cm",
+        "mediums": "水彩、油性簽字筆",
         "year": "2022",
         "catergory": "",
         "classics": "",
@@ -1024,9 +1024,9 @@
     {
         "id": 74,
         "name": "遺棄",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "52X72cm",
+        "mediums": "油畫",
+        "year": "1991",
         "catergory": "",
         "classics": "",
         "series": "museumTaipei",
@@ -1038,9 +1038,9 @@
     {
         "id": 75,
         "name": "起心動念",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "116X91cm",
+        "mediums": "油畫",
+        "year": "1994",
         "catergory": "",
         "classics": "",
         "series": "museumTaipei",
@@ -1052,9 +1052,9 @@
     {
         "id": 76,
         "name": "那一夜",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "116X91cm",
+        "mediums": "油畫",
+        "year": "1993",
         "catergory": "",
         "classics": "",
         "series": "museumTaipei",
@@ -1066,9 +1066,9 @@
     {
         "id": 77,
         "name": "飛越地平線",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "116X91cm",
+        "mediums": "油畫",
+        "year": "1992",
         "catergory": "",
         "classics": "",
         "series": "museumTaipei",
@@ -1080,15 +1080,15 @@
     {
         "id": 78,
         "name": "內戰",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "60X80cm",
+        "mediums": "素描",
+        "year": "1985",
         "catergory": "",
         "classics": "",
         "series": "museumNational",
         "tag": "國美館時期",
         "thumbnail": "https://live.staticflickr.com/65535/54335579206_9b33f402c8_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54162033447_56d1338a9c_w.jpg",
+        "img": "https://live.staticflickr.com/65535/54162033447_8e8b5e62cf_h.jpg",
         "similarArt": []
     },
     {
@@ -1096,21 +1096,21 @@
         "name": "理想與現實",
         "size": "182X72cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "1985",
         "catergory": "",
         "classics": "",
         "series": "museumNational",
         "tag": "國美館時期",
         "thumbnail": "https://live.staticflickr.com/65535/54334672262_14de0b2b6b_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54162908656_fd9595d37a_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162908656_fd9595d37a_b.jpg",
         "similarArt": []
     },
     {
         "id": 80,
         "name": "慾望的迷失",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "60X80cm",
+        "mediums": "素描",
+        "year": "1991",
         "catergory": "",
         "classics": "",
         "series": "museumNational",
@@ -1122,9 +1122,9 @@
     {
         "id": 81,
         "name": "失去平衡",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "60X80cm",
+        "mediums": "素描",
+        "year": "1985",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1388,9 +1388,9 @@
     {
         "id": 100,
         "name": "跨越時空的少女",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "80X80cm",
+        "mediums": "壓克力, 矽膠, LED燈",
+        "year": "2021",
         "catergory": "",
         "classics": "",
         "series": "light",
@@ -1402,9 +1402,9 @@
     {
         "id": 101,
         "name": "天際效應",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "150X150cm",
+        "mediums": "壓克力, 矽膠, LED燈",
+        "year": "2021",
         "catergory": "",
         "classics": "",
         "series": "blockChain",
@@ -1416,9 +1416,9 @@
     {
         "id": 102,
         "name": "漫遊天際",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "175X235cm",
+        "mediums": "壓克力, 矽膠, LED燈",
+        "year": "2020",
         "catergory": "",
         "classics": "",
         "series": "light",
@@ -1430,9 +1430,9 @@
     {
         "id": 103,
         "name": "追夢-花非花",
-        "size": "182X72cm",
-        "mediums": "壓克力",
-        "year": "2022",
+        "size": "63X120cm",
+        "mediums": "壓克力, 矽膠, LED燈",
+        "year": "2019",
         "catergory": "",
         "classics": "",
         "series": "light",
@@ -1444,9 +1444,9 @@
     {
         "id": 104,
         "name": "種子系列",
-        "size": "182X72cm",
+        "size": "64X55cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2018",
         "catergory": "",
         "classics": "",
         "series": "blockChain",
@@ -1458,9 +1458,9 @@
     {
         "id": 105,
         "name": "種子系列",
-        "size": "182X72cm",
+        "size": "64X55cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2018",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1472,9 +1472,9 @@
     {
         "id": 106,
         "name": "種子系列",
-        "size": "182X72cm",
+        "size": "64X55cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2018",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1486,9 +1486,9 @@
     {
         "id": 107,
         "name": "時代的過客",
-        "size": "182X72cm",
+        "size": "60X72cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2016",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1500,9 +1500,9 @@
     {
         "id": 108,
         "name": "來自星星的你",
-        "size": "182X72cm",
+        "size": "60X72cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2016",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1514,9 +1514,9 @@
     {
         "id": 109,
         "name": "花開時節",
-        "size": "182X72cm",
+        "size": "100X80cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2020",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1528,9 +1528,9 @@
     {
         "id": 110,
         "name": "靜靜的在星空中",
-        "size": "182X72cm",
+        "size": "72X60cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2023",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1542,9 +1542,9 @@
     {
         "id": 111,
         "name": "塵影",
-        "size": "182X72cm",
+        "size": "72X60cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2023",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1556,9 +1556,9 @@
     {
         "id": 112,
         "name": "我們創造了我們",
-        "size": "182X72cm",
+        "size": "73X62cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2023",
         "catergory": "",
         "classics": "",
         "series": "",
@@ -1570,9 +1570,9 @@
     {
         "id": 113,
         "name": "我們創造了我們",
-        "size": "182X72cm",
+        "size": "73X62cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2023",
         "catergory": "",
         "classics": "",
         "series": "Classics",
@@ -1662,7 +1662,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808843_d44052d046_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54163059766_73a6dd2806_w.jpg",
+        "img": "https://live.staticflickr.com/65535/54163059766_c231074f32_h.jpg",
         "similarArt": []
     },
     {
@@ -1676,7 +1676,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335579061_8dc22cf8bd_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335579061_8dc22cf8bd_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163059756_556105c308_k.jpg",
         "similarArt": []
     },
     {
@@ -1690,11 +1690,12 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335997070_8fb2dc1ac5_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335997070_8fb2dc1ac5_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162922103_45d8820254_z.jpg",
         "similarArt": []
     },
     {
-        "id": 132,
+
+        "id": 122,
         "name": "宇宙快遞",
         "size": "176×50×19cm",
         "mediums": "木雕、玻璃",
@@ -1703,8 +1704,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335579041_b7fbbf80b3_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335579041_b7fbbf80b3_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335996995_8236774967_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163516715_90d3e82fe4_z.jpg",
         "similarArt": []
     },
     {
@@ -1717,8 +1718,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335996995_8236774967_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996995_8236774967_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335579076_9c630c4e18_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163059711_b85380e814_z.jpg",
         "similarArt": []
     },
     {
@@ -1731,8 +1732,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335579076_9c630c4e18_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335579076_9c630c4e18_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335808588_3faa4ed092_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163374919_c82585546b_k.jpg",
         "similarArt": []
     },
     {
@@ -1745,8 +1746,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335808588_3faa4ed092_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808588_3faa4ed092_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335997040_d1eedece28_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54161772152_2eb1f59f52_k.jpg",
         "similarArt": []
     },
     {
@@ -1759,8 +1760,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335997040_d1eedece28_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335997040_d1eedece28_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335797364_10bedee63a_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54161772107_4151aa940e_k.jpg",
         "similarArt": []
     },
     {
@@ -1773,8 +1774,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335797364_10bedee63a_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335797364_10bedee63a_n.jpg",
+       "thumbnail": "https://live.staticflickr.com/65535/54335579026_c4bc50c234_n.jpg",
+        "img": "//live.staticflickr.com/65535/54162922663_d904915dbd_k.jpg",
         "similarArt": []
     },
     {
@@ -1787,8 +1788,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335579026_c4bc50c234_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335579026_c4bc50c234_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335797434_ccfa77996f_n.jpg",
+        "img": "//live.staticflickr.com/65535/54163336248_bf5365fdf9_k.jpg",
         "similarArt": []
     },
     {
@@ -1801,8 +1802,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335797434_ccfa77996f_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335797434_ccfa77996f_n.jpg",
+       "thumbnail": "https://live.staticflickr.com/65535/54334672092_0555d8c528_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163103895_f3fa5f037a_k.jpg",
         "similarArt": []
     },
     {
@@ -1815,8 +1816,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54334672092_0555d8c528_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54334672092_0555d8c528_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335579036_bbeca31ef3_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162646861_9ae44d7f14_k.jpg",
         "similarArt": []
     },
     {
@@ -1829,8 +1830,8 @@
         "classics": "",
         "series": "modernStereo",
         "tag": "近代立體",
-        "thumbnail": "https://live.staticflickr.com/65535/54335579036_bbeca31ef3_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335579036_bbeca31ef3_n.jpg",
+        "thumbnail": "https://live.staticflickr.com/65535/54335579041_b7fbbf80b3_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163374874_8748f29b37_k.jpg",
         "similarArt": []
     },
     {
@@ -1844,7 +1845,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808583_ccd0c25326_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808583_ccd0c25326_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163516710_0e353334b0_k.jpg",
         "similarArt": []
     },
     {
@@ -1858,7 +1859,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808553_cea15521e6_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808553_cea15521e6_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163374824_908f87fe9c_k.jpg",
         "similarArt": []
     },
     {
@@ -1872,7 +1873,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335997120_5537bf7591_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335997120_5537bf7591_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163516760_ae30c49615_k.jpg",
         "similarArt": []
     },
     {
@@ -1886,7 +1887,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54334672107_3cb54934d5_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54334672107_3cb54934d5_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162922433_6858a7f539_k.jpg",
         "similarArt": []
     },
     {
@@ -1900,7 +1901,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335797384_c67de5574e_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335797384_c67de5574e_n.jpg",
+        "img": "//live.staticflickr.com/65535/54162961669_629991da53_k.jpg",
         "similarArt": []
     },
     {
@@ -1914,7 +1915,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54334672122_6dbb821f6e_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54334672122_6dbb821f6e_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162646466_e5251620e3_k.jpg",
         "similarArt": []
     },
     {
@@ -1928,7 +1929,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335997050_351bd43721_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335997050_351bd43721_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54161771767_48047650a6_k.jpg",
         "similarArt": []
     },
     {
@@ -1942,7 +1943,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808533_20534c4753_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808533_20534c4753_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54161771647_fbc6cb2f5d_k.jpg",
         "similarArt": []
     },
     {
@@ -1956,7 +1957,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808538_3517a33144_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808538_3517a33144_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162646516_d22cf26e80_k.jpg",
         "similarArt": []
     },
     {
@@ -1970,7 +1971,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335578986_85191ae4cf_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335578986_85191ae4cf_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163336313_a5720eda02_c.jpg",
         "similarArt": []
     },
     {
@@ -1984,7 +1985,7 @@
         "series": "modernStereo",
         "tag": "近代立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335996930_dc4de07493_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996930_dc4de07493_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163059966_35bbe41c10_z.jpg",
         "similarArt": []
     },
     {
@@ -1998,7 +1999,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808848_38e6cd94d4_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808848_38e6cd94d4_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163375134_467822a881_z.jpg",
         "similarArt": []
     },
     {
@@ -2012,7 +2013,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335996895_dd80670248_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996895_dd80670248_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163375174_4c6e085848_z.jpg",
         "similarArt": []
     },
     {
@@ -2026,7 +2027,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808338_6592d90c43_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808338_6592d90c43_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163517015_a2a321c471_z.jpg",
         "similarArt": []
     },
     {
@@ -2040,7 +2041,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808328_898d9db9ba_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808328_898d9db9ba_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162185897_69201fc400_z.jpg",
         "similarArt": []
     },
     {
@@ -2054,7 +2055,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808408_f91178f313_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808408_f91178f313_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162185772_3b595db8e5_z.jpg",
         "similarArt": []
     },
     {
@@ -2068,7 +2069,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335578981_3948e1b5d7_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335578981_3948e1b5d7_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162195572_32a78ccce0_b.jpg",
         "similarArt": []
     },
     {
@@ -2082,7 +2083,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808308_0fea048b78_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808308_0fea048b78_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163516830_f95dc30bb0_z.jpg",
         "similarArt": []
     },
     {
@@ -2096,7 +2097,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808303_be5b182d4f_w.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808303_be5b182d4f_w.jpg",
+        "img": "https://live.staticflickr.com/65535/54163374984_288e829d91_z.jpg",
         "similarArt": []
     },
     {
@@ -2110,7 +2111,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335996825_9e30272b1b_w.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996825_9e30272b1b_w.jpg",
+        "img": "https://live.staticflickr.com/65535/54163516880_8ed3ee736d_z.jpg",
         "similarArt": []
     },
     {
@@ -2124,7 +2125,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335578976_d2f4e1fb92_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335578976_d2f4e1fb92_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163374999_58b13a83e8_z.jpg",
         "similarArt": []
     },
     {
@@ -2138,7 +2139,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54334671912_ca3f25e79f_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54334671912_ca3f25e79f_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163059751_8c7ede628c_c.jpg",
         "similarArt": []
     },
     {
@@ -2152,7 +2153,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335996855_5098859048_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996855_5098859048_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163374964_89d5165bfc_z.jpg",
         "similarArt": []
     },
     {
@@ -2166,7 +2167,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54334671867_45401a3c37_w.jpg",
-        "img": "https://live.staticflickr.com/65535/54334671867_45401a3c37_w.jpg",
+        "img": "https://live.staticflickr.com/65535/54163059876_5366e2ff05_z.jpg",
         "similarArt": []
     },
     {
@@ -2180,7 +2181,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808358_e7912cdc52_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808358_e7912cdc52_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163336443_6be0947eca_z.jpg",
         "similarArt": []
     },
     {
@@ -2194,7 +2195,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335996915_5e75dee71b_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996915_5e75dee71b_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163375094_4335fea25b_z.jpg",
         "similarArt": []
     },
     {
@@ -2208,7 +2209,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54334671897_54a7b3f807_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54334671897_54a7b3f807_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163336273_54ede5325d_z.jpg",
         "similarArt": []
     },
     {
@@ -2222,7 +2223,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335578961_6d89d3502b_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335578961_6d89d3502b_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163336348_268b00a88d_z.jpg",
         "similarArt": []
     },
     {
@@ -2236,7 +2237,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335996920_fda416d4f8_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996920_fda416d4f8_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163375109_b013d61dbc_z.jpg",
         "similarArt": []
     },
     {
@@ -2250,7 +2251,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335578966_09c7562e7a_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335578966_09c7562e7a_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163516910_802598b823_z.jpg",
         "similarArt": []
     },
     {
@@ -2264,7 +2265,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808443_124b18e0af_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808443_124b18e0af_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163375049_9be2450826_c.jpg",
         "similarArt": []
     },
     {
@@ -2278,7 +2279,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335808438_bdd685dc4e_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335808438_bdd685dc4e_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163060026_36a7c77bbd.jpg",
         "similarArt": []
     },
     {
@@ -2292,7 +2293,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335996940_29cc8c078e_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335996940_29cc8c078e_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162185792_fdd5022a5a_z.jpg",
         "similarArt": []
     },
     {
@@ -2306,7 +2307,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54335797294_a6ce19f889_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54335797294_a6ce19f889_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54162185692_35787abdb6_z.jpg",
         "similarArt": []
     },
     {
@@ -2320,7 +2321,7 @@
         "series": "earlyStereo",
         "tag": "早期立體",
         "thumbnail": "https://live.staticflickr.com/65535/54334671972_010a7457b3_n.jpg",
-        "img": "https://live.staticflickr.com/65535/54334671972_010a7457b3_n.jpg",
+        "img": "https://live.staticflickr.com/65535/54163336398_a32da542e4_z.jpg",
         "similarArt": []
     },
     {

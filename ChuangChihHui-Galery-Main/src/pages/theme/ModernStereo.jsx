@@ -13,7 +13,7 @@ const ModernStereo = () => {
 
     return(
       <div style={{width:"22%", marginBottom:"100px", position:"relative"}}>
-        <Link to={`/portfolio/artworks/${artwork.name}`}>
+        <Link to={`/portfolio/artworks/${artwork.id}`}>
           <img
             src={artworks[img_Id].thumbnail} alt="" 
             className='bx-sd-sm imgActive'
@@ -31,6 +31,8 @@ const ModernStereo = () => {
       </div>
     )
   }
+
+  
 
   return (
     <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} pd-xContainer`}>

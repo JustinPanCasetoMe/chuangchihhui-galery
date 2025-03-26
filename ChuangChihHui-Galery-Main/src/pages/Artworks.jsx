@@ -22,9 +22,22 @@ const ArtworkDetails = ({ artwork }) => {
     );
 };
 
-const ArtworkImage = ({ img }) => (
-    <div className='df jc-c' style={{height:'500px'}}>
-        <img src={img} alt="" className='bd-r-sm bx-sd-sm fh'/>
+const ArtworkImage = ({ img, series }) => (
+    <div
+        className={`
+            df jc-c
+            ${series === 'modernStereo' || series === 'earlyStereo' ? 'bd-r-sm bx-sd-sm fh' : ''}
+        `}
+        style={{
+            width:'100%',
+            height:'500px',
+            backgroundImage:`url(${img})`,
+            backgroundSize:"contain",
+            backgroundRepeat:"no-repeat",
+            backgroundPosition:"center center"
+        }}
+    >
+        {/* <img src={img} alt="" className='bd-r-sm bx-sd-sm fh'/> */}
     </div>
 );
 
@@ -33,7 +46,7 @@ const ResponsiveArtworkView = ({ artwork, screenWidth }) => {
         desktop: {
             condition: screenWidth >= 1024 && screenWidth < 1960,
             containerClass: 'df jc-sb fw mg-b-lg',
-            imageWidth: '600px'
+            imageWidth: '60%'
         },
         tablet: {
             condition: screenWidth >= 768 && screenWidth < 1024,
@@ -54,7 +67,7 @@ const ResponsiveArtworkView = ({ artwork, screenWidth }) => {
     return (
         <div className={`${currentLayout.containerClass} ${currentLayout.condition ? '' : 'dn'}`}>
             <div style={{width: currentLayout.imageWidth}}>
-                <ArtworkImage img={artwork.img} />
+                <ArtworkImage img={artwork.img} series={artwork.series} />
             </div>
             <ArtworkDetails artwork={artwork} />
         </div>
@@ -86,7 +99,7 @@ const SimilarArtworks = ({ artworks, currentArtworkId }) => {
 
                     return (
                         <div key={index} className='mg-b-30' style={{height:'160px'}}>
-                            <Link to={`/portfolio/artworks/${similarArtwork.name}`}>
+                            <Link to={`/portfolio/artworks/${similarArtwork.id}`}>
                                 <img
                                     src={similarArtwork.img} 
                                     alt={similarArtwork.name}
@@ -102,13 +115,13 @@ const SimilarArtworks = ({ artworks, currentArtworkId }) => {
 };
 
 const Artworks = ({ artworks = [] }) => {
-    const { ArtworkName } = useParams();
+    const { ArtworkID } = useParams();
     const screenWidth = window.innerWidth;
   
-    const currentArtworkId = artworks.findIndex(artwork => artwork.name === ArtworkName);
+    const currentArtworkId = artworks.findIndex(artwork => artwork.id === parseInt(ArtworkID));
     const currentArtwork = artworks[currentArtworkId];
 
-    if (!currentArtwork) return <div>Artwork not found</div>;
+    // if (!currentArtwork) return <div className='xContainer'>Artwork not found</div>;
 
     return (
         <div className='pd-xContainer'>

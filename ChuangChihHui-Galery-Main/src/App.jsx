@@ -78,9 +78,9 @@ function App() {
 
         {/* Header Menu Navigation Bar Component */}
         <Route path='/portfolio' element={<Portfolio artworks={artworks}/>} />
-        <Route path='/portfolio/:Classics' element={<Portfolio artworks={artworks}/>} />
+        {/* <Route path='/portfolio/:Classics' element={<Portfolio artworks={artworks}/>} />
         <Route path='/portfolio/:graphics' element={<Portfolio artworks={artworks}/>} />
-        <Route path='/portfolio/:threeD' element={<Portfolio artworks={artworks}/>} />
+        <Route path='/portfolio/:threeD' element={<Portfolio artworks={artworks}/>} /> */}
         <Route path='/events' element={<Events />}/>
         <Route 
           path='/experiences'
@@ -113,7 +113,7 @@ function App() {
         <Route path='/contacts' element={<Contacts />} />
 
         {/* Artworks */}
-        <Route path='/portfolio/artworks/:ArtworkName' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
+        <Route path='/portfolio/artworks/:ArtworkID' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
 
         {/* Period */}
         <Route path='/portfolio/periods/:Period' element={<ArtworkPeriods artworks={artworks}/>} />
