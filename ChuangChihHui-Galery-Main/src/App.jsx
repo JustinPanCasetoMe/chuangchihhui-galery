@@ -6,7 +6,7 @@ import './i18n'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods, Events } from './pages'
 import { MuseumNational, MuseumTaipei, BlockChain, NoXiangFeild, Classics, LightSeries, ModernStereo, EarlyStereo } from './pages/theme'
 import Header from './components/Header'
-import Header1 from './components/Header'
+import Header1 from './components/Header1'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import exhibition from './datas/exhibition.json'
@@ -116,11 +116,11 @@ function App() {
         <Route path='/portfolio/artworks/:ArtworkID' element={<Artworks artworks={artworks} mainArtwork={{}}/>} />
 
         {/* Period */}
-        <Route path='/portfolio/periods/:Period' element={<ArtworkPeriods artworks={artworks}/>} />
+        {/* <Route path='/portfolio/periods/:Period' element={<ArtworkPeriods artworks={artworks}/>} />
         <Route path='/portfolio/periods/1986-2001' element={<Period_1986_2001 artworks={artworks} />} />
         <Route path='/portfolio/periods/2002-2019' element={<Period_2002_2019 artworks={artworks} />} />
         <Route path='/portfolio/periods/2020-2024' element={<Period_2020_2024 artworks={artworks} />} />
-        <Route path='/portfolio/unxiangareaDefault' element={<UnXiangArea artworks={artworks} />} />
+        <Route path='/portfolio/unxiangareaDefault' element={<UnXiangArea artworks={artworks} />} /> */}
 
         {/* Seires */}
         <Route path='/portfolio/museumNational' element={<MuseumNational />}/>
@@ -186,7 +186,8 @@ function App() {
         
       </Routes>
 
-      <Header />
+      {/* <Header /> */}
+      <Header1 />
       <Footer />
     </div>
   )

@@ -17,15 +17,6 @@
 }
 
 /* Direct Style Name */
-.Logo{
-  width: 360px;
-  height: 80px;
-}
-
-.Logo img{
-  height: 60%;
-}
-
 .OpeningLogo{
   position: absolute;
   width: 100%;
@@ -80,16 +71,6 @@
 
 .thumbnailMask:hover{
   opacity: 1;
-}
-
-.lngSub{
-  width: 100px;
-  background-color: #f5f5f5;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #d5d5d5;
-  transform: translateX(-50%);
-  cursor: pointer;
 }
 
 .preface{
@@ -175,6 +156,15 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   color: #979797;
+}
+
+/* Position */
+.ps-rl{
+  position: relative;
+}
+
+.ps-ab{
+  position: absolute;
 }
 
 /* Font, Letter */

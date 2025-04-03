@@ -60,7 +60,7 @@ const Opening = () => {
                     textAlign:"center",
                     fontSize: "24px",
                     color: "#fff",
-                    zIndex:45,
+                    zIndex:40,
                     transition: 'all 0.5s ease-in-out'
                 }}
             >

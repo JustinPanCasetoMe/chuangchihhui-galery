@@ -1,0 +1,169 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-1);
+    z-index: 50;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+}
+
+.menuItemContainer {
+    position: relative;
+}
+
+.LogoContainer {
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.Logo {
+    width: 300px;
+}
+
+.Logo img {
+    width: 50px;
+    height: 60%;
+    margin-right: 20px;
+}
+
+.menuItem {
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--grey-1);
+    position: relative;
+}
+
+.menuItem.active {
+    color: var(--grey-active);
+}
+
+.subMenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    padding: 0 10px;
+    border: 1px solid var(--grey-1);
+    display: none; /* 預設隱藏 */
+}
+
+.menuItem.active .subMenu {
+    display: block; /* 點擊後顯示 */
+}
+
+.subMenuItem {
+    margin-top: 15px;
+    border-bottom: 1px solid var(--grey-1);
+}
+
+.subMenuLink {
+    display: block;
+    padding: 10px;
+}
+
+.lngEarth {
+    width: 20px;
+    position: relative;
+}
+
+.lngSub {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 120px;
+}
+
+.lngSubItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hamburgerButton {
+    display: none;
+}
+
+/* 隱藏主選單，顯示漢堡按鈕 */
+@media (max-width: 768px) {
+    header{
+        /* height: 100%; */
+    }
+
+    .menuContainer {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menuContainer.open {
+        display: flex;
+    }
+
+    .menuItemContainer {
+        width: 100%;
+    }
+
+    .menuItem {
+        border-bottom: 1px solid var(--grey-1);
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .subMenu {
+        position: relative;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        display: none;
+        border: none;
+    }
+
+    .menuItem.active .subMenu {
+        display: block;
+    }
+
+    .subMenuItem {
+        margin-top: 15px;
+        border-bottom: 1px solid var(--grey-1);
+    }
+
+    .subMenuLink {
+        display: block;
+        padding: 10px;
+    }
+
+    .hamburgerButton {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .LogoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}

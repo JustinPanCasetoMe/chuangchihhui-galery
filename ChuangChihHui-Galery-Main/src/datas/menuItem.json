@@ -49,25 +49,21 @@
     {
         "menu" : "活動",
         "id": "events",
-        "url":"events",
-        "sub":[]
+        "url":"events"
     },
     {
         "menu" : "資歷",
         "id": "experiences",
-        "url":"experiences",
-        "sub":[]
+        "url":"experiences"
     },
     {
         "menu" : "藝評",
         "id": "critics",
-        "url":"critics",
-        "sub":[]
+        "url":"critics"
     },
     {
         "menu" : "聯絡",
         "id" :"contacts",
-        "url":"contacts",
-        "sub":[]
+        "url":"contacts"
     }
   ]
