@@ -8,7 +8,7 @@ import LanguageSelector from './header/LanguageSelector';
 
 const Header1 = () => {
     const [activeSubMenu, setActiveSubMenu] = useState(null); // 用於追蹤哪個選單被點擊
-    const [activeMenu, setActiveMenu] = useState('');
+    const [activeMenu, setActiveMenu] = useState('default');
     const menuRef = useRef(null); // 用於檢測點擊外部
     const [isMenuOpen, setIsMenuOpen] = useState(false); // 控制漢堡選單是否打開
     const { t } = useTranslation();
@@ -28,6 +28,7 @@ const Header1 = () => {
 
     // 點擊主選單時顯示/隱藏子選單
     const handleMenuClick = (menuId) => {
+        setActiveMenu(menuId)
         setActiveSubMenu((prevMenu) => (prevMenu === menuId ? null : menuId));
     };
 
@@ -50,6 +51,12 @@ const Header1 = () => {
         };
     }, []);
 
+       // 點擊子選單的行為
+    const handleSubMenuClick = () => {
+        setActiveSubMenu(null);
+        setActiveMenu('default')
+    };
+
     const menuItemRender = menuItems.map((menu, index) => {
         console.log(activeSubMenu)
         return (
@@ -58,7 +65,7 @@ const Header1 = () => {
                 {menu.sub ? (
                     <div
                         className={`menuItem ${activeSubMenu === menu.id ? 'active' : ''}`}
-                        onClick={() =>{ {handleMenuClick(menu.id)}; setActiveMenu(menu.id)}}
+                        onClick={() =>{ { !activeSubMenu ? handleMenuClick(menu.id) : ''}}}
                     >
                         {t(menu.menu)}
 
@@ -70,7 +77,7 @@ const Header1 = () => {
                                         <Link
                                             to={`/portfolio/${subMenu.pathname}`}
                                             className="subMenuLink"
-                                            onClick={() => {setActiveSubMenu(subMenu.id);setActiveMenu('artworks')}} // 點擊子選單後關閉
+                                            onClick={() => {handleSubMenuClick();setActiveMenu('')}} // 點擊子選單後關閉
                                         >
                                             {t(subMenu.text)}
                                         </Link>
@@ -93,36 +100,39 @@ const Header1 = () => {
     });
 
     return (
-        <header className="header">
-            {/* Logo */}
-            <Link to="/" className="LogoContainer">
-                <div className="Logo df aln-itm-c">
-                    <img
-                        src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg"
-                        alt="Logo"
-                        className="mg-r-20"
-                    />
-                    <div style={{ width: '200px' }}>
-                        <h3 style={{ fontSize: '18px' }}>莊志輝</h3>
-                        <h3 style={{ fontSize: '18px' }}>CHUANG CHIH HUI</h3>
+        <div className='headerContainer'>
+            <header className={`header ${isMenuOpen ? 'open' : 'close'}`}>
+                {/* Logo */}
+                <Link to="/" className="LogoContainer">
+                    <div className="Logo df aln-itm-c">
+                        <img
+                            src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg"
+                            alt="Logo"
+                            className="mg-r-20"
+                        />
+                        <div className='LogoTxt'>
+                            <h3>莊志輝</h3>
+                            <h3>CHUANG CHIH HUI</h3>
+                        </div>
                     </div>
+                </Link>
+
+                {/* 主選單 */}
+                <div className={`menuContainer ${isMenuOpen ? 'open' : ''}`}>
+                    {menuItemRender}
+                    <LanguageSelector />
                 </div>
-            </Link>
-
+            </header>
+            
             {/* 漢堡按鈕 */}
-            <button
+            <div
                 className="hamburgerButton"
-                onClick={() => setIsMenuOpen((prev) => !prev)}
+                style={{color: `${isMenuOpen ? '#fff' : '#000'}`}}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-                ☰
-            </button>
-
-            {/* 主選單 */}
-            <div className={`menuContainer ${isMenuOpen ? 'open' : ''}`}>
-                {menuItemRender}
-                <LanguageSelector />
+                <h1>☰</h1>
             </div>
-        </header>
+        </div>
     );
 };
 
