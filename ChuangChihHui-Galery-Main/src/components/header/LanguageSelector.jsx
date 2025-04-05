@@ -51,7 +51,7 @@ const LanguageSelector = () => {
                             {t('中文')}
                         </li>
                         <li className="lngSubItem" onClick={() => changeLanguage('en')}>
-                            {t('英文')}
+                            {t('English')}
                         </li>
                     </ul>
                 )}

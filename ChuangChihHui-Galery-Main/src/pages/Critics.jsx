@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import critics_item from '../datas/critics.json';
+import report from '../datas/reports.json';
+import '../css/critics.css'
+import { FaWeight } from 'react-icons/fa';
 
 const SCREEN_BREAKPOINTS = {
   MOBILE: { min: 375, max: 425, width: '100%' },
@@ -9,19 +12,17 @@ const SCREEN_BREAKPOINTS = {
   DESKTOP: { min: 1024, max: 1960, width: '31%' }
 };
 
-const CriticCard = ({ critic, width }) => (
-  <div className="mg-b-50" style={{ width, position: 'relative' }}>
-    <Link to={`/critics/${critic.id}`}>
-      <div className="fw" style={{ position: 'relative' }}>
+const CriticCard = ({ critic, width, visibleSection }) => (
+  <div className="mg-b-50" style={{ position: 'relative', height:"200px", overflow:"hidden" }}>
+    <Link to={`${visibleSection==='critics' ? `/critics/${critic.id}` : `${critic.url}`}`} target={`${visibleSection==='report' ? '_blank' : ''}`} className='df'>
+      <div className="fw mg-r-50" style={{ position: 'relative', width:"40%" }}>
         <img src={critic.bg} alt={critic.title} className="fw" />
-        <div className="msk" />
       </div>
-      <div
-        className="fw df jc-sb pd-10"
-        style={{ position: 'absolute', bottom: '0', left: '0', color: '#fff' }}
-      >
-        <h5>{critic.title}</h5>
-        <h5>{critic.author}</h5>
+      <div style={{width:"60%"}}>
+        <h3 style={{color:"var(--title-grey)"}} className="mg-b-20">{critic.title}</h3>
+        <h4 className='mg-b-5'>{critic.concept}</h4>
+        <h4 style={{display: `${visibleSection==='critics' ? '' : 'none'}`}}>{critic.author}</h4>
+        <h4>{critic.description}</h4>
       </div>
     </Link>
   </div>
@@ -54,9 +55,12 @@ const TabButton = ({ label, isActive, onClick, screenWidth }) => {
     } else { // Desktop
       return {
         ...baseStyles,
-        fontSize: '12px',
-        padding: '2px 20px',
-        marginRight: '5px',
+        fontSize: '16px',
+        FaWeight:900,
+        lineHeight: 1.5,
+        padding: '2px 2px',
+        marginRight: '0px',
+        textAlign:"center"
       };
     }
   };
@@ -78,7 +82,7 @@ const TabButton = ({ label, isActive, onClick, screenWidth }) => {
       onClick={onClick}
       style={{
         ...getTabStyles(),
-        borderBottom: isActive ? '2px solid #000' : 'none',
+        // borderBottom: isActive ? '2px solid #000' : 'none',
         textAlign: screenWidth < 425 ? 'center' : 'left', // Center text on mobil｀
         flex: screenWidth < 425 ? '1 1 45%' : 'none', // Equal width on mobile
       }}
@@ -89,7 +93,7 @@ const TabButton = ({ label, isActive, onClick, screenWidth }) => {
 };
 
 
-const ResponsiveCriticsList = ({ critics, screenWidth }) => {
+const ResponsiveCriticsList = ({ critics, screenWidth, visibleSection }) => {
   const getResponsiveStyles = () => {
     const baseClasses = 'df';
     if (screenWidth >= 375 && screenWidth < 425) return `${baseClasses} fd-c`;
@@ -98,8 +102,8 @@ const ResponsiveCriticsList = ({ critics, screenWidth }) => {
 
   const getCardWidth = () => {
     if (screenWidth < 425) return '100%';  // mobile
-    if (screenWidth < 768) return '45%';   // small tablet
-    return '31%';                          // tablet & desktop
+    if (screenWidth < 768) return '50%';   // small tablet
+    return '100%';                         // tablet & desktop
   };
 
   return (
@@ -110,8 +114,8 @@ const ResponsiveCriticsList = ({ critics, screenWidth }) => {
         );
 
         return (
-          <div key={index} className={isVisible ? 'di' : 'dn'} style={{width:getCardWidth()}}>
-            <CriticCard critic={critic} width={"100%"} />
+          <div key={index} className={`${isVisible ? 'df' : 'dn'}`} style={{width:getCardWidth()}}>
+            <CriticCard critic={critic} width={"100%"} visibleSection={visibleSection}/>
           </div>
         );
       })}
@@ -133,8 +137,8 @@ const Critics = () => {
   ];
 
   return (
-    <div className='pd-xContainer'>
-      <ul className="df pd-b-title mg-b-10 w-auto">
+    <div className='Container'>
+      <ul className="df pd-b-title mg-b-30 w-auto">
         {tabs.map(tab => (
           <TabButton
             key={tab.id}
@@ -150,13 +154,15 @@ const Critics = () => {
         <ResponsiveCriticsList
           critics={critics_item}
           screenWidth={screenWidth}
+          visibleSection={'critics'}
         />
       )}
 
       {visibleSection === 'report' && (
         <ResponsiveCriticsList
-          critics={[]} // Add report data here
+          critics={report} // Add report data here
           screenWidth={screenWidth}
+          visibleSection={'report'}
         />
       )}
     </div>

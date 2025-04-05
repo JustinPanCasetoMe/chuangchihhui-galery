@@ -65,7 +65,6 @@ const Header1 = () => {
     }, []);
 
     const menuItemRender = menuItems.map((menu, index) => {
-        console.log(activeSubMenu)
         return (
             <div key={index} className="menuItemContainer" ref={menuRef}>
                 {/* 主選單 */}

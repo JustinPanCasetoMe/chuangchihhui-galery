@@ -47,11 +47,6 @@
         ]
     },
     {
-        "menu" : "活動",
-        "id": "events",
-        "url":"events"
-    },
-    {
         "menu" : "資歷",
         "id": "experiences",
         "url":"experiences"

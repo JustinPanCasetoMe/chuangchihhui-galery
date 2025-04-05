@@ -4,6 +4,7 @@ import { Route, Routes, useParams } from 'react-router'
 import { useTranslation } from 'react-i18next'
 import './i18n'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods, Events } from './pages'
+import { Critics1, Critics2, Critics3, Critics4, Critics5, Critics6 } from './pages/critics/index-critics'
 import { MuseumNational, MuseumTaipei, BlockChain, NoXiangFeild, Classics, LightSeries, ModernStereo, EarlyStereo } from './pages/theme'
 import Header from './components/Header'
 import Header1 from './components/Header1'
@@ -13,12 +14,6 @@ import exhibition from './datas/exhibition.json'
 import competition from './datas/competition.json'
 import archive from './datas/archive.json'
 import artworks from './datas/artworks.json'
-import criticsContent1 from './datas/criticsContent/text01.json'
-import criticsContent2 from './datas/criticsContent/text02.json'
-import criticsContent3 from './datas/criticsContent/text03.json'
-import criticsContent4 from './datas/criticsContent/text04.json'
-import criticsContent5 from './datas/criticsContent/text05.json'
-import criticsContent6 from './datas/criticsContent/text06.json'
 import 'slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css"
 import Period_1986_2001 from './pages/Periods/Period_1986_2001'
@@ -95,18 +90,7 @@ function App() {
         <Route path='/critics' element={<Critics />} />
         <Route
           path='/critics/:CriticsItem'
-          element={
-            <CriticsContent
-              CriticsContent={
-                CriticsItem == 1 ? criticsContent1 :
-                CriticsItem == 2 ? criticsContent2 :
-                CriticsItem == 3 ? criticsContent3 :
-                CriticsItem == 4 ? criticsContent4 :
-                CriticsItem == 5 ? criticsContent5 :
-                CriticsItem == 6 ? criticsContent6 : {}
-              }
-            />
-          }
+          element={<CriticsContent/>}
         />
 
         <Route path='/collections' element={<Collections/>} />
