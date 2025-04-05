@@ -1,1 +1,15 @@
-.artworks{}
+.artworks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.outerLink{
+    width: fit-content;
+    display: block;
+    padding: 10px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    color: #979797;
+    margin: 0 20px 30px 0;
+}

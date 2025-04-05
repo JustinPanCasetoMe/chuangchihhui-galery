@@ -6,6 +6,8 @@ import artworks from '../datas/artworks.json';
 import { Link } from 'react-router-dom';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
+import '../css/home.css'
+import Homevideo from '../components/Homevideo';
 
 // Constants
 const SOCIAL_LINKS = [
@@ -69,7 +71,7 @@ const ArtworkThumbnail = ({ artwork, screenWidth }) => {
 const SocialLinks = ({ isMobile }) => {
   const containerStyle = isMobile ? 'txt-aln-c' : 'df';
   const linkStyle = isMobile ?
-    {width: '100%', className: 'outerLink mg-r-30 mg-b-20 db'}:
+    {width: '100%', className: 'outerLink'}:
     {className: 'outerLink mg-r-30'};
 
   return (
@@ -123,14 +125,18 @@ const Home = () => {
         style={{marginTop:`${ screenWidth<425 ? '100px' : '100px'}`}}
         className="df jc-c pd-xContainer"
       >
-        <div className="df jc-sb fl-wp artworks">
+        <div className="artworks">
           {renderArtworks()}
         </div>
       </div>
 
       {/* <Preface listings={preface_text} /> */}
       
-      {getResponsiveLinks()}
+      <Homevideo />
+
+
+      {/* {getResponsiveLinks()} */}
+
     </div>
   );
 };
