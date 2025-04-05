@@ -14,7 +14,7 @@ const NoXiangFeild = () => {
 
     return(
       <div style={{width:"22%", marginBottom:"100px", position:"relative"}}>
-        <Link to={`/portfolio/artworks/${artwork.id}`}>
+        <Link to={`/portfolio/artworks/${artwork.id}`} style={{height:"100%"}}>
           <img
             src={artworks[img_Id].thumbnail} alt="" 
             className='bx-sd-sm imgActive'

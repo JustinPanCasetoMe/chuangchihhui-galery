@@ -53,6 +53,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     line-height: 1;
+    color: black;
 }
 
 .LogoTxt h3{

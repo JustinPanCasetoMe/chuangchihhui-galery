@@ -14,7 +14,7 @@ const Classics = () => {
 
     return(
       <div style={{width:"22%", marginBottom:"100px", position:"relative"}}>
-        <Link to={`/portfolio/artworks/${artwork.id}`}>
+        <Link to={`/portfolio/artworks/${artwork.id}`} style={{height:"100%"}}>
           <img
             src={artworks[img_Id].thumbnail} alt="" 
             className='bx-sd-sm imgActive'
@@ -48,9 +48,9 @@ const Classics = () => {
         {imgRender(65)}
         {imgRender(91)}
         {imgRender(113)}
-        {imgRender(114)}
+        {imgRender(28)}
         {imgRender(115)}
-        {imgRender(116)}
+        {imgRender(97)}
         {imgRender(117)}
         {imgRender(118)}
         {imgRender(96)}

@@ -7,7 +7,6 @@ import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks,
 import { Critics1, Critics2, Critics3, Critics4, Critics5, Critics6 } from './pages/critics/index-critics'
 import { MuseumNational, MuseumTaipei, BlockChain, NoXiangFeild, Classics, LightSeries, ModernStereo, EarlyStereo } from './pages/theme'
 import Header from './components/Header'
-import Header1 from './components/Header1'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import exhibition from './datas/exhibition.json'
@@ -171,7 +170,7 @@ function App() {
       </Routes>
 
       {/* <Header /> */}
-      <Header1 />
+      <Header />
       <Footer />
     </div>
   )

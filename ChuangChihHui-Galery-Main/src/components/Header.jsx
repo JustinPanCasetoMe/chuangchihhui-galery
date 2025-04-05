@@ -1,29 +1,17 @@
 import { useState, useEffect, useRef } from 'react';
+import '../css/header.css';
 import { Link } from 'react-router-dom';
-import { FaAngleDown, FaAngleRight, FaBars } from 'react-icons/fa';
-import { FaEarthAfrica } from 'react-icons/fa6';
+import menuItems from '../datas/menuItem.json';
 import '../i18n';
 import { useTranslation } from 'react-i18next';
-import menuItems from '../datas/menuItem.json';
-import '../css/header.css';
+import LanguageSelector from './header/LanguageSelector';
 
 const Header = () => {
-    const { t, i18n } = useTranslation();
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    const [menuItem, setMenuItem] = useState('Artworks');
-    const [menuToggle, setMenuToggle] = useState(null);
-    const [menuBarStatus, setMenuBarStatus] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-
-    const menuRef = useRef(null);
-    const languageSelectorRef = useRef(null);
-
-    // ==================== Handle Screen Width ====================
-    useEffect(() => {
-        const handleResize = () => setScreenWidth(window.innerWidth);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    const [activeSubMenu, setActiveSubMenu] = useState(null); // 用於追蹤哪個選單被點擊
+    const [activeMenu, setActiveMenu] = useState('default');
+    const menuRef = useRef(null); // 用於檢測點擊外部
+    const [isMenuOpen, setIsMenuOpen] = useState(false); // 控制漢堡選單是否打開
+    const { t } = useTranslation();
 
     // ==================== Reload Menu ====================
     useEffect(() => {
@@ -35,155 +23,122 @@ const Header = () => {
             '/critics': 'critics',
             '/contacts': 'contacts',
         };
-        setMenuItem(menuMapping[pathname] || 'artworks');
+        setActiveMenu(menuMapping[pathname] || 'artworks');
     }, [location.pathname]);
 
-    // ==================== Handle Click Outside ====================
+    // 點擊主選單時顯示/隱藏子選單
+    const handleMenuClick = (menuId) => {
+        setActiveMenu(menuId)
+        setIsMenuOpen(false)
+        setActiveSubMenu((prevMenu) => (prevMenu === menuId ? null : menuId));
+    };
+    
+    // 點擊子選單的行為
+    const handleSubMenuClick = () => {
+        setActiveSubMenu(null);
+        setIsMenuOpen(false)
+        setActiveMenu('default')
+    };
+
+    //
+    const handleBurgerBtn = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
+    // 點擊外部時關閉子選單
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (
                 menuRef.current &&
                 !menuRef.current.contains(event.target) &&
-                !event.target.closest('.menuBar')
+                !event.target.closest('.subMenuLink')
             ) {
-                setMenuBarStatus(false);
-            }
-            if (
-                languageSelectorRef.current &&
-                !languageSelectorRef.current.contains(event.target)
-            ) {
-                setIsOpen(false);
+                setActiveSubMenu(null);
             }
         };
+
         document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
     }, []);
 
-    // ==================== Toggle Functions ====================
-    const toggleLanguageSelector = () => setIsOpen((prev) => !prev);
-    const menubarToggle = () => setMenuBarStatus((prev) => !prev);
-    const handleSubMenuToggle = (menuId) => setMenuToggle((prev) => (prev === menuId ? null : menuId));
-    const changeLanguage = (lng) => i18n.changeLanguage(lng);
+    const menuItemRender = menuItems.map((menu, index) => {
+        return (
+            <div key={index} className="menuItemContainer" ref={menuRef}>
+                {/* 主選單 */}
+                {menu.sub ? (
+                    <div
+                        className={`menuItem ${activeSubMenu === menu.id ? 'active' : ''}`}
+                        onClick={() =>{ { !activeSubMenu ? handleMenuClick(menu.id) : ''}}}
+                    >
+                        {t(menu.menu)}
 
-    // ==================== Render Menu Items ====================
-    const menuItemRender = menuItems.map((menu) => (
-        <li key={menu.id} style={{ position: 'relative', marginRight: '20px' }}>
-            <Link
-                to={menu.url}
-                className={`pd-10 df jc-c aln-itm-c ${
-                    screenWidth < 768 ? 'bd-b' : ''
-                } ${menu.id === menuItem ? 'menuItemActive' : ''}`}
-                style={{ color: menu.id === menuItem ? '#383838' : '' }}
-                onClick={() => handleSubMenuToggle(menu.id)}
-            >
-                {t(menu.menu)}
-                <FaAngleDown size={16} className={`pd-l-10 ${menu.id === menuToggle ? 'db' : 'dn'}`} />
-            </Link>
-            {menu.sub && (
-                <ul
-                    className={`
-                        pointer 
-                        ${menu.id === menuToggle ? 'db' : 'dn'}
-                        ${screenWidth<=768 ? 'subMenuMobile' : ''}
-                    `}
-                    style={{
-                        position: 'absolute',
-                        top: '100%',
-                        left: '-100px',
-                        backgroundColor: '#fff',
-                        border: '0.6px solid var(--grey-1)',
-                    }}
-                >
-                    {menu.sub.map((sub) => (
-                        <li key={sub.pathname} className='bd-b' style={{ width: '200px' }}>
-                            <Link to={`/portfolio/${sub.pathname}`} className="df aln-itm-c pd-10">
-                                {sub.text}
-                                <FaAngleRight size={16} className="pd-l-10" />
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
-        </li>
-    ));
+                        {/* 子選單：僅在主選單被點擊時顯示 */}
+                        {menu.sub && activeSubMenu === menu.id && (
+                            <ul className="subMenu">
+                                {menu.sub.map((subMenu, subMenuIdx) => (
+                                    <li key={subMenuIdx} className="subMenuItem">
+                                        <Link
+                                            to={`/portfolio/${subMenu.pathname}`}
+                                            className="subMenuLink"
+                                            onClick={() => {handleSubMenuClick();setActiveMenu('')}} // 點擊子選單後關閉
+                                        >
+                                            {t(subMenu.text)}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+                ) : (
+                    <Link
+                        to={menu.url}
+                        className={`menuItem ${activeMenu === menu.id ? 'active' : ''}`}
+                        onClick={() => setActiveMenu(menu.id)}
+                    >
+                        {t(menu.menu)}
+                    </Link>
+                )}
+            </div>
+        );
+    });
 
-    // ==================== Render Header ====================
-    const renderHeader = (minWidth, maxWidth) => (
-        <header
-            className={`
-                df jc-sb aln-itm-c fw pd-x-container 
-                ${screenWidth >= minWidth && screenWidth < maxWidth ? '' : 'dn'}
-            `}
-        >
-            <div className="df jc-sb aln-itm-c fw">
+    return (
+        <div className='headerContainer'>
+            <header className={`header ${isMenuOpen ? 'open' : 'close'}`}>
                 {/* Logo */}
-                <Link to="/" onClick={() => setMenuBarStatus(false)}>
+                <Link to="/" className="LogoContainer">
                     <div className="Logo df aln-itm-c">
                         <img
                             src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg"
                             alt="Logo"
                             className="mg-r-20"
-                            style={{ height: '40%' }}
                         />
-                        <div style={{ width: '200px' }}>
-                            <h3 style={{ fontSize: '18px' }}>莊志輝</h3>
-                            <h3 style={{ fontSize: '18px' }}>CHUANG CHIH HUI</h3>
+                        <div className='LogoTxt'>
+                            <h3>莊志輝</h3>
+                            <h3>CHUANG CHIH HUI</h3>
                         </div>
                     </div>
                 </Link>
 
-                {/* Menu */}
-                {screenWidth >= 768 ? (
-                    <div className="fh df jc-sb aln-itm-c mg-r-30">{menuItemRender}</div>
-                ) : (
-                    <>
-                        <FaBars size={32} className="menuBar" onClick={menubarToggle} />
-                        <div
-                            ref={menuRef}
-                            className={`fh df fd-c mg-r-30 ${menuBarStatus ? 'menuMobile' : 'dn'}`}
-                        >
-                            {menuItemRender}
-                        </div>
-                    </>
-                )}
-            </div>
-
-            {/* Language Selector */}
-            {/* <ul style={{ position: 'relative' }} className="df fd-c pd-w-10 fh jc-c aln-itm-c">
-                <div className="df fd-c jc-c" onClick={toggleLanguageSelector}>
-                    <FaEarthAfrica size={20} />
+                {/* 主選單 */}
+                <div className={`menuContainer ${isMenuOpen ? 'open' : ''}`}>
+                    {menuItemRender}
+                    <LanguageSelector />
                 </div>
-                {isOpen && (
-                    <ul
-                        className="df fd-c"
-                        style={{
-                            position: 'absolute',
-                            top: '160%',
-                            left: '50%',
-                            transform: 'translateX(-50%)',
-                            backgroundColor: '#fff',
-                            border: '1px solid var(--grey-1)',
-                        }}
-                        ref={languageSelectorRef}
-                    >
-                        <li className="lngSub" onClick={() => changeLanguage('ch')}>
-                            {t('中文')}
-                        </li>
-                        <li className="lngSub" onClick={() => changeLanguage('en')}>
-                            {t('英文')}
-                        </li>
-                    </ul>
-                )}
-            </ul> */}
-        </header>
-    );
-
-    return (
-        <>
-            {renderHeader(1024, 1960)}
-            {renderHeader(768, 1024)}
-            {renderHeader(375, 768)}
-        </>
+            </header>
+            
+            {/* 漢堡按鈕 */}
+            <div
+                className="hamburgerButton"
+                style={{color: `${isMenuOpen ? '#fff' : '#000'}`}}
+                onClick={() => handleBurgerBtn()}
+            >
+                <h1>☰</h1>
+            </div>
+        </div>
     );
 };
 

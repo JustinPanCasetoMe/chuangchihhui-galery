@@ -17,7 +17,7 @@ const ArtworkDetails = ({ artwork }) => {
                 </span>
             ))}
             </ul>
-            <Link to='/portfolio/artworks' className='trans-2 button'>同期作品</Link>
+            {/* <Link to='/portfolio/artworks' className='trans-2 button'>同期作品</Link> */}
         </div>
     );
 };
@@ -82,8 +82,8 @@ const SimilarArtworks = ({ artworks, currentArtworkId }) => {
     if (!currentArtwork.similarArt || currentArtwork.similarArt.length === 0) {
         return (
             <div>
-                <h2 className='mg-b-30'>相似作品</h2>
-                <h3 style={{color:"var(--grey-2)"}}>暫無相似作品</h3>
+                <h3 className='mg-b-30'>相似作品</h3>
+                <h4 style={{color:"var(--grey-2)"}}>暫無相似作品</h4>
             </div>
         );
     }

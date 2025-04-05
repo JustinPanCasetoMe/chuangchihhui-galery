@@ -45,7 +45,7 @@ const ArtworkThumbnail = ({ artwork, screenWidth }) => {
 
   return (
     <div style={{ ...getArtworkStyles(), position: "relative" }}>
-      <Link to={`/portfolio/${artwork.series}`}>
+      <Link to={`/portfolio/${artwork.series}`} style={{height:"100%"}}>
         <img
           src={artwork.thumbnail}
           alt={artwork.tag}
