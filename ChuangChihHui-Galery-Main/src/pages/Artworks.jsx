@@ -90,7 +90,7 @@ const SimilarArtworks = ({ artworks, currentArtworkId }) => {
 
     return (
         <div>
-            <h2 className='mg-b-30'>相似作品</h2>
+            <h3 className='mg-b-30'>相似作品</h3>
             <div className='df fl-wp'>
                 {currentArtwork.similarArt.map((similarId, index) => {
                     
