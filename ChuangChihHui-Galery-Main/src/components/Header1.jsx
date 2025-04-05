@@ -29,8 +29,21 @@ const Header1 = () => {
     // 點擊主選單時顯示/隱藏子選單
     const handleMenuClick = (menuId) => {
         setActiveMenu(menuId)
+        setIsMenuOpen(false)
         setActiveSubMenu((prevMenu) => (prevMenu === menuId ? null : menuId));
     };
+    
+    // 點擊子選單的行為
+    const handleSubMenuClick = () => {
+        setActiveSubMenu(null);
+        setIsMenuOpen(false)
+        setActiveMenu('default')
+    };
+
+    //
+    const handleBurgerBtn = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
 
     // 點擊外部時關閉子選單
     useEffect(() => {
@@ -50,12 +63,6 @@ const Header1 = () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
-
-       // 點擊子選單的行為
-    const handleSubMenuClick = () => {
-        setActiveSubMenu(null);
-        setActiveMenu('default')
-    };
 
     const menuItemRender = menuItems.map((menu, index) => {
         console.log(activeSubMenu)
@@ -128,7 +135,7 @@ const Header1 = () => {
             <div
                 className="hamburgerButton"
                 style={{color: `${isMenuOpen ? '#fff' : '#000'}`}}
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                onClick={() => handleBurgerBtn()}
             >
                 <h1>☰</h1>
             </div>

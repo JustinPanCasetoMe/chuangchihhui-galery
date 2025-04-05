@@ -1,5 +1,5 @@
 #root {
-  max-width: 1440px;
+  max-width: 1960px;
 }
 
 .trans-2{
@@ -255,6 +255,11 @@
 }
 
 /* Margin */
+
+.mg-r-50{
+  margin-right: 50px;
+}
+
 .mg-r-20{
   margin-right: 20px;
 }

@@ -11,7 +11,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
   const exhibitionRender = exhibition.map((item, index) => {
     return(
       <div key={index} className='df mg-list' style={{color:'var(--content-grey)'}}>
-        <h4 className='fw-b' style={{width:'80px'}}>{t(item.year)}</h4>
+        <h4 style={{width:'80px'}}>{t(item.year)}</h4>
         <h4>{t(item.exhibition)}</h4>
       </div>
     )
@@ -28,7 +28,7 @@ const Experiences = ({ exhibition = [], competition = [], archive = [] }) => {
 
   const archiveRender = archive.map((item, index) => {
     return(
-      <div key={index} className='dib mg-r-20 mg-b-10' style={{color:'var(--content-grey)'}}>
+      <div key={index} className='mg-b-10' style={{color:'var(--content-grey)'}}>
         <h4>{item}</h4>
       </div>
     )

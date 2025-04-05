@@ -39,8 +39,8 @@ const NoXiangFeild = () => {
         {imgRender(55)}
         {imgRender(54)}
         {imgRender(58)}
-        {imgRender(86)}
-        {imgRender(90)}
+        {imgRender(12)}
+        {imgRender(83)}
         {imgRender(57)}
         {imgRender(56)}
         {imgRender(11)}

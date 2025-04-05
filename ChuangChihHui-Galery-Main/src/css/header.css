@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     z-index: 50;
+    overflow: hidden;
 }
 
 header {
@@ -38,15 +39,20 @@ header {
 }
 
 .Logo {
+    height: 36px;
 }
 
 .Logo img {
-    width: 50px;
-    height: 60%;
+    height: 100%;
     margin-right: 20px;
 }
 
 .LogoTxt{
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1;
 }
 
 .LogoTxt h3{
@@ -75,11 +81,11 @@ header {
     background-color: #fff;
     padding: 0 10px;
     border: 1px solid var(--grey-1);
-    display: none; /* 預設隱藏 */
+    display: none; 
 }
 
 .menuItem.active .subMenu {
-    display: block; /* 點擊後顯示 */
+    display: block; 
 }
 
 .subMenuItem {
@@ -135,25 +141,23 @@ header {
         position: absolute;
         overflow-y: auto;
         top: 0;
-        left: auto;
+        left: 100%;
         right: 0;
         width: 400px;
         height: 120vh;
         align-items: flex-start;
         padding: 10px 20px 300px;
         background-color: var(--grey-3);
-        /* display: none; */
-        transform: translateX(100%); /* 初始位置：隱藏在右側 */
-        transition: transform .5s ease; /* 添加平滑動畫效果 */
+        transition: transform .5s ease; 
     }
 
     header.open{
         display: block;
-        transform: translateX(0); /* 打開時：移動到可見範圍 */
+        transform: translateX(-100%); 
     }
 
     header.close {
-        transform: translateX(100%); /* 關閉時：移回右側 */
+        transform: translateX(0%); 
     }
 
     .LogoContainer {
@@ -235,7 +239,6 @@ header {
 @media (max-width: 768px) {
     header{
         top: 0;
-        left: auto;
         right: 0px;
         width: 350px;
     }
@@ -249,10 +252,8 @@ header {
 
     header{
         top: 0;
-        left: 0;
         width: 100%;
         height: 160vh;
-        /* padding-bottom: 300px; */
     }
 
     .LogoContainer {

@@ -123,7 +123,7 @@ const Home = () => {
         style={{marginTop:`${ screenWidth<425 ? '100px' : '100px'}`}}
         className="df jc-c pd-xContainer"
       >
-        <div className="df jc-sb fl-wp">
+        <div className="df jc-sb fl-wp artworks">
           {renderArtworks()}
         </div>
       </div>

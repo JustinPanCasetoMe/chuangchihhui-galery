@@ -36,9 +36,9 @@ const BlockChain = () => {
       <h3 className='periodTitle' style={{marginBottom:'160px'}}>{t('區塊鏈系列')}</h3>
       <div className='df jc-sb fl-wp'>
         {imgRender(6)}
-        {imgRender(82)}
+        {imgRender(5)}
         {imgRender(87)}
-        {imgRender(83)}
+        {imgRender(90)}
         {imgRender(85)}
         {imgRender(84)}
         {imgRender(27)}

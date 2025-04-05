@@ -163,7 +163,7 @@
         "classics": true,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54335797639_2738b64a90.jpg",
         "img": "https://live.staticflickr.com/65535/54163390858_b8844253ec_w.jpg",
         "similarArt": [54,55,56,57,58,59]
     },
@@ -193,7 +193,7 @@
         "tag": "國美館時期",
         "thumbnail": "https://live.staticflickr.com/65535/54335797519_2e55aafe38_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343735_a4a2bb962a_h.jpg",
-        "similarArt": [78, 79, 80, 81]
+        "similarArt": [80, 78, 79, 81]
     },
     {
         "id": 15,
@@ -1089,7 +1089,7 @@
         "tag": "國美館時期",
         "thumbnail": "https://live.staticflickr.com/65535/54335579206_9b33f402c8_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162033447_8e8b5e62cf_h.jpg",
-        "similarArt": []
+        "similarArt": [80, 14, 79, 81]
     },
     {
         "id": 79,
@@ -1103,7 +1103,7 @@
         "tag": "國美館時期",
         "thumbnail": "https://live.staticflickr.com/65535/54334672262_14de0b2b6b_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162908656_fd9595d37a_b.jpg",
-        "similarArt": []
+        "similarArt": [80, 14, 78, 81]
     },
     {
         "id": 80,
@@ -1117,7 +1117,7 @@
         "tag": "國美館時期",
         "thumbnail": "https://live.staticflickr.com/65535/54335579266_c30ef16502_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163222854_d3ebbeb3e1.jpg",
-        "similarArt": []
+        "similarArt": [14, 78, 79, 81]
     },
     {
         "id": 81,
@@ -1131,14 +1131,14 @@
         "tag": "",
         "thumbnail": "https://live.staticflickr.com/65535/54334672282_74d89fe07e_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163222469_5e831b1773_z.jpg",
-        "similarArt": []
+        "similarArt": [80, 14, 78, 79]
     },
     {
         "id": 82,
-        "name": "追夢-花非花",
-        "size": "182X72cm",
+        "name": "引力",
+        "size": "154X75cm",
         "mediums": "壓克力",
-        "year": "2022",
+        "year": "2016",
         "catergory": "",
         "classics": "",
         "series": "blockChain",

@@ -35,7 +35,7 @@ const Classics = () => {
     <div className={`${(1024<=ScreenWidth && ScreenWidth < 1960) ? '' : 'dn'} pd-xContainer`}>
       <h3 className='periodTitle' style={{marginBottom:'160px'}}>{t('各時期經典')}</h3>
       <div className='df jc-sb fl-wp'>
-        {imgRender(5)}
+        {imgRender(82)}
         {imgRender(7)}
         {imgRender(40)}
         {imgRender(8)}

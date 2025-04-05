@@ -99,11 +99,12 @@ const SimilarArtworks = ({ artworks, currentArtworkId }) => {
 
                     return (
                         <div key={index} className='mg-b-30' style={{height:'160px'}}>
-                            <Link to={`/portfolio/artworks/${similarArtwork.id}`}>
+                            <Link to={`/portfolio/artworks/${similarArtwork.id}`} style={{height:"100%"}}>
                                 <img
-                                    src={similarArtwork.img} 
+                                    src={similarArtwork.thumbnail} 
                                     alt={similarArtwork.name}
-                                    className='bx-sd-sm fh mg-r-20 imgActive trans-2'
+                                    className='bx-sd-sm fh mg-r-50 imgActive trans-2'
+                                    style={{height:"100%"}}
                                 />
                             </Link>
                         </div>
