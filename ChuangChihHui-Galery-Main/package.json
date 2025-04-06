@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "http://chuangchihhui.com",
+  "keywords": ["莊志輝", "莊志輝藝術", "莊志輝藝術作品", "莊志輝藝術工作室", "Chuangchihhui", "Chuang Chih Hui", "莊志輝畫廊", "畫廊", "台灣藝術", "畫作購買", "藝術", "超現實", "超現實主義", "畫作", "展覽", "藝術家", "國家美術館", "區塊鏈", "藝術創作"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
