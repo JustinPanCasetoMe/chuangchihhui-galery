@@ -21,7 +21,7 @@ const CriticCard = ({ critic, width, visibleSection }) => (
       <div style={{width:"60%"}}>
         <h3 style={{color:"var(--title-grey)"}} className="mg-b-20">{critic.title}</h3>
         <h4 className='mg-b-5'>{critic.concept}</h4>
-        <h4 style={{display: `${visibleSection==='critics' ? '' : 'none'}`}}>{critic.author}</h4>
+        <h4 style={{display: `${visibleSection==='critics' ? '' : 'none'}`}} className='mg-b-5'>{critic.author}</h4>
         <h4>{critic.description}</h4>
       </div>
     </Link>
