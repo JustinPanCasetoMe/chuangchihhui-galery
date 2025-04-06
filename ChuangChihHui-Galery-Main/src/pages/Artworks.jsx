@@ -22,7 +22,7 @@ const ArtworkDetails = ({ artwork }) => {
     );
 };
 
-const ArtworkImage = ({ img, series }) => (
+const ArtworkImage = ({ img, series, alt }) => (
     <div
         className={`
             df jc-c
@@ -37,7 +37,7 @@ const ArtworkImage = ({ img, series }) => (
             backgroundPosition:"center center"
         }}
     >
-        {/* <img src={img} alt="" className='bd-r-sm bx-sd-sm fh'/> */}
+        {/* <img src={img} alt={alt} className='bd-r-sm bx-sd-sm fh'/> */}
     </div>
 );
 
@@ -67,7 +67,7 @@ const ResponsiveArtworkView = ({ artwork, screenWidth }) => {
     return (
         <div className={`${currentLayout.containerClass} ${currentLayout.condition ? '' : 'dn'}`}>
             <div style={{width: currentLayout.imageWidth}}>
-                <ArtworkImage img={artwork.img} series={artwork.series} />
+                <ArtworkImage img={artwork.img} series={artwork.series} alt={artwork.alt}/>
             </div>
             <ArtworkDetails artwork={artwork} />
         </div>
@@ -102,7 +102,7 @@ const SimilarArtworks = ({ artworks, currentArtworkId }) => {
                             <Link to={`/portfolio/artworks/${similarArtwork.id}`} style={{height:"100%"}}>
                                 <img
                                     src={similarArtwork.thumbnail} 
-                                    alt={similarArtwork.name}
+                                    alt={similarArtwork.alt}
                                     className='bx-sd-sm fh mg-r-50 imgActive trans-2'
                                     style={{height:"100%"}}
                                 />
