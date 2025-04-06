@@ -121,9 +121,10 @@ const Home = () => {
     <div>
       <Opening />
 
-      <div  
-        style={{marginTop:`${ screenWidth<425 ? '100px' : '100px'}`}}
-        className="df jc-c pd-xContainer"
+      <div
+        id='homeExplore'
+        style={{marginTop:`${ screenWidth<425 ? '100px' : '100px'}`, paddingTop:"120px"}}
+        className="df jc-c Container"
       >
         <div className="artworks">
           {renderArtworks()}

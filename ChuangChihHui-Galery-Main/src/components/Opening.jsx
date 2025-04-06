@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaChevronDown } from "react-icons/fa";
-
+import '../css/Opening.css'
+import { Link } from 'react-router-dom';
 
 const Opening = () => {
 
@@ -77,21 +78,15 @@ const Opening = () => {
             </div>
         )}
 
-        <div
-            className='df jc-c aln-itm-c'
-            style={{
-                position:"absolute",
-                top:"80%",
-                width:"100%",
-                textAlign:"center",
-                color:"#fff",
-                display:`${ScreenWidth<425 ? 'none' : ''}`,
-                zIndex:45
-            }}
-        >
-            <h3 style={{fontWeight:"400", marginRight:"20px"}}>EXPLORE</h3>
-            <FaChevronDown size={28} style={{fontWeight:"200"}}/>
-        </div>
+        <Link to={'/#homeExplore'} className='exploreContainer'>
+            <div
+                className='exploreBtn'
+                style={{display:`${ScreenWidth<425 ? 'none' : ''}`}}
+            >
+                <h4 style={{fontWeight:"400", marginRight:"40px"}}>EXPLORE</h4>
+                <FaChevronDown size={20} style={{fontWeight:"200"}}/>
+            </div>
+        </Link>
 
         <div className="OpeningBG">
             <div

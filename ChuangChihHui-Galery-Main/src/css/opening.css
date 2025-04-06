@@ -1,0 +1,26 @@
+.exploreContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    z-index: 45;
+    cursor: pointer;
+}
+
+.exploreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    text-align: center;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.exploreBtn:hover{
+    color: rgb(234, 234, 234);
+}

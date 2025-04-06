@@ -33,7 +33,7 @@ const LanguageSelector = () => {
     return (
         <ul className="lgnEarth df fd-c pd-w-10 fh jc-c aln-itm-c">
             <div className="df fd-c jc-c ps-rl" onClick={toggleLanguageSelector}>
-                <FaEarthAfrica size={20} />
+                <FaEarthAfrica size={32}  style={{padding:"8px"}}/>
                 {isOpen && (
                     <ul
                         className="df fd-c lngSub"

@@ -58,8 +58,8 @@ const TabButton = ({ label, isActive, onClick, screenWidth }) => {
         fontSize: '16px',
         FaWeight:900,
         lineHeight: 1.5,
-        padding: '2px 2px',
-        marginRight: '0px',
+        padding: '2px 0px',
+        // marginRight: '0px',
         textAlign:"center"
       };
     }
@@ -83,7 +83,7 @@ const TabButton = ({ label, isActive, onClick, screenWidth }) => {
       style={{
         ...getTabStyles(),
         // borderBottom: isActive ? '2px solid #000' : 'none',
-        textAlign: screenWidth < 425 ? 'center' : 'left', // Center text on mobil｀
+        textAlign: screenWidth < 425 ? 'center' : 'center', // Center text on mobile｀
         flex: screenWidth < 425 ? '1 1 45%' : 'none', // Equal width on mobile
       }}
     >

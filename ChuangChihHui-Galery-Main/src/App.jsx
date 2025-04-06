@@ -1,6 +1,7 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Route, Routes, useParams } from 'react-router'
+import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'
 import './i18n'
 import { Portfolio, Experiences, Critics, Collections, Contacts, Home, Artworks, ArtworkPeriods, Events } from './pages'
@@ -35,6 +36,17 @@ function App() {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
   }
+
+  const location = useLocation();
+
+  useEffect(() => {
+      if (location.hash) {
+          const element = document.querySelector(location.hash);
+          if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+          }
+      }
+  }, [location]);
 
   // Transaction
   function getCurrentTime() {
