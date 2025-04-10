@@ -42,12 +42,10 @@ const Opening = () => {
   return (
     <div
         style={{
-            // position:"absolute",
             marginTop:`${ScreenWidth<425 ? '0px' : '-60px'}`,
             left:"0",
-            width:"100vw",
+            width:"100%",
             height: `${ScreenWidth<425 ? '' : '100vh'}`,
-            // backgroundColor: bgColor,
             transition:"background-color 0.5s ease" //smooth transition for background color
         }}
     >

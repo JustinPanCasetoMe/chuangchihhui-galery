@@ -47,9 +47,10 @@ a:hover {
 }
 
 body {
-  margin: 120px 0 80px;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .Container{

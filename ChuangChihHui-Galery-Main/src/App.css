@@ -1,5 +1,6 @@
 #root {
   max-width: 1960px;
+  margin: 120px 0 80px;
 }
 
 .trans-2{
@@ -30,19 +31,6 @@
 
 .LogoTransition{
   position: absolute;
-}
-
-.OpeningBG{
-  width: 100vw;
-  height: 100vh;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  z-index: 40;
-  background-image: url("//live.staticflickr.com/65535/54411619563_3f6339fbfd_h.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-position: center center; */
 }
 
 .mask{
