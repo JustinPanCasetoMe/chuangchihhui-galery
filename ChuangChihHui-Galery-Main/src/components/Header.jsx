@@ -107,6 +107,16 @@ const Header = () => {
 
     return (
         <div className={`headerContainer`}>
+            
+            {/* 漢堡按鈕 */}
+            <div
+                className="hamburgerButton"
+                style={{color: `${isMenuOpen ? '#fff' : '#000'}`}}
+                onClick={() => handleBurgerBtn()}
+            >
+                <h1>☰</h1>
+            </div>
+
             <header className={`header ${isMenuOpen ? 'open' : 'close'}`}>
                 {/* Logo */}
                 <Link to="/" className="LogoContainer">
@@ -130,14 +140,7 @@ const Header = () => {
                 </div>
             </header>
             
-            {/* 漢堡按鈕 */}
-            <div
-                className="hamburgerButton"
-                style={{color: `${isMenuOpen ? '#fff' : '#000'}`}}
-                onClick={() => handleBurgerBtn()}
-            >
-                <h1>☰</h1>
-            </div>
+            
         </div>
     );
 };
