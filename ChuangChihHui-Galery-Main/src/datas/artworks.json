@@ -9,10 +9,10 @@
         "classics": true,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118024662_7b3aaeb012_h.jpg",
         "alt": "莊志輝 遠離塵囂",
-        "similarArt": [2, 3, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [16, 17, 2, 3, 18, 19, 168, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335997240_10e0996498_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119154933_fc62c54d16_h.jpg",
         "alt": "莊志輝 真假同歸",
-        "similarArt": [1, 3, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [16, 17, 3, 1, 18, 19, 168, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 3,
@@ -39,10 +39,10 @@
         "classics": true,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "http://live.staticflickr.com/65535/54432467932_55eff4feb9_b.jpg",
         "img": "https://live.staticflickr.com/65535/54118025062_945540c340_h.jpg",
         "alt": "莊志輝 心裡心外",
-        "similarArt": [1, 2, 15, 16, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [16, 17, 2, 1, 18, 19, 168, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 4,
@@ -57,7 +57,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335796789_ee5be968b8_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119216779_b9b00c2599_h.jpg",
         "alt": "莊志輝 夜遊巴黎",
-        "similarArt": [91, 92, 93, 94, 95, 96, 97, 98, 99]
+        "similarArt": [91]
     },
     {
         "id": 5,
@@ -72,11 +72,11 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335997255_ea743650e9_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119342710_55f7c26e47_h.jpg",
         "alt": "莊志輝 時間在分娩",
-        "similarArt": [86, 87, 88, 89, 90]
+        "similarArt": [86]
     },
     {
         "id": 6,
-        "name": "心智的演化",
+        "name": "新智的演化",
         "size": "150X150cm",
         "mediums": "壓克力",
         "year": "2018",
@@ -87,7 +87,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335797634_7186ba2bb2_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343000_4fd16cc8cb_h.jpg",
         "alt": "莊志輝 心智的演化",
-        "similarArt": [27, 82, 83, 84, 85]
+        "similarArt": [27]
     },
     {
         "id": 7,
@@ -144,7 +144,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54119344315_ea119da027_h.jpg",
         "alt": "莊志輝 美好的記憶",
         "similarArt": []
@@ -177,7 +177,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335797639_2738b64a90.jpg",
         "img": "https://live.staticflickr.com/65535/54119217354_0a93df70d7_k.jpg",
         "alt": "莊志輝 尋找內心的名牌",
-        "similarArt": [54,55,56,57,58,59]
+        "similarArt": [57]
     },
     {
         "id": 13,
@@ -192,7 +192,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671267_a826126627_n.jpg",
         "img": "https://live.staticflickr.com/65535/54118880636_401f411fb6_h.jpg",
         "alt": "莊志輝 靈山",
-        "similarArt": []
+        "similarArt": [31, 42, 43, 101, 102, 103, 104, 105, 106]
     },
     {
         "id": 14,
@@ -237,7 +237,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334672217_992da242af_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119156188_9923c9ac0c_k.jpg",
         "alt": "莊志輝 守護者",
-        "similarArt": [1, 2, 3, 15, 17, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [17, 2, 3, 1, 18, 19, 168, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 17,
@@ -249,10 +249,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433573443_401fa11510_b.jpg",
         "img": "https://live.staticflickr.com/65535/54119343575_0f6bdef994_h.jpg",
         "alt": "莊志輝 流浪者之歌",
-        "similarArt": [1, 2, 3, 15, 16, 18, 19, 20, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [16, 2, 3, 1, 18, 19, 168, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 18,
@@ -267,7 +267,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808663_9c8ae730e8_n.jpg",
         "img": "https://live.staticflickr.com/65535/54118025692_4e3f45b089_h.jpg",
         "alt": "莊志輝 想入非非",
-        "similarArt": [1, 2, 3, 15, 16, 17, 19, 20, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [16, 17, 2, 3, 1, 19, 168, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 19,
@@ -279,10 +279,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54432467947_a1da86024d_b.jpg",
         "img": "https://live.staticflickr.com/65535/54119218754_c653a9df61_h.jpg",
         "alt": "莊志輝 鬆懈的自在",
-        "similarArt": [1, 2, 3, 15, 16, 17, 18, 20, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [16, 17, 2, 3, 1, 18, 168, 71, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 20,
@@ -312,7 +312,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335797534_d8364ee4f2_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343910_2260e4af37_h.jpg",
         "alt": "莊志輝 你想系列",
-        "similarArt": [22, 23, 24, 67, 68, 69, 70]
+        "similarArt": [22, 23, 24]
     },
     {
         "id": 22,
@@ -327,7 +327,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335997195_249ebfbd17_n.jpg",
         "img": "https://live.staticflickr.com/65535/54118882031_975c639f4d_h.jpg",
         "alt": "莊志輝 你想系列2",
-        "similarArt": [21, 23, 24, 67, 68, 69, 70]
+        "similarArt": [21, 23, 24]
     },
     {
         "id": 23,
@@ -342,7 +342,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335579201_43a00f982c_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343855_2622b755d9_h.jpg",
         "alt": "莊志輝 你想系列3",
-        "similarArt": [21, 22, 24, 67, 68, 69, 70]
+        "similarArt": [21, 22, 24]
     },
     {
         "id": 24,
@@ -357,7 +357,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334672277_5485d227f8_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343820_f27dbd1324_h.jpg",
         "alt": "莊志輝 你想系列4",
-        "similarArt": [21, 22, 23, 67, 68, 69, 70]
+        "similarArt": [21, 22, 23]
     },
     {
         "id": 25,
@@ -384,7 +384,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118024277_1ab6968aaf_h.jpg",
         "alt": "莊志輝 ====",
         "similarArt": []
@@ -402,7 +402,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808148_9a2bb0a699_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119154228_2aa86864dc_h.jpg",
         "alt": "莊志輝 區塊鏈 - 心念的演變",
-        "similarArt": [6, 82, 83, 84, 85]
+        "similarArt": [6]
     },
     {
         "id": 28,
@@ -417,7 +417,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671432_c2361b95d9_n.jpg",
         "img": "https://live.staticflickr.com/65535/54118024602_9a5042b61f_k.jpg",
         "alt": "莊志輝 走走",
-        "similarArt": [29, 30, 107, 108]
+        "similarArt": [29, 30, 107]
     },
     {
         "id": 29,
@@ -429,10 +429,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118881371_7acea5db82_h.jpg",
         "alt": "莊志輝 那一曲",
-        "similarArt": [28, 30, 107, 108]
+        "similarArt": [28, 30, 107]
     },
     {
         "id": 30,
@@ -444,10 +444,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118024602_5dbbd023da_h.jpg",
         "alt": "莊志輝 在想什麼呢",
-        "similarArt": [28, 29, 107, 108]
+        "similarArt": [28, 29, 107]
     },
     {
         "id": 31,
@@ -462,7 +462,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335807788_97c0825158_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119342755_553a5eefdb_k.jpg",
         "alt": "莊志輝 太陽雨",
-        "similarArt": [42, 43, 100, 101, 102, 103, 104, 105, 106]
+        "similarArt": [13, 42, 43, 101, 102, 103, 104, 105, 106]
     },
     {
         "id": 32,
@@ -474,7 +474,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54119155668_d04798cab2_h.jpg",
         "alt": "莊志輝 青春",
         "similarArt": []
@@ -489,7 +489,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118025192_b12ef3636a_h.jpg",
         "alt": "莊志輝 充滿憂鬱的女人",
         "similarArt": []
@@ -504,10 +504,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118026172_5384892596_h.jpg",
         "alt": "莊志輝 大地之愛",
-        "similarArt": []
+        "similarArt": [35, 36, 37]
     },
     {
         "id": 35,
@@ -519,10 +519,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54119155973_070e331c9c_h.jpg",
         "alt": "莊志輝 大地之愛2",
-        "similarArt": []
+        "similarArt": [34, 36, 37]
     },
     {
         "id": 36,
@@ -534,10 +534,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118026007_7ebccedf72_h.jpg",
         "alt": "莊志輝 大地之愛3",
-        "similarArt": []
+        "similarArt": [34, 35, 37]
     },
     {
         "id": 37,
@@ -552,7 +552,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335578566_e8fca676a5_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119156003_7dfdc948fa_k.jpg",
         "alt": "莊志輝 大地之愛4",
-        "similarArt": []
+        "similarArt": [34, 35, 36]
     },
     {
         "id": 38,
@@ -627,7 +627,7 @@
         "thumbnail": "燈系列",
         "img": "https://live.staticflickr.com/65535/54118882291_543be4180e_h.jpg",
         "alt": "莊志輝 跨越時空的少女",
-        "similarArt": [31, 43, 100, 101, 102, 103, 104, 105, 106]
+        "similarArt": [13, 31, 43, 101, 102, 103, 104, 105, 106]
     },
     {
         "id": 43,
@@ -642,7 +642,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335997250_fbcd1f8e60_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119155453_069292ad46_h.jpg",
         "alt": "莊志輝 跨越時空的少女2",
-        "similarArt": [31, 42, 100, 101, 102, 103, 104, 105, 106]
+        "similarArt": [13, 31, 42, 101, 102, 103, 104, 105, 106]
     },
     {
         "id": 44,
@@ -669,7 +669,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
         "alt": "莊志輝 ",
         "similarArt": []
@@ -684,7 +684,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
         "alt": "莊志輝 ",
         "similarArt": []
@@ -699,7 +699,7 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54118026402_f093b0f142_h.jpg",
         "alt": "莊志輝 ",
         "similarArt": []
@@ -729,10 +729,10 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54335578616_6f3b7ffc61.jpg",
         "img": "https://live.staticflickr.com/65535/54163403898_7bed12a7ae_k.jpg",
         "alt": "莊志輝 指月",
-        "similarArt": [50, 60, 61, 62, 63]
+        "similarArt": [50]
     },
     {
         "id": 50,
@@ -747,7 +747,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671632_d0d9949e3e_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119343185_5a803fb8d0_k.jpg",
         "alt": "莊志輝 什麼是名牌",
-        "similarArt": [49, 60, 61, 62, 63]
+        "similarArt": [49]
     },
     {
         "id": 51,
@@ -759,7 +759,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54163401958_781dbf9f84_w.jpg",
         "alt": "莊志輝 ",
         "similarArt": []
@@ -774,7 +774,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54163439579_dc90360465_w.jpg",
         "alt": "莊志輝 ",
         "similarArt": []
@@ -789,7 +789,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54163581915_2832544d7d_w.jpg",
         "alt": "莊志輝 心非心",
         "similarArt": []
@@ -807,7 +807,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996520_7fbe1db58e_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163248549_3887386ee8_k.jpg",
         "alt": "莊志輝 找回一點真心",
-        "similarArt": []
+        "similarArt": [59, 56, 58, 55]
     },
     {
         "id": 55,
@@ -822,7 +822,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808038_8db97426ce_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163207668_8e6e83690d_k.jpg",
         "alt": "莊志輝 隨心",
-        "similarArt": []
+        "similarArt": [54, 59, 56, 58]
     },
     {
         "id": 56,
@@ -837,7 +837,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335578666_ccdfb52a5c_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163189093_c319b05bb2_k.jpg",
         "alt": "莊志輝 共乘佛道",
-        "similarArt": []
+        "similarArt": [54, 59, 58, 55]
     },
     {
         "id": 57,
@@ -852,7 +852,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808068_9eb4093bc5_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119219099_3864059fd1_h.jpg",
         "alt": "莊志輝 覺",
-        "similarArt": []
+        "similarArt": [12]
     },
     {
         "id": 58,
@@ -867,7 +867,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996515_3c2a9c500d_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163246774_69adf7d210_k.jpg",
         "alt": "莊志輝 頭頂上的星星",
-        "similarArt": []
+        "similarArt": [54, 59, 56, 55]
     },
     {
         "id": 59,
@@ -882,7 +882,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335796854_6987d892c4_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162934221_071460a697_k.jpg",
         "alt": "莊志輝 我是誰",
-        "similarArt": []
+        "similarArt": [54, 56, 58, 55]
     },
     {
         "id": 60,
@@ -909,7 +909,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54162937081_963e882642_k.jpg",
         "alt": "莊志輝 簡單是一種幸福 三聯作",
         "similarArt": []
@@ -924,7 +924,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433696505_8195f079fe_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163556489_bbd2278575_k.jpg",
         "alt": "莊志輝 簡單是一種幸福 三聯作2",
         "similarArt": []
@@ -939,7 +939,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54162937131_cef9104211_k.jpg",
         "alt": "莊志輝 簡單是一種幸福 三聯作3",
         "similarArt": []
@@ -954,7 +954,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "",
         "alt": "莊志輝 心非心",
         "similarArt": []
@@ -972,7 +972,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335578416_d0351ff07a_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162045887_fb4228ddb1_k.jpg",
         "alt": "莊志輝 大地之歌",
-        "similarArt": []
+        "similarArt": [25, 66]
     },
     {
         "id": 66,
@@ -984,10 +984,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433324561_d5d443b3bf_k.jpg",
         "img": "https://live.staticflickr.com/65535/54163393965_b2e764a140_k.jpg",
         "alt": "莊志輝 紅心",
-        "similarArt": []
+        "similarArt": [25, 65]
     },
     {
         "id": 67,
@@ -999,10 +999,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "http://live.staticflickr.com/65535/54433573188_f526ccd150_w.jpg",
         "img": "https://live.staticflickr.com/65535/54162907731_61c7eb0534_w.jpg",
         "alt": "莊志輝 拼湊的愛",
-        "similarArt": []
+        "similarArt": [68, 69, 70]
     },
     {
         "id": 68,
@@ -1017,7 +1017,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335797614_9056feef54_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163183583_202552477f_b.jpg",
         "alt": "莊志輝 無法自拔",
-        "similarArt": []
+        "similarArt": [67, 69, 70]
     },
     {
         "id": 69,
@@ -1032,7 +1032,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335579211_de432089a1_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163183503_79a4324433_w.jpg",
         "alt": "莊志輝 三合一體",
-        "similarArt": []
+        "similarArt": [67, 68, 70]
     },
     {
         "id": 70,
@@ -1047,7 +1047,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335997225_2fe4416ff3_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162033482_01b12415a0_b.jpg",
         "alt": "莊志輝 離別",
-        "similarArt": []
+        "similarArt": [67, 68, 69]
     },
     {
         "id": 71,
@@ -1062,7 +1062,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335578826_a052dcf64d_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163209173_c5eac72b3a_k.jpg",
         "alt": "莊志輝 同根生",
-        "similarArt": []
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 168, 72, 73, 74, 75, 76, 77]
     },
     {
         "id": 72,
@@ -1077,7 +1077,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335997160_8bf2492f34_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163212008_2e7fddde6d_k.jpg",
         "alt": "莊志輝 時空記憶",
-        "similarArt": []
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 168, 71, 73, 74, 75, 76, 77]
     },
     {
         "id": 73,
@@ -1092,7 +1092,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808648_b2720727fe_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163376750_863f8c4f97_k.jpg",
         "alt": "莊志輝 生命的循環",
-        "similarArt": []
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 168, 71, 72, 74, 75, 76, 77]
     },
     {
         "id": 74,
@@ -1107,7 +1107,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808638_589518e812_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119219729_ad7a31747d_k.jpg",
         "alt": "莊志輝 遺棄",
-        "similarArt": []
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 168, 71, 72, 73, 75, 76, 77]
     },
     {
         "id": 75,
@@ -1122,7 +1122,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996810_ef4609fafd_n.jpg",
         "img": "https://live.staticflickr.com/65535/54118881766_ac66562b6f_k.jpg",
         "alt": "莊志輝 起心動念",
-        "similarArt": []
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 168, 71, 72, 73, 74, 76, 77]
     },
     {
         "id": 76,
@@ -1137,7 +1137,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671817_e2d9e15b36_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163390350_5d93fde35c_k.jpg",
         "alt": "莊志輝 那一夜",
-        "similarArt": []
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 168, 71, 72, 73, 74, 75, 77]
     },
     {
         "id": 77,
@@ -1152,7 +1152,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808258_e37c4e0d13_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163183593_e70abf41e6_c.jpg",
         "alt": "莊志輝 飛越地平線",
-        "similarArt": []
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 168, 71, 72, 73, 74, 75, 76]
     },
     {
         "id": 78,
@@ -1287,7 +1287,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671447_f365352a40_n.jpg",
         "img": "https://live.staticflickr.com/65535/54118881581_208cd0a704_k.jpg",
         "alt": "莊志輝 美國國慶狂想曲",
-        "similarArt": []
+        "similarArt": [5]
     },
     {
         "id": 87,
@@ -1314,7 +1314,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433322531_f747c6658d_b.jpg",
         "img": "//live.staticflickr.com/65535/54162940731_ec3a94edce_k.jpg",
         "alt": "莊志輝 飛越道德的階梯",
         "similarArt": []
@@ -1329,7 +1329,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54432467867_ecaab633ca_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163235759_52bc1eadeb_k.jpg",
         "alt": "莊志輝 秘密花園",
         "similarArt": []
@@ -1362,7 +1362,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671547_2c41107f54_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163363980_a37c8561eb_z.jpg",
         "alt": "莊志輝 被愚弄的盲從",
-        "similarArt": []
+        "similarArt": [4]
     },
     {
         "id": 92,
@@ -1374,10 +1374,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433696535_e9e506f365_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163225144_1dc2a6e125_k.jpg",
         "alt": "莊志輝 浪頭上",
-        "similarArt": []
+        "similarArt": [97]
     },
     {
         "id": 93,
@@ -1389,10 +1389,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433573273_0665763220_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163387620_ce6632fd08_k.jpg",
         "alt": "莊志輝 相非相22",
-        "similarArt": []
+        "similarArt": [94, 95, 96, 98, 99]
     },
     {
         "id": 94,
@@ -1404,10 +1404,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433696295_830d2f69b5_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163387460_bc2ee25f09_k.jpg",
-        "alt": "莊志輝 ",
-        "similarArt": []
+        "alt": "莊志輝 相非相23",
+        "similarArt": [93, 95, 96, 98, 99]
     },
     {
         "id": 95,
@@ -1419,10 +1419,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433696300_fcf9a9680f_b.jpg",
         "img": "https://live.staticflickr.com/65535/54162932311_479d90c2a7_k.jpg",
-        "alt": "莊志輝 ",
-        "similarArt": []
+        "alt": "莊志輝 相非相24",
+        "similarArt": [93, 94, 96, 98, 99]
     },
     {
         "id": 96,
@@ -1436,8 +1436,8 @@
         "tag": "各時期經典",
         "thumbnail": "https://live.staticflickr.com/65535/54335796654_595020a18d_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163208098_601d511d60_k.jpg",
-        "alt": "莊志輝 ",
-        "similarArt": []
+        "alt": "莊志輝 相非相25",
+        "similarArt": [93, 94, 95, 98, 99]
     },
     {
         "id": 97,
@@ -1452,7 +1452,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671442_4b64795335_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163249709_abfbecc57e_k.jpg",
         "alt": "莊志輝 消極等待貪婪",
-        "similarArt": []
+        "similarArt": [92]
     },
     {
         "id": 98,
@@ -1464,10 +1464,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54432467902_202c7fbda2_b.jpg",
         "img": "https://live.staticflickr.com/65535/54162059837_b05e050467_n.jpg",
         "alt": "莊志輝 弦樂篇",
-        "similarArt": []
+        "similarArt": [93, 94, 95, 96, 99]
     },
     {
         "id": 99,
@@ -1479,10 +1479,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54432467887_7529cce586_b.jpg",
         "img": "https://live.staticflickr.com/65535/54162934836_dd7c12f57c_h.jpg",
         "alt": "莊志輝 弦樂篇2",
-        "similarArt": []
+        "similarArt": [93, 94, 95, 96, 98]
     },
     {
         "id": 100,
@@ -1512,7 +1512,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996750_32762866b3_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163250954_364763e703_k.jpg",
         "alt": "莊志輝 天際效應",
-        "similarArt": [31, 42, 43, 100, 102, 103, 104, 105, 106]
+        "similarArt": [13, 31, 42, 43, 102, 103, 104, 105, 106]
     },
     {
         "id": 102,
@@ -1542,7 +1542,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671237_1da61dce68_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163251039_65d7b1cc00_k.jpg",
         "alt": "莊志輝 追夢-花非花",
-        "similarArt": [31, 42, 43, 100, 101, 102, 104, 105, 106]
+        "similarArt": [13, 31, 42, 43, 101, 102, 104, 105, 106]
     },
     {
         "id": 104,
@@ -1557,7 +1557,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335797044_471067339a_n.jpg",
         "img": "https://live.staticflickr.com/65535/54119153643_82c88ea250_k.jpg",
         "alt": "莊志輝 種子系列",
-        "similarArt": [31, 42, 43, 100, 101, 102, 103, 105, 106]
+        "similarArt": [13, 31, 42, 43, 101, 102, 103, 105, 106]
     },
     {
         "id": 105,
@@ -1569,10 +1569,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433573218_b2d7bf8142_b.jpg",
         "img": "https://live.staticflickr.com/65535/54162935421_12fddc44a4_k.jpg",
         "alt": "莊志輝 種子系列2",
-        "similarArt": [31, 42, 43, 100, 101, 102, 103, 104, 106]
+        "similarArt": [13, 31, 42, 43, 101, 102, 103, 104, 106]
     },
     {
         "id": 106,
@@ -1584,10 +1584,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433696180_3da170bd02_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163210068_91b8f69bec_k.jpg",
         "alt": "莊志輝 種子系列3",
-        "similarArt": [31, 42, 43, 100, 101, 102, 103, 104, 105]
+        "similarArt": [13, 31, 42, 43, 101, 102, 103, 104, 105]
     },
     {
         "id": 107,
@@ -1599,10 +1599,10 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433515519_224835511f_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163255454_6300809df1_k.jpg",
         "alt": "莊志輝 時代的過客",
-        "similarArt": [28, 29, 30, 108]
+        "similarArt": [28, 29, 30]
     },
     {
         "id": 108,
@@ -1614,7 +1614,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54163208183_6d8fd1d4c3_k.jpg",
         "alt": "莊志輝 來自星星的你",
         "similarArt": [28, 29, 30, 107]
@@ -1629,7 +1629,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433322556_afd4dbd97d_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163394300_0501937394_k.jpg",
         "alt": "莊志輝 花開時節2",
         "similarArt": [41, 110, 111]
@@ -1644,7 +1644,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433322221_8d45fd3038_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163214858_0ce2a98dde_k.jpg",
         "alt": "莊志輝 靜靜的在星空中",
         "similarArt": [41, 109, 111]
@@ -1659,7 +1659,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54432467977_5735f5f8a3_b.jpg",
         "img": "https://live.staticflickr.com/65535/54163394700_db7aebb94a_k.jpg",
         "alt": "莊志輝 塵影",
         "similarArt": [41, 109, 110]
@@ -1674,7 +1674,7 @@
         "classics": "",
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https:",
         "img": "https://live.staticflickr.com/65535/54162065362_ed593f3606_w.jpg",
         "alt": "莊志輝 我們創造了我們",
         "similarArt": [9]
@@ -1797,7 +1797,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335579061_8dc22cf8bd_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163059756_556105c308_k.jpg",
         "alt": "莊志輝 悠遊於大千",
-        "similarArt": []
+        "similarArt": [121, 122]
     },
     {
         "id": 121,
@@ -1812,7 +1812,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335997070_8fb2dc1ac5_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162922103_45d8820254_z.jpg",
         "alt": "莊志輝 想像是真實的存在",
-        "similarArt": []
+        "similarArt": [120, 122]
     },
     {
 
@@ -1828,7 +1828,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996995_8236774967_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163516715_90d3e82fe4_z.jpg",
         "alt": "莊志輝 宇宙快遞",
-        "similarArt": []
+        "similarArt": [120, 121]
     },
     {
         "id": 123,
@@ -2023,7 +2023,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334672107_3cb54934d5_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162922433_6858a7f539_k.jpg",
         "alt": "莊志輝 完美需要一點缺陷",
-        "similarArt": []
+        "similarArt": [136, 137]
     },
     {
         "id": 136,
@@ -2038,7 +2038,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335797384_c67de5574e_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162961669_629991da53_k.jpg",
         "alt": "莊志輝 生生不息",
-        "similarArt": []
+        "similarArt": [135, 137]
     },
     {
         "id": 137,
@@ -2053,7 +2053,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334672122_6dbb821f6e_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162646466_e5251620e3_k.jpg",
         "alt": "莊志輝 花開時節3",
-        "similarArt": []
+        "similarArt": [135, 136]
     },
     {
         "id": 138,
@@ -2143,7 +2143,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808848_38e6cd94d4_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163375134_467822a881_z.jpg",
         "alt": "莊志輝 家人系列_爸爸",
-        "similarArt": []
+        "similarArt": [144, 145, 146, 147, 148, 149, 150, 151, 152]
     },
     {
         "id": 144,
@@ -2158,7 +2158,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996895_dd80670248_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163375174_4c6e085848_z.jpg",
         "alt": "莊志輝 家人系列_媽媽",
-        "similarArt": []
+        "similarArt": [143, 145, 146, 147, 148, 149, 150, 151, 152]
     },
     {
         "id": 145,
@@ -2173,7 +2173,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808338_6592d90c43_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163517015_a2a321c471_z.jpg",
         "alt": "莊志輝 家人系列_哥哥",
-        "similarArt": []
+        "similarArt": [143, 144, 146, 147, 148, 149, 150, 151, 152]
     },
     {
         "id": 146,
@@ -2188,7 +2188,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808328_898d9db9ba_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162185897_69201fc400_z.jpg",
         "alt": "莊志輝 家人系列_妹妹",
-        "similarArt": []
+        "similarArt": [143, 144, 145, 147, 148, 149, 150, 151, 152]
     },
     {
         "id": 147,
@@ -2203,7 +2203,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808408_f91178f313_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162185772_3b595db8e5_z.jpg",
         "alt": "莊志輝 出入自在",
-        "similarArt": []
+        "similarArt": [143, 144, 145, 146, 148, 149, 150, 151, 152]
     },
     {
         "id": 148,
@@ -2218,7 +2218,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335578981_3948e1b5d7_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162195572_32a78ccce0_b.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [143, 144, 145, 146, 147, 149, 150, 151, 152]
     },
     {
         "id": 149,
@@ -2233,7 +2233,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808308_0fea048b78_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163516830_f95dc30bb0_z.jpg",
         "alt": "莊志輝 女",
-        "similarArt": []
+        "similarArt": [143, 144, 145, 146, 147, 148, 150, 151, 152]
     },
     {
         "id": 150,
@@ -2248,7 +2248,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808303_be5b182d4f_w.jpg",
         "img": "https://live.staticflickr.com/65535/54163374984_288e829d91_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [143, 144, 145, 146, 147, 148, 149, 151, 152]
     },
     {
         "id": 151,
@@ -2263,7 +2263,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996825_9e30272b1b_w.jpg",
         "img": "https://live.staticflickr.com/65535/54163516880_8ed3ee736d_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [143, 144, 145, 146, 147, 148, 149, 150, 152]
     },
     {
         "id": 152,
@@ -2278,7 +2278,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335578976_d2f4e1fb92_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163374999_58b13a83e8_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [143, 144, 145, 146, 147, 148, 149, 150, 151]
     },
     {
         "id": 153,
@@ -2293,7 +2293,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671912_ca3f25e79f_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163059751_8c7ede628c_c.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [154, 155, 156, 161, 162, 157, 158]
     },
     {
         "id": 154,
@@ -2308,7 +2308,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996855_5098859048_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163374964_89d5165bfc_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [153, 155, 156, 161, 162, 157, 158]
     },
     {
         "id": 155,
@@ -2323,7 +2323,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671867_45401a3c37_w.jpg",
         "img": "https://live.staticflickr.com/65535/54163059876_5366e2ff05_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [153, 154, 156, 161, 162, 157, 158]
     },
     {
         "id": 156,
@@ -2338,7 +2338,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808358_e7912cdc52_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163336443_6be0947eca_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [153, 154, 155, 161, 162, 157, 158]
     },
     {
         "id": 157,
@@ -2353,7 +2353,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996915_5e75dee71b_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163375094_4335fea25b_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [153, 154, 155, 156, 161, 162, 158]
     },
     {
         "id": 158,
@@ -2368,7 +2368,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671897_54a7b3f807_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163336273_54ede5325d_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [153, 154, 155, 156, 161, 162, 157]
     },
     {
         "id": 159,
@@ -2413,7 +2413,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335578966_09c7562e7a_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163516910_802598b823_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [153, 154, 155, 156, 162, 157, 158]
     },
     {
         "id": 162,
@@ -2428,7 +2428,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808443_124b18e0af_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163375049_9be2450826_c.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [153, 154, 155, 156, 161, 157, 158]
     },
     {
         "id": 163,
@@ -2443,7 +2443,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335808438_bdd685dc4e_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163060026_36a7c77bbd.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [164, 165, 166]
     },
     {
         "id": 164,
@@ -2458,7 +2458,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335996940_29cc8c078e_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162185792_fdd5022a5a_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [163, 165, 166]
     },
     {
         "id": 165,
@@ -2473,7 +2473,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54335797294_a6ce19f889_n.jpg",
         "img": "https://live.staticflickr.com/65535/54162185692_35787abdb6_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [163, 164, 166]
     },
     {
         "id": 166,
@@ -2488,7 +2488,7 @@
         "thumbnail": "https://live.staticflickr.com/65535/54334671972_010a7457b3_n.jpg",
         "img": "https://live.staticflickr.com/65535/54163336398_a32da542e4_z.jpg",
         "alt": "莊志輝 ",
-        "similarArt": []
+        "similarArt": [163, 164, 165]
     },
     {
         "id": 167,
@@ -2515,9 +2515,9 @@
         "classics": false,
         "series": "",
         "tag": "",
-        "thumbnail": "",
+        "thumbnail": "https://live.staticflickr.com/65535/54433573408_e92a541d9d_b.jpg",
         "img": "https://live.staticflickr.com/65535/54119343515_8a4f5bac17_h.jpg",
         "alt": "莊志輝 ",
-        "similarArt": [1, 2, 3, 15, 16, 17, 18, 19, 71, 72, 73, 74, 75, 76, 77]
+        "similarArt": [16, 17, 2, 3, 1, 18, 19, 71, 72, 73, 74, 75, 76, 77]
     }
 ]
