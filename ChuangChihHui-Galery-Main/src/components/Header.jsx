@@ -12,7 +12,7 @@ const Header = () => {
     const menuRef = useRef(null); // 用於檢測點擊外部
     const [isMenuOpen, setIsMenuOpen] = useState(false); // 控制漢堡選單是否打開
     const { t } = useTranslation();
-
+    console.log(isMenuOpen)
     // ==================== Reload Menu ====================
     useEffect(() => {
         const pathname = location.pathname;
@@ -106,7 +106,7 @@ const Header = () => {
     });
 
     return (
-        <div className='headerContainer'>
+        <div className={`headerContainer`}>
             <header className={`header ${isMenuOpen ? 'open' : 'close'}`}>
                 {/* Logo */}
                 <Link to="/" className="LogoContainer">
