@@ -457,13 +457,13 @@
     padding: 0 20px;
   }
 
-  .OpeningBG{
+  /* .OpeningBG{
     width: 100vw;
     height: 30vh;
     top: 100px;
     background-image: url("https://live.staticflickr.com/65535/54315706478_7e63925e1b_w.jpg");
     background-size: contain;
-  }
+  } */
 
   /* .artW-sub{
     position: absolute;

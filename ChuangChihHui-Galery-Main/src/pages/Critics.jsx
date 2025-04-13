@@ -4,6 +4,7 @@ import critics_item from '../datas/critics.json';
 import report from '../datas/reports.json';
 import '../css/critics.css'
 import { FaWeight } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const SCREEN_BREAKPOINTS = {
   MOBILE: { min: 375, max: 425, width: '100%' },
@@ -30,6 +31,9 @@ const CriticCard = ({ critic, width, visibleSection }) => (
 
 // Updated TabButton component with responsive features
 const TabButton = ({ label, isActive, onClick, screenWidth }) => {
+
+  const { t } = useTranslation();
+
   const getTabStyles = () => {
     // Base styles
     const baseStyles = {
@@ -87,7 +91,7 @@ const TabButton = ({ label, isActive, onClick, screenWidth }) => {
         flex: screenWidth < 425 ? '1 1 45%' : 'none', // Equal width on mobile
       }}
     >
-      <h5 style={getTabStyles()}>{label}</h5>
+      <h5 style={getTabStyles()}>{t(label)}</h5>
     </li>
   );
 };

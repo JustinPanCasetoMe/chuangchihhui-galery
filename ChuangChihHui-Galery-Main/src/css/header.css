@@ -5,247 +5,242 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    /* overflow: hidden; */
-    background-color: #fff;
+    background-color: var(--white);
     z-index: 50;
 }
 
-header {
+header{
     max-width: 1960px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 60px;
-    background-color: #fff;
-    border-bottom: 1px solid var(--grey-1);
+    padding: 0 80px;
+    background-color: var(--white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.menuContainer {
+header a{
+    color: #000000;
+    font-weight: 900;
+}
+
+header ul ul li a{
+    color: #8C8383;
+    font-weight: 400;
+}
+
+.Logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.Logo img{
+    height: 42%;
+}
+
+.defaultLogo{
+    display: none;
+}
+
+.menuItemActive{
+    transition: all 0.4s ease-in-out;
+}
+
+.menuContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menuItemContainer{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    width: 75%;
+    width: 100%;
 }
 
-.menuItemContainer {
+.menuItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
     position: relative;
 }
 
-.LogoContainer {
-    width: 300px;
-    display: flex;
-    align-items: center;
+.submenuContainer {
+    position: absolute;
+    top: 100%;
+    width: 160px;
+    background-color: #fff;
+    flex-direction: column;
 }
 
-.Logo {
-    height: 36px;
+.submenuItem {
+    margin-top: 5px;
+    border-bottom: 1px solid var(--grey-1);
+    padding: 10px;
 }
 
-.Logo img {
+.submenuLink {
+    color: #000000; /* Default color for submenu items */
+    font-weight: 400;
+}
+
+.menuItemActive .submenuContainer {
+    display: block; /* Show submenu when parent menu is active */
+}
+
+.lngSelector{
     height: 100%;
-    margin-right: 20px;
-}
-
-.LogoTxt{
-    height: 45px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    line-height: 1;
-    color: black;
-}
-
-.LogoTxt h3{
-    font-size: 18px;
-    display: block;
-    width: fit-content;
-}
-
-.menuItem {
-    padding: 10px 20px;
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--grey-1);
-    position: relative;
-}
-
-.menuItem.active {
-    color: var(--grey-active);
-}
-
-.subMenu {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 200px;
-    background-color: #fff;
-    padding: 0 10px;
-    border: 1px solid var(--grey-1);
-    display: none; 
-}
-
-.menuItem.active .subMenu {
-    display: block; 
-}
-
-.subMenuItem {
-    margin-top: 15px;
-    border-bottom: 1px solid var(--grey-1);
-}
-
-.subMenuLink {
-    display: block;
-    padding: 10px;
-}
-
-.lngEarth {
-    width: 20px;
-    position: relative;
-}
-
-.lngSub {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 120px;
-}
-
-.lngSubItem {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.hamburgerButton {
-    position: fixed;
-    top: 20px;
-    right: 60px;
-    width: 20px;
-    font-size: 60px;
-    height: 100px;
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
     justify-content: center;
     align-items: center;
-    z-index: 55;
+    margin-right: 30px;
+    padding: 0 10px;
 }
 
+.lngSub{
+    width: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #d5d5d5;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+/* 漢堡按鈕樣式 */
+.hamburger {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 55;
+    cursor: pointer;
+    display: none;
+  }
+  
+/* 在小螢幕顯示漢堡按鈕 */
 @media (max-width: 1024px) {
     header{
         position: fixed;
         top: 0;
         left: 100%;
-        /* right: 0; */
-        width: 50%;
+        width: 40%;
         height: 100%;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px 300px;
-        background-color: var(--grey-3);
-        transition: transform .5s ease;
+        background-color: var(--grey-1);
+        padding: 20px 20px 20%;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    header a{
+        color: #ffffff;
+    }
+    
+    header ul ul li a{
+        color: #8C8383;
     }
 
-    header.open{
+    .defaultLogo{
         display: block;
-        transform: translateX(-100%); 
-    }
-
-    header.close {
-        transform: translateX(0%); 
-    }
-
-    .LogoContainer {
-        justify-content: space-between;
-        width: 80%;
-        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        padding: 10px 40px ;
+        background-color: var(--primary-blue);
+        width: 100%;
     }
 
     .Logo{
-        width: 100%;
+        /* margin-bottom: 20px; */
     }
 
-    .Logo img{
-        width: 30px;
-        height: auto;
+    header.header-open {
+        transform: translateX(-100%);
+        /* width: 500px; */
+    }
+
+    header.header-closed {
+        transform: translateX(0%);
     }
     
-    .LogoTxt h3{
-        font-size: 14px;
-        color: #fff;
+    .menuContainer{
+        flex-direction: column;
     }
-
-    .menuContainer {
+    
+    .menuItemContainer{
+        flex-direction: column;
+    }
+    
+    .menuItem{
         width: 100%;
         flex-direction: column;
-        position: absolute;
-        top: 140px;
-        left: 0;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .menuContainer.open {
-        display: flex;
-    }
-
-    .menuItemContainer {
-        width: 100%;
+        text-align: center;
     }
     
-    .menuItem {
-        border-bottom: 1px solid var(--white);
-        padding: 15px 20px;
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-    }
-    
-    .subMenu {
-        position: relative;
-        top: 0px;
+    .menuItemContainer li{
         width: 100%;
-        display: none;
-        border: none;
+        padding: 10px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .submenuContainer {
+        width: 100%;
+        position: static;
         background-color: transparent;
     }
     
-    .subMenu a{
+    .submenuItem {
+        margin-top: 5px;
+        border-bottom: 1px solid var(--black-0);
+        padding: 10px;
+    }
+    
+    .submenuLink {
         color: #fff;
+        font-weight: 400;
+    }
+    
+    .menuItemActive .submenuContainer {
+        display: block; /* Show submenu when parent menu is active */
     }
 
-    .menuItem.active .subMenu {
+    .lngSelector{
+        height: auto;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        padding: 30px 30px;
+    }
+    
+    .hamburger {
         display: block;
     }
 
-    .subMenuItem {
-        margin-top: 15px;
-        border-bottom: 1px solid var(--grey-1);
+    .registerBtn{
+        width: 320px;
     }
-
-    .hamburgerButton {
-        display: block;
-        color: #fff;
-    }
-} 
+}
 
 @media (max-width: 768px) {
     header{
-        width: 300px;
+        width: 360px;
     }
-} 
+    
+    .defaultLogo{
+        padding: 10px 20px ;
+    }
+
+    .registerBtn{
+        width: 240px;
+    }
+}
 
 @media (max-width: 425px) {
     header{
-        top: 0;
-        width: 100%;
-        height: 160vh;
-    }
-
-    .LogoContainer {
-        width: 80%;
-    }
-
-    .Logo{
         width: 100%;
     }
 }

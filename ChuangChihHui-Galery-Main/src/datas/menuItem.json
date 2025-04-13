@@ -3,62 +3,74 @@
         "menu" : "作品",
         "id": "artworks",
         "url":"",
-        "sub":[
-            { 
+        "sub": [
+            {
+                "menu": "國美館時期",
+                "root": "artworks",
                 "id": "museumNational",
-                "text": "國美館時期",
-                "pathname": "museumNational"
+                "url": "museumNational"
             },
             {
+                "menu": "北美館時期",
+                "root": "artworks",
                 "id": "museumTaipei",
-                "text": "北美館時期",
-                "pathname": "museumTaipei"
+                "url": "museumTaipei"
             },
             {
+                "menu": "區塊鏈系列",
+                "root": "artworks",
                 "id": "blockChain",
-                "text": "區塊鏈系列",
-                "pathname": "blockChain"
+                "url": "blockChain"
             },
             {
+                "menu": "無相之境",
+                "root": "artworks",
                 "id": "unXiangArea",
-                "text": "無相之境",
-                "pathname": "unXiangArea"
+                "url": "unXiangArea"
             },
             {
+                "menu": "各經典時期",
+                "root": "artworks",
                 "id": "classics",
-                "text": "各經典時期",
-                "pathname": "classics"
+                "url": "classics"
             },
             {
+                "menu": "燈系列",
+                "root": "artworks",
                 "id": "light",
-                "text": "燈系列",
-                "pathname": "light"
+                "url": "light"
             },
             {
+                "menu": "近代立體",
+                "root": "artworks",
                 "id": "modernStereo",
-                "text": "近代立體",
-                "pathname": "modernStereo"
+                "url": "modernStereo"
             },
             {
+                "menu": "早期立體",
+                "root": "artworks",
                 "id": "earlyStereo",
-                "text": "早期立體",
-                "pathname": "earlyStereo"
+                "url": "earlyStereo"
             }
         ]
     },
     {
         "menu" : "資歷",
         "id": "experiences",
-        "url":"experiences"
+        "url":"experiences",
+        "sub": []
     },
     {
         "menu" : "藝評",
         "id": "critics",
-        "url":"critics"
+        "url":"critics",
+        "sub": []
     },
     {
         "menu" : "聯絡",
-        "id" :"contacts",
-        "url":"contacts"
+        "id": "contacts",
+        "url":"contacts",
+        "sub": []
+        
     }
   ]

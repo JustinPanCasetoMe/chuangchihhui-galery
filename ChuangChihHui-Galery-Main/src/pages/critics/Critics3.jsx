@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Critics3 = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className='criticsContainer'>
       <div className='title'>

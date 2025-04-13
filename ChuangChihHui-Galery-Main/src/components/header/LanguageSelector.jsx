@@ -1,61 +1,78 @@
-import React from 'react'
 import { useState, useEffect, useRef } from 'react';
+import { FaEarthAfrica, FaBasketball } from "react-icons/fa6";
+import { RiEarthFill } from "react-icons/ri";
+import '../../i18n'
 import { useTranslation } from 'react-i18next';
-import { FaEarthAfrica } from 'react-icons/fa6';
 
 const LanguageSelector = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    
+    const [lngSubClose, setLngSubClose] = useState(false);
+    const languageSelectorRef = useRef(null); // Add this ref
 
-    // ==================== Toggle Functions ====================
-    const toggleLanguageSelector = () => setIsOpen((isOpen) => !isOpen);
-    const changeLanguage = (lng) => i18n.changeLanguage(lng);
-    const languageSelectorRef = useRef(null);
-    const { t, i18n } = useTranslation()
-
-    // 點擊外部時關閉語言選擇器
+    // Add this useEffect for click outside handling
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (
-                languageSelectorRef.current &&
-                !languageSelectorRef.current.contains(event.target)
-            ) {
-                setIsOpen(false);
+            if (languageSelectorRef.current && !languageSelectorRef.current.contains(event.target)) {
+            setLangActive(false);
+            // console.log('Click Outside');
             }
         };
 
         document.addEventListener('mousedown', handleClickOutside);
-
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
 
+    // ==================== Language Select ====================
+    const { t, i18n } = useTranslation();
+    const [langActive, setLangActive] = useState(false);
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        setLangActive(false);
+    };
+
+    const handleLanguageSelect = () => {
+        setLangActive(!langActive);
+    };
+
+    const handleCloseLng = () => {
+        setLngSubClose(false);
+    };
+
     return (
-        <ul className="lgnEarth df fd-c pd-w-10 fh jc-c aln-itm-c">
-            <div className="df fd-c jc-c ps-rl" onClick={toggleLanguageSelector}>
-                <FaEarthAfrica size={32}  style={{padding:"8px"}}/>
-                {isOpen && (
-                    <ul
-                        className="df fd-c lngSub"
-                        style={{
-                            position: 'absolute',
-                            top: '160%',
-                            left: '50%',
-                            transform: 'translateX(-50%)',
-                            backgroundColor: '#fff',
-                            border: '1px solid var(--grey-1)',
-                        }}
-                        ref={languageSelectorRef}
-                    >
-                        <li className="lngSubItem" onClick={() => changeLanguage('ch')}>
-                            {t('中文')}
-                        </li>
-                        <li className="lngSubItem" onClick={() => changeLanguage('en')}>
-                            {t('English')}
-                        </li>
-                    </ul>
-                )}
-            </div>
+        <ul
+            ref={languageSelectorRef}
+            style={{ position: 'relative' }}
+            className='lngSelector'
+        >
+        <div onClick={handleLanguageSelect} className='df jc-ca aln-itm-c'>
+            <RiEarthFill size={20} />
+        </div>
+        <ul
+            className='df fd-c'
+            style={{
+                position: "absolute",
+                top: "100%",
+                left: "50%",
+                display: `${langActive ? '' : 'none'}`
+            }}
+            onClick={() => handleCloseLng(false)}
+        >
+            <li
+                className='lngSub pointer'
+                onClick={() => { changeLanguage('ch'); }}
+            >
+                {t('中文')}
+            </li>
+            <li
+                className='lngSub pointer'
+                onClick={() => { changeLanguage('en'); }}
+            >
+                {t('English')}
+            </li>
+        </ul>
         </ul>
     )
 }
