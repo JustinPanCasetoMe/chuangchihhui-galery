@@ -75,7 +75,7 @@ function App() {
   // const backendurl = "http://localhost:3000";
 
   return (
-    <div className=''>
+    <>
 
       <ScrollToTop />
       <Routes>
@@ -181,10 +181,9 @@ function App() {
         
       </Routes>
 
-      {/* <Header /> */}
       <Header />
       <Footer />
-    </div>
+    </>
   )
 }
 

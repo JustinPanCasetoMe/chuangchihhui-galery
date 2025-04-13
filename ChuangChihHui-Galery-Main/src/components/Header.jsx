@@ -120,56 +120,54 @@ const Header = () => {
     
 
     return (
-        <>
-            <div className='headerContainer'>
-                {/* 漢堡按鈕 */}
-                <div className="hamburger" onClick={toggleHeader}>
-                    {isHeaderOpen ? <FaTimes size={30} color="#000" /> : <FaBars size={30} color="#000" />}
+        <div className='headerContainer'>
+            {/* 漢堡按鈕 */}
+            <div className="hamburger" onClick={toggleHeader}>
+                {isHeaderOpen ? <FaTimes size={30} color="#000" /> : <FaBars size={30} color="#000" />}
+            </div>
+
+            <Link to='/' className='defaultLogo'>
+                <div className="Logo">
+                <img
+                    src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg"
+                    alt=""
+                    className='mg-r-20'
+                />
+                <div style={{ width: '200px', color: "#000" }}>
+                    <h3 style={{ fontSize: '14px' }}>莊志輝</h3>
+                    <h3 style={{ fontSize: '14px' }}>CHUANG CHIH HUI</h3>
+                </div>
+                </div>
+            </Link>
+
+            {/* Header */}
+            <header
+                className={`${isHeaderOpen ? 'header-open' : 'header-closed'}`}
+                // onClick={() => setIsHeaderOpen(false)}
+            >
+                <div className={`menuContainer ${location.pathname !== '/' ? 'df' : 'dn'}`}>
+                    {/* Logo Container */}
+                    <Link to='/' className='Logo' style={{ marginRight: '0px' }}>
+                        <img
+                            src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg"
+                            alt=""
+                            className='mg-r-20'/>
+                        <div style={{ width: '200px', color: "#000" }}>
+                            <h3 style={{ fontSize: '14px' }}>莊志輝</h3>
+                            <h3 style={{ fontSize: '14px' }}>CHUANG CHIH HUI</h3>
+                        </div>
+                    </Link>
+
+                    <ul className='menuItemContainer' ref={menuRef}>
+                        {menuItemRender}
+                    </ul>
                 </div>
 
-                <Link to='/' className='defaultLogo'>
-                    <div className="Logo">
-                    <img
-                        src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg"
-                        alt=""
-                        className='mg-r-20'
-                    />
-                    <div style={{ width: '200px', color: "#000" }}>
-                        <h3 style={{ fontSize: '14px' }}>莊志輝</h3>
-                        <h3 style={{ fontSize: '14px' }}>CHUANG CHIH HUI</h3>
-                    </div>
-                    </div>
-                </Link>
+                {/* Language Select */}
+                <LanguageSelector />
 
-                {/* Header */}
-                <header
-                    className={`${isHeaderOpen ? 'header-open' : 'header-closed'}`}
-                    // onClick={() => setIsHeaderOpen(false)}
-                >
-                    <div className={`menuContainer ${location.pathname !== '/' ? 'df' : 'dn'}`}>
-                        {/* Logo Container */}
-                        <Link to='/' className='Logo' style={{ marginRight: '0px' }}>
-                            <img
-                                src="https://live.staticflickr.com/65535/54137328621_14ed0a9d0d_c.jpg"
-                                alt=""
-                                className='mg-r-20'/>
-                            <div style={{ width: '200px', color: "#000" }}>
-                                <h3 style={{ fontSize: '14px' }}>莊志輝</h3>
-                                <h3 style={{ fontSize: '14px' }}>CHUANG CHIH HUI</h3>
-                            </div>
-                        </Link>
-
-                        <ul className='menuItemContainer' ref={menuRef}>
-                            {menuItemRender}
-                        </ul>
-                    </div>
-
-                    {/* Language Select */}
-                    <LanguageSelector />
-
-                </header>
-            </div>
-        </>
+            </header>
+        </div>
     );
 };
 

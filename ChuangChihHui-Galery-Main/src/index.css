@@ -47,8 +47,6 @@ a:hover {
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -129,30 +127,36 @@ select{
   color: #383838;
 }
 
-option{
-  /* background-color: #fff; */
-}
-
-@media (max-width:1250px) {
-  .pd-xContainer{
-    padding: 0 180px;
-  }
-}
 
 @media (max-width:1024px) {
   .pd-xContainer{
     padding: 0 120px;
   }
+
+  .Container{
+    padding: 30px 140px;
+  }
+  
 }
 
 @media (max-width:768px) {
   .pd-xContainer{
     padding: 0 80px;
   }
+
+  .Container{
+    padding: 30px 80px;
+  }
+  
 }
 
 @media (max-width:425px) {
   .pd-xContainer{
     padding: 0 20px;
   }
+
+  .Container{
+    padding: 30px 20px;
+  }
+  
 }

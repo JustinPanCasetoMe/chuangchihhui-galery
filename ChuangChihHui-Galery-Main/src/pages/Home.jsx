@@ -46,7 +46,7 @@ const ArtworkThumbnail = ({ artwork, screenWidth }) => {
   };
 
   return (
-    <div style={{ ...getArtworkStyles(), position: "relative" }}>
+    <div style={{ ...getArtworkStyles(), position: "relative" }} className='artworkItem'>
       <Link to={`/portfolio/${artwork.series}`} style={{height:"100%"}}>
         <img
           src={artwork.thumbnail}
@@ -123,8 +123,8 @@ const Home = () => {
 
       <div
         id='homeExplore'
-        style={{marginTop:`${ screenWidth<425 ? '100px' : '100px'}`, paddingTop:"120px"}}
-        className="df jc-c Container"
+        style={{marginTop:`${ screenWidth<425 ? '100px' : '100px'}`}}
+        className="df jc-c homeArtworks"
       >
         <div className="artworks">
           {renderArtworks()}

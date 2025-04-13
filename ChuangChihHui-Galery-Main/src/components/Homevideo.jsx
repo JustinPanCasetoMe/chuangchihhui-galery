@@ -9,11 +9,11 @@ const Homevideo = () => {
         <div className='df fd-c aln-itm-c Container'>
             <h2 className='videoTitle'>紀錄片：創作背後的故事</h2>
             <p className='videoBrief'>
-            這部紀錄片展示了藝術家創作過程中的靈感與故事，讓觀眾更深入了解每件作品背後的意義。
+              這部紀錄片展示了藝術家創作過程中的靈感與故事，讓觀眾更深入了解每件作品背後的意義。
             </p>
             <iframe
-                width="800"
-                height="450"
+                // width="800"
+                // height="450"
                 src="https://www.youtube.com/embed/aSooyTSjAh8?si=ipN_XdFP10r0U-gH"
                 title="YouTube video player"
                 frameBorder="0"
